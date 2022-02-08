@@ -20,24 +20,16 @@ const ActorSchema = new Schema({
     minlength: 5,
     required: 'Kindly enter the actor password'
   },
-  preferredLanguage: {
-    type: String,
-    default: 'en'
-  },
   phone: {
-    type: String,
-    required: 'Kindly enter the phone number'
+    type: String
   },
   address: {
     type: String
   },
-  photo: {
-    data: Buffer, contentType: String
-  },
   role: [{
     type: String,
     required: 'Kindly enter the user role(s)',
-    enum: ['CUSTOMER', 'CLERK', 'ADMINISTRATOR']
+    enum: ['EXPLORER', 'MANAGER', 'ADMINISTRATOR']
   }],
   validated: {
     type: Boolean,
