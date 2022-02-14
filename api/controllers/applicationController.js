@@ -22,3 +22,7 @@ exports.update_an_application = function (req, res) {
 exports.delete_an_application = function (req, res) {
   
 }
+
+exports.list_applications_by_user = function (req, res) {
+  
+}
