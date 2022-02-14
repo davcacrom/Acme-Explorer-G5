@@ -14,3 +14,7 @@ exports.update_a_finder = function (req, res) {
 exports.get_dashboard = function (req, res) {
   
 }
+
+exports.update_config = function (req, res){
+    
+}

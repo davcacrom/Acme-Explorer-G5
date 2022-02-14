@@ -15,6 +15,9 @@ const ApplicationSchema = new Schema( {
 		type: String,
 		required:'Kindly enter the Application rejectionReason',
 	},
+	comments:{
+		type: String,
+	},
 	status:[{
 		type: String,
 		default:pending,

@@ -13,7 +13,8 @@ const ActorSchema = new Schema({
   },
   email: {
     type: String,
-    required: 'Kindly enter the actor email'
+    required: 'Kindly enter the actor email',
+    unique: true
   },
   password: {
     type: String,
