@@ -9,6 +9,6 @@ module.exports = function (app) {
   app.route('/finders/dashboard')
     .get(finders.get_dashboard) //finder dashboard
   
-  app.route('/finders/config')
+  app.route('/finders/config/:configId')
   .put(finders.update_config) // update cached period, update limit results
 }
