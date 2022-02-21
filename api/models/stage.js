@@ -1,5 +1,5 @@
 'use strict'
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 
 const StageSchema = new Schema( {
@@ -8,7 +8,7 @@ const StageSchema = new Schema( {
 		required:'Kindly enter the Stage description',
 	},
 	price:{
-		type: double,
+		type: Number,
 		required:'Kindly enter the Stage price',
 	},
 	title:{

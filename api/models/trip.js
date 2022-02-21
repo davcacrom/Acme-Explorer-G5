@@ -18,7 +18,7 @@ const TripSchema = new Schema( {
 		type: String,
 	},
 	price:{
-		type: double,
+		type: Number,
 		required:'Kindly enter the Trip price',
 	},
 	requirements:{

@@ -7,13 +7,13 @@ const FinderSchema = new Schema( {
 		type: Date,
 	},
 	keyword:{
-		type: string,
+		type: String,
 	},
 	maxPrice:{
-		type: double,
+		type: Number,
 	},
 	minPrice:{
-		type: double,
+		type: Number,
 	},
 	startDate:{
 		type: Date,

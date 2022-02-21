@@ -4,10 +4,16 @@ const Schema = mongoose.Schema
 
 const ConfigurationSchema = new Schema( {
 	cachedPeriod:{
-		type: Date,
+		type: Number,
+		default: 1,
+		min:0,
+		max:24
 	},
 	numberResults:{
-		type: number,
+		type: Number,
+		default: 10,
+		min: 0,
+		max: 100
 	},
 
 },{strict:false})//end Configuration

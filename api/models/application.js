@@ -4,11 +4,11 @@ const Schema = mongoose.Schema
 
 const ApplicationSchema = new Schema( {
 	creationMoment:{
-		type: Time,
+		type: Date,
 		required:'Kindly enter the Application creationMoment',
 	},
 	paid:{
-		type: boolean,
+		type: Boolean,
 		required:'Kindly enter the Application paid',
 	},
 	rejectionReason:{
