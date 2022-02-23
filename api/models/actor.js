@@ -34,9 +34,9 @@ const ActorSchema = new Schema({
     required: 'Kindly enter the user role(s)',
     enum: ['EXPLORER', 'MANAGER', 'ADMINISTRATOR']
   }],
-  validated: {
+  active: {
     type: Boolean,
-    default: false
+    default: true
   },
   created: {
     type: Date,
@@ -70,5 +70,7 @@ ActorSchema.methods.verifyPassword = function (password, cb) {
     cb(null, isMatch)
   })
 }
+
+//indices: indice unique de email
 
 module.exports = mongoose.model('Actors', ActorSchema)

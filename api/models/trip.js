@@ -21,6 +21,7 @@ const TripSchema = new Schema( {
 	pictures:{
 		type: String,
 	},
+	// Esta es una propiedad derivada
 	price:{
 		type: Number,
 		required:'Kindly enter the Trip price',
@@ -54,5 +55,9 @@ TripSchema.pre('save', function (callback) {
 
 	callback()
   })
+
+  //Indices: 	Indexar por peso los títulos, descripciones y tickers (de mayor a menor peso)
+  //			Indexar precio y fechas
+  //			indice unique de ticker
 
 module.exports=mongoose.model('Trips',TripSchema)

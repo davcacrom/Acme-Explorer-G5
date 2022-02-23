@@ -32,4 +32,6 @@ const ApplicationSchema = new Schema( {
 
 },{strict:false})//end Application
 
+	// Indexar aplicaciones por status
+	
 module.exports=mongoose.model('Applications',ApplicationSchema)
