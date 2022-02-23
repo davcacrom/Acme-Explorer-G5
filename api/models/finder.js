@@ -18,6 +18,10 @@ const FinderSchema = new Schema( {
 	startDate:{
 		type: Date,
 	},
+	actor:{
+		type: Schema.Types.ObjectId,
+		ref: 'Actors',
+  	},
 
 },{strict:false})//end Finder
 
