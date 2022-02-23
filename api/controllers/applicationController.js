@@ -1,6 +1,7 @@
 'use strict'
 /* ---------------ACTOR---------------------- */
 const mongoose = require('mongoose')
+const Trip = require('../models/trip')
 const Application = mongoose.model('Applications')
 
 exports.list_all_applications = function (req, res) {
@@ -35,13 +36,36 @@ exports.read_an_application = function (req, res) {
 }
 
 exports.update_an_application = function (req, res) {
+  if( req.params.price != undefined){
+    let price = req.params.price;
+    let tripPrice;
+    Trip.findById(req.params.tripId, function (err, trip) {
+      tripPrice = trip.price;
+      if(price == tripPrice){
+            Application.findOneAndUpdate({ _id: req.params.applicationId }, {$set: {'application.status': "ACEPTED"}}, { new: true }, function (err, application) {
+              if (err) {
+                res.send(err)
+              } else {
+                  res.json(application)
+              }
+            }) 
+      }else{
+        res.send("Kindly enter the correct price")
+      }
+    });
+  }else{
     Application.findOneAndUpdate({ _id: req.params.applicationId }, req.body, { new: true }, function (err, application) {
         if (err) {
           res.send(err)
         } else {
-          res.json(application)
+          if(req.body.status=="REJECTED" && (req.body.rejectionReason==null||req.body.rejectionReason.match(/^ *$/) !==null)){
+            res.send("Kindly enter the rejection reason")
+          }else{
+            res.json(application)
+          }
         }
       })
+    }
 }
 
 exports.delete_an_application = function (req, res) {
