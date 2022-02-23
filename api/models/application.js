@@ -27,7 +27,7 @@ const ApplicationSchema = new Schema( {
 	}],
 	trip:{
 		type:String,
-		requred:'Kindly enter the Application trip',
+		required:'Kindly enter the Application trip',
 	}
 
 },{strict:false})//end Application
