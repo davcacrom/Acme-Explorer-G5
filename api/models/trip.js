@@ -41,6 +41,12 @@ const TripSchema = new Schema( {
 		type: String,
 		required:'Kindly enter the Trip title',
 	},
+	stages: [
+		{
+		  type: Schema.Types.ObjectId,
+		  ref: 'Stages',
+		},
+	  ],
 
 },{strict:false})//end Trip
 

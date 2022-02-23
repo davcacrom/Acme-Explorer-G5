@@ -19,16 +19,20 @@ const ApplicationSchema = new Schema( {
 	comments:{
 		type: String,
 	},
-	status:[{
+	status:{
 		type: String,
-		default:"PENDING",
 		required:'Kindly enter the Application status',
-		enum:['PENDING','REJECTED','ACEPTED','DUE','CANCELLED']
-	}],
+		enum:['PENDING','REJECTED','ACEPTED','DUE','CANCELLED'],
+		default:'PENDING'
+	},
 	trip:{
-		type:String,
-		required:'Kindly enter the Application trip',
-	}
+		  type: Schema.Types.ObjectId,
+		  ref: 'Trips',
+	},
+	actor:{
+		type: Schema.Types.ObjectId,
+		ref: 'Actors',
+  	},
 
 },{strict:false})//end Application
 
