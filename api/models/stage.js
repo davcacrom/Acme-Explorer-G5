@@ -2,20 +2,26 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 
-const StageSchema = new Schema( {
-	description:{
+function priceSetter(value) {
+	return value.toFixed(2);
+}
+
+const StageSchema = new Schema({
+	description: {
 		type: String,
-		required:'Kindly enter the Stage description',
+		required: 'Kindly enter the Stage description',
 	},
-	price:{
+	price: {
 		type: Number,
-		required:'Kindly enter the Stage price',
+		required: 'Kindly enter the Stage price',
+		min: 0,
+		set: priceSetter
 	},
-	title:{
+	title: {
 		type: String,
-		required:'Kindly enter the Stage title',
+		required: 'Kindly enter the Stage title',
 	},
 
-},{strict:false})//end Stage
+}, { strict: false })//end Stage
 
-module.exports=mongoose.model('Stages',StageSchema)
+module.exports = mongoose.model('Stages', StageSchema)

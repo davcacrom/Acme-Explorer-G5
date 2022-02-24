@@ -2,27 +2,52 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const FinderSchema = new Schema( {
-	endDate:{
+function endDateValidator(value) {
+	return this.startDate <= value;
+}
+
+function priceSetter(value) {
+	return value.toFixed(2);
+}
+
+const FinderSchema = new Schema({
+	endDate: {
 		type: Date,
+		default: null,
+		validate: [endDateValidator, 'End date must be greater than start date']
 	},
-	keyword:{
+	keyword: {
 		type: String,
+		default: null
 	},
-	maxPrice:{
+	maxPrice: {
 		type: Number,
+		default: null,
+		min: 0,
+		set: priceSetter
 	},
-	minPrice:{
+	minPrice: {
 		type: Number,
+		default: null,
+		min: 0,
+		set: priceSetter
 	},
-	startDate:{
+	startDate: {
 		type: Date,
+		default: null
 	},
-	actor:{
+	actor: {
 		type: Schema.Types.ObjectId,
 		ref: 'Actors',
-  	},
+		unique: true,
+	},
+	trips: [
+		{
+			type: Schema.Types.ObjectId,
+			ref: 'Trips',
+		},
+	],
 
-},{strict:false})//end Finder
+}, { strict: false })//end Finder
 
-module.exports=mongoose.model('Finders',FinderSchema)
+module.exports = mongoose.model('Finders', FinderSchema)

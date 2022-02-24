@@ -2,20 +2,20 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const ConfigurationSchema = new Schema( {
-	cachedPeriod:{
+const ConfigurationSchema = new Schema({
+	cachedPeriod: {
 		type: Number,
 		default: 1,
-		min:0,
-		max:24
+		min: 1,
+		max: 24
 	},
-	numberResults:{
+	numberResults: {
 		type: Number,
 		default: 10,
-		min: 0,
+		min: 1,
 		max: 100
 	},
 
-},{strict:false})//end Configuration
+}, { strict: false })//end Configuration
 
-module.exports=mongoose.model('Configurations',ConfigurationSchema)
+module.exports = mongoose.model('Configurations', ConfigurationSchema)

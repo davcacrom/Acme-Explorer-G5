@@ -1,5 +1,6 @@
 'use strict'
 const mongoose = require('mongoose')
+const validator = require('validator')
 const Schema = mongoose.Schema
 const bcrypt = require('bcrypt')
 
@@ -16,7 +17,7 @@ const ActorSchema = new Schema({
     type: String,
     required: 'Kindly enter the actor email',
     unique: true,
-    match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
+    validate: [validator.isEmail, 'Please fill a valid email address']
   },
   password: {
     type: String,
@@ -40,8 +41,7 @@ const ActorSchema = new Schema({
   },
   created: {
     type: Date,
-    default: Date.now,
-    timestamp: Date.now
+    default: Date.now
   }
 }, { strict: false })
 
