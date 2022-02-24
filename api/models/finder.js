@@ -6,6 +6,10 @@ function endDateValidator(value) {
 	return this.startDate <= value;
 }
 
+function maxPriceValidator(value) {
+	return this.minPrice <= value;
+}
+
 function priceSetter(value) {
 	return value != null ? value.toFixed(2) : value;
 }
@@ -28,7 +32,8 @@ const FinderSchema = new Schema({
 		type: Number,
 		default: null,
 		min: 0,
-		set: priceSetter
+		set: priceSetter,
+		validate: [maxPriceValidator, 'Maximum price must be greater than start date']
 	},
 	minPrice: {
 		type: Number,
@@ -59,7 +64,7 @@ FinderSchema.pre('save', function (callback) {
 	callback();
 });
 
-FinderSchema.post('find', function (result) {
+FinderSchema.post('find', function (callback) {
 	// Comprobar tiempo de caché y actualizar si es necesario
 });
 
