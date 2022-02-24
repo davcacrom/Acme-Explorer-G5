@@ -1,68 +1,111 @@
 'use strict'
 const mongoose = require('mongoose')
+const validator = require('validator')
 const Schema = mongoose.Schema
 
 const moment = require('moment')
 const customAlphabet = require('nanoid').customAlphabet
 const idGenerator = customAlphabet('ABCDEFGHIJKLMNOPQRSTUVWXYZ', 4)
 
-const TripSchema = new Schema( {
-	cancelationReason:{
+function priceSetter(value) {
+	return value != null ? value.toFixed(2) : value;
+}
+
+function endDateValidator(value) {
+	return this.startDate <= value;
+}
+
+const TripSchema = new Schema({
+	actor: {
+		type: Schema.Types.ObjectId,
+		ref: 'Actors',
+		required: 'Kindly enter the Trip actor',
+	},
+	cancelationReason: {
 		type: String,
 	},
-	description:{
+	description: {
 		type: String,
-		required:'Kindly enter the Trip description',
+		required: 'Kindly enter the Trip description',
 	},
-	endDate:{
+	endDate: {
 		type: Date,
-		required:'Kindly enter the Trip endDate',
+		required: 'Kindly enter the Trip endDate',
+		min: Date.now,
+		validate: [endDateValidator, 'End date must be greater than start date']
 	},
-	pictures:{
+	pictures: [
+		{
+			type: String,
+			validate: [v => validator.isURL(v, { protocols: ['http', 'https'] }), 'Please enter a valid URL']
+		}
+	],
+	requirements: {
 		type: String,
+		required: 'Kindly enter the Trip requirements',
 	},
-	// Esta es una propiedad derivada
-	price:{
-		type: Number,
-		required:'Kindly enter the Trip price',
-	},
-	requirements:{
-		type: String,
-		required:'Kindly enter the Trip requirements',
-	},
-	startDate:{
+	startDate: {
 		type: Date,
-		required:'Kindly enter the Trip startDate',
+		required: 'Kindly enter the Trip startDate',
+		min: Date.now,
 	},
-	ticker:{
+	ticker: {
 		type: String
 	},
-	title:{
+	title: {
 		type: String,
-		required:'Kindly enter the Trip title',
+		required: 'Kindly enter the Trip title',
 	},
-
+	published: {
+		type: Boolean,
+		default: false,
+		required: true
+	},
+	stages: {
+		type: [
+			{
+				description: {
+					type: String,
+					required: 'Kindly enter the Stage description',
+				},
+				price: {
+					type: Number,
+					required: 'Kindly enter the Stage price',
+					min: 0.01,
+					set: priceSetter
+				},
+				title: {
+					type: String,
+					required: 'Kindly enter the Stage title',
+				},
+			},
+		],
+		validate: [v => v.length >= 1, 'Must have at least one stage']
+	},
 	finder:{
 		type: String,
 		required:'Kindly enter the finder Id',
 	}
+}, { strict: false, toJSON: { virtuals: true } })//end Trip
 
-},{strict:false})//end Trip
+TripSchema.virtual('price').get(function () {
+	return this.stages.reduce((sum, stage) => sum + stage.price, 0);
+});
 
 TripSchema.pre('save', function (callback) {
-	const trip = this
-	
+	const trip = this;
+
 	var day = new Date();
-	day=moment(day).format('YYMMDD'); 
+	day = moment(day).format('YYMMDD');
 
-	const generatedTicker = [day, idGenerator()].join('-')
-	trip.ticker = generatedTicker
+	const generatedTicker = [day, idGenerator()].join('-');
+	trip.ticker = generatedTicker;
 
-	callback()
-  })
+	callback();
+})
 
-  //Indices: 	Indexar por peso los títulos, descripciones y tickers (de mayor a menor peso)
-  //			Indexar precio y fechas
-  //			indice unique de ticker
+//Indices: 	Indexar por peso los títulos, descripciones y tickers (de mayor a menor peso)
+//			Indexar precio y fechas
+//			indice unique de ticker
 
-module.exports=mongoose.model('Trips',TripSchema)
+module.exports = mongoose.model('Trips', TripSchema)

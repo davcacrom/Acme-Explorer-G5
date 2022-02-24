@@ -2,36 +2,40 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const ApplicationSchema = new Schema( {
-	creationMoment:{
+const ApplicationSchema = new Schema({
+	creationMoment: {
 		type: Date,
-		required:'Kindly enter the Application creationMoment',
 		default: Date.now,
+		required: true
 	},
-	paid:{
+	paid: {
 		type: Boolean,
-		required:'Kindly enter the Application paid',
-		default: false
+		default: false,
+		required: true
 	},
-	rejectionReason:{
-		type: String	
+	rejectionReason: {
+		type: String
 	},
-	comments:{
+	comments: {
 		type: String,
 	},
-	status:[{
+	status: {
 		type: String,
-		default:"PENDING",
-		required:'Kindly enter the Application status',
-		enum:['PENDING','REJECTED','ACEPTED','DUE','CANCELLED']
-	}],
-	trip:{
-		type:String,
-		required:'Kindly enter the Application trip',
-	}
+		required: 'Kindly enter the Application status',
+		enum: ['PENDING', 'REJECTED', 'ACEPTED', 'DUE', 'CANCELLED'],
+		default: 'PENDING'
+	},
+	trip: {
+		type: Schema.Types.ObjectId,
+		ref: 'Trips',
+	},
+	actor: {
+		type: Schema.Types.ObjectId,
+		ref: 'Actors',
+	},
 
-},{strict:false})//end Application
+}, { strict: false })//end Application
 
-	// Indexar aplicaciones por status
-	
-module.exports=mongoose.model('Applications',ApplicationSchema)
+// Indexar aplicaciones por status
+
+module.exports = mongoose.model('Applications', ApplicationSchema)

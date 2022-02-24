@@ -1,6 +1,7 @@
 'use strict'
 /* ---------------ACTOR---------------------- */
 const mongoose = require('mongoose')
+const Finder = require('../models/finder')
 const Actor = mongoose.model('Actors')
 
 exports.list_all_actors = function (req, res) {
@@ -15,11 +16,18 @@ exports.list_all_actors = function (req, res) {
 
 exports.create_an_actor = function (req, res) {
   const newActor = new Actor(req.body)
+  const newFinder = new Finder()
   newActor.save(function (err, actor) {
     if (err) {
       res.send(err)
     } else {
-      res.json(actor)
+      newFinder.save(function (err, finder) {
+        if (err) {
+          res.send(err)
+        } else {
+          res.json({ actor: actor, finder: finder })
+        }
+      })
     }
   })
 }
