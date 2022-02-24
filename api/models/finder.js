@@ -7,7 +7,7 @@ function endDateValidator(value) {
 }
 
 function priceSetter(value) {
-	return value.toFixed(2);
+	return value != null ? value.toFixed(2) : value;
 }
 
 const FinderSchema = new Schema({
@@ -19,6 +19,10 @@ const FinderSchema = new Schema({
 	keyword: {
 		type: String,
 		default: null
+	},
+	lastUpdate: {
+		type: Date,
+		default: null,
 	},
 	maxPrice: {
 		type: Number,
@@ -49,5 +53,14 @@ const FinderSchema = new Schema({
 	],
 
 }, { strict: false })//end Finder
+
+FinderSchema.pre('save', function (callback) {
+	// Comprobar tiempo de caché y actualizar si es necesario
+	callback();
+});
+
+FinderSchema.post('find', function (result) {
+	// Comprobar tiempo de caché y actualizar si es necesario
+});
 
 module.exports = mongoose.model('Finders', FinderSchema)

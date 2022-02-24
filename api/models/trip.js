@@ -7,6 +7,10 @@ const moment = require('moment')
 const customAlphabet = require('nanoid').customAlphabet
 const idGenerator = customAlphabet('ABCDEFGHIJKLMNOPQRSTUVWXYZ', 4)
 
+function priceSetter(value) {
+	return value != null ? value.toFixed(2) : value;
+}
+
 function endDateValidator(value) {
 	return this.startDate <= value;
 }
@@ -15,6 +19,7 @@ const TripSchema = new Schema({
 	actor: {
 		type: Schema.Types.ObjectId,
 		ref: 'Actors',
+		required: 'Kindly enter the Trip actor',
 	},
 	cancelationReason: {
 		type: String,
@@ -32,17 +37,9 @@ const TripSchema = new Schema({
 	pictures: [
 		{
 			type: String,
-			required: 'Kindly enter the picture URL', // no sé si esto va bien o no
 			validate: [v => validator.isURL(v, { protocols: ['http', 'https'] }), 'Please enter a valid URL']
 		}
 	],
-	// Esta es una propiedad derivada
-	price: {
-		type: Number,
-		required: 'Kindly enter the Trip price',
-		default: 0,
-		min: 0
-	},
 	requirements: {
 		type: String,
 		required: 'Kindly enter the Trip requirements',
@@ -53,8 +50,7 @@ const TripSchema = new Schema({
 		min: Date.now,
 	},
 	ticker: {
-		type: String,
-		required: true
+		type: String
 	},
 	title: {
 		type: String,
@@ -65,14 +61,32 @@ const TripSchema = new Schema({
 		default: false,
 		required: true
 	},
-	stages: [
-		{
-			type: Schema.Types.ObjectId,
-			ref: 'Stages',
-		},
-	],
+	stages: {
+		type: [
+			{
+				description: {
+					type: String,
+					required: 'Kindly enter the Stage description',
+				},
+				price: {
+					type: Number,
+					required: 'Kindly enter the Stage price',
+					min: 0.01,
+					set: priceSetter
+				},
+				title: {
+					type: String,
+					required: 'Kindly enter the Stage title',
+				},
+			},
+		],
+		validate: [v => v.length >= 1, 'Must have at least one stage']
+	}
+}, { strict: false, toJSON: { virtuals: true } })//end Trip
 
-}, { strict: false })//end Trip
+TripSchema.virtual('price').get(function () {
+	return this.stages.reduce((sum, stage) => sum + stage.price, 0);
+});
 
 TripSchema.pre('save', function (callback) {
 	const trip = this;

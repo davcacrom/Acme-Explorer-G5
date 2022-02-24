@@ -16,7 +16,7 @@ exports.list_all_actors = function (req, res) {
 
 exports.create_an_actor = function (req, res) {
   const newActor = new Actor(req.body)
-  const newFinder = new Finder({'endDate': null, 'keyword': null, 'maxPrice': null, 'minPrice': null, 'startDate': null, 'actor': newActor._id})
+  const newFinder = new Finder()
   newActor.save(function (err, actor) {
     if (err) {
       res.send(err)
@@ -25,7 +25,7 @@ exports.create_an_actor = function (req, res) {
         if (err) {
           res.send(err)
         } else {
-          res.json({actor: actor,finder: finder})
+          res.json({ actor: actor, finder: finder })
         }
       })
     }
