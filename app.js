@@ -5,7 +5,6 @@ const port = process.env.PORT || 8080
 const mongoose = require('mongoose')
 const Actor = require('./api/models/actor')
 const Trip = require('./api/models/trip')
-const Stage = require('./api/models/stage')
 const Application = require('./api/models/application')
 const Configuration = require('./api/models/configuration')
 const Finder = require('./api/models/finder')
