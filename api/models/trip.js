@@ -42,6 +42,11 @@ const TripSchema = new Schema( {
 		required:'Kindly enter the Trip title',
 	},
 
+	finder:{
+		type: String,
+		required:'Kindly enter the finder Id',
+	}
+
 },{strict:false})//end Trip
 
 TripSchema.pre('save', function (callback) {

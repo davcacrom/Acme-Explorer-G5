@@ -14,7 +14,13 @@ exports.list_all_trips = function (req, res) {
 }
 
 exports.list_trips_by_finder = function (req, res) {
-  
+    Trip.find({finder: req.params.finderId}, function (err, trips) {
+      if (err) {
+        res.send(err)
+      } else {
+        res.json(trips)
+      }
+    })
 }
 
 exports.create_a_trip = function (req, res) {
