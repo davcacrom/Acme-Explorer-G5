@@ -25,7 +25,15 @@ exports.update_a_finder = function (req, res) {
 }
 
 exports.get_dashboard = function (req, res) {
-  
+    Finder.aggregate([[{$facet:{"Top":[{$group:{_id: {keyword: "$keyword"}, count:{$sum:1}}}, {$sort:{count:-1}}, {$group:{_id: "topWords", top_keywords:{$push:"$_id.keyword"}}}, {$project:{_id:0, top_keywords:
+      {$slice:["$top_keywords",10]}}}], "AvgRange": [{$group: {_id:"dashboard" ,avgPriceRangeLow:{$avg:"$minPrice"},avgPriceRangeHigh:{$avg:"$maxPrice"}}},{$project: {_id:0}}]}},
+{$project: {"data": {$concatArrays: ["$Top","$AvgRange"]}}}]], function (err, dashboard) {
+      if (err) {
+        console.log(err)
+        res.send(err)
+      } else {
+        res.json(dashboard[0].data)
+      }})
 }
 
 exports.update_config = function (req, res){
