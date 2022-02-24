@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a8387d0d-23ce-4598-a96d-22b0d1d85edf",
+		"_postman_id": "27514735-a665-4113-8260-97b964d9473a",
 		"name": "ASS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -236,7 +236,7 @@
 								"exec": [
 									"var moment = require('moment');\r",
 									"\r",
-									"pm.environment.set('currentdate', moment().format((\"YYYY-MM-DD\")));"
+									"pm.environment.set('currentdate', moment().add(1, 'days').format((\"YYYY-MM-DD\")));"
 								],
 								"type": "text/javascript"
 							}
@@ -247,7 +247,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{   \r\n\t\"description\":\"Trip1\",\r\n\t\"endDate\":\"{{currentdate}}\",\r\n\t\"pictures\":\"asset/png\",\r\n\t\"price\":\"40\",\r\n\t\"requirements\":\"Requisitos: Lorem ipsum...\",\r\n\t\"startDate\":\"{{currentdate}}\",\r\n\t\"title\":\"Viaje1\"\r\n}",
+							"raw": "{   \r\n    \"actor\":\"6217a91ec753c354725b48cd\",\r\n\t\"description\":\"Trip1\",\r\n\t\"endDate\":\"{{currentdate}}\",\r\n\t\"pictures\":[\"https://lacosmopolilla.com/wp-content/uploads/2021/01/Monos-en-Gibraltar-e1612122511927.jpg\"],\r\n\t\"price\":\"40\",\r\n\t\"requirements\":\"Requisitos: Lorem ipsum...\",\r\n\t\"startDate\":\"{{currentdate}}\",\r\n\t\"title\":\"Viaje1\",\r\n    \"stages\": [\r\n        {\r\n            \"title\":\"etapa 1\",\r\n            \"description\":\"descripción\",\r\n            \"price\": 0.016\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
