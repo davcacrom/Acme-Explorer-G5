@@ -71,6 +71,4 @@ ActorSchema.methods.verifyPassword = function (password, cb) {
   })
 }
 
-//indices: indice unique de email
-
 module.exports = mongoose.model('Actors', ActorSchema)
