@@ -50,7 +50,8 @@ const TripSchema = new Schema({
 		min: Date.now,
 	},
 	ticker: {
-		type: String
+		type: String,
+		unique: true
 	},
 	title: {
 		type: String,
@@ -104,8 +105,10 @@ TripSchema.pre('save', function (callback) {
 	callback();
 })
 
-//Indices: 	Indexar por peso los títulos, descripciones y tickers (de mayor a menor peso)
-//			Indexar precio y fechas
-//			indice unique de ticker
+//Indices: Indexar precio y fechas
+
+TripSchema.index({ title: 'text', description: 'text', ticker: 'text'},{name: 'trips by finder value', weights: {title: 10, description: 5, ticker: 1} })
+TripSchema.index({startDate: 1})
+TripSchema.index({endDate: 1})
 
 module.exports = mongoose.model('Trips', TripSchema)
