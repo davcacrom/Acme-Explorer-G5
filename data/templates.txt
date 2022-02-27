@@ -1,0 +1,66 @@
+## Esquemas de JSON GENERATOR
+https://json-generator.com/#
+
+## Actor
+[
+  '{{repeat(500, 500)}}', 
+  {
+    _id: '{{objectId()}}',
+    name: '{{firstName()}}',
+    surname: '{{surname()}}',
+    email: '{{email()}}',
+    password: '{{guid()}}',
+    phone: '{{phone()}}',
+    address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
+    role: '{{random("EXPLORER", "MANAGER", "ADMINISTRATOR")}}',
+    active: '{{bool()}}',
+    created: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss")}}',
+    __v: '{{integer(1, 10)}}'
+	}
+]
+
+## Applications
+[
+  '{{repeat(500, 500)}}', 
+  {
+    _id: '{{objectId()}}',
+    trip: '{{objectId()}}',
+    actor: '{{objectId()}}',
+    status: '{{random("PENDING", "REJECTED", "ACEPTED","DUE","CANCELLED")}}',
+    paid: '{{bool()}}',
+    rejectionReason: '{{lorem(1, "paragraphs")}}',
+    comments: '{{lorem(5, "paragraphs")}}',
+    creationMoment: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss")}}',
+    __v: '{{integer(1, 10)}}'
+	}
+]
+
+## Trips
+[
+  '{{repeat(500, 500)}}', 
+  {
+    _id: '{{objectId()}}',
+    actor: '{{objectId()}}',
+    FINDER: '{{objectId()}}',
+    published: '{{bool()}}',
+    description: '{{lorem(5, "paragraphs")}}',
+    requirements: '{{lorem(5, "words")}}',
+    title: '{{lorem(5, "words")}}',
+    endDate: '{{date(new Date(2022, 31, 12), new Date(2023, 31, 12), "YYYY-MM-ddThh:mm:ss")}}',
+    startDate: '{{date(new Date(), new Date(2022, 31, 12),  "YYYY-MM-ddThh:mm:ss")}}',
+    ticker:'{{date(new Date(2014, 0, 1), new Date(), "YYMMDD")-AQKW}}',
+    pictures: [
+      '{{repeat(7)}}',
+      'http://placehold.it/32x32'
+    ],
+    stages: [
+      '{{repeat(2,8)}}',
+      {
+        description: '{{lorem(5, "paragraphs")}}',
+        price: '{{floating(50, 700)}}',
+        title: '{{lorem(5, "words")}}'
+      }
+    ],
+    __v: '{{integer(1, 10)}}'
+	}
+]

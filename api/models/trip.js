@@ -85,7 +85,7 @@ const TripSchema = new Schema({
 	},
 	finder:{
 		type: String,
-		required:'Kindly enter the finder Id',
+		// required:'Kindly enter the finder Id',
 	}
 }, { strict: false, toJSON: { virtuals: true } })//end Trip
 

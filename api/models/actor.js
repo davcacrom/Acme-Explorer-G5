@@ -30,11 +30,11 @@ const ActorSchema = new Schema({
   address: {
     type: String
   },
-  role: [{
+  role: {
     type: String,
     required: 'Kindly enter the user role(s)',
     enum: ['EXPLORER', 'MANAGER', 'ADMINISTRATOR']
-  }],
+  },
   active: {
     type: Boolean,
     default: true
