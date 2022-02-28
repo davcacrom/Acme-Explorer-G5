@@ -19,6 +19,11 @@ const ActorSchema = new Schema({
     unique: true,
     validate: [validator.isEmail, 'Please fill a valid email address']
   },
+  preferredLanguage: {
+    type: String,
+    enum: ['ENGLISH', 'SPANISH'],
+    default: 'ENGLISH'
+  },
   password: {
     type: String,
     minlength: 5,
