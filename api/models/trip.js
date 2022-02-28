@@ -82,10 +82,6 @@ const TripSchema = new Schema({
 			},
 		],
 		validate: [v => v.length >= 1, 'Must have at least one stage']
-	},
-	finder:{
-		type: String,
-		// required:'Kindly enter the finder Id',
 	}
 }, { strict: false, toJSON: { virtuals: true } })//end Trip
 

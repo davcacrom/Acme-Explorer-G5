@@ -41,14 +41,13 @@ https://json-generator.com/#
   {
     _id: '{{objectId()}}',
     actor: '{{objectId()}}',
-    FINDER: '{{objectId()}}',
     published: '{{bool()}}',
     description: '{{lorem(5, "paragraphs")}}',
     requirements: '{{lorem(5, "words")}}',
     title: '{{lorem(5, "words")}}',
     endDate: '{{date(new Date(2022, 31, 12), new Date(2023, 31, 12), "YYYY-MM-ddThh:mm:ss")}}',
     startDate: '{{date(new Date(), new Date(2022, 31, 12),  "YYYY-MM-ddThh:mm:ss")}}',
-    ticker:'{{date(new Date(2014, 0, 1), new Date(), "YYMMDD")-AQKW}}',
+    ticker:'{{date(new Date(2014, 0, 1), new Date(), "YYMMDD")}}-AQKW',
     pictures: [
       '{{repeat(7)}}',
       'http://placehold.it/32x32'
