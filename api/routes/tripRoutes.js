@@ -6,6 +6,9 @@ module.exports = function (app) {
   app.route('/trips')
     .get(trips.list_all_trips) //browse the list of trips, search for trips using keyword, listing trips
     .post(trips.create_a_trip) //creating trips
+
+  app.route('/trips/dashboard')
+  .get(trips.get_dashboard) //trip dashboard
   
   app.route('/trips/:tripId')
     .get(trips.read_a_trip) //displaying trips
@@ -26,8 +29,4 @@ module.exports = function (app) {
   app.route('/trips/:tripId/applications/:applicationId/:price')
     .put(applications.update_an_application) //pay trip
 
-  app.route('/trips/dashboard')
-    .get(trips.get_dashboard) //trip dashboard
-
-  
 }

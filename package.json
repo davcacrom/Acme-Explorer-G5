@@ -21,6 +21,7 @@
     "bcrypt": "^5.0.1",
     "dateformat": "^5.0.3",
     "express": "^4.17.3",
+    "mathjs": "^10.1.1",
     "moment": "^2.29.1",
     "mongoose": "^6.2.1",
     "nanoid": "^3.3.1",

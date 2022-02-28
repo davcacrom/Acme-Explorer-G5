@@ -56,7 +56,7 @@ mongoose.connect(mongoDBURI)
 console.log('Connecting DB to: ' + mongoDBURI)
 
 //TODO: Cambiar false a true para cargar los datos iniciales
-if (false){
+if (true){
   prepareDatabase();
 }
 
@@ -69,6 +69,7 @@ mongoose.connection.on('open', function () {
 mongoose.connection.on('error', function (err) {
   console.error('DB init error ' + err)
 })
+
 async function prepareDatabase () {
   try {
     console.log('Deleting collections');
