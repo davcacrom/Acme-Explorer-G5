@@ -3,6 +3,10 @@
 const mongoose = require('mongoose')
 const Finder = mongoose.model('Finders')
 const Config = mongoose.model('Configurations')
+const CronJob = require('cron').CronJob
+const CronTime = require('cron').CronTime
+
+let rebuildPeriod;
 
 exports.read_a_finder = function (req, res) {
   Finder.findById(req.params.finderId, function (err, finder) {
@@ -30,7 +34,7 @@ exports.get_dashboard = function (req, res) {
       "Top": [{ $match: { "keyword": { "$exists": true, "$ne": null } } }, { $group: { _id: { keyword: "$keyword" }, count: { $sum: 1 } } }, { $sort: { count: -1 } }, { $group: { _id: "topWords", top_keywords: { $push: "$_id.keyword" } } }, {
         $project: {
           _id: 0, top_keywords:
-            { $slice: ["$top_keywords", 15] }
+            { $slice: ["$top_keywords", 10] }
         }
       }], "AvgRange": [{ $group: { _id: "dashboard", avgPriceRangeLow: { $avg: "$minPrice" }, avgPriceRangeHigh: { $avg: "$maxPrice" } } }, { $project: { _id: 0 } }]
     }

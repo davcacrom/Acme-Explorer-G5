@@ -17,6 +17,7 @@ exports.list_all_actors = function (req, res) {
 exports.create_an_actor = function (req, res) {
   const newActor = new Actor(req.body)
   const newFinder = new Finder()
+  newFinder.actor = newActor._id;
   newActor.save(function (err, actor) {
     if (err) {
       res.send(err)
