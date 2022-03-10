@@ -60,12 +60,8 @@ const FinderSchema = new Schema({
 }, { strict: false })//end Finder
 
 FinderSchema.pre('save', function (callback) {
-	// Comprobar tiempo de caché y actualizar si es necesario
+	this.lastUpdate = new Date();
 	callback();
-});
-
-FinderSchema.post('find', function (callback) {
-	// Comprobar tiempo de caché y actualizar si es necesario
 });
 
 module.exports = mongoose.model('Finders', FinderSchema)
