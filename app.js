@@ -5,15 +5,12 @@ const port = process.env.PORT || 8080
 
 const mongoose = require('mongoose')
 require('./api/models/actor');
-const Actor = mongoose.model('Actors')
 require('./api/models/trip')
-const Trip = mongoose.model('Trips')
 require('./api/models/application')
-const Application = mongoose.model('Applications')
+require('./api/models/configuration')
+require('./api/models/finder')
 
-const Configuration = require('./api/models/configuration')
-const Finder = require('./api/models/finder')
-const fileSystem = require('fs');
+const {prepareDatabase}= require("./massiveData");
 
 const bodyParser = require('body-parser')
 
@@ -55,12 +52,8 @@ mongoose.connect(mongoDBURI)
 // })
 console.log('Connecting DB to: ' + mongoDBURI)
 
-//TODO: Cambiar false a true para cargar los datos iniciales
-if (true){
-  prepareDatabase();
-}
-
 mongoose.connection.on('open', function () {
+  prepareDatabase();
   app.listen(port, function () {
     console.log('ACME-Explorer RESTful API server started on: ' + port)
   })
@@ -70,35 +63,3 @@ mongoose.connection.on('error', function (err) {
   console.error('DB init error ' + err)
 })
 
-async function prepareDatabase () {
-  try {
-    console.log('Deleting collections');
-    try {
-      await Actor.collection.drop();
-      await Trip.collection.drop();
-      await Application.collection.drop();
-    } catch (err) {
-      if (err.message !== 'ns not found') {
-        throw err;
-      }
-    }
-
-    console.log("Loading collections");
-    let data = fileSystem.readFileSync("./data/Actors.json", 'utf8');
-    let jsonDataset = JSON.parse(data);
-    await Actor.insertMany(jsonDataset);
-
-    data = fileSystem.readFileSync("./data/Trips.json", 'utf8');
-    jsonDataset = JSON.parse(data);
-    await Trip.insertMany(jsonDataset);
-
-    data = fileSystem.readFileSync("./data/Applications.json", 'utf8');
-    jsonDataset = JSON.parse(data);
-    await Application.insertMany(jsonDataset);
-
-    console.log("Collections created")
-  } catch (err) {
-    throw err;
-  }
-
-}

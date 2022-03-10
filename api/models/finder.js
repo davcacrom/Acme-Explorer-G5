@@ -33,7 +33,7 @@ const FinderSchema = new Schema({
 		default: null,
 		min: 0,
 		set: priceSetter,
-		validate: [maxPriceValidator, 'Maximum price must be greater than start date']
+		validate: [maxPriceValidator, 'Maximum price must be greater than min price']
 	},
 	minPrice: {
 		type: Number,

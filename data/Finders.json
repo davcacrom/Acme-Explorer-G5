@@ -1,0 +1,3086 @@
+[
+    {
+      "_id": "622a4b3d173ed4dd63fc7059",
+      "endDate": "2025-03-15T08:02:55",
+      "startDate": "2024-07-13T10:41:52",
+      "keyword": "eiusmod tempor labore consequat deserunt",
+      "lastUpdate": "2019-02-13T11:36:13",
+      "minPrice": 97.6001,
+      "maxPrice": 220,
+      "actor": "621bc003d03031da41d7d008",
+      "__v": 5,
+      "trips": [
+        "622a4b3d56cd895c8be5394f",
+        "622a4b3d12768422bb1f8264",
+        "622a4b3d9082d59462e67870",
+        "622a4b3da6678d60ede666a8",
+        "622a4b3dd8d77d251f9715da"
+      ]
+    },
+    {
+      "_id": "622a4b3dd5f05dd39bebe28a",
+      "endDate": "2025-01-11T02:12:15",
+      "startDate": "2022-12-14T10:15:52",
+      "keyword": "reprehenderit deserunt aliqua veniam dolore",
+      "lastUpdate": "2019-10-10T10:14:30",
+      "minPrice": 53.0065,
+      "maxPrice": 291,
+      "actor": "621bc0033e1251e6ff6787fd",
+      "__v": 6,
+      "trips": [
+        "622a4b3db7c5a8be34bf63fa",
+        "622a4b3d7021bf507f731c1d",
+        "622a4b3d2d99706f5bb3c2c6",
+        "622a4b3d724f0ddadec25579",
+        "622a4b3d89f0b8ce7985d257",
+        "622a4b3db2dcacf6c8213a27",
+        "622a4b3da308b5cea5712afc"
+      ]
+    },
+    {
+      "_id": "622a4b3d7a3f96bf01a53c00",
+      "endDate": "2024-09-13T07:26:31",
+      "startDate": "2023-04-23T11:06:17",
+      "keyword": "proident amet incididunt do consequat",
+      "lastUpdate": "2021-07-22T10:57:59",
+      "minPrice": 76.1215,
+      "maxPrice": 118,
+      "actor": "621bc0036acdb33797547e1d",
+      "__v": 7,
+      "trips": [
+        "622a4b3dc97eee4efbe94db9",
+        "622a4b3dbfe143ea0aed0c5e",
+        "622a4b3d58798851f7575d56",
+        "622a4b3d3394be7619b187c2",
+        "622a4b3d7ac075e300658468",
+        "622a4b3dc216f077df996985",
+        "622a4b3dd55cf33c9fa44973",
+        "622a4b3d09bc9f59f896ee5d"
+      ]
+    },
+    {
+      "_id": "622a4b3db4a8f21bac0c332f",
+      "endDate": "2025-07-06T06:25:42",
+      "startDate": "2024-05-20T10:40:35",
+      "keyword": "adipisicing deserunt sit dolor exercitation",
+      "lastUpdate": "2016-10-19T12:19:31",
+      "minPrice": 75.2238,
+      "maxPrice": 396,
+      "actor": "622a4b3dd7851ea880f6c52a",
+      "__v": 4,
+      "trips": [
+        "622a4b3d9630ff57ffe61127",
+        "622a4b3dde5ee45a54fa5d85",
+        "622a4b3d3f82c17868c3b173",
+        "622a4b3d67604f1fc8eddd29",
+        "622a4b3de5ff949201e5a7a0"
+      ]
+    },
+    {
+      "_id": "622a4b3d9153a1791b24173f",
+      "endDate": "2025-06-22T10:25:41",
+      "startDate": "2022-11-03T10:50:55",
+      "keyword": "proident elit nostrud officia consequat",
+      "lastUpdate": "2019-09-14T09:31:13",
+      "minPrice": 57.8515,
+      "maxPrice": 145,
+      "actor": "622a4b3dd112d5765a93b38d",
+      "__v": 4,
+      "trips": [
+        "622a4b3d4f9a33ecffc05187",
+        "622a4b3d23fa5b5a2b301cec",
+        "622a4b3d4a64107f5a292a71",
+        "622a4b3dcc0b44985c7725f2",
+        "622a4b3d4f3727778f294a17",
+        "622a4b3da26a7950ce3dac7c",
+        "622a4b3d9915ee964b550836",
+        "622a4b3d4f788818582499df"
+      ]
+    },
+    {
+      "_id": "622a4b3db8f72a95008933f4",
+      "endDate": "2024-08-21T12:30:21",
+      "startDate": "2023-02-08T07:24:10",
+      "keyword": "nisi ad qui irure aute",
+      "lastUpdate": "2021-10-27T04:33:53",
+      "minPrice": 70.7463,
+      "maxPrice": 204,
+      "actor": "622a4b3d17d47d7d3464079f",
+      "__v": 4,
+      "trips": [
+        "622a4b3d154dfac9a3ce2c3a",
+        "622a4b3d8b05a85602ff3485",
+        "622a4b3d8c7e33fccdcef053",
+        "622a4b3d609db1d4f843c568"
+      ]
+    },
+    {
+      "_id": "622a4b3da4c91e4669979c09",
+      "endDate": "2024-12-17T10:32:46",
+      "startDate": "2023-09-17T10:39:03",
+      "keyword": "duis dolore ullamco non ullamco",
+      "lastUpdate": "2016-04-09T05:11:15",
+      "minPrice": 87.4069,
+      "maxPrice": 424,
+      "actor": "622a4b3d2e08534beb1c6af3",
+      "__v": 4,
+      "trips": [
+        "622a4b3d4b4422ffeb91f914",
+        "622a4b3d8f6da98777ff6311",
+        "622a4b3d515b60b49bb38f92",
+        "622a4b3db89a8d4ee7a960c7",
+        "622a4b3d7549b01dbbeffe65",
+        "622a4b3d3e1831350206d338",
+        "622a4b3d00c5c2e72ac37fbf"
+      ]
+    },
+    {
+      "_id": "622a4b3dee057b47a2ce4496",
+      "endDate": "2025-04-29T07:31:03",
+      "startDate": "2023-03-30T06:05:12",
+      "keyword": "est cupidatat cillum proident fugiat",
+      "lastUpdate": "2014-04-23T09:56:58",
+      "minPrice": 81.3046,
+      "maxPrice": 274,
+      "actor": "622a4b3df3b038f36e3d0fec",
+      "__v": 5,
+      "trips": [
+        "622a4b3d7b382f3aa9e20254",
+        "622a4b3ddf73b4cd09b2548d"
+      ]
+    },
+    {
+      "_id": "622a4b3d1f3084f04260567e",
+      "endDate": "2025-06-20T08:35:26",
+      "startDate": "2024-02-21T08:15:57",
+      "keyword": "irure irure nisi irure nisi",
+      "lastUpdate": "2018-05-24T04:51:28",
+      "minPrice": 99.5797,
+      "maxPrice": 142,
+      "actor": "622a4b3dbfad0349c17a19b1",
+      "__v": 1,
+      "trips": [
+        "622a4b3d367849724b116499",
+        "622a4b3d9c1b5c8519e9ba58",
+        "622a4b3d6b40188bb641e42d",
+        "622a4b3d5ef7d45aa3c5669f",
+        "622a4b3db58f7d9db1330760"
+      ]
+    },
+    {
+      "_id": "622a4b3dd6e6566186238cfc",
+      "endDate": "2024-12-17T06:54:51",
+      "startDate": "2022-06-26T03:40:37",
+      "keyword": "ullamco amet reprehenderit veniam cupidatat",
+      "lastUpdate": "2018-01-20T01:16:16",
+      "minPrice": 61.7123,
+      "maxPrice": 419,
+      "actor": "622a4b3db43bc48590657b57",
+      "__v": 5,
+      "trips": [
+        "622a4b3d675d8a94c274adac",
+        "622a4b3d1c76c2d46b39a698",
+        "622a4b3d369d007e2acdb7ae",
+        "622a4b3db78b6b96f796ab1a",
+        "622a4b3dc728b4145fc87d1f",
+        "622a4b3d999533d6dc37c0fc",
+        "622a4b3dbfeee56dc25a5f19"
+      ]
+    },
+    {
+      "_id": "622a4b3d67d012b349604999",
+      "endDate": "2025-05-12T06:02:49",
+      "startDate": "2022-04-29T01:20:08",
+      "keyword": "deserunt sunt in exercitation dolor",
+      "lastUpdate": "2017-04-03T08:32:53",
+      "minPrice": 82.6638,
+      "maxPrice": 161,
+      "actor": "622a4b3d79c6440e61aff21d",
+      "__v": 4,
+      "trips": [
+        "622a4b3d96aa6d4c8c3e1783",
+        "622a4b3dc10ad2ca69d12af4",
+        "622a4b3da176c7c56f70c009"
+      ]
+    },
+    {
+      "_id": "622a4b3d784abc5f6b30a8a1",
+      "endDate": "2024-12-10T07:44:26",
+      "startDate": "2022-11-09T08:01:07",
+      "keyword": "ullamco excepteur labore duis reprehenderit",
+      "lastUpdate": "2014-01-30T10:15:48",
+      "minPrice": 50.5063,
+      "maxPrice": 428,
+      "actor": "622a4b3d2a936c2005346941",
+      "__v": 1,
+      "trips": [
+        "622a4b3d8f7d9262aabc72c7",
+        "622a4b3d04a6cb4f964366c1",
+        "622a4b3db89f1be4f6b75999",
+        "622a4b3d41a05f4bdc14ef2f",
+        "622a4b3dfe08a3c5e04be5b6",
+        "622a4b3dc2b6bbb8d70de273"
+      ]
+    },
+    {
+      "_id": "622a4b3d9641e276471eb677",
+      "endDate": "2025-06-08T10:21:05",
+      "startDate": "2023-01-29T08:42:16",
+      "keyword": "sit labore qui in cillum",
+      "lastUpdate": "2016-09-08T08:16:08",
+      "minPrice": 53.5902,
+      "maxPrice": 253,
+      "actor": "622a4b3d68e8f3678d9bf8d1",
+      "__v": 5,
+      "trips": [
+        "622a4b3d98017c9ece411830",
+        "622a4b3d373fc36d1605f3cc",
+        "622a4b3db48ef4edb07a4f5e",
+        "622a4b3d8cc73afe383327d6",
+        "622a4b3db0c04ca2a2abcd54",
+        "622a4b3d7feb58aa5a22680a",
+        "622a4b3dda0741abf25d161c",
+        "622a4b3d394dbcce4e91f627"
+      ]
+    },
+    {
+      "_id": "622a4b3dd947ce3ec5435612",
+      "endDate": "2024-10-25T07:22:52",
+      "startDate": "2023-12-22T11:10:08",
+      "keyword": "anim aliquip veniam veniam duis",
+      "lastUpdate": "2016-09-12T09:57:42",
+      "minPrice": 89.5543,
+      "maxPrice": 357,
+      "actor": "622a4b3d2bcd4c8e87aaf6b7",
+      "__v": 4,
+      "trips": [
+        "622a4b3d167b9ae5e7347c76",
+        "622a4b3df967ac8ac1349d31",
+        "622a4b3d0973bf3d978c956e",
+        "622a4b3dbf8cf4624d64c84f",
+        "622a4b3da7f70f1c30b8b95a"
+      ]
+    },
+    {
+      "_id": "622a4b3df48b46a96b82cde9",
+      "endDate": "2024-10-17T02:58:45",
+      "startDate": "2024-01-06T06:42:04",
+      "keyword": "aliquip non deserunt qui ex",
+      "lastUpdate": "2014-03-27T11:22:40",
+      "minPrice": 65.2176,
+      "maxPrice": 258,
+      "actor": "622a4b3dd65fa4f83ff8fcaa",
+      "__v": 4,
+      "trips": [
+        "622a4b3d6c6c4e68442d0230",
+        "622a4b3da04277458249c5da",
+        "622a4b3de1e7245ee6673ab6",
+        "622a4b3d41cc39b187a75a7d",
+        "622a4b3d298e251eaf094099",
+        "622a4b3d3a0f004cca93ef5e",
+        "622a4b3dfcba30e7b88e2755"
+      ]
+    },
+    {
+      "_id": "622a4b3d97310a5efbe2e79c",
+      "endDate": "2025-02-10T09:39:17",
+      "startDate": "2024-03-08T04:32:35",
+      "keyword": "fugiat officia ex elit labore",
+      "lastUpdate": "2014-01-19T06:03:18",
+      "minPrice": 79.2374,
+      "maxPrice": 388,
+      "actor": "622a4b3d90096139256984fc",
+      "__v": 6,
+      "trips": [
+        "622a4b3dc384e7065847699d",
+        "622a4b3d984140014152b51b",
+        "622a4b3d7be85f431c154e45",
+        "622a4b3d22883b61a9f35381",
+        "622a4b3dfad2a70efce36cfb",
+        "622a4b3d3c43618356c6cdbc"
+      ]
+    },
+    {
+      "_id": "622a4b3d8f123770685c6fbb",
+      "endDate": "2024-09-14T05:27:45",
+      "startDate": "2024-04-02T10:38:26",
+      "keyword": "aliqua consectetur mollit Lorem reprehenderit",
+      "lastUpdate": "2020-10-11T01:07:22",
+      "minPrice": 75.7461,
+      "maxPrice": 478,
+      "actor": "622a4b3d8f8ca8d958aac784",
+      "__v": 7,
+      "trips": [
+        "622a4b3dbea9ebeea034fd8e",
+        "622a4b3db254e2a9cb462567",
+        "622a4b3df268651a627ea4f4",
+        "622a4b3db66499f8de6d9ed8"
+      ]
+    },
+    {
+      "_id": "622a4b3dd2e11d7af8138056",
+      "endDate": "2025-04-01T03:34:41",
+      "startDate": "2022-10-12T06:24:56",
+      "keyword": "anim pariatur id consectetur commodo",
+      "lastUpdate": "2021-10-11T02:14:45",
+      "minPrice": 95.8947,
+      "maxPrice": 359,
+      "actor": "622a4b3d7b535cc60b87c516",
+      "__v": 2,
+      "trips": [
+        "622a4b3db7bc4b5931c82204",
+        "622a4b3dd149bbab2eecbfe9",
+        "622a4b3d9e86fb7ef8066f19",
+        "622a4b3d94242d4ef27eeedd"
+      ]
+    },
+    {
+      "_id": "622a4b3d58f27182ce0c9c72",
+      "endDate": "2024-09-25T01:31:16",
+      "startDate": "2022-06-01T09:45:21",
+      "keyword": "enim commodo incididunt incididunt aliquip",
+      "lastUpdate": "2014-05-21T04:54:42",
+      "minPrice": 85.284,
+      "maxPrice": 168,
+      "actor": "622a4b3db606c64b7a7ef1cb",
+      "__v": 1,
+      "trips": [
+        "622a4b3da0cdf20a3cb1d8c0",
+        "622a4b3da00f9a562ebd9e32"
+      ]
+    },
+    {
+      "_id": "622a4b3dc2f6d3b90bcffd94",
+      "endDate": "2025-08-10T10:34:28",
+      "startDate": "2024-01-23T04:45:01",
+      "keyword": "non nulla pariatur eu veniam",
+      "lastUpdate": "2015-03-27T05:22:21",
+      "minPrice": 70.5588,
+      "maxPrice": 499,
+      "actor": "622a4b3d9a0362a76b4c7e34",
+      "__v": 6,
+      "trips": [
+        "622a4b3d4dc20dbeb061b709",
+        "622a4b3d2d28c337959f3cab",
+        "622a4b3dc64d424d642aaabb",
+        "622a4b3dc71b576f244f18ca",
+        "622a4b3d347f30053000f7ed"
+      ]
+    },
+    {
+      "_id": "622a4b3d016762d28968b2bd",
+      "endDate": "2025-04-04T06:32:47",
+      "startDate": "2022-06-03T01:54:46",
+      "keyword": "nisi aliqua voluptate id aliqua",
+      "lastUpdate": "2019-12-29T08:49:42",
+      "minPrice": 70.4517,
+      "maxPrice": 101,
+      "actor": "622a4b3dfa6e7cbe50bc230e",
+      "__v": 5,
+      "trips": [
+        "622a4b3d408ce1ef45584742",
+        "622a4b3d7113aa7f3979dd84",
+        "622a4b3d37d25857405e23f6",
+        "622a4b3d0788752a2b18886e",
+        "622a4b3da2db5936b68a587e"
+      ]
+    },
+    {
+      "_id": "622a4b3dcc17cbf3244bd254",
+      "endDate": "2024-12-10T09:43:35",
+      "startDate": "2023-09-27T11:10:20",
+      "keyword": "proident nostrud cillum in cillum",
+      "lastUpdate": "2018-11-04T03:49:54",
+      "minPrice": 78.5613,
+      "maxPrice": 286,
+      "actor": "622a4b3d79b7786c5ef74b98",
+      "__v": 5,
+      "trips": [
+        "622a4b3d79cca17e5ab2287a",
+        "622a4b3d7ea6f133a70c83ac"
+      ]
+    },
+    {
+      "_id": "622a4b3d59581b9442803682",
+      "endDate": "2025-05-19T03:37:51",
+      "startDate": "2022-07-27T02:04:09",
+      "keyword": "elit ullamco nostrud elit nisi",
+      "lastUpdate": "2018-05-23T07:05:31",
+      "minPrice": 93.8929,
+      "maxPrice": 117,
+      "actor": "622a4b3d377c0b3ec1ec3e4f",
+      "__v": 5,
+      "trips": [
+        "622a4b3dcf51a84e8bba4a86",
+        "622a4b3d0b447b926d489844",
+        "622a4b3dc30695f44408e61b",
+        "622a4b3df1a193a78ee49dc8",
+        "622a4b3deea9adf5a84f20f3"
+      ]
+    },
+    {
+      "_id": "622a4b3d37862b9f173e64d6",
+      "endDate": "2025-07-01T05:46:06",
+      "startDate": "2022-05-29T08:51:17",
+      "keyword": "tempor ut cupidatat deserunt adipisicing",
+      "lastUpdate": "2018-04-02T07:58:11",
+      "minPrice": 84.0426,
+      "maxPrice": 135,
+      "actor": "622a4b3dee24421765f65d85",
+      "__v": 8,
+      "trips": [
+        "622a4b3db1d60a0c29947e22",
+        "622a4b3d8bcec6afc6fab436",
+        "622a4b3d077fa1122d053cf7",
+        "622a4b3d8a1d9ac4a465b6c7",
+        "622a4b3def9559a0c7691183"
+      ]
+    },
+    {
+      "_id": "622a4b3d8dd3d0c642b914d5",
+      "endDate": "2024-10-16T11:32:17",
+      "startDate": "2022-03-14T02:39:35",
+      "keyword": "ut qui cupidatat exercitation id",
+      "lastUpdate": "2015-03-21T11:55:02",
+      "minPrice": 63.6734,
+      "maxPrice": 375,
+      "actor": "622a4b3d5c73447905acff3f",
+      "__v": 8,
+      "trips": [
+        "622a4b3d18c02e9cf16d30d0",
+        "622a4b3db075763788d02994",
+        "622a4b3d33f34b1d503c1df7",
+        "622a4b3d5b28ef853193be8e",
+        "622a4b3d394e2bdab25d36f1",
+        "622a4b3d1db337b138d1c372",
+        "622a4b3dccd31ae2b768daaf"
+      ]
+    },
+    {
+      "_id": "622a4b3d5dde3941722820df",
+      "endDate": "2025-04-01T12:19:03",
+      "startDate": "2023-09-28T09:36:42",
+      "keyword": "nulla elit eiusmod duis et",
+      "lastUpdate": "2014-09-02T10:41:45",
+      "minPrice": 89.3914,
+      "maxPrice": 438,
+      "actor": "622a4b3d2fafa17c098c56af",
+      "__v": 1,
+      "trips": [
+        "622a4b3def51ffc07ef001f4",
+        "622a4b3de42a220ebb809e53"
+      ]
+    },
+    {
+      "_id": "622a4b3d822a663b3677206b",
+      "endDate": "2025-02-23T07:01:47",
+      "startDate": "2022-04-19T10:56:32",
+      "keyword": "sint cillum quis Lorem consequat",
+      "lastUpdate": "2021-06-20T05:06:39",
+      "minPrice": 63.7728,
+      "maxPrice": 219,
+      "actor": "622a4b3d66c355d59256a5a0",
+      "__v": 10,
+      "trips": [
+        "622a4b3d92a19004afe84495",
+        "622a4b3dbe2bc0ce27608c6b",
+        "622a4b3dd45524b7a8dbdc4d"
+      ]
+    },
+    {
+      "_id": "622a4b3d544b9e4b1daea473",
+      "endDate": "2025-02-07T09:42:17",
+      "startDate": "2022-10-01T02:21:34",
+      "keyword": "Lorem laboris anim velit eiusmod",
+      "lastUpdate": "2021-04-18T09:34:30",
+      "minPrice": 70.9599,
+      "maxPrice": 338,
+      "actor": "622a4b3da62b1dbc62385579",
+      "__v": 1,
+      "trips": [
+        "622a4b3dd176438e06d24e75",
+        "622a4b3d0c22a95598e4ebc4",
+        "622a4b3d12e4912dfdde6590",
+        "622a4b3d99b45851b9f54bde",
+        "622a4b3dee935073b4cb4c86",
+        "622a4b3d6e97d73426f74eeb"
+      ]
+    },
+    {
+      "_id": "622a4b3d5e14c33134e68f81",
+      "endDate": "2024-11-27T04:10:27",
+      "startDate": "2022-05-07T02:27:48",
+      "keyword": "esse officia enim est incididunt",
+      "lastUpdate": "2018-05-24T12:36:29",
+      "minPrice": 85.5157,
+      "maxPrice": 300,
+      "actor": "622a4b3d318a5d556cdda7a9",
+      "__v": 7,
+      "trips": [
+        "622a4b3d2690f65ced347869",
+        "622a4b3dfc616a5938690870"
+      ]
+    },
+    {
+      "_id": "622a4b3d381ad953e5998d52",
+      "endDate": "2024-09-15T08:55:01",
+      "startDate": "2023-04-01T12:44:56",
+      "keyword": "irure occaecat eiusmod ullamco id",
+      "lastUpdate": "2015-07-21T06:08:39",
+      "minPrice": 77.4794,
+      "maxPrice": 329,
+      "actor": "622a4b3df51df0c611e501e7",
+      "__v": 2,
+      "trips": [
+        "622a4b3d0a97a379ca09e9d6",
+        "622a4b3dd9e4cac87463c281"
+      ]
+    },
+    {
+      "_id": "622a4b3d7d6aa1d930a104ad",
+      "endDate": "2024-08-26T12:59:16",
+      "startDate": "2024-07-31T06:12:32",
+      "keyword": "deserunt officia sit amet dolore",
+      "lastUpdate": "2017-08-12T08:55:33",
+      "minPrice": 77.4262,
+      "maxPrice": 134,
+      "actor": "622a4b3d1879f93332d244ad",
+      "__v": 9,
+      "trips": [
+        "622a4b3dff0f90cdb1c91fe2",
+        "622a4b3d1ce03da60e003772",
+        "622a4b3da254ff372e5033a7",
+        "622a4b3d7655da707a032773"
+      ]
+    },
+    {
+      "_id": "622a4b3d69e6f61d5b5e3a89",
+      "endDate": "2025-07-09T04:23:43",
+      "startDate": "2022-11-28T08:38:56",
+      "keyword": "sunt proident pariatur eu aute",
+      "lastUpdate": "2015-01-11T11:10:19",
+      "minPrice": 72.3175,
+      "maxPrice": 322,
+      "actor": "622a4b3dc7bd0c616194fad6",
+      "__v": 6,
+      "trips": [
+        "622a4b3d25520ae8bb24fbe8",
+        "622a4b3da387a0a89a4ea539"
+      ]
+    },
+    {
+      "_id": "622a4b3de34bb5e638c3a0d0",
+      "endDate": "2024-09-27T04:54:05",
+      "startDate": "2023-08-22T06:02:19",
+      "keyword": "eiusmod commodo esse dolor cillum",
+      "lastUpdate": "2018-05-02T09:33:18",
+      "minPrice": 87.8474,
+      "maxPrice": 219,
+      "actor": "622a4b3dbef59646c200cf84",
+      "__v": 8,
+      "trips": [
+        "622a4b3d89a050c5494705b9",
+        "622a4b3dd94863274b69927c",
+        "622a4b3d0482525633d8fc0f"
+      ]
+    },
+    {
+      "_id": "622a4b3d165eb052f644c378",
+      "endDate": "2024-12-09T06:59:48",
+      "startDate": "2023-04-21T03:56:21",
+      "keyword": "voluptate tempor et nisi aute",
+      "lastUpdate": "2018-08-25T01:27:08",
+      "minPrice": 81.7601,
+      "maxPrice": 218,
+      "actor": "622a4b3d52d508c1271b95fb",
+      "__v": 9,
+      "trips": [
+        "622a4b3d6110d8d774ce5ea0",
+        "622a4b3df0b7151a687b7e81",
+        "622a4b3da2ce540faffd4178",
+        "622a4b3d332bc4b1a7b47ac2",
+        "622a4b3d18c7795330721f30"
+      ]
+    },
+    {
+      "_id": "622a4b3dced724b308a2d7a0",
+      "endDate": "2024-12-11T09:52:52",
+      "startDate": "2022-11-28T06:19:11",
+      "keyword": "officia dolor quis nisi ex",
+      "lastUpdate": "2021-02-15T09:16:25",
+      "minPrice": 60.1874,
+      "maxPrice": 181,
+      "actor": "622a4b3d84a15982192e7109",
+      "__v": 5,
+      "trips": [
+        "622a4b3dff010613ae78435a",
+        "622a4b3dfe1bd7068120ee02",
+        "622a4b3d0b4f5aad40f75ab5",
+        "622a4b3db6eaa21f7e92bb8c"
+      ]
+    },
+    {
+      "_id": "622a4b3d17e9a089336d2104",
+      "endDate": "2024-10-31T05:48:17",
+      "startDate": "2024-04-20T07:34:59",
+      "keyword": "exercitation duis mollit laboris ipsum",
+      "lastUpdate": "2014-04-10T11:42:12",
+      "minPrice": 82.0812,
+      "maxPrice": 206,
+      "actor": "622a4b3db4eb3da1c3c659c7",
+      "__v": 5,
+      "trips": [
+        "622a4b3d5c5b64bcc4a42364",
+        "622a4b3d960eb6f712ebc7c4",
+        "622a4b3d7047cbe3853812e2",
+        "622a4b3d289c379904585895",
+        "622a4b3d21fef01e8312d587",
+        "622a4b3de7ed438dc6fec3d3",
+        "622a4b3d3476a58aa52cc532",
+        "622a4b3d490b313394f71b1e"
+      ]
+    },
+    {
+      "_id": "622a4b3d1ddf64e33603c0bb",
+      "endDate": "2025-04-06T01:39:04",
+      "startDate": "2023-05-21T02:10:10",
+      "keyword": "tempor cupidatat magna cupidatat labore",
+      "lastUpdate": "2020-10-22T07:45:34",
+      "minPrice": 61.0911,
+      "maxPrice": 128,
+      "actor": "622a4b3d34de03431b077b4d",
+      "__v": 2,
+      "trips": [
+        "622a4b3d91a79778483893ee",
+        "622a4b3d1cf2b1c367b9bca4",
+        "622a4b3db9623b9c7f87c586",
+        "622a4b3d1c2a544daad612ee",
+        "622a4b3d61e87c7a381381c0",
+        "622a4b3d19e03f2179772ad5",
+        "622a4b3db43275878cb2ca28"
+      ]
+    },
+    {
+      "_id": "622a4b3d5c17d0c4bb94f2f7",
+      "endDate": "2025-03-29T06:07:59",
+      "startDate": "2023-03-13T06:31:24",
+      "keyword": "eiusmod incididunt quis duis pariatur",
+      "lastUpdate": "2019-10-13T04:19:09",
+      "minPrice": 54.3913,
+      "maxPrice": 247,
+      "actor": "622a4b3dd6f4fed8af829d95",
+      "__v": 3,
+      "trips": [
+        "622a4b3de6d17e71c016a41e",
+        "622a4b3dd543717f27cc862f",
+        "622a4b3def9482be2e3d2a27",
+        "622a4b3d9080b6a050c03049",
+        "622a4b3dd16332dd200a90ad",
+        "622a4b3de5d7b8f67729ba82",
+        "622a4b3d2df1907235dcbf87",
+        "622a4b3d7d0fe9c6a3978700"
+      ]
+    },
+    {
+      "_id": "622a4b3d5af79b8c7870e337",
+      "endDate": "2024-12-30T02:38:17",
+      "startDate": "2022-07-10T11:29:55",
+      "keyword": "do cillum officia consequat sint",
+      "lastUpdate": "2018-01-06T05:16:00",
+      "minPrice": 52.6499,
+      "maxPrice": 108,
+      "actor": "622a4b3da5d07edb91c1b893",
+      "__v": 6,
+      "trips": [
+        "622a4b3df9c71e6dbe64948e",
+        "622a4b3d3f0365c34e00917d",
+        "622a4b3dc806b6e33d109164",
+        "622a4b3d7139fc75d00bc960",
+        "622a4b3d93efb177ec2bfc35",
+        "622a4b3d9eff5263f5b652c3",
+        "622a4b3d105a322f2782cfb8"
+      ]
+    },
+    {
+      "_id": "622a4b3d3df5eab901bea323",
+      "endDate": "2025-07-27T03:41:49",
+      "startDate": "2022-04-06T09:32:14",
+      "keyword": "incididunt labore culpa ad in",
+      "lastUpdate": "2015-06-26T07:44:44",
+      "minPrice": 67.9636,
+      "maxPrice": 353,
+      "actor": "622a4b3dc7eecb20497fd8c5",
+      "__v": 5,
+      "trips": [
+        "622a4b3db65c0f29dfd932e3",
+        "622a4b3d3f244f8685cea3d3",
+        "622a4b3dfa20e8699200bd3b",
+        "622a4b3d3bc28d4290602f81",
+        "622a4b3d4afc110269d2fc14",
+        "622a4b3d08a98ea04f9a0efa",
+        "622a4b3d7ea76aa37a9ed611",
+        "622a4b3de5b53782008314ef"
+      ]
+    },
+    {
+      "_id": "622a4b3d5708ab20a838ce63",
+      "endDate": "2025-06-22T01:00:01",
+      "startDate": "2022-08-28T08:20:46",
+      "keyword": "pariatur ut pariatur exercitation nostrud",
+      "lastUpdate": "2016-11-09T08:04:05",
+      "minPrice": 55.0432,
+      "maxPrice": 497,
+      "actor": "622a4b3ddb536e7ccf58e5f8",
+      "__v": 4,
+      "trips": [
+        "622a4b3d154378e002c5b02d",
+        "622a4b3dabaab2a124d8398c",
+        "622a4b3d2afd8d5aee8e5806",
+        "622a4b3d05b4ad235c8503b2"
+      ]
+    },
+    {
+      "_id": "622a4b3d910c3e6d688b7bf5",
+      "endDate": "2025-03-22T11:15:36",
+      "startDate": "2024-04-17T01:53:42",
+      "keyword": "aliqua minim enim et in",
+      "lastUpdate": "2020-08-22T09:50:55",
+      "minPrice": 59.7903,
+      "maxPrice": 213,
+      "actor": "622a4b3da0adbae7294e0d62",
+      "__v": 1,
+      "trips": [
+        "622a4b3d88ddd24010fa073d",
+        "622a4b3d6ad6fda87c341558",
+        "622a4b3d5f5466ebdabcedfd",
+        "622a4b3deb3ac291c4554a9e"
+      ]
+    },
+    {
+      "_id": "622a4b3db13cd54181c453e2",
+      "endDate": "2025-05-26T08:32:10",
+      "startDate": "2022-10-19T05:38:23",
+      "keyword": "eiusmod ut et nostrud culpa",
+      "lastUpdate": "2017-07-18T10:23:38",
+      "minPrice": 54.9188,
+      "maxPrice": 314,
+      "actor": "622a4b3d432e8086012a0fa6",
+      "__v": 7,
+      "trips": [
+        "622a4b3d6dc3960b03aa6d5d",
+        "622a4b3d9a1d6698443fd15e",
+        "622a4b3dc060ab72c32a6a6f",
+        "622a4b3d876492cb95d57969",
+        "622a4b3d0d0c2c70d06888c4"
+      ]
+    },
+    {
+      "_id": "622a4b3de4cedae449a48922",
+      "endDate": "2024-09-14T12:24:04",
+      "startDate": "2024-04-09T09:07:51",
+      "keyword": "exercitation nulla elit labore cupidatat",
+      "lastUpdate": "2014-02-14T01:27:09",
+      "minPrice": 78.1188,
+      "maxPrice": 195,
+      "actor": "622a4b3d369f303cd9412850",
+      "__v": 7,
+      "trips": [
+        "622a4b3d0efd6f2b02eca2a7",
+        "622a4b3d66cbeb34ed192529",
+        "622a4b3d385f90f3acff0b5c",
+        "622a4b3d27037e0e5fd9394f",
+        "622a4b3da1b224b99d2d3518"
+      ]
+    },
+    {
+      "_id": "622a4b3df4faa3f5f96a30c5",
+      "endDate": "2024-12-23T08:00:56",
+      "startDate": "2023-08-22T10:45:09",
+      "keyword": "sit nulla commodo et consectetur",
+      "lastUpdate": "2020-04-04T10:05:53",
+      "minPrice": 89.9563,
+      "maxPrice": 118,
+      "actor": "622a4b3d9666da526784159c",
+      "__v": 8,
+      "trips": [
+        "622a4b3d31bd7f310a0c2bad",
+        "622a4b3d01178601c7ea7401"
+      ]
+    },
+    {
+      "_id": "622a4b3ddcd7c3051bb52031",
+      "endDate": "2024-11-20T12:26:11",
+      "startDate": "2022-09-20T06:34:55",
+      "keyword": "ipsum veniam aute voluptate in",
+      "lastUpdate": "2016-03-12T06:05:36",
+      "minPrice": 77.7366,
+      "maxPrice": 342,
+      "actor": "622a4b3d855178760b3eba5b",
+      "__v": 8,
+      "trips": [
+        "622a4b3deae3ff429c3a7eb1",
+        "622a4b3d43fcdc4604144e5d"
+      ]
+    },
+    {
+      "_id": "622a4b3dbe16fdb148f0731f",
+      "endDate": "2024-12-02T01:12:10",
+      "startDate": "2024-08-10T12:59:43",
+      "keyword": "et cillum amet id sunt",
+      "lastUpdate": "2015-06-05T12:13:02",
+      "minPrice": 52.7984,
+      "maxPrice": 477,
+      "actor": "622a4b3de865eae848326298",
+      "__v": 7,
+      "trips": [
+        "622a4b3dfa4279bde565965c",
+        "622a4b3da4e7f6cc1d37d34e"
+      ]
+    },
+    {
+      "_id": "622a4b3d957a1a0edf1fd7a0",
+      "endDate": "2024-09-18T06:03:15",
+      "startDate": "2024-05-26T04:35:54",
+      "keyword": "proident tempor tempor amet excepteur",
+      "lastUpdate": "2020-11-01T02:41:55",
+      "minPrice": 92.8465,
+      "maxPrice": 306,
+      "actor": "622a4b3defdc4f1a7c8efed4",
+      "__v": 3,
+      "trips": [
+        "622a4b3d9b38c7a64a2c5463",
+        "622a4b3d00e22cacae7b6d9e",
+        "622a4b3d9f465b907f5e4085",
+        "622a4b3d84c6cadab8e55370",
+        "622a4b3dcd6f8f611ec44a3b",
+        "622a4b3db696c6fdf272dee2",
+        "622a4b3d607bff19845735e7"
+      ]
+    },
+    {
+      "_id": "622a4b3d33553176370487a0",
+      "endDate": "2024-12-31T07:40:02",
+      "startDate": "2024-07-26T02:05:28",
+      "keyword": "amet pariatur dolore sunt dolor",
+      "lastUpdate": "2022-01-09T01:44:19",
+      "minPrice": 56.9464,
+      "maxPrice": 253,
+      "actor": "622a4b3df6758e27b2ffda82",
+      "__v": 7,
+      "trips": [
+        "622a4b3d755b1634bba665c7",
+        "622a4b3debdab5a4015e89ff",
+        "622a4b3d209178d69e8b266d",
+        "622a4b3dfceddd582fc8c848",
+        "622a4b3da301216e96402aa9",
+        "622a4b3d740bb2c09cf8213a",
+        "622a4b3dd98869cc40a4760a"
+      ]
+    },
+    {
+      "_id": "622a4b3ddf82e5504f368ced",
+      "endDate": "2025-06-11T08:16:26",
+      "startDate": "2024-02-09T10:02:39",
+      "keyword": "do do sint qui sit",
+      "lastUpdate": "2020-02-11T12:21:09",
+      "minPrice": 58.6529,
+      "maxPrice": 297,
+      "actor": "622a4b3dbd9e291f30cee141",
+      "__v": 4,
+      "trips": [
+        "622a4b3d615e6dcbe7bb8606",
+        "622a4b3dc082ac522e25f1c7",
+        "622a4b3dc077762b9f5944d3",
+        "622a4b3d79b127fd6773ef20",
+        "622a4b3d53d80c7da2a79105",
+        "622a4b3d1e4136ae0ac0c584",
+        "622a4b3decf737de0734a13d",
+        "622a4b3d3c71083238e383de"
+      ]
+    },
+    {
+      "_id": "622a4b3d6d004492d098fd78",
+      "endDate": "2025-05-22T05:54:00",
+      "startDate": "2022-03-13T12:46:40",
+      "keyword": "ut adipisicing cupidatat aute commodo",
+      "lastUpdate": "2017-12-10T03:12:31",
+      "minPrice": 85.5395,
+      "maxPrice": 478,
+      "actor": "622a4b3d793859733f8126c1",
+      "__v": 4,
+      "trips": [
+        "622a4b3d69acce9c85efeff9",
+        "622a4b3ddc0d73ee244339b5",
+        "622a4b3de99e429a01d0b42a",
+        "622a4b3d60da657d867af289",
+        "622a4b3daf10c4f229749a1e",
+        "622a4b3d01f7049af30f1c72",
+        "622a4b3d62fe2ba571637080",
+        "622a4b3d6379d5fd084f01f8"
+      ]
+    },
+    {
+      "_id": "622a4b3def3aa80717562b51",
+      "endDate": "2025-05-03T10:16:12",
+      "startDate": "2023-09-22T09:55:44",
+      "keyword": "commodo irure mollit officia cillum",
+      "lastUpdate": "2021-03-20T07:12:30",
+      "minPrice": 65.7046,
+      "maxPrice": 428,
+      "actor": "622a4b3d2e05cdacde79c940",
+      "__v": 1,
+      "trips": [
+        "622a4b3d6957e3f060c7ee0d",
+        "622a4b3df46f1e7d6d422b14",
+        "622a4b3d7eb1fb77e682721c",
+        "622a4b3d408e1a3391e4d703"
+      ]
+    },
+    {
+      "_id": "622a4b3d078a829d0fe9aa4e",
+      "endDate": "2025-03-02T02:01:29",
+      "startDate": "2022-03-11T05:44:39",
+      "keyword": "voluptate irure voluptate exercitation reprehenderit",
+      "lastUpdate": "2020-11-22T01:09:44",
+      "minPrice": 68.235,
+      "maxPrice": 358,
+      "actor": "622a4b3d99ee5e7efca87108",
+      "__v": 7,
+      "trips": [
+        "622a4b3d0bc00c9909f11927",
+        "622a4b3d85eb6b276751f12f",
+        "622a4b3d5cf17d2c1440a06d",
+        "622a4b3d87b248a44abc7588",
+        "622a4b3d3647ae8a43902941",
+        "622a4b3d00f156dd1c3c2f45"
+      ]
+    },
+    {
+      "_id": "622a4b3dd37df72489e51a0e",
+      "endDate": "2025-02-20T11:54:47",
+      "startDate": "2022-09-24T01:32:02",
+      "keyword": "et deserunt nulla incididunt laboris",
+      "lastUpdate": "2016-06-12T02:18:04",
+      "minPrice": 70.2388,
+      "maxPrice": 184,
+      "actor": "622a4b3d39868aeb91f6ce88",
+      "__v": 8,
+      "trips": [
+        "622a4b3dbd7b9acf758560e0",
+        "622a4b3d5711ae86d3c03597"
+      ]
+    },
+    {
+      "_id": "622a4b3d5267e229a4571ee2",
+      "endDate": "2025-02-01T04:47:36",
+      "startDate": "2023-01-21T03:17:59",
+      "keyword": "eu reprehenderit commodo incididunt dolor",
+      "lastUpdate": "2020-01-03T08:10:03",
+      "minPrice": 54.3521,
+      "maxPrice": 332,
+      "actor": "622a4b3d19472252e0fed194",
+      "__v": 5,
+      "trips": [
+        "622a4b3dd169d54aebbeac1c",
+        "622a4b3d540cb51082921214",
+        "622a4b3d0a4c0b21f205d4e6",
+        "622a4b3d4e8ecae0e9a02b4a",
+        "622a4b3db21453a57b025307"
+      ]
+    },
+    {
+      "_id": "622a4b3d896e9223ae874cb1",
+      "endDate": "2025-08-02T05:04:38",
+      "startDate": "2023-03-16T05:47:00",
+      "keyword": "nulla velit in reprehenderit et",
+      "lastUpdate": "2020-10-31T09:11:52",
+      "minPrice": 59.7229,
+      "maxPrice": 296,
+      "actor": "622a4b3d8406a018d9efa594",
+      "__v": 10,
+      "trips": [
+        "622a4b3d25d28e47ba8243fd",
+        "622a4b3dc567bb4cf7fc678a",
+        "622a4b3da3a9f1f1f9b58177",
+        "622a4b3dab3dc853d052f7d4",
+        "622a4b3dfb75285c057c9926"
+      ]
+    },
+    {
+      "_id": "622a4b3dc2626c9de09eb71d",
+      "endDate": "2025-06-14T01:36:14",
+      "startDate": "2024-03-07T01:52:59",
+      "keyword": "duis dolore sit deserunt do",
+      "lastUpdate": "2018-12-03T04:34:14",
+      "minPrice": 86.7196,
+      "maxPrice": 335,
+      "actor": "622a4b3d04f833adca578f8c",
+      "__v": 1,
+      "trips": [
+        "622a4b3d5ee08fbc5a87a6ff",
+        "622a4b3da88d74ffcc1cfd1e",
+        "622a4b3dbe1c04c914822c1a",
+        "622a4b3d4486c86bff492c7e"
+      ]
+    },
+    {
+      "_id": "622a4b3d40f35267b54fd6ce",
+      "endDate": "2025-07-18T06:52:07",
+      "startDate": "2023-01-20T12:22:39",
+      "keyword": "laborum amet ex veniam duis",
+      "lastUpdate": "2022-01-09T11:32:50",
+      "minPrice": 72.7969,
+      "maxPrice": 113,
+      "actor": "622a4b3d10504bbba160ef69",
+      "__v": 1,
+      "trips": [
+        "622a4b3df881f69d86ab757c",
+        "622a4b3dbbb3efeb08a232bf",
+        "622a4b3d8baaa640069754ee",
+        "622a4b3d2213cfdee668c1b2",
+        "622a4b3dacf901f7faf49c80",
+        "622a4b3d21339db7a49e91f8"
+      ]
+    },
+    {
+      "_id": "622a4b3dcb08305872ea8145",
+      "endDate": "2025-03-15T07:17:44",
+      "startDate": "2024-06-27T12:20:37",
+      "keyword": "incididunt ad deserunt magna sint",
+      "lastUpdate": "2016-04-01T04:01:14",
+      "minPrice": 61.4109,
+      "maxPrice": 212,
+      "actor": "622a4b3dec59492687bfcba7",
+      "__v": 10,
+      "trips": [
+        "622a4b3da301a86188a9c4ec",
+        "622a4b3d4b43f345310afb47",
+        "622a4b3df651860cb1de46a8",
+        "622a4b3dde14107ca28e6007",
+        "622a4b3d4b940951812a8e29",
+        "622a4b3dc7cdc5d042f3b11a"
+      ]
+    },
+    {
+      "_id": "622a4b3ded7e8219b34bf91f",
+      "endDate": "2025-03-18T09:40:23",
+      "startDate": "2022-05-14T06:47:26",
+      "keyword": "officia nisi fugiat voluptate ut",
+      "lastUpdate": "2014-02-08T07:59:17",
+      "minPrice": 58.3599,
+      "maxPrice": 262,
+      "actor": "622a4b3d4b2b9cd5d40f159d",
+      "__v": 10,
+      "trips": [
+        "622a4b3de1989182684b8c57",
+        "622a4b3d415b1f27586f7b0b"
+      ]
+    },
+    {
+      "_id": "622a4b3dcc465feaa18d6161",
+      "endDate": "2025-04-27T09:18:02",
+      "startDate": "2022-08-19T05:19:53",
+      "keyword": "nulla ullamco irure eu mollit",
+      "lastUpdate": "2021-07-03T09:32:51",
+      "minPrice": 61.0709,
+      "maxPrice": 158,
+      "actor": "622a4b3d418c8636f37dfd58",
+      "__v": 5,
+      "trips": [
+        "622a4b3dba0de322cbe8cef3",
+        "622a4b3decc4102331273819",
+        "622a4b3dab0a25ee68ab1c46",
+        "622a4b3de8552f1c37abb233",
+        "622a4b3db406cc83ca04d0b3",
+        "622a4b3d0bc250474096e021",
+        "622a4b3daa532ce5f1619da6",
+        "622a4b3d6088b07d7ce8d087"
+      ]
+    },
+    {
+      "_id": "622a4b3ddbd95322057003ee",
+      "endDate": "2024-11-04T04:06:26",
+      "startDate": "2024-04-08T01:56:36",
+      "keyword": "cupidatat mollit elit reprehenderit nostrud",
+      "lastUpdate": "2016-05-20T12:54:19",
+      "minPrice": 70.5507,
+      "maxPrice": 284,
+      "actor": "622a4b3dd4236174aa678a79",
+      "__v": 2,
+      "trips": [
+        "622a4b3d0ed721dceebc3615",
+        "622a4b3d9b1da8f1c16856cb",
+        "622a4b3da95c9ea5d044c8b8",
+        "622a4b3d194dc25983a195de",
+        "622a4b3d11298a23383e1dfc",
+        "622a4b3d147c2fcf2cad2aeb",
+        "622a4b3d2e151255c991b726",
+        "622a4b3d7ea905f36bc465ff"
+      ]
+    },
+    {
+      "_id": "622a4b3d23fd4b26331b619c",
+      "endDate": "2024-12-22T07:43:39",
+      "startDate": "2024-05-01T03:34:18",
+      "keyword": "ipsum irure ea enim veniam",
+      "lastUpdate": "2016-07-30T11:57:52",
+      "minPrice": 68.1243,
+      "maxPrice": 176,
+      "actor": "622a4b3d42cef10707495103",
+      "__v": 1,
+      "trips": [
+        "622a4b3d82a9bca3bbf25c4a",
+        "622a4b3d98d4f097ebe708da",
+        "622a4b3d0cb096c0af36df1c",
+        "622a4b3d9741210d0d95e4ea",
+        "622a4b3ddeecb4238c9c5ad3",
+        "622a4b3da3da02670452803f",
+        "622a4b3d7c742e64a5497193",
+        "622a4b3d8e2ca42d9c3de52b"
+      ]
+    },
+    {
+      "_id": "622a4b3d0380c5ab320287b1",
+      "endDate": "2025-02-15T04:40:26",
+      "startDate": "2024-04-24T08:59:56",
+      "keyword": "quis nulla eiusmod eiusmod nostrud",
+      "lastUpdate": "2014-12-29T12:01:45",
+      "minPrice": 78.1106,
+      "maxPrice": 269,
+      "actor": "622a4b3d2885e31c76a5c620",
+      "__v": 2,
+      "trips": [
+        "622a4b3d0382f43e11de8c7b",
+        "622a4b3dd6633c044ba1010f",
+        "622a4b3d7c9c85bcc17ba299",
+        "622a4b3d668bfd96a5209013"
+      ]
+    },
+    {
+      "_id": "622a4b3d94d43cc5a2777765",
+      "endDate": "2024-08-29T09:36:56",
+      "startDate": "2022-12-20T05:32:14",
+      "keyword": "minim elit et amet aute",
+      "lastUpdate": "2017-05-21T06:33:36",
+      "minPrice": 62.0182,
+      "maxPrice": 249,
+      "actor": "622a4b3dec09b28794e01503",
+      "__v": 3,
+      "trips": [
+        "622a4b3da6eac0f54fcc73bf",
+        "622a4b3d5e927116ca05f140",
+        "622a4b3de730a57327696025",
+        "622a4b3dc98f2ba5392bafd0"
+      ]
+    },
+    {
+      "_id": "622a4b3d50cb2d959ea936b6",
+      "endDate": "2025-02-25T12:28:16",
+      "startDate": "2024-02-22T07:57:06",
+      "keyword": "do duis sint labore non",
+      "lastUpdate": "2018-01-16T11:20:56",
+      "minPrice": 85.5633,
+      "maxPrice": 449,
+      "actor": "622a4b3d91607b801d166e4e",
+      "__v": 2,
+      "trips": [
+        "622a4b3de673ded6dc946846",
+        "622a4b3dc7d1319bc414c467",
+        "622a4b3dca371b229291f6d8",
+        "622a4b3d94975d3bb2ac639a",
+        "622a4b3dfc48246caaa247fa"
+      ]
+    },
+    {
+      "_id": "622a4b3d4fb0eb319f71d187",
+      "endDate": "2024-12-16T08:35:03",
+      "startDate": "2023-12-21T09:55:28",
+      "keyword": "enim ea tempor non cupidatat",
+      "lastUpdate": "2014-09-24T06:14:22",
+      "minPrice": 53.2331,
+      "maxPrice": 292,
+      "actor": "622a4b3d1c5b89490614e072",
+      "__v": 10,
+      "trips": [
+        "622a4b3d79283ab46b30cda4",
+        "622a4b3dfb547ca2a57752ab",
+        "622a4b3df92d67de6d898fc4",
+        "622a4b3d7d9e957a0f2bc077",
+        "622a4b3de0dcb13a647de353",
+        "622a4b3db5f9de3290bbafd0"
+      ]
+    },
+    {
+      "_id": "622a4b3dae0652a804448958",
+      "endDate": "2024-11-24T10:20:46",
+      "startDate": "2022-11-20T10:25:27",
+      "keyword": "voluptate deserunt qui excepteur eiusmod",
+      "lastUpdate": "2018-06-23T05:49:27",
+      "minPrice": 77.0984,
+      "maxPrice": 117,
+      "actor": "622a4b3d92431ab8750406f3",
+      "__v": 6,
+      "trips": [
+        "622a4b3dc4b2ebc5aaabd0e0",
+        "622a4b3dddba7dee8a341d00"
+      ]
+    },
+    {
+      "_id": "622a4b3d921082f79c4dbd6b",
+      "endDate": "2025-06-01T05:33:03",
+      "startDate": "2023-01-19T05:57:29",
+      "keyword": "ea qui dolor dolor et",
+      "lastUpdate": "2020-12-29T02:58:45",
+      "minPrice": 97.6001,
+      "maxPrice": 398,
+      "actor": "622a4b3d4b71246b934599ae",
+      "__v": 1,
+      "trips": [
+        "622a4b3dffb7be2c8ef18c02",
+        "622a4b3d8f7096dbbc47dc36",
+        "622a4b3d4f9783e2de5b3014",
+        "622a4b3d10c8905a0208e5af",
+        "622a4b3d252acaa42ff231ec",
+        "622a4b3d2338ae1f0bf15ace"
+      ]
+    },
+    {
+      "_id": "622a4b3d25dbd54c559857c1",
+      "endDate": "2025-05-21T12:18:11",
+      "startDate": "2023-12-12T10:18:38",
+      "keyword": "non officia culpa eu laboris",
+      "lastUpdate": "2014-04-04T04:48:21",
+      "minPrice": 78.5797,
+      "maxPrice": 302,
+      "actor": "622a4b3d6279fb9136635192",
+      "__v": 2,
+      "trips": [
+        "622a4b3dcbc8a5e2e27f7dd5",
+        "622a4b3dacc55ceb51a48227",
+        "622a4b3ddbd7c83188a480a5",
+        "622a4b3dcebfe9c476951ced",
+        "622a4b3d446588f66a19ce1e",
+        "622a4b3d51edd8c406ddd227"
+      ]
+    },
+    {
+      "_id": "622a4b3d7d030260d090a95c",
+      "endDate": "2024-10-19T06:15:17",
+      "startDate": "2023-01-06T11:20:14",
+      "keyword": "ut Lorem veniam exercitation ea",
+      "lastUpdate": "2017-11-21T12:43:47",
+      "minPrice": 77.8085,
+      "maxPrice": 483,
+      "actor": "622a4b3d39fbdfd21a45c25e",
+      "__v": 4,
+      "trips": [
+        "622a4b3dba6ca855d6732a5a",
+        "622a4b3dcc282b41d3dc79b9"
+      ]
+    },
+    {
+      "_id": "622a4b3d89e259e44eb66b53",
+      "endDate": "2024-10-14T01:16:21",
+      "startDate": "2022-05-12T10:10:26",
+      "keyword": "labore commodo sunt voluptate irure",
+      "lastUpdate": "2018-07-19T07:50:36",
+      "minPrice": 87.825,
+      "maxPrice": 411,
+      "actor": "622a4b3d414414b67d3464b6",
+      "__v": 7,
+      "trips": [
+        "622a4b3dfde8c69998b77176",
+        "622a4b3d8723a40214417f0f",
+        "622a4b3ddae29d19430906d1",
+        "622a4b3deaf67a1796535fb7",
+        "622a4b3d02dbbe4897504f59",
+        "622a4b3d538aa367904cc0f7",
+        "622a4b3debf178acafe0754b",
+        "622a4b3d6240e477a08de8ed"
+      ]
+    },
+    {
+      "_id": "622a4b3dfaec0f50de83b96a",
+      "endDate": "2025-03-01T11:18:43",
+      "startDate": "2022-10-30T11:02:20",
+      "keyword": "sit aliquip non ad et",
+      "lastUpdate": "2018-06-17T02:23:12",
+      "minPrice": 99.1377,
+      "maxPrice": 236,
+      "actor": "622a4b3d5bb43fe07b881275",
+      "__v": 1,
+      "trips": [
+        "622a4b3d7393fcf6347012c6",
+        "622a4b3dd5d305a3c4d4c360",
+        "622a4b3d292fc8983adddf3a",
+        "622a4b3d76531b39591e20f5",
+        "622a4b3df780c52a30d154f7",
+        "622a4b3d2a85b25fbe16beb6",
+        "622a4b3d7b117f0ac3ea5086",
+        "622a4b3dc321f8a2750b1c92"
+      ]
+    },
+    {
+      "_id": "622a4b3d4a249cd9ae2f332f",
+      "endDate": "2024-10-12T01:33:32",
+      "startDate": "2024-05-04T03:33:37",
+      "keyword": "laborum cupidatat dolor proident sit",
+      "lastUpdate": "2014-06-25T11:19:12",
+      "minPrice": 66.9809,
+      "maxPrice": 343,
+      "actor": "622a4b3d317af7fdb03afe61",
+      "__v": 8,
+      "trips": [
+        "622a4b3d43985564317de656",
+        "622a4b3dbc777c93b83992e7",
+        "622a4b3d5d2d8d626cf7042f",
+        "622a4b3d2ef755b425df090e",
+        "622a4b3d4d6fd174f2b99346",
+        "622a4b3d097d6216cbbae98c",
+        "622a4b3dce4f091f219ec943"
+      ]
+    },
+    {
+      "_id": "622a4b3d98a76d9326bceb69",
+      "endDate": "2024-11-23T12:06:01",
+      "startDate": "2023-07-10T06:20:52",
+      "keyword": "cupidatat sit non consequat ex",
+      "lastUpdate": "2014-06-12T01:00:53",
+      "minPrice": 56.8561,
+      "maxPrice": 409,
+      "actor": "622a4b3d6c3e020b9287ef11",
+      "__v": 6,
+      "trips": [
+        "622a4b3dd1e5d88beb0d42c1",
+        "622a4b3d8df058ecbbd22b4f",
+        "622a4b3d33a820455169c8fd",
+        "622a4b3dd6fcb35908e20ae7"
+      ]
+    },
+    {
+      "_id": "622a4b3d8bee90df7057d1f9",
+      "endDate": "2025-08-03T12:55:07",
+      "startDate": "2022-10-10T06:02:03",
+      "keyword": "aliquip commodo laborum ea anim",
+      "lastUpdate": "2014-06-18T11:08:06",
+      "minPrice": 88.6945,
+      "maxPrice": 202,
+      "actor": "622a4b3d17d06c2010240019",
+      "__v": 9,
+      "trips": [
+        "622a4b3da8bc433070965d47",
+        "622a4b3d422a94581e83016c",
+        "622a4b3d411e46d8294d6cec",
+        "622a4b3d7b21bd5c09db7020",
+        "622a4b3d860cd804471d93d0",
+        "622a4b3d02b313666e7e7ca7",
+        "622a4b3d905635cb9bdead4e",
+        "622a4b3d96d45a482b491479"
+      ]
+    },
+    {
+      "_id": "622a4b3d69fe37cd9ccb46dc",
+      "endDate": "2025-03-08T11:29:14",
+      "startDate": "2022-08-05T06:45:32",
+      "keyword": "officia est qui Lorem culpa",
+      "lastUpdate": "2021-09-20T12:46:49",
+      "minPrice": 78.6284,
+      "maxPrice": 170,
+      "actor": "622a4b3d171397ae56428ec8",
+      "__v": 9,
+      "trips": [
+        "622a4b3d26e69748abb61495",
+        "622a4b3d5c9516b912340a5a",
+        "622a4b3db01caad0f32cf053",
+        "622a4b3d715738a47888190f"
+      ]
+    },
+    {
+      "_id": "622a4b3de1cf6bfca171eb77",
+      "endDate": "2025-02-15T01:15:25",
+      "startDate": "2023-06-26T07:13:22",
+      "keyword": "elit aute nulla consectetur reprehenderit",
+      "lastUpdate": "2021-02-02T04:17:58",
+      "minPrice": 59.3992,
+      "maxPrice": 112,
+      "actor": "622a4b3d36258cd8ed2e2c8f",
+      "__v": 5,
+      "trips": [
+        "622a4b3db6ed341019b30fd9",
+        "622a4b3da203f644f010d3a2",
+        "622a4b3d3cc49857baaaad81",
+        "622a4b3dd93de6fc3454517f",
+        "622a4b3db139e97a0c5ba864",
+        "622a4b3d959936f547f8eca4"
+      ]
+    },
+    {
+      "_id": "622a4b3d0d325bccc6c3ae5c",
+      "endDate": "2024-08-19T04:34:37",
+      "startDate": "2022-08-11T12:19:39",
+      "keyword": "ipsum consequat esse occaecat veniam",
+      "lastUpdate": "2020-12-03T06:47:01",
+      "minPrice": 87.2702,
+      "maxPrice": 483,
+      "actor": "622a4b3d6e6dc50454fff45b",
+      "__v": 1,
+      "trips": [
+        "622a4b3d073804059961652d",
+        "622a4b3d39a89b377fe6afd8",
+        "622a4b3d75c9ae76e3ed7d3c",
+        "622a4b3d227ca1db5d3d329f",
+        "622a4b3def7c03a0e691c04d"
+      ]
+    },
+    {
+      "_id": "622a4b3dcfef8cce429d2029",
+      "endDate": "2025-06-27T06:31:18",
+      "startDate": "2024-06-08T10:49:50",
+      "keyword": "pariatur ad consectetur dolore id",
+      "lastUpdate": "2019-08-25T01:32:16",
+      "minPrice": 96.2465,
+      "maxPrice": 110,
+      "actor": "622a4b3d25e292ad89f5f240",
+      "__v": 6,
+      "trips": [
+        "622a4b3dd9d0ac3fc2efb039",
+        "622a4b3dbbd7fa6511abdec3",
+        "622a4b3d1e852ea7a8f102c9",
+        "622a4b3df0c5b5e879bdbddc",
+        "622a4b3ded594a798d93109e",
+        "622a4b3d421581ac144f1e33",
+        "622a4b3d62ca2d0925d1a494",
+        "622a4b3d5d17f24dc1ad98c6"
+      ]
+    },
+    {
+      "_id": "622a4b3db5c1805c34b4ea7d",
+      "endDate": "2024-12-21T04:47:59",
+      "startDate": "2022-10-09T09:49:24",
+      "keyword": "in irure officia et aute",
+      "lastUpdate": "2015-11-13T11:25:50",
+      "minPrice": 74.2485,
+      "maxPrice": 189,
+      "actor": "622a4b3d87a8cb93863492e1",
+      "__v": 1,
+      "trips": [
+        "622a4b3d3c1a023501584943",
+        "622a4b3d38b41db20e54f979",
+        "622a4b3d0ea180708fa3470b",
+        "622a4b3d60f9b56fb0f0849a",
+        "622a4b3de2a6d0149c69a806"
+      ]
+    },
+    {
+      "_id": "622a4b3df680861d24dd3536",
+      "endDate": "2024-12-28T07:36:27",
+      "startDate": "2023-08-05T02:24:33",
+      "keyword": "voluptate cupidatat officia Lorem duis",
+      "lastUpdate": "2015-05-31T04:02:18",
+      "minPrice": 86.0612,
+      "maxPrice": 431,
+      "actor": "622a4b3db40d2d9461e06092",
+      "__v": 2,
+      "trips": [
+        "622a4b3d824a91f9a68b5094",
+        "622a4b3d948fa158f86cae4e",
+        "622a4b3d6c407c1502bffb27"
+      ]
+    },
+    {
+      "_id": "622a4b3d7103cba2d830e0b7",
+      "endDate": "2024-09-02T02:11:35",
+      "startDate": "2022-05-14T08:25:50",
+      "keyword": "in sint ipsum enim commodo",
+      "lastUpdate": "2016-06-30T04:02:57",
+      "minPrice": 67.888,
+      "maxPrice": 117,
+      "actor": "622a4b3dd6c97c5e3cb5b669",
+      "__v": 7,
+      "trips": [
+        "622a4b3da1096aae86169fcd",
+        "622a4b3d31ee1747d69b86cd",
+        "622a4b3d05e285bf70cbe834",
+        "622a4b3de50e4748d0bebd21",
+        "622a4b3d3ca53983a76506ed",
+        "622a4b3d8ef2d2acd4ce9fb9",
+        "622a4b3dca8d12971ec53524"
+      ]
+    },
+    {
+      "_id": "622a4b3d5b45d908714b605e",
+      "endDate": "2024-12-09T04:27:56",
+      "startDate": "2022-06-23T12:38:01",
+      "keyword": "amet tempor in in culpa",
+      "lastUpdate": "2019-05-17T11:54:08",
+      "minPrice": 63.7934,
+      "maxPrice": 240,
+      "actor": "622a4b3dbcb8a3c8781fb80d",
+      "__v": 9,
+      "trips": [
+        "622a4b3db83eb181f51a417c",
+        "622a4b3dbb31b932fb5ca241",
+        "622a4b3d94108e3015ad6b2b",
+        "622a4b3db0e8df046d37ad0c"
+      ]
+    },
+    {
+      "_id": "622a4b3db061cb3fca7fde58",
+      "endDate": "2025-03-24T09:08:34",
+      "startDate": "2024-05-20T09:00:00",
+      "keyword": "culpa quis eu occaecat in",
+      "lastUpdate": "2016-03-16T03:11:46",
+      "minPrice": 93.6285,
+      "maxPrice": 179,
+      "actor": "622a4b3da12acde19bd3e331",
+      "__v": 2,
+      "trips": [
+        "622a4b3d10f234c4b5d1ba25",
+        "622a4b3de14300ab7f716225",
+        "622a4b3d5c1410e0f6b59d47",
+        "622a4b3de719963d121464ec"
+      ]
+    },
+    {
+      "_id": "622a4b3d73f608bdbd4a74c1",
+      "endDate": "2025-01-01T12:55:47",
+      "startDate": "2023-04-03T08:22:09",
+      "keyword": "pariatur velit adipisicing quis veniam",
+      "lastUpdate": "2019-09-02T03:05:02",
+      "minPrice": 93.0629,
+      "maxPrice": 302,
+      "actor": "622a4b3d42514b7d1f87c5d2",
+      "__v": 3,
+      "trips": [
+        "622a4b3d2c019f3ea916a6df",
+        "622a4b3dd27b2576fd8c2e49",
+        "622a4b3dd4d6c1614a8a3878"
+      ]
+    },
+    {
+      "_id": "622a4b3d5b2314efb9bf09fb",
+      "endDate": "2024-12-13T06:55:06",
+      "startDate": "2022-04-19T11:53:47",
+      "keyword": "proident esse cillum magna Lorem",
+      "lastUpdate": "2016-04-16T12:10:49",
+      "minPrice": 93.998,
+      "maxPrice": 487,
+      "actor": "622a4b3dda76ec5d8f30e834",
+      "__v": 3,
+      "trips": [
+        "622a4b3da9a6dac47cdbf398",
+        "622a4b3d63c4d285669afe6b",
+        "622a4b3d5a28b04f798a7b32",
+        "622a4b3d57a91898637815b2",
+        "622a4b3d80e8aeeee5ebd744",
+        "622a4b3ddd0246a61ea4ec00",
+        "622a4b3d2718b4ee8fd2c781"
+      ]
+    },
+    {
+      "_id": "622a4b3d0c76e70f7977255d",
+      "endDate": "2024-08-31T04:45:31",
+      "startDate": "2024-02-22T09:21:34",
+      "keyword": "esse id magna ex dolor",
+      "lastUpdate": "2020-03-29T01:29:24",
+      "minPrice": 79.6485,
+      "maxPrice": 385,
+      "actor": "622a4b3d9e2b86ac33c5e140",
+      "__v": 5,
+      "trips": [
+        "622a4b3dc9ab272515edbc5d",
+        "622a4b3d5a9aa64bc5cc9592",
+        "622a4b3daf9bc5f797df44c7",
+        "622a4b3dc23d5784416ead92",
+        "622a4b3dc2da4028e8a7a19b"
+      ]
+    },
+    {
+      "_id": "622a4b3d3866feaec87ebb07",
+      "endDate": "2024-09-19T07:27:22",
+      "startDate": "2022-10-12T12:52:01",
+      "keyword": "sit duis eu cillum proident",
+      "lastUpdate": "2021-02-08T06:10:01",
+      "minPrice": 54.2022,
+      "maxPrice": 460,
+      "actor": "622a4b3d70a4c3bd2361737b",
+      "__v": 1,
+      "trips": [
+        "622a4b3d74746e1f86e151dc",
+        "622a4b3d52d8316d47e02da3"
+      ]
+    },
+    {
+      "_id": "622a4b3d7251a8323d2cffce",
+      "endDate": "2024-08-14T03:08:32",
+      "startDate": "2023-04-01T03:45:10",
+      "keyword": "minim duis ut deserunt ex",
+      "lastUpdate": "2014-11-09T02:03:18",
+      "minPrice": 58.205,
+      "maxPrice": 198,
+      "actor": "622a4b3d2fd27d30f89b2f2e",
+      "__v": 4,
+      "trips": [
+        "622a4b3d77a3a040aa61e3a8",
+        "622a4b3d5fd5c7a19975b82e",
+        "622a4b3d5803bfb0a3949842",
+        "622a4b3d29bbc6bd9450556a"
+      ]
+    },
+    {
+      "_id": "622a4b3d4dc83b311c27beb6",
+      "endDate": "2025-01-19T10:07:43",
+      "startDate": "2023-06-25T10:17:42",
+      "keyword": "dolor non aliquip excepteur duis",
+      "lastUpdate": "2018-08-21T01:38:58",
+      "minPrice": 89.45,
+      "maxPrice": 449,
+      "actor": "622a4b3d4e81219c24755b9f",
+      "__v": 7,
+      "trips": [
+        "622a4b3d704b5298068f2da8",
+        "622a4b3d7419f689a6e20293",
+        "622a4b3d3c0f9287f1d38433",
+        "622a4b3d2f0f10a9632d0f56",
+        "622a4b3d90271b49fff8f7a3"
+      ]
+    },
+    {
+      "_id": "622a4b3dc48edf70f425852c",
+      "endDate": "2025-07-13T05:44:33",
+      "startDate": "2022-08-15T04:26:41",
+      "keyword": "ut irure incididunt minim enim",
+      "lastUpdate": "2018-09-23T12:01:35",
+      "minPrice": 65.4649,
+      "maxPrice": 273,
+      "actor": "622a4b3d8192614ba835e17b",
+      "__v": 8,
+      "trips": [
+        "622a4b3dc22110a13f24c81b",
+        "622a4b3de5b58a344d7fd5ed",
+        "622a4b3d8cdcf65656f74e75"
+      ]
+    },
+    {
+      "_id": "622a4b3d4ff97106101badb9",
+      "endDate": "2025-07-04T10:21:59",
+      "startDate": "2024-07-21T09:45:42",
+      "keyword": "ut magna Lorem ipsum consequat",
+      "lastUpdate": "2019-07-01T03:10:05",
+      "minPrice": 76.8961,
+      "maxPrice": 332,
+      "actor": "622a4b3da2542b1f8e92d6ef",
+      "__v": 1,
+      "trips": [
+        "622a4b3d433770f93778c8d1",
+        "622a4b3d74bac8565fdc5bee",
+        "622a4b3d5e2d246fcffc60dc",
+        "622a4b3d6d23b235cfa5e9ca",
+        "622a4b3da1acd59a577c4fe7"
+      ]
+    },
+    {
+      "_id": "622a4b3d649929edb77c461c",
+      "endDate": "2025-04-21T04:18:11",
+      "startDate": "2024-05-22T10:23:09",
+      "keyword": "deserunt cillum eu ullamco nulla",
+      "lastUpdate": "2014-04-11T08:39:41",
+      "minPrice": 62.1232,
+      "maxPrice": 388,
+      "actor": "622a4b3d7886533624f45e1d",
+      "__v": 2,
+      "trips": [
+        "622a4b3d15893a2833824b2f",
+        "622a4b3d816743c8d99e3863",
+        "622a4b3dcac5428dcfa7fb8b",
+        "622a4b3d033e4f4bdc055ca7",
+        "622a4b3d9978d254368f8d43"
+      ]
+    },
+    {
+      "_id": "622a4b3dc5bcc2b0b42f610f",
+      "endDate": "2025-01-20T10:21:10",
+      "startDate": "2022-11-19T09:34:01",
+      "keyword": "magna sint ut cillum ad",
+      "lastUpdate": "2015-12-23T02:44:54",
+      "minPrice": 77.2444,
+      "maxPrice": 336,
+      "actor": "622a4b3dba94cb2bb2d56c41",
+      "__v": 9,
+      "trips": [
+        "622a4b3d8133e97e928bcff1",
+        "622a4b3d639d84ddcf84d03d"
+      ]
+    },
+    {
+      "_id": "622a4b3d2280f80f78d85a12",
+      "endDate": "2024-09-21T08:33:43",
+      "startDate": "2023-02-19T04:26:53",
+      "keyword": "proident deserunt veniam anim laborum",
+      "lastUpdate": "2014-10-12T10:39:14",
+      "minPrice": 83.6236,
+      "maxPrice": 391,
+      "actor": "622a4b3dffbcd96c48ab10ae",
+      "__v": 7,
+      "trips": [
+        "622a4b3d7ce6fb54b05ef568",
+        "622a4b3d9e284f54ca11b0ef",
+        "622a4b3db439ba3cf4a71dbc",
+        "622a4b3df0c7c9be46235fff",
+        "622a4b3df6d877b55fc194c9",
+        "622a4b3d62690d084080e51b",
+        "622a4b3d9cbf8ddde6a17787"
+      ]
+    },
+    {
+      "_id": "622a4b3d26ed0034fd0807ff",
+      "endDate": "2024-11-07T12:06:48",
+      "startDate": "2023-09-18T04:22:39",
+      "keyword": "est duis elit laboris eiusmod",
+      "lastUpdate": "2021-07-25T02:33:35",
+      "minPrice": 85.4734,
+      "maxPrice": 429,
+      "actor": "622a4b3dc7b87472a9fcc0c9",
+      "__v": 4,
+      "trips": [
+        "622a4b3d61eb4a7cc487f0e4",
+        "622a4b3de12a28595ea776c0",
+        "622a4b3db7a67ac26162718a"
+      ]
+    },
+    {
+      "_id": "622a4b3d2b8d91045afb3aa4",
+      "endDate": "2024-10-13T09:30:02",
+      "startDate": "2024-07-27T08:34:31",
+      "keyword": "id fugiat ea non reprehenderit",
+      "lastUpdate": "2022-01-23T04:19:52",
+      "minPrice": 58.123,
+      "maxPrice": 444,
+      "actor": "622a4b3d27d184cffb9932da",
+      "__v": 5,
+      "trips": [
+        "622a4b3df12ed8a7ef54eb3f",
+        "622a4b3d0df9d77ea8a65e6c",
+        "622a4b3d4d6c678f83af2086"
+      ]
+    },
+    {
+      "_id": "622a4b3d0099351d6c32c00f",
+      "endDate": "2024-10-29T09:36:00",
+      "startDate": "2024-05-19T11:18:59",
+      "keyword": "nisi labore Lorem ullamco proident",
+      "lastUpdate": "2014-05-12T05:05:42",
+      "minPrice": 74.2874,
+      "maxPrice": 275,
+      "actor": "622a4b3d34ae75cb34bc0f26",
+      "__v": 8,
+      "trips": [
+        "622a4b3df13f8b0bdb151eca",
+        "622a4b3d1c39a10ead50f486",
+        "622a4b3dcbb99360588cbeaf",
+        "622a4b3dc67b5daf475d4b5d",
+        "622a4b3ddfc41d7451ab049e",
+        "622a4b3d994e9cb291493977",
+        "622a4b3df1f3093507e8bf08",
+        "622a4b3d079666ba2fad0fd4"
+      ]
+    },
+    {
+      "_id": "622a4b3daaf56284c6345bac",
+      "endDate": "2025-01-13T06:35:59",
+      "startDate": "2024-03-16T06:28:47",
+      "keyword": "Lorem magna deserunt dolor quis",
+      "lastUpdate": "2015-09-20T10:49:31",
+      "minPrice": 92.6421,
+      "maxPrice": 124,
+      "actor": "622a4b3d11f3f7899f1f9fc2",
+      "__v": 7,
+      "trips": [
+        "622a4b3d82706f63ad7072d4",
+        "622a4b3dba82a5e62879e75b",
+        "622a4b3d1f1747405c6b8ab1",
+        "622a4b3d44ea83ffce127ef7"
+      ]
+    },
+    {
+      "_id": "622a4b3d5d09e4a21766fbe3",
+      "endDate": "2024-11-01T03:18:27",
+      "startDate": "2023-03-12T11:44:03",
+      "keyword": "sunt officia consectetur minim quis",
+      "lastUpdate": "2018-11-19T06:30:21",
+      "minPrice": 98.1727,
+      "maxPrice": 451,
+      "actor": "622a4b3d14c0543fc0274535",
+      "__v": 3,
+      "trips": [
+        "622a4b3d82205d9b23c7c794",
+        "622a4b3d44029153d792ae56",
+        "622a4b3ddaf90452df277752",
+        "622a4b3d5abacc88b8a39910",
+        "622a4b3d48c7b8b91620c6d1"
+      ]
+    },
+    {
+      "_id": "622a4b3dc11a23e7684c9678",
+      "endDate": "2025-04-09T07:15:47",
+      "startDate": "2022-04-01T02:23:03",
+      "keyword": "veniam laborum irure do eiusmod",
+      "lastUpdate": "2022-01-18T02:24:27",
+      "minPrice": 73.2229,
+      "maxPrice": 462,
+      "actor": "622a4b3da087b7c8dae91b1a",
+      "__v": 10,
+      "trips": [
+        "622a4b3dd169e3997380b5fa",
+        "622a4b3d77a36691b846acf6",
+        "622a4b3db8af9a14f1a28b93",
+        "622a4b3d091f0eb0c42af9be"
+      ]
+    },
+    {
+      "_id": "622a4b3d4feccd49b7ba4132",
+      "endDate": "2025-01-28T07:40:53",
+      "startDate": "2023-08-17T08:11:08",
+      "keyword": "commodo adipisicing ex qui dolor",
+      "lastUpdate": "2016-10-18T12:21:36",
+      "minPrice": 68.4894,
+      "maxPrice": 179,
+      "actor": "622a4b3d12bbd5318bc60cb4",
+      "__v": 2,
+      "trips": [
+        "622a4b3db25af8de67952c20",
+        "622a4b3d17dcb2c7d49e233f",
+        "622a4b3d0c0df99701aed9b8",
+        "622a4b3d10b741ba1740c68b",
+        "622a4b3d11142cafc7cccb45",
+        "622a4b3d667859af19b13882",
+        "622a4b3d41048a34ed060461"
+      ]
+    },
+    {
+      "_id": "622a4b3d55d8c3c8fd81aa29",
+      "endDate": "2025-03-21T03:25:09",
+      "startDate": "2022-10-19T03:49:54",
+      "keyword": "est anim sint do est",
+      "lastUpdate": "2018-04-15T02:41:01",
+      "minPrice": 94.3832,
+      "maxPrice": 168,
+      "actor": "622a4b3d1c44868f8981d6c0",
+      "__v": 6,
+      "trips": [
+        "622a4b3d9fae189dfe4aa695",
+        "622a4b3d80138cdafde4dd87",
+        "622a4b3dea0350f7bbbc1659",
+        "622a4b3d9ea189949f45b36b",
+        "622a4b3d82d9329b71137e43",
+        "622a4b3d859512a676ffc26c",
+        "622a4b3d36686b0a85b265d3"
+      ]
+    },
+    {
+      "_id": "622a4b3d0811f29e2ff3ea6e",
+      "endDate": "2025-01-16T09:13:53",
+      "startDate": "2022-07-26T09:16:22",
+      "keyword": "aliquip sunt laborum excepteur nulla",
+      "lastUpdate": "2019-03-21T04:11:02",
+      "minPrice": 94.7707,
+      "maxPrice": 255,
+      "actor": "622a4b3df322dcfc3d9c4fa4",
+      "__v": 10,
+      "trips": [
+        "622a4b3d897b2f0de9111baa",
+        "622a4b3dc86ca652de30895c",
+        "622a4b3daca6dc37eac87e1a",
+        "622a4b3d51a187f94b30df0a"
+      ]
+    },
+    {
+      "_id": "622a4b3dff60d6ebab579b5e",
+      "endDate": "2024-08-27T04:26:48",
+      "startDate": "2022-08-19T06:44:00",
+      "keyword": "tempor ullamco id cillum Lorem",
+      "lastUpdate": "2020-08-30T11:40:46",
+      "minPrice": 64.9231,
+      "maxPrice": 309,
+      "actor": "622a4b3d27309746c27985cc",
+      "__v": 9,
+      "trips": [
+        "622a4b3d283f21fb1da65412",
+        "622a4b3d2c218e38ef494af9"
+      ]
+    },
+    {
+      "_id": "622a4b3d3b58a089aa1549d6",
+      "endDate": "2025-04-29T05:51:12",
+      "startDate": "2023-12-20T10:25:55",
+      "keyword": "do elit et minim fugiat",
+      "lastUpdate": "2021-10-08T12:03:56",
+      "minPrice": 66.0074,
+      "maxPrice": 237,
+      "actor": "622a4b3dc8ec858311f71c12",
+      "__v": 3,
+      "trips": [
+        "622a4b3d338c681854e669f1",
+        "622a4b3d013bc35c21052837",
+        "622a4b3d340d7bccc55ba72e",
+        "622a4b3db89ec4b9444fb2b4",
+        "622a4b3d699649c3d9730f43"
+      ]
+    },
+    {
+      "_id": "622a4b3d2d9dedba7b0712dd",
+      "endDate": "2025-06-06T03:36:50",
+      "startDate": "2022-04-04T01:57:16",
+      "keyword": "nostrud non eu proident in",
+      "lastUpdate": "2018-02-17T09:30:18",
+      "minPrice": 76.1698,
+      "maxPrice": 392,
+      "actor": "622a4b3d318d803e5552ad8d",
+      "__v": 9,
+      "trips": [
+        "622a4b3d388d346b8001be5d",
+        "622a4b3dd0115c49912ab238",
+        "622a4b3db2885bf8a0d6c3ae",
+        "622a4b3dbff8fecc856bff46",
+        "622a4b3df244e2680f258e10",
+        "622a4b3ddd762dbceb454829",
+        "622a4b3d7ce354bffa67e848"
+      ]
+    },
+    {
+      "_id": "622a4b3d8beb4ed7fab3a55e",
+      "endDate": "2025-07-10T07:37:22",
+      "startDate": "2023-11-10T12:02:49",
+      "keyword": "est aliquip fugiat amet ex",
+      "lastUpdate": "2016-12-24T12:49:11",
+      "minPrice": 98.707,
+      "maxPrice": 374,
+      "actor": "622a4b3d146965662e176386",
+      "__v": 1,
+      "trips": [
+        "622a4b3d0c1da1116bdde0fe",
+        "622a4b3d127033abff1e995b",
+        "622a4b3d80a724291ad04fdd",
+        "622a4b3dc39451447f73e0cf",
+        "622a4b3ddf6d563292165657"
+      ]
+    },
+    {
+      "_id": "622a4b3d4cbcf6f584e4ce9b",
+      "endDate": "2024-09-12T10:02:03",
+      "startDate": "2022-11-16T11:20:36",
+      "keyword": "incididunt minim ex culpa deserunt",
+      "lastUpdate": "2016-12-14T06:03:10",
+      "minPrice": 58.2161,
+      "maxPrice": 347,
+      "actor": "622a4b3d531d0e48eca129f5",
+      "__v": 6,
+      "trips": [
+        "622a4b3df452904504579a2a",
+        "622a4b3dd24bc6f13d45c757"
+      ]
+    },
+    {
+      "_id": "622a4b3df628bb11956c1c59",
+      "endDate": "2024-11-10T02:04:20",
+      "startDate": "2023-01-14T01:54:55",
+      "keyword": "deserunt sint sunt cillum sint",
+      "lastUpdate": "2016-05-07T05:39:27",
+      "minPrice": 58.9161,
+      "maxPrice": 147,
+      "actor": "622a4b3d1eaf812d65914168",
+      "__v": 7,
+      "trips": [
+        "622a4b3d5cf01ff73b0fc4fe",
+        "622a4b3d914154c08edf6640",
+        "622a4b3d8015153f620b643e",
+        "622a4b3df7d80219d90d8af7",
+        "622a4b3dbba2f4f68677238a"
+      ]
+    },
+    {
+      "_id": "622a4b3d1e4125becb87761e",
+      "endDate": "2025-07-27T12:25:42",
+      "startDate": "2024-03-26T11:29:34",
+      "keyword": "id exercitation ad eu dolor",
+      "lastUpdate": "2019-12-18T01:02:37",
+      "minPrice": 68.3545,
+      "maxPrice": 301,
+      "actor": "622a4b3dcd60d17d8b17b6b6",
+      "__v": 4,
+      "trips": [
+        "622a4b3dc223b490c6c36f13",
+        "622a4b3d6699bb17d931a9e5",
+        "622a4b3d491c4d1f062f791d"
+      ]
+    },
+    {
+      "_id": "622a4b3d6ba3577802340dcd",
+      "endDate": "2025-01-17T12:50:32",
+      "startDate": "2024-03-01T09:24:07",
+      "keyword": "fugiat exercitation cillum qui proident",
+      "lastUpdate": "2014-07-28T08:22:10",
+      "minPrice": 79.9426,
+      "maxPrice": 134,
+      "actor": "622a4b3dba209f82430ded1b",
+      "__v": 7,
+      "trips": [
+        "622a4b3ded72d400c2d8fda5",
+        "622a4b3da72c19b10b36aa99",
+        "622a4b3df9d56f4618a7c2ce",
+        "622a4b3d32f4721055c656b5",
+        "622a4b3db031537102541d67",
+        "622a4b3d42c6d570ae2e0dcd"
+      ]
+    },
+    {
+      "_id": "622a4b3dd9fd8b7af925f34a",
+      "endDate": "2024-09-09T03:45:59",
+      "startDate": "2022-03-24T05:40:57",
+      "keyword": "enim mollit veniam fugiat ipsum",
+      "lastUpdate": "2018-12-15T02:30:35",
+      "minPrice": 53.7598,
+      "maxPrice": 248,
+      "actor": "622a4b3d14026a4de93712e0",
+      "__v": 4,
+      "trips": [
+        "622a4b3de4df6af222241723",
+        "622a4b3d108e2ddc00bbf2fb",
+        "622a4b3dab59ca2df159cf52",
+        "622a4b3dfe350b71e4c25feb"
+      ]
+    },
+    {
+      "_id": "622a4b3de400fd3a0568fa8e",
+      "endDate": "2024-08-21T04:24:37",
+      "startDate": "2023-04-08T11:49:40",
+      "keyword": "labore pariatur duis adipisicing quis",
+      "lastUpdate": "2021-10-11T08:12:23",
+      "minPrice": 88.8873,
+      "maxPrice": 269,
+      "actor": "622a4b3de088dfcee66c0fde",
+      "__v": 2,
+      "trips": [
+        "622a4b3dc812c652ff4b8c43",
+        "622a4b3dfff71e71b9c25b72"
+      ]
+    },
+    {
+      "_id": "622a4b3db5074f5a244a759b",
+      "endDate": "2025-02-19T10:37:44",
+      "startDate": "2023-02-14T01:31:06",
+      "keyword": "voluptate commodo ad ea excepteur",
+      "lastUpdate": "2016-07-28T01:23:56",
+      "minPrice": 61.5441,
+      "maxPrice": 353,
+      "actor": "622a4b3d0ab9449a34d3b7df",
+      "__v": 4,
+      "trips": [
+        "622a4b3d14eb9f5fc0764f5a",
+        "622a4b3d631f2819353a701b",
+        "622a4b3d5c332c5caac57ae6",
+        "622a4b3db4012c69a0170e74"
+      ]
+    },
+    {
+      "_id": "622a4b3db9fa8230bc130ee3",
+      "endDate": "2024-09-17T05:18:24",
+      "startDate": "2022-10-07T01:10:51",
+      "keyword": "magna velit laborum velit eiusmod",
+      "lastUpdate": "2020-05-20T07:35:09",
+      "minPrice": 94.5301,
+      "maxPrice": 277,
+      "actor": "622a4b3dc9832182a2019bf3",
+      "__v": 2,
+      "trips": [
+        "622a4b3d9d687490e89c8404",
+        "622a4b3d1c488f42498105d4"
+      ]
+    },
+    {
+      "_id": "622a4b3d951e424f66d2effa",
+      "endDate": "2025-02-05T08:46:44",
+      "startDate": "2024-05-16T07:32:28",
+      "keyword": "pariatur Lorem adipisicing eiusmod deserunt",
+      "lastUpdate": "2017-10-19T01:25:45",
+      "minPrice": 68.2167,
+      "maxPrice": 131,
+      "actor": "622a4b3ded1272322efb1fff",
+      "__v": 10,
+      "trips": [
+        "622a4b3d596e26e9d5fca0c6",
+        "622a4b3d6eb0e1199ff56851",
+        "622a4b3d5ae76b1afb940cfd",
+        "622a4b3d9384cf9b32461a5c",
+        "622a4b3dfc748776fa06a893",
+        "622a4b3d5ba278a06e48e57b"
+      ]
+    },
+    {
+      "_id": "622a4b3df317eb416c0ac934",
+      "endDate": "2025-07-09T06:16:51",
+      "startDate": "2024-01-05T07:02:26",
+      "keyword": "adipisicing incididunt do eu et",
+      "lastUpdate": "2020-08-28T05:59:19",
+      "minPrice": 71.3684,
+      "maxPrice": 307,
+      "actor": "622a4b3ddb5ac1467309dde3",
+      "__v": 5,
+      "trips": [
+        "622a4b3d31f4611bbd6510a6",
+        "622a4b3d87715a50b705e1fe",
+        "622a4b3dcdfddfe0f547fa7b",
+        "622a4b3d26dcf6893d1365f3",
+        "622a4b3de932fafbbd10807c",
+        "622a4b3d45b50a935038d9fc"
+      ]
+    },
+    {
+      "_id": "622a4b3d0b68303e69e712dc",
+      "endDate": "2025-07-14T03:48:51",
+      "startDate": "2024-03-22T02:59:37",
+      "keyword": "exercitation ad reprehenderit aliqua laborum",
+      "lastUpdate": "2015-04-27T07:44:43",
+      "minPrice": 80.0902,
+      "maxPrice": 107,
+      "actor": "622a4b3def52e79e96f1c08a",
+      "__v": 6,
+      "trips": [
+        "622a4b3dad353f1a3bcc6732",
+        "622a4b3d151b6151c9b48547",
+        "622a4b3defbce4cdc0258ec4",
+        "622a4b3dbc2080dcf32c58e9",
+        "622a4b3d5595544bbe62e8b4"
+      ]
+    },
+    {
+      "_id": "622a4b3d6d53fe379f0f7489",
+      "endDate": "2024-12-03T01:57:21",
+      "startDate": "2023-10-29T10:02:55",
+      "keyword": "elit anim commodo ullamco proident",
+      "lastUpdate": "2016-02-11T12:06:58",
+      "minPrice": 94.0701,
+      "maxPrice": 447,
+      "actor": "622a4b3dc51269aba81c6672",
+      "__v": 2,
+      "trips": [
+        "622a4b3d3c3c8462a717d75a",
+        "622a4b3d0c4a9717dd7b9ed7",
+        "622a4b3d1ec5ff09a4879193",
+        "622a4b3d3c49b33c010637d0",
+        "622a4b3d97a32d616b21ea8f",
+        "622a4b3d7512684cedb3ce85",
+        "622a4b3d7ab273bb76059aa2"
+      ]
+    },
+    {
+      "_id": "622a4b3d79547ab0b6dc02a5",
+      "endDate": "2025-07-03T02:57:53",
+      "startDate": "2022-10-13T04:57:23",
+      "keyword": "dolor culpa est sunt ipsum",
+      "lastUpdate": "2016-08-16T09:50:36",
+      "minPrice": 79.8325,
+      "maxPrice": 365,
+      "actor": "622a4b3ddc20d87ad3ec7f7c",
+      "__v": 1,
+      "trips": [
+        "622a4b3d567632933245fcd6",
+        "622a4b3dd8bdcb081a8a1d91",
+        "622a4b3d90c768f75b220cfd",
+        "622a4b3da5a813ce9119ad27",
+        "622a4b3d929d2f95d8061279"
+      ]
+    },
+    {
+      "_id": "622a4b3d618311d5c43030a5",
+      "endDate": "2025-05-02T07:30:16",
+      "startDate": "2023-04-27T02:03:46",
+      "keyword": "voluptate ad laboris Lorem duis",
+      "lastUpdate": "2015-10-03T10:43:08",
+      "minPrice": 78.499,
+      "maxPrice": 225,
+      "actor": "622a4b3d3baeff9cdba05fdb",
+      "__v": 2,
+      "trips": [
+        "622a4b3d2dd2d9bea5811647",
+        "622a4b3de0f3d3817e000635",
+        "622a4b3dde245d494bec3275",
+        "622a4b3d3deef1c5660afd55"
+      ]
+    },
+    {
+      "_id": "622a4b3d896a09a83073ad0b",
+      "endDate": "2024-11-20T02:30:38",
+      "startDate": "2023-09-20T12:07:58",
+      "keyword": "Lorem amet nulla labore excepteur",
+      "lastUpdate": "2014-08-25T09:31:31",
+      "minPrice": 55.349,
+      "maxPrice": 254,
+      "actor": "622a4b3d1714dc2ca2c40eeb",
+      "__v": 1,
+      "trips": [
+        "622a4b3d07cce0daaa64b0dc",
+        "622a4b3db20e4ca6789ac861",
+        "622a4b3dc958b27f3f1b68d3",
+        "622a4b3dc5f89caa0e74b503"
+      ]
+    },
+    {
+      "_id": "622a4b3d601d2eb6cb5d1f35",
+      "endDate": "2025-06-26T07:35:46",
+      "startDate": "2023-03-11T12:50:56",
+      "keyword": "aute consequat officia ut ex",
+      "lastUpdate": "2019-02-05T03:33:27",
+      "minPrice": 59.4079,
+      "maxPrice": 333,
+      "actor": "622a4b3db3a1ad2830d511f4",
+      "__v": 9,
+      "trips": [
+        "622a4b3dc547f87307122ac5",
+        "622a4b3d9d9718f5501c2b80",
+        "622a4b3d70378dbec0af308f",
+        "622a4b3dc28906a33507776b"
+      ]
+    },
+    {
+      "_id": "622a4b3da1a4b7d0beb9f8a5",
+      "endDate": "2025-08-04T01:11:53",
+      "startDate": "2023-11-27T07:45:41",
+      "keyword": "do deserunt laborum id nostrud",
+      "lastUpdate": "2016-09-21T04:42:42",
+      "minPrice": 94.3848,
+      "maxPrice": 498,
+      "actor": "622a4b3dc0dfbdf11a19862c",
+      "__v": 7,
+      "trips": [
+        "622a4b3df1ff9621eab76c3f",
+        "622a4b3d9a42d701bc13f201"
+      ]
+    },
+    {
+      "_id": "622a4b3d546cbe26ad994921",
+      "endDate": "2025-03-17T05:55:59",
+      "startDate": "2022-09-12T06:08:13",
+      "keyword": "excepteur aliquip in ipsum commodo",
+      "lastUpdate": "2016-04-24T05:58:06",
+      "minPrice": 51.7158,
+      "maxPrice": 406,
+      "actor": "622a4b3d14d1dae8dba37084",
+      "__v": 6,
+      "trips": [
+        "622a4b3d880a2c504ce625c8",
+        "622a4b3da35ce77afcca7717",
+        "622a4b3d5686603936445e90",
+        "622a4b3d15eea050c0201d50",
+        "622a4b3dc1d6c262d04c6749"
+      ]
+    },
+    {
+      "_id": "622a4b3dae2ba14c1eca50c2",
+      "endDate": "2024-11-05T06:43:03",
+      "startDate": "2023-12-27T10:52:24",
+      "keyword": "excepteur consequat proident irure sit",
+      "lastUpdate": "2015-10-10T09:52:02",
+      "minPrice": 64.8708,
+      "maxPrice": 307,
+      "actor": "622a4b3d8f6bacaadeca7aee",
+      "__v": 8,
+      "trips": [
+        "622a4b3dec3734a43bb1d586",
+        "622a4b3d50a026a00851866b",
+        "622a4b3d0bcacf1482602057"
+      ]
+    },
+    {
+      "_id": "622a4b3d4abf23e71abd9296",
+      "endDate": "2025-04-07T05:47:27",
+      "startDate": "2023-07-24T03:13:33",
+      "keyword": "id dolor ea adipisicing ut",
+      "lastUpdate": "2018-07-05T02:23:49",
+      "minPrice": 69.973,
+      "maxPrice": 105,
+      "actor": "622a4b3df5a9339703d7b6a3",
+      "__v": 6,
+      "trips": [
+        "622a4b3de0aff1586ed249bc",
+        "622a4b3da8bccd74968c5935",
+        "622a4b3ddae60a51aef51abb"
+      ]
+    },
+    {
+      "_id": "622a4b3da7efbb55780a7f63",
+      "endDate": "2024-10-10T12:45:28",
+      "startDate": "2023-11-04T02:16:18",
+      "keyword": "amet laboris minim cupidatat sunt",
+      "lastUpdate": "2017-05-10T05:59:26",
+      "minPrice": 94.7389,
+      "maxPrice": 419,
+      "actor": "622a4b3d416c4f1519bf7441",
+      "__v": 4,
+      "trips": [
+        "622a4b3d4b1858b94055bc73",
+        "622a4b3d59c4eb64b91482c7"
+      ]
+    },
+    {
+      "_id": "622a4b3de8cdbb36670af513",
+      "endDate": "2025-03-19T12:14:33",
+      "startDate": "2022-04-25T07:03:28",
+      "keyword": "sint Lorem et et nisi",
+      "lastUpdate": "2016-12-10T09:34:07",
+      "minPrice": 91.2158,
+      "maxPrice": 248,
+      "actor": "622a4b3d9b9ca32079a948ba",
+      "__v": 10,
+      "trips": [
+        "622a4b3db059f579d20c33bb",
+        "622a4b3db2bd953a6a1b5b64",
+        "622a4b3dbb4090a591b6f623",
+        "622a4b3d44cd173f3c6e13e0",
+        "622a4b3d46885cd36c1154ab",
+        "622a4b3d0110100c9689f669"
+      ]
+    },
+    {
+      "_id": "622a4b3da09fc05d17fec924",
+      "endDate": "2025-01-07T06:36:13",
+      "startDate": "2023-11-05T10:25:20",
+      "keyword": "nulla cillum in do deserunt",
+      "lastUpdate": "2019-08-11T11:59:05",
+      "minPrice": 95.6338,
+      "maxPrice": 464,
+      "actor": "622a4b3de0091a5fde0347af",
+      "__v": 3,
+      "trips": [
+        "622a4b3d0e162bfa0b777631",
+        "622a4b3d6f641964bbf38ad2",
+        "622a4b3dcbf581db4d82155a",
+        "622a4b3df8f8c9638250330e",
+        "622a4b3d5573a4375daf6684",
+        "622a4b3deb2ad71ed752e808"
+      ]
+    },
+    {
+      "_id": "622a4b3db8e37a832203b3cf",
+      "endDate": "2025-08-04T04:39:15",
+      "startDate": "2023-05-24T06:09:56",
+      "keyword": "amet esse laboris aliqua do",
+      "lastUpdate": "2019-02-07T06:26:51",
+      "minPrice": 83.3435,
+      "maxPrice": 424,
+      "actor": "622a4b3d586b48aa3ee1ac82",
+      "__v": 10,
+      "trips": [
+        "622a4b3d4594438b84d99413",
+        "622a4b3d5e5b32b2afa129e8",
+        "622a4b3d6a3b41e90edd6200",
+        "622a4b3d02f8f72ca0fc5f00",
+        "622a4b3da5a9b16ceba12edf"
+      ]
+    },
+    {
+      "_id": "622a4b3d525ad792e4e0cd88",
+      "endDate": "2024-09-05T03:30:05",
+      "startDate": "2022-08-31T12:32:01",
+      "keyword": "id adipisicing sint laborum do",
+      "lastUpdate": "2018-07-21T03:34:42",
+      "minPrice": 76.9558,
+      "maxPrice": 245,
+      "actor": "622a4b3dcc94137ad1828a5b",
+      "__v": 9,
+      "trips": [
+        "622a4b3df742c106bd9e72c4",
+        "622a4b3d01f94d9f749ccfcc",
+        "622a4b3d0b46dd79d9f15574",
+        "622a4b3da212bac278ed8e0c",
+        "622a4b3d43d37755f584df98",
+        "622a4b3d7a94f1850bf40a80"
+      ]
+    },
+    {
+      "_id": "622a4b3da76bddca33575ad2",
+      "endDate": "2025-04-26T10:41:54",
+      "startDate": "2023-02-05T03:38:36",
+      "keyword": "excepteur et sint proident voluptate",
+      "lastUpdate": "2021-02-03T11:08:36",
+      "minPrice": 80.3021,
+      "maxPrice": 145,
+      "actor": "622a4b3d3b7ef58a6ef34f27",
+      "__v": 4,
+      "trips": [
+        "622a4b3d615967af008d6081",
+        "622a4b3d0bdfd139831b4797"
+      ]
+    },
+    {
+      "_id": "622a4b3d7738f8cc54fa4721",
+      "endDate": "2025-02-22T12:29:14",
+      "startDate": "2022-08-09T05:55:40",
+      "keyword": "ea sunt laborum ut nisi",
+      "lastUpdate": "2019-10-28T09:12:49",
+      "minPrice": 53.6659,
+      "maxPrice": 442,
+      "actor": "622a4b3dec25547c64d16ed2",
+      "__v": 1,
+      "trips": [
+        "622a4b3d99e1f46e67f7c52e",
+        "622a4b3dd8069f9339d9fac8",
+        "622a4b3d822199a2d387c037"
+      ]
+    },
+    {
+      "_id": "622a4b3d2090d30d6a9f6539",
+      "endDate": "2024-08-22T06:37:23",
+      "startDate": "2023-02-07T12:22:05",
+      "keyword": "cupidatat incididunt nostrud adipisicing minim",
+      "lastUpdate": "2022-02-03T11:54:16",
+      "minPrice": 95.8363,
+      "maxPrice": 383,
+      "actor": "622a4b3d5c83cdf8217c2659",
+      "__v": 1,
+      "trips": [
+        "622a4b3d37ad85d601dc831e",
+        "622a4b3ddcd88cee360ea0ac",
+        "622a4b3d151fe04d87797b3f",
+        "622a4b3dcf9e17c12ba16338"
+      ]
+    },
+    {
+      "_id": "622a4b3dd1af1c487ef8cf60",
+      "endDate": "2025-06-17T02:16:56",
+      "startDate": "2022-08-07T12:13:41",
+      "keyword": "velit excepteur sunt aute dolore",
+      "lastUpdate": "2016-01-29T04:59:01",
+      "minPrice": 64.9388,
+      "maxPrice": 117,
+      "actor": "622a4b3df8aded2185084b69",
+      "__v": 9,
+      "trips": [
+        "622a4b3d52dd027ea99456c3",
+        "622a4b3dd86f95f1f071e86e",
+        "622a4b3d0b9ea20db774b3b7",
+        "622a4b3d5c322aa8a761909d"
+      ]
+    },
+    {
+      "_id": "622a4b3dc8760b287794fc67",
+      "endDate": "2024-10-03T12:41:22",
+      "startDate": "2024-04-12T08:11:46",
+      "keyword": "excepteur sunt voluptate dolor minim",
+      "lastUpdate": "2014-07-28T10:52:42",
+      "minPrice": 64.0696,
+      "maxPrice": 280,
+      "actor": "622a4b3d7ac7adc0a6da2501",
+      "__v": 10,
+      "trips": [
+        "622a4b3d5b85e0d9901becec",
+        "622a4b3d289c7338da5bc017",
+        "622a4b3d5f2afac2b36655d1",
+        "622a4b3dd53531c3845f190b",
+        "622a4b3d6af05f6a592f32a4",
+        "622a4b3d2cadc9fb664e6f83",
+        "622a4b3dca1855027488f26d"
+      ]
+    },
+    {
+      "_id": "622a4b3dd9dc923ab639e9eb",
+      "endDate": "2025-06-16T06:00:30",
+      "startDate": "2022-12-13T03:10:19",
+      "keyword": "ex reprehenderit ex laborum adipisicing",
+      "lastUpdate": "2017-05-05T04:19:36",
+      "minPrice": 71.7624,
+      "maxPrice": 199,
+      "actor": "622a4b3d67f7685b15b8156e",
+      "__v": 3,
+      "trips": [
+        "622a4b3dba325718f7a755cd",
+        "622a4b3da42d55261ed31274",
+        "622a4b3d4e81a6b54c7ad523"
+      ]
+    },
+    {
+      "_id": "622a4b3df1283167e955d2a8",
+      "endDate": "2025-03-14T01:43:50",
+      "startDate": "2024-02-22T12:41:50",
+      "keyword": "nisi nostrud pariatur culpa occaecat",
+      "lastUpdate": "2018-09-07T12:37:18",
+      "minPrice": 51.7999,
+      "maxPrice": 253,
+      "actor": "622a4b3dc6b45ff154d735b2",
+      "__v": 2,
+      "trips": [
+        "622a4b3d4f1770eb582ab2e8",
+        "622a4b3dea2a2b7ed3ffcbe4",
+        "622a4b3d4800051c7d537847",
+        "622a4b3d0e25226b9ed3226a"
+      ]
+    },
+    {
+      "_id": "622a4b3d8993242fcae9993a",
+      "endDate": "2025-02-27T04:04:50",
+      "startDate": "2023-08-04T04:05:49",
+      "keyword": "labore mollit minim consequat consequat",
+      "lastUpdate": "2014-11-29T08:52:19",
+      "minPrice": 50.9514,
+      "maxPrice": 375,
+      "actor": "622a4b3d61c12d8bc2fe30dc",
+      "__v": 3,
+      "trips": [
+        "622a4b3d1e0cf91006912b6d",
+        "622a4b3d5fa79b5e8f2a409c",
+        "622a4b3dbcc6b1ff48d32431",
+        "622a4b3d819b075ac93c5e95",
+        "622a4b3d4b46a1332036c4f5",
+        "622a4b3df1a2aaa2d5e89240"
+      ]
+    },
+    {
+      "_id": "622a4b3d1754512695d73745",
+      "endDate": "2025-03-01T03:32:28",
+      "startDate": "2023-12-26T06:37:35",
+      "keyword": "consectetur non esse do non",
+      "lastUpdate": "2019-02-12T07:05:41",
+      "minPrice": 58.8863,
+      "maxPrice": 270,
+      "actor": "622a4b3debc6a0ed7d646e60",
+      "__v": 8,
+      "trips": [
+        "622a4b3d5c58d9ab97bb5c67",
+        "622a4b3de7ee79e657a4c7a0"
+      ]
+    },
+    {
+      "_id": "622a4b3d4a14c41ca712ebb8",
+      "endDate": "2025-05-28T11:51:55",
+      "startDate": "2024-07-16T09:41:16",
+      "keyword": "ullamco commodo quis ad occaecat",
+      "lastUpdate": "2014-10-08T12:10:48",
+      "minPrice": 83.056,
+      "maxPrice": 494,
+      "actor": "622a4b3d2c2715061456716f",
+      "__v": 7,
+      "trips": [
+        "622a4b3d515fcd508e681471",
+        "622a4b3df22a909b1f9add9a",
+        "622a4b3db8034bfac97210ca",
+        "622a4b3d765a464c10e4e47f",
+        "622a4b3db3e3cc28ed4fe3a4",
+        "622a4b3d4dc67c2f6c1047b6",
+        "622a4b3db1edef04fd883437"
+      ]
+    },
+    {
+      "_id": "622a4b3d39d7624b9d86c754",
+      "endDate": "2025-07-16T05:50:23",
+      "startDate": "2024-03-10T07:54:39",
+      "keyword": "proident veniam sit qui ad",
+      "lastUpdate": "2020-01-17T01:10:44",
+      "minPrice": 75.3088,
+      "maxPrice": 421,
+      "actor": "622a4b3d40f81cd96d93759b",
+      "__v": 2,
+      "trips": [
+        "622a4b3d449350f0200b6c70",
+        "622a4b3dda6274f95796f033"
+      ]
+    },
+    {
+      "_id": "622a4b3d97bf67a14c8078b0",
+      "endDate": "2024-12-17T09:36:00",
+      "startDate": "2023-04-30T06:04:50",
+      "keyword": "in dolor fugiat anim officia",
+      "lastUpdate": "2020-06-05T12:48:23",
+      "minPrice": 89.0572,
+      "maxPrice": 124,
+      "actor": "622a4b3dd5142e702f696d3f",
+      "__v": 3,
+      "trips": [
+        "622a4b3ddce0e8c2faaa6dcc",
+        "622a4b3d214323dc71e0e3a4",
+        "622a4b3de818dcdccfc010ce",
+        "622a4b3db3a30660f8073e59",
+        "622a4b3d5765cd5eea6ff33d",
+        "622a4b3d4bdcce344ae82638"
+      ]
+    },
+    {
+      "_id": "622a4b3d0be819c6fa61542a",
+      "endDate": "2025-06-20T03:11:51",
+      "startDate": "2023-12-05T02:31:03",
+      "keyword": "commodo pariatur anim non magna",
+      "lastUpdate": "2015-05-13T06:56:03",
+      "minPrice": 83.8443,
+      "maxPrice": 364,
+      "actor": "622a4b3ddc7c2db417a066e2",
+      "__v": 2,
+      "trips": [
+        "622a4b3d0011266ef264206a",
+        "622a4b3dcbc3daa3e4ee25a3",
+        "622a4b3df4f25b32c84ad38d",
+        "622a4b3dc52d0dae3e35ca4d",
+        "622a4b3d84d98c438555d499",
+        "622a4b3d5cc12f229dd9d84b",
+        "622a4b3d1b90e437103c02ab",
+        "622a4b3d69a127dc91237698"
+      ]
+    },
+    {
+      "_id": "622a4b3d2fc39053fd8f0c7a",
+      "endDate": "2024-10-20T08:53:55",
+      "startDate": "2024-05-19T01:43:26",
+      "keyword": "officia aute adipisicing laboris commodo",
+      "lastUpdate": "2017-07-21T11:56:24",
+      "minPrice": 97.0736,
+      "maxPrice": 196,
+      "actor": "622a4b3d8076b707690d64ce",
+      "__v": 5,
+      "trips": [
+        "622a4b3dfd025ed59a1e46be",
+        "622a4b3d38ca0c62687ada91",
+        "622a4b3d85bd58228b949be8",
+        "622a4b3dbb46922dedc5f026",
+        "622a4b3de5c1b7b6f842d394",
+        "622a4b3d0fac39e58eed601c",
+        "622a4b3dc9d70b7e3b350270",
+        "622a4b3d3fa5148fb49585a7"
+      ]
+    },
+    {
+      "_id": "622a4b3deab9efaf449efaad",
+      "endDate": "2025-02-15T04:00:57",
+      "startDate": "2023-03-26T12:15:12",
+      "keyword": "exercitation laborum reprehenderit in consequat",
+      "lastUpdate": "2019-11-15T06:38:55",
+      "minPrice": 90.1203,
+      "maxPrice": 130,
+      "actor": "622a4b3d74f50aa36e587874",
+      "__v": 3,
+      "trips": [
+        "622a4b3d9e3a657c3cb4d06b",
+        "622a4b3df86563459b1c7e22",
+        "622a4b3d38feb5f866e99d0e",
+        "622a4b3d234c3c18b3a18497"
+      ]
+    },
+    {
+      "_id": "622a4b3d1caa810047514105",
+      "endDate": "2024-11-17T10:36:31",
+      "startDate": "2023-11-28T05:07:23",
+      "keyword": "et sit consequat adipisicing do",
+      "lastUpdate": "2021-01-06T10:16:30",
+      "minPrice": 81.4497,
+      "maxPrice": 428,
+      "actor": "622a4b3de17cb72adaab6e3a",
+      "__v": 10,
+      "trips": [
+        "622a4b3d0bf509ce1fb7b929",
+        "622a4b3d6ab570ae45b800ee"
+      ]
+    },
+    {
+      "_id": "622a4b3d9f4b75e4a5fc15c8",
+      "endDate": "2025-02-15T01:09:30",
+      "startDate": "2023-09-12T02:57:31",
+      "keyword": "incididunt consequat est ut occaecat",
+      "lastUpdate": "2018-11-13T08:25:01",
+      "minPrice": 52.4258,
+      "maxPrice": 342,
+      "actor": "622a4b3dd167465adc338bb2",
+      "__v": 8,
+      "trips": [
+        "622a4b3df8a74d6086b7f9a5",
+        "622a4b3dad133982756e39e1",
+        "622a4b3d17dddd0590e653d9",
+        "622a4b3d55636526b8b7bf1f"
+      ]
+    },
+    {
+      "_id": "622a4b3df41760bdf3ba21ba",
+      "endDate": "2024-12-30T05:31:30",
+      "startDate": "2022-05-03T01:30:04",
+      "keyword": "magna do nostrud sit do",
+      "lastUpdate": "2014-06-13T12:58:18",
+      "minPrice": 81.3232,
+      "maxPrice": 452,
+      "actor": "622a4b3d831815e74f36f2b3",
+      "__v": 7,
+      "trips": [
+        "622a4b3d66b1c5a094ca1a8f",
+        "622a4b3d6e9378a6898436ef",
+        "622a4b3dee24825dadebf47c",
+        "622a4b3d393cd41778dfcdf4",
+        "622a4b3d64a571adaee42d86",
+        "622a4b3d86e90549d03b5fbc"
+      ]
+    },
+    {
+      "_id": "622a4b3da8a933f967e7c09f",
+      "endDate": "2024-11-11T10:17:10",
+      "startDate": "2022-09-10T10:14:50",
+      "keyword": "in cupidatat ea ex nulla",
+      "lastUpdate": "2019-06-01T08:04:50",
+      "minPrice": 96.1545,
+      "maxPrice": 276,
+      "actor": "622a4b3d259300c88988504d",
+      "__v": 5,
+      "trips": [
+        "622a4b3dc2f6149d9267f28e",
+        "622a4b3d66fa1c18ee28b886",
+        "622a4b3d6e0df57f807d2668",
+        "622a4b3d3481a8c228f0e53d",
+        "622a4b3d7d79753bf28dbd40"
+      ]
+    },
+    {
+      "_id": "622a4b3d91e06c385a113f70",
+      "endDate": "2025-07-18T08:23:42",
+      "startDate": "2022-11-10T09:14:48",
+      "keyword": "minim sint anim deserunt ea",
+      "lastUpdate": "2015-09-29T02:36:47",
+      "minPrice": 91.0167,
+      "maxPrice": 117,
+      "actor": "622a4b3d70d51ca4a7cf79c7",
+      "__v": 8,
+      "trips": [
+        "622a4b3d0afdec43585fece4",
+        "622a4b3db3eb7893a1a775cb",
+        "622a4b3d57f5bd396b6aa41e",
+        "622a4b3ddf022fbb1235cc14",
+        "622a4b3d52443228d085104e",
+        "622a4b3d91926a95cea13dd7"
+      ]
+    },
+    {
+      "_id": "622a4b3d53a93325106f86f3",
+      "endDate": "2024-11-24T02:19:07",
+      "startDate": "2022-11-07T04:08:26",
+      "keyword": "voluptate eu eu cupidatat incididunt",
+      "lastUpdate": "2014-10-24T06:15:06",
+      "minPrice": 81.4904,
+      "maxPrice": 294,
+      "actor": "622a4b3d08addfe7fa7707a3",
+      "__v": 2,
+      "trips": [
+        "622a4b3d60aa3635540b6530",
+        "622a4b3dbee89e4358af172a",
+        "622a4b3df25a9adab12d0887",
+        "622a4b3d1acf155306187657",
+        "622a4b3da50f12fd1c041d38",
+        "622a4b3db074a40f8a4dfe5e",
+        "622a4b3dadf03757244e7e01"
+      ]
+    },
+    {
+      "_id": "622a4b3d6d99c85d6accaf2c",
+      "endDate": "2024-08-23T11:04:32",
+      "startDate": "2023-04-21T01:45:34",
+      "keyword": "sint consequat dolor ut et",
+      "lastUpdate": "2019-02-16T05:11:29",
+      "minPrice": 58.4535,
+      "maxPrice": 286,
+      "actor": "622a4b3d864b8f0cb750eb70",
+      "__v": 1,
+      "trips": [
+        "622a4b3da0c2fa359f856c82",
+        "622a4b3de1fd7571122bf724",
+        "622a4b3d8b074bf407004c7e",
+        "622a4b3d18c1427728212aa1",
+        "622a4b3de0fc4211862c180f",
+        "622a4b3d4ced978477bdb465"
+      ]
+    },
+    {
+      "_id": "622a4b3d154aced0d8b0d498",
+      "endDate": "2025-02-16T02:44:09",
+      "startDate": "2023-09-15T02:58:47",
+      "keyword": "sit nisi fugiat quis ipsum",
+      "lastUpdate": "2020-02-23T08:11:54",
+      "minPrice": 62.3118,
+      "maxPrice": 405,
+      "actor": "622a4b3d521d972e7771eff9",
+      "__v": 5,
+      "trips": [
+        "622a4b3d992d13f6ce3f1228",
+        "622a4b3d69494e94e7dceed7",
+        "622a4b3d6ea20cc1cf9e399a",
+        "622a4b3d8e9e0a8cc26fdc5e",
+        "622a4b3dbd6273b6b2186459",
+        "622a4b3d586ed52cdcdf6765"
+      ]
+    },
+    {
+      "_id": "622a4b3d96a945935e11c59a",
+      "endDate": "2025-03-05T12:45:21",
+      "startDate": "2022-06-27T06:12:14",
+      "keyword": "et nulla pariatur ad dolor",
+      "lastUpdate": "2016-02-20T01:48:48",
+      "minPrice": 58.3969,
+      "maxPrice": 326,
+      "actor": "622a4b3de7fac55cc6f8f6a8",
+      "__v": 10,
+      "trips": [
+        "622a4b3d08a68c61328b6e9e",
+        "622a4b3d24ff972465ba8757",
+        "622a4b3d65a4c67ab0ac60b2"
+      ]
+    },
+    {
+      "_id": "622a4b3da5cdbf2a60b36564",
+      "endDate": "2025-07-01T08:35:17",
+      "startDate": "2022-07-03T05:33:12",
+      "keyword": "minim consectetur quis consectetur commodo",
+      "lastUpdate": "2020-02-21T11:49:21",
+      "minPrice": 70.6057,
+      "maxPrice": 341,
+      "actor": "622a4b3de75943320630b688",
+      "__v": 5,
+      "trips": [
+        "622a4b3d39d179771a1894b9",
+        "622a4b3d19356bdaa2813294",
+        "622a4b3dda20c0a6a32e4dad",
+        "622a4b3d4082c2c1e5e4c42b",
+        "622a4b3d6d0e1c4f9d4b62c3",
+        "622a4b3d787243d59850a8c0",
+        "622a4b3d55bd30a8baafb5a9"
+      ]
+    },
+    {
+      "_id": "622a4b3d8efcb74471ebb534",
+      "endDate": "2025-05-06T05:22:09",
+      "startDate": "2022-06-30T06:38:09",
+      "keyword": "laborum tempor non incididunt incididunt",
+      "lastUpdate": "2021-05-19T04:25:57",
+      "minPrice": 82.7037,
+      "maxPrice": 387,
+      "actor": "622a4b3d79b59ddcf705e8d2",
+      "__v": 4,
+      "trips": [
+        "622a4b3dc36afcc94f5b92b7",
+        "622a4b3dcfd2f4f6a106ac1c",
+        "622a4b3d9667fc3ba993dad5",
+        "622a4b3df2c6c0b745412562",
+        "622a4b3d7c35e7d17faae89c",
+        "622a4b3de7efd9f8575531ee"
+      ]
+    },
+    {
+      "_id": "622a4b3d3b8d9a195898b96e",
+      "endDate": "2024-09-26T03:24:48",
+      "startDate": "2024-06-09T09:42:13",
+      "keyword": "occaecat culpa ex eiusmod officia",
+      "lastUpdate": "2018-07-09T01:20:50",
+      "minPrice": 90.3419,
+      "maxPrice": 184,
+      "actor": "622a4b3d9d1a2bf452c2e7e1",
+      "__v": 2,
+      "trips": [
+        "622a4b3d18849f18a6df4ecd",
+        "622a4b3d8d33fcd0a4491e4e",
+        "622a4b3db63ecc0a4f43389e",
+        "622a4b3d1a9ad2fcf9721983",
+        "622a4b3df7c91aa9e424cbb3",
+        "622a4b3d58087ad0fe6400d4"
+      ]
+    },
+    {
+      "_id": "622a4b3d78c5921b16844cbb",
+      "endDate": "2025-03-31T07:57:44",
+      "startDate": "2023-01-20T08:15:36",
+      "keyword": "dolor esse tempor consectetur aliquip",
+      "lastUpdate": "2021-03-18T06:10:21",
+      "minPrice": 86.8291,
+      "maxPrice": 250,
+      "actor": "622a4b3d5b5969251898d7ad",
+      "__v": 7,
+      "trips": [
+        "622a4b3dade09cc3551e8590",
+        "622a4b3df444b549c3aa3736",
+        "622a4b3d7366e5e0e129c3e1",
+        "622a4b3d8a0a01440ef648aa",
+        "622a4b3da9d9d2e3bbe8fac0",
+        "622a4b3d9c639c941b89e106",
+        "622a4b3d5ce446b10e003177"
+      ]
+    },
+    {
+      "_id": "622a4b3ded9fc34784b2ae4b",
+      "endDate": "2024-12-30T06:37:29",
+      "startDate": "2022-12-16T12:24:42",
+      "keyword": "laboris adipisicing cillum aute non",
+      "lastUpdate": "2018-01-18T05:02:01",
+      "minPrice": 59.235,
+      "maxPrice": 343,
+      "actor": "622a4b3dc8102a2e0d82e961",
+      "__v": 3,
+      "trips": [
+        "622a4b3d323177064a100a67",
+        "622a4b3d08b3f4849fcc321a",
+        "622a4b3dd0bca5d223444f76",
+        "622a4b3d275a6a4ad4c28715",
+        "622a4b3dd6bbd19ccbe4a1a6",
+        "622a4b3d0c8719bcc4a62c70",
+        "622a4b3d781510d2dd34a9bf"
+      ]
+    },
+    {
+      "_id": "622a4b3d5d8ec370f5500c71",
+      "endDate": "2025-02-21T05:35:31",
+      "startDate": "2023-02-21T09:30:08",
+      "keyword": "Lorem cillum esse cillum quis",
+      "lastUpdate": "2015-06-14T11:03:19",
+      "minPrice": 79.9302,
+      "maxPrice": 475,
+      "actor": "622a4b3d056d22ecfffe4643",
+      "__v": 8,
+      "trips": [
+        "622a4b3d4be39bac7b37cd73",
+        "622a4b3de448e85880134cd6",
+        "622a4b3dfbe755f7670416fa",
+        "622a4b3d6fa17fcc904a1854",
+        "622a4b3d8ac9854f0b1fc203"
+      ]
+    },
+    {
+      "_id": "622a4b3de2cda8801bcf13e7",
+      "endDate": "2025-06-27T08:26:02",
+      "startDate": "2023-09-20T08:25:41",
+      "keyword": "incididunt laboris anim adipisicing et",
+      "lastUpdate": "2018-08-26T07:37:05",
+      "minPrice": 81.87,
+      "maxPrice": 450,
+      "actor": "622a4b3d569f6357a195590f",
+      "__v": 9,
+      "trips": [
+        "622a4b3dd7f0c42793e4c030",
+        "622a4b3d0780f85876dbb220"
+      ]
+    },
+    {
+      "_id": "622a4b3dabd9d5416863d9a4",
+      "endDate": "2025-07-05T01:04:39",
+      "startDate": "2024-05-31T09:20:37",
+      "keyword": "dolor sint exercitation ad est",
+      "lastUpdate": "2018-06-27T10:54:17",
+      "minPrice": 74.5194,
+      "maxPrice": 370,
+      "actor": "622a4b3dc4c67ec90c153cf6",
+      "__v": 7,
+      "trips": [
+        "622a4b3d025826c6e0595d2d",
+        "622a4b3d7530ebd145b67afc",
+        "622a4b3dff2468e4fb3a58d4",
+        "622a4b3d8308c1a0623a27e5",
+        "622a4b3de2c0da57e78a0607",
+        "622a4b3da594727a641035df",
+        "622a4b3d55665d524d248e9b"
+      ]
+    },
+    {
+      "_id": "622a4b3d9a5be4bd5b5fa631",
+      "endDate": "2024-12-21T12:10:02",
+      "startDate": "2023-08-27T06:45:50",
+      "keyword": "adipisicing reprehenderit labore ad id",
+      "lastUpdate": "2016-07-10T11:48:23",
+      "minPrice": 95.0128,
+      "maxPrice": 239,
+      "actor": "622a4b3d322a17de94792983",
+      "__v": 2,
+      "trips": [
+        "622a4b3d8820996572405648",
+        "622a4b3d6a771be23009f8d5",
+        "622a4b3de2ae0f7104663358",
+        "622a4b3decdf5e3bf4cb2803",
+        "622a4b3dd0d4c231a730ae8e",
+        "622a4b3db5203ebaa6a44abd"
+      ]
+    },
+    {
+      "_id": "622a4b3d97aad56fd3d7e414",
+      "endDate": "2025-06-02T01:20:08",
+      "startDate": "2022-03-29T09:36:26",
+      "keyword": "non dolore commodo cillum ut",
+      "lastUpdate": "2014-11-16T10:50:09",
+      "minPrice": 86.9699,
+      "maxPrice": 235,
+      "actor": "622a4b3d9265eee7ca5f2b55",
+      "__v": 10,
+      "trips": [
+        "622a4b3d9423be7882435310",
+        "622a4b3d1d21f8cc835efb6a",
+        "622a4b3d2c08a60ec2133ceb",
+        "622a4b3d0bb259027a70b9c1",
+        "622a4b3d8a323946a9ee5dbf",
+        "622a4b3d067daaaa71a76212",
+        "622a4b3d161e9e736fe5f37f",
+        "622a4b3d73453fe84cfb9af6"
+      ]
+    },
+    {
+      "_id": "622a4b3debb8248e4b9cbfd2",
+      "endDate": "2025-06-03T09:51:06",
+      "startDate": "2022-07-07T10:20:37",
+      "keyword": "amet enim consequat mollit Lorem",
+      "lastUpdate": "2016-06-16T07:25:58",
+      "minPrice": 61.4629,
+      "maxPrice": 477,
+      "actor": "622a4b3d739afc6f57a5215f",
+      "__v": 9,
+      "trips": [
+        "622a4b3dd73476c6360e245d",
+        "622a4b3d7561d63cfe036bdc",
+        "622a4b3d8c0489deb8cadafb",
+        "622a4b3d0e5c2948c1a510f4"
+      ]
+    },
+    {
+      "_id": "622a4b3de5860e9010f459de",
+      "endDate": "2025-05-23T12:02:42",
+      "startDate": "2023-09-18T12:27:01",
+      "keyword": "sunt esse aliquip officia laboris",
+      "lastUpdate": "2021-09-15T12:40:35",
+      "minPrice": 63.4992,
+      "maxPrice": 206,
+      "actor": "622a4b3d4859b540e639b879",
+      "__v": 3,
+      "trips": [
+        "622a4b3d83186e10aa372a6c",
+        "622a4b3d82c9baa3579ef6be",
+        "622a4b3de48693238fb27b9c",
+        "622a4b3de58b508b60301b86"
+      ]
+    },
+    {
+      "_id": "622a4b3d5f4ab026a4173dfe",
+      "endDate": "2025-07-04T12:26:00",
+      "startDate": "2024-03-05T04:40:41",
+      "keyword": "duis cupidatat ut ad consectetur",
+      "lastUpdate": "2016-07-06T10:33:49",
+      "minPrice": 50.5887,
+      "maxPrice": 257,
+      "actor": "622a4b3d16085df5a89aa6ef",
+      "__v": 4,
+      "trips": [
+        "622a4b3d8044b5eea7ef2c95",
+        "622a4b3d8badd6528657efd9"
+      ]
+    },
+    {
+      "_id": "622a4b3d01da5669eb2482cb",
+      "endDate": "2025-06-17T11:27:47",
+      "startDate": "2023-11-18T08:27:38",
+      "keyword": "reprehenderit culpa aliqua in non",
+      "lastUpdate": "2017-08-29T11:17:47",
+      "minPrice": 97.5118,
+      "maxPrice": 214,
+      "actor": "622a4b3d337a766c7f231960",
+      "__v": 2,
+      "trips": [
+        "622a4b3d4c4490bd205263d0",
+        "622a4b3deb7c44fa3ec31b75",
+        "622a4b3d622e1fc6850f89d2",
+        "622a4b3d940e149aa2cea499",
+        "622a4b3d192916cfba28ba5d",
+        "622a4b3d17c19ddd166ac322"
+      ]
+    }
+  ]
