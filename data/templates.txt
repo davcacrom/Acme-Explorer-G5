@@ -46,8 +46,8 @@ https://json-generator.com/#
     requirements: '{{lorem(5, "words")}}',
     title: '{{lorem(5, "words")}}',
     endDate: '{{date(new Date(2022, 31, 12), new Date(2023, 31, 12), "YYYY-MM-ddThh:mm:ss")}}',
-    startDate: '{{date(new Date(), new Date(2022, 31, 12),  "YYYY-MM-ddThh:mm:ss")}}',
-    ticker:'{{date(new Date(2014, 0, 1), new Date(), "YYMMDD")}}-AQKW',
+    startDate: '{{date(new Date(2022, 08, 01), new Date(2022, 31, 12),  "YYYY-MM-ddThh:mm:ss")}}',
+    ticker:'{{date(new Date(2014, 0, 1), new Date(), "YYMMdd")}}-{{random("A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z")}}{{random("A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z")}}{{random("A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z")}}{{random("A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z")}}',
     pictures: [
       '{{repeat(7)}}',
       'http://placehold.it/32x32'
@@ -55,11 +55,32 @@ https://json-generator.com/#
     stages: [
       '{{repeat(2,8)}}',
       {
-        description: '{{lorem(5, "paragraphs")}}',
+        description: '{{lorem(2, "paragraphs")}}',
         price: '{{floating(50, 700)}}',
         title: '{{lorem(5, "words")}}'
       }
     ],
     __v: '{{integer(1, 10)}}'
+	}
+]
+
+## Finders
+
+[
+  '{{repeat(172, 172)}}', 
+  {
+    _id: '{{objectId()}}',
+    endDate: '{{date(new Date(2022, 31, 12), new Date(2023, 31, 12), "YYYY-MM-ddThh:mm:ss")}}',
+    startDate: '{{date(new Date(), new Date(2022, 31, 12),  "YYYY-MM-ddThh:mm:ss")}}',
+    keyword: '{{lorem(5, "words")}}',
+    lastUpdate: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss")}}',
+    minPrice: '{{floating(50, 100)}}',
+    maxPrice: '{{integer(100, 500)}}',
+    actor:'{{objectId()}}',
+    __v: '{{integer(1, 10)}}',
+    trips:[
+      '{{repeat(2,8)}}',
+      '{{objectId()}}'
+    ]
 	}
 ]
