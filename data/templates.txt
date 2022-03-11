@@ -56,7 +56,7 @@ https://json-generator.com/#
       '{{repeat(2,8)}}',
       {
         description: '{{lorem(2, "paragraphs")}}',
-        price: '{{floating(50, 700)}}',
+        price: '{{floating(50, 700, 2)}}',
         title: '{{lorem(5, "words")}}'
       }
     ],
@@ -67,15 +67,15 @@ https://json-generator.com/#
 ## Finders
 
 [
-  '{{repeat(172, 172)}}', 
+  '{{repeat(500, 500)}}', 
   {
     _id: '{{objectId()}}',
     endDate: '{{date(new Date(2022, 31, 12), new Date(2023, 31, 12), "YYYY-MM-ddThh:mm:ss")}}',
     startDate: '{{date(new Date(), new Date(2022, 31, 12),  "YYYY-MM-ddThh:mm:ss")}}',
     keyword: '{{lorem(5, "words")}}',
     lastUpdate: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss")}}',
-    minPrice: '{{floating(50, 100)}}',
-    maxPrice: '{{integer(100, 500)}}',
+    minPrice: '{{floating(50, 100, 2)}}',
+    maxPrice: '{{floating(100, 500, 2)}}',
     actor:'{{objectId()}}',
     __v: '{{integer(1, 10)}}',
     trips:[
