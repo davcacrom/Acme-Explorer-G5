@@ -19,6 +19,7 @@ exports.read_a_finder = function (req, res) {
 }
 
 exports.update_a_finder = function (req, res) {
+  req.body['lastUpdate'] = new Date();
   Finder.findOneAndUpdate({ _id: req.params.finderId }, req.body, { new: true }, function (err, finder) {
     if (err) {
       res.send(err)
