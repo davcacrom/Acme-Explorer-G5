@@ -64,4 +64,9 @@ FinderSchema.pre('save', function (callback) {
 	callback();
 });
 
+FinderSchema.pre('update', function (callback) {
+	this.lastUpdate = new Date();
+	callback();
+});
+
 module.exports = mongoose.model('Finders', FinderSchema)
