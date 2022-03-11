@@ -24,6 +24,11 @@ const TripSchema = new Schema({
 	cancelationReason: {
 		type: String,
 	},
+	state: {
+		type: String,
+		required: 'Kindly enter the user role(s)',
+		enum: ['ACTIVE', 'CANCELLED']
+	},
 	description: {
 		type: String,
 		required: 'Kindly enter the Trip description',
