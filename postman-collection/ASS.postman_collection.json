@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "27514735-a665-4113-8260-97b964d9473a",
+		"_postman_id": "ea11f25c-df60-4239-a212-7b853dd31f5b",
 		"name": "ASS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -91,12 +91,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/actors/6213b1cf3700b0ba7e6fa01b/applications",
-							"protocol": "http",
+							"raw": "{{url}}/actors/6213b1cf3700b0ba7e6fa01b/applications",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"actors",
 								"6213b1cf3700b0ba7e6fa01b",
@@ -117,12 +115,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/finders/:finderId",
-							"protocol": "http",
+							"raw": "{{url}}/finders/:finderId",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"finders",
 								":finderId"
@@ -143,12 +139,10 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/finders/:finderId",
-							"protocol": "http",
+							"raw": "{{url}}/finders/:finderId",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"finders",
 								":finderId"
@@ -169,12 +163,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/finders/dashboard",
-							"protocol": "http",
+							"raw": "{{url}}/finders/dashboard",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"finders",
 								"dashboard"
@@ -189,12 +181,10 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/finders/config",
-							"protocol": "http",
+							"raw": "{{url}}/finders/config",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"finders",
 								"config"
@@ -214,12 +204,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/trips",
-							"protocol": "http",
+							"raw": "{{url}}/trips",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips"
 							]
@@ -229,40 +217,32 @@
 				},
 				{
 					"name": "Post trip",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"exec": [
-									"var moment = require('moment');\r",
-									"\r",
-									"pm.environment.set('currentdate', moment().add(1, 'days').format((\"YYYY-MM-DD\")));"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{   \r\n    \"actor\":\"6217a91ec753c354725b48cd\",\r\n\t\"description\":\"Trip1\",\r\n\t\"endDate\":\"{{currentdate}}\",\r\n\t\"pictures\":[\"https://lacosmopolilla.com/wp-content/uploads/2021/01/Monos-en-Gibraltar-e1612122511927.jpg\"],\r\n\t\"price\":\"40\",\r\n\t\"requirements\":\"Requisitos: Lorem ipsum...\",\r\n\t\"startDate\":\"{{currentdate}}\",\r\n\t\"title\":\"Viaje1\",\r\n    \"stages\": [\r\n        {\r\n            \"title\":\"etapa 1\",\r\n            \"description\":\"descripción\",\r\n            \"price\": 0.016\r\n        }\r\n    ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\r\n    \"_id\": \"622a58178b63a618651e9e69\",\r\n    \"actor\": \"622a581776a587eb7497f4ab\",\r\n    \"published\": true,\r\n    \"description\": \"Consectetur et in cillum in nostrud adipisicing amet laborum voluptate. Consequat nulla dolore duis ad exercitation aute commodo et eu aute amet sint laborum. Velit minim quis minim est nisi et incididunt id eu esse aliqua qui nostrud ad. Officia duis laborum labore occaecat reprehenderit dolore nulla. Exercitation proident elit officia ad eu.\\r\\nFugiat dolor culpa quis occaecat sit exercitation. Duis adipisicing fugiat nulla aliqua non occaecat aute reprehenderit duis veniam tempor duis. Ullamco cupidatat fugiat aliqua laborum. Nulla sunt elit aliquip et nostrud Lorem proident. Ad veniam minim cupidatat laborum consectetur et irure eiusmod deserunt velit cillum dolor cillum do.\\r\\nAd esse voluptate dolore eu enim culpa. Commodo sint culpa consectetur duis duis cupidatat. Exercitation adipisicing excepteur incididunt ea laboris. Eu excepteur esse cupidatat eu esse tempor nisi. Deserunt duis eu reprehenderit id reprehenderit irure excepteur aliqua id ex amet magna.\\r\\nEst ut in Lorem non est Lorem sunt non incididunt minim sunt in. Lorem adipisicing tempor ea commodo magna culpa esse ut deserunt ea sit. Anim proident eiusmod irure ad dolor anim non esse magna magna.\\r\\nUllamco consectetur incididunt ex ipsum laboris Lorem ullamco et Lorem ullamco excepteur commodo tempor. Eiusmod ex cupidatat veniam aliqua consectetur in aliquip consectetur aute officia reprehenderit tempor. Id labore cupidatat ea nulla exercitation in veniam cupidatat ex nulla deserunt quis laborum.\\r\\n\",\r\n    \"requirements\": \"Lorem exercitation nulla id esse\",\r\n    \"title\": \"sit ad fugiat Lorem cillum\",\r\n    \"endDate\": \"2025-07-24T01:12:10\",\r\n    \"startDate\": \"2024-05-06T07:35:05\",\r\n    \"ticker\": \"2009Monday-AQKW\",\r\n    \"pictures\": [\r\n      \"http://placehold.it/32x32\",\r\n      \"http://placehold.it/32x32\",\r\n      \"http://placehold.it/32x32\",\r\n      \"http://placehold.it/32x32\",\r\n      \"http://placehold.it/32x32\",\r\n      \"http://placehold.it/32x32\",\r\n      \"http://placehold.it/32x32\"\r\n    ],\r\n    \"stages\": [\r\n      {\r\n        \"description\": \"Ea amet aliqua laboris incididunt. Elit voluptate exercitation fugiat adipisicing qui do. Proident dolor sint occaecat irure dolore esse proident. Est do sit eiusmod aliqua voluptate magna nulla culpa. Deserunt nostrud ex mollit occaecat commodo id.\\r\\nCommodo dolor nostrud aliqua eu do reprehenderit excepteur adipisicing nisi adipisicing. Ex aute do aliquip labore culpa anim deserunt tempor esse ad eu qui laborum. Irure irure et eu pariatur culpa enim ipsum fugiat officia. Excepteur ea veniam id labore ea sit magna laborum qui. Aliquip id qui fugiat elit aliqua do laborum velit ad esse. Qui fugiat id esse ea aliqua laboris mollit nostrud. Culpa ex adipisicing ad velit cillum sit et culpa incididunt.\\r\\nUt ullamco fugiat eu aliquip ut cillum est sint pariatur sint proident elit Lorem. Adipisicing eiusmod et fugiat velit laborum. Est dolor reprehenderit Lorem culpa officia magna duis commodo cupidatat elit eu nisi nisi. Amet velit qui non ipsum laborum id excepteur do minim ea officia deserunt sint. Reprehenderit commodo in aliquip consequat labore aliquip consequat mollit ex.\\r\\nQui ullamco ex exercitation fugiat eu sunt ullamco deserunt amet id aliqua. Cupidatat et dolore nulla excepteur irure proident fugiat id deserunt mollit. Non sit aliqua voluptate elit labore sit in elit esse in reprehenderit ut ea.\\r\\nOfficia non cillum officia ut ad laboris in laborum incididunt do incididunt eiusmod. Amet minim consequat ea laborum eiusmod aliqua. Nisi sunt nulla do proident pariatur aliqua. Culpa cillum sit tempor pariatur tempor nostrud velit dolor officia incididunt excepteur deserunt fugiat sit. Tempor exercitation incididunt excepteur esse enim reprehenderit non ex dolor incididunt. Laboris esse aute irure enim eiusmod irure eu enim consequat dolor cillum. Eiusmod aute laborum velit magna tempor mollit in anim laboris.\\r\\n\",\r\n        \"price\": 420.2781,\r\n        \"title\": \"aliqua ipsum cupidatat pariatur proident\"\r\n      },\r\n      {\r\n        \"description\": \"Aute nostrud consectetur ex consequat nostrud proident laborum mollit voluptate. Ullamco enim nulla nisi ex excepteur sint labore pariatur id labore nostrud ex. Deserunt pariatur elit pariatur minim eiusmod. Sint esse quis occaecat ex sunt. Sint eu pariatur ipsum ex officia quis deserunt esse occaecat enim laboris sunt ut consectetur. Exercitation duis mollit sit excepteur dolore aliquip anim quis ea sunt amet. Ea veniam in consequat consequat enim aute deserunt Lorem anim pariatur.\\r\\nNulla ea id ut sit aute consectetur aute tempor labore non duis minim. Non excepteur culpa duis nisi eiusmod adipisicing incididunt aute deserunt. Ullamco anim sit labore non aute ipsum magna consequat amet. Deserunt minim laborum elit tempor ea est sit veniam minim. Fugiat fugiat nostrud est sit culpa magna culpa. Occaecat laborum sint deserunt consectetur nostrud. Duis excepteur sint cillum elit do amet nisi sint sit culpa reprehenderit ex esse sunt.\\r\\nDeserunt nisi voluptate dolore aliqua voluptate velit adipisicing. In minim proident et ad duis aute magna irure sint aliquip non. Elit nisi dolor mollit magna esse ad ut et qui pariatur culpa. Sint veniam ex elit sit sit commodo aute et. Deserunt sunt eu eu irure pariatur qui occaecat anim exercitation Lorem culpa cillum labore anim.\\r\\nEx consectetur eu ipsum pariatur qui adipisicing qui dolore. Aliqua labore ipsum irure dolore minim culpa duis cupidatat mollit exercitation eiusmod excepteur. Labore enim officia veniam minim labore fugiat sint minim ea enim dolore magna. Ea ex voluptate aliquip ipsum irure ut ullamco est irure quis. Tempor consequat in officia et consectetur ex irure est. Aliqua elit commodo ea exercitation proident eu ut enim reprehenderit pariatur in veniam. Sint mollit incididunt do excepteur aliquip sit in anim nisi cillum sint irure magna.\\r\\nQui ad cupidatat enim eiusmod tempor nisi ex labore. Deserunt dolor consequat sit sit Lorem sit incididunt ex sit consectetur cupidatat cillum. Dolore ut excepteur consectetur excepteur minim exercitation culpa amet. Sit culpa aute aliqua deserunt veniam id aliquip cupidatat occaecat mollit elit dolor tempor excepteur. Cillum consectetur sint aliquip et mollit exercitation eiusmod aliqua pariatur qui exercitation consectetur. Anim cillum non eiusmod nisi laborum enim aute ullamco. Culpa exercitation non culpa ea et esse deserunt velit.\\r\\n\",\r\n        \"price\": 415.8619,\r\n        \"title\": \"duis irure eiusmod qui laboris\"\r\n      }\r\n    ],\r\n    \"__v\": 1\r\n  }"
 						},
 						"url": {
-							"raw": "http://localhost:8080/trips",
-							"protocol": "http",
+							"raw": "{{url}}/trips/6213bcb56ffe766fe06c9ba7/applications/:applicationId",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
-								"trips"
+								"trips",
+								"6213bcb56ffe766fe06c9ba7",
+								"applications",
+								":applicationId"
+							],
+							"variable": [
+								{
+									"key": "applicationId",
+									"value": ""
+								}
 							]
 						}
 					},
@@ -274,12 +254,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/trips/6213bb20815f362e1ca45326",
-							"protocol": "http",
+							"raw": "{{url}}/trips/6213bb20815f362e1ca45326",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips",
 								"6213bb20815f362e1ca45326"
@@ -303,12 +281,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/trips/6213bb20815f362e1ca45326",
-							"protocol": "http",
+							"raw": "{{url}}/trips/6213bb20815f362e1ca45326",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips",
 								"6213bb20815f362e1ca45326"
@@ -323,12 +299,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/trips/6213bb20815f362e1ca45326",
-							"protocol": "http",
+							"raw": "{{url}}/trips/6213bb20815f362e1ca45326",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips",
 								"6213bb20815f362e1ca45326"
@@ -343,12 +317,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/trips/6213bcb56ffe766fe06c9ba7/applications",
-							"protocol": "http",
+							"raw": "{{url}}/trips/6213bcb56ffe766fe06c9ba7/applications",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips",
 								"6213bcb56ffe766fe06c9ba7",
@@ -365,7 +337,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"comments\":\"Comentarios de una aplicación\",\r\n\t\"trip\":\"6213bcb56ffe766fe06c9ba7\"\r\n}",
+							"raw": "{\r\n\t\"comments\":\"Comentarios de una aplicación\",\r\n\t\"trip\":\"621bc2fdb771ebce7be666da\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -373,12 +345,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/trips/6213bcb56ffe766fe06c9ba7/applications",
-							"protocol": "http",
+							"raw": "{{url}}/trips/6213bcb56ffe766fe06c9ba7/applications",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips",
 								"6213bcb56ffe766fe06c9ba7",
@@ -394,12 +364,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/trips/finders/:finderId",
-							"protocol": "http",
+							"raw": "{{url}}/trips/finders/:finderId",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips",
 								"finders",
@@ -421,12 +389,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/trips/6213bcb56ffe766fe06c9ba7/applications/:applicationId",
-							"protocol": "http",
+							"raw": "{{url}}/trips/6213bcb56ffe766fe06c9ba7/applications/:applicationId",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips",
 								"6213bcb56ffe766fe06c9ba7",
@@ -458,12 +424,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/trips/6213bcb56ffe766fe06c9ba7/applications/6213c3c2236bd5e2b17fa6d6",
-							"protocol": "http",
+							"raw": "{{url}}/trips/6213bcb56ffe766fe06c9ba7/applications/6213c3c2236bd5e2b17fa6d6",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips",
 								"6213bcb56ffe766fe06c9ba7",
@@ -480,12 +444,10 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/trips/:tripId/applications/:applicationId/:price",
-							"protocol": "http",
+							"raw": "{{url}}/trips/:tripId/applications/:applicationId/:price",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips",
 								":tripId",
@@ -513,16 +475,52 @@
 				},
 				{
 					"name": "Get trips dashboard",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Validate status 2xx ",
+									"pm.test(\"[GET]::/api/v1/recipes - Status code is 2xx\", function () {",
+									"   pm.response.to.be.success;",
+									"});",
+									"",
+									"// Validate if response header has matching content-type",
+									"pm.test(\"[GET]::/api/v1/recipes - Content-Type is application/json\", function () {",
+									"   pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+									"});",
+									"",
+									"// Validate if response has JSON Body ",
+									"pm.test(\"[GET]::/api/v1/recipes - Response has JSON Body\", function () {",
+									"    pm.response.to.have.jsonBody();",
+									"});",
+									"",
+									"// Response Validation",
+									"const schema = {\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"recipeId\":{\"type\":\"string\",\"minLength\":1},\"descripcion\":{\"type\":\"string\",\"minLength\":1},\"ingredients\":{\"type\":\"string\",\"minLength\":1},\"complexity\":{\"type\":\"number\"}},\"required\":[\"recipeId\",\"descripcion\",\"ingredients\",\"complexity\"]}}",
+									"",
+									"// Validate if response matches JSON schema ",
+									"pm.test(\"[GET]::/api/v1/recipes - Schema is valid\", function() {",
+									"    pm.response.to.have.jsonSchema(schema,{unknownFormats: [\"int32\", \"int64\"]});",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
 						"url": {
-							"raw": "http://localhost:8080/trips/dashboard",
-							"protocol": "http",
+							"raw": "{{url}}/trips/dashboard",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8080",
 							"path": [
 								"trips",
 								"dashboard"
