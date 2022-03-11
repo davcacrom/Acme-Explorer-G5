@@ -26,8 +26,9 @@ const TripSchema = new Schema({
 	},
 	state: {
 		type: String,
-		required: 'Kindly enter the user role(s)',
-		enum: ['ACTIVE', 'CANCELLED']
+		required: 'Kindly enter the trip state',
+		enum: ['ACTIVE', 'CANCELLED'],
+		default: 'ACTIVE'
 	},
 	description: {
 		type: String,
@@ -108,8 +109,8 @@ TripSchema.pre('save', function (callback) {
 
 //Indices: Indexar precio y fechas
 
-TripSchema.index({ title: 'text', description: 'text', ticker: 'text'},{name: 'trips by finder value', weights: {title: 10, description: 5, ticker: 1} })
-TripSchema.index({startDate: 1})
-TripSchema.index({endDate: 1})
+TripSchema.index({ title: 'text', description: 'text', ticker: 'text' }, { name: 'trips by finder value', weights: { title: 10, description: 5, ticker: 1 } })
+TripSchema.index({ startDate: 1 })
+TripSchema.index({ endDate: 1 })
 
 module.exports = mongoose.model('Trips', TripSchema)
