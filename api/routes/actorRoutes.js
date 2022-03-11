@@ -23,5 +23,5 @@ module.exports = function (app) {
     .put(actors.update_an_actor) //edit personal data, ban actor, unban actor
   
   app.route('/v2/actors/:actorId/applications')
-    .get(applications.list_applications_by_user) //list applications user has made grouped by status
+    .get(applications.list_applications_by_user_with_auth) //list applications user has made grouped by status
 }
