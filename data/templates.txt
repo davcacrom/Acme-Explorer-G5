@@ -45,6 +45,7 @@ https://json-generator.com/#
     description: '{{lorem(5, "paragraphs")}}',
     requirements: '{{lorem(5, "words")}}',
     title: '{{lorem(5, "words")}}',
+    state: '{{random("ACTIVE", "CANCELLED")}}',
     endDate: '{{date(new Date(2022, 31, 12), new Date(2023, 31, 12), "YYYY-MM-ddThh:mm:ss")}}',
     startDate: '{{date(new Date(2022, 08, 01), new Date(2022, 31, 12),  "YYYY-MM-ddThh:mm:ss")}}',
     ticker:'{{date(new Date(2014, 0, 1), new Date(), "YYMMdd")}}-{{random("A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z")}}{{random("A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z")}}{{random("A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z")}}{{random("A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z")}}',
