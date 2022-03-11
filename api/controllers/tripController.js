@@ -5,6 +5,7 @@ const Trip = mongoose.model('Trips')
 const Application = mongoose.model('Applications')
 const Finder = mongoose.model('Finders')
 const math=require('mathjs')
+const async= require("async");
 
 exports.list_all_trips = function (req, res) {
   Trip.find({}, function (err, trips) {
@@ -68,105 +69,86 @@ exports.delete_a_trip = function (req, res) {
 }
 
 exports.get_dashboard = async function (req, res) {
-  var tripsByManager={};
-  var applicationsTrip={};
-  var pricessTrip={};
-  var ratioApplication={};
-
-  // Trips by manager
-  await Trip.aggregate([
-    { "$group": { _id: "$actor", total: { $sum:1}}}
-  ], function (err, actors) {
-    if (err) {
-      console.log(err)
-      res.send(err)
-    } else {
-      var totals=actors.map(item => item.total);
-      var min = Math.min.apply(null, totals),
-        max = Math.max.apply(null, totals),
-        mean = math.mean(totals),
-        std = math.std(totals);
-
-      tripsByManager["max"]=max;
-      tripsByManager["min"]=min;
-      tripsByManager["mean"]=mean;
-      tripsByManager["std"]=std;
+  async.parallel(
+    [
+        applicationDashboard,
+        tripsDashboard,
+    ],
+    function(err,results){
+        if(err){
+            throw err
+        }else{
+            var result={}
+            result["applicationsTrip"]= results[0]["applicationsTrip"][0];
+            result["tripsByManager"]= results[1]["tripsByManager"][0];
+            result["pricesTrip"]= results[1]["pricesTrip"][0];
+            result["ratioApplication"]= results[0]["ratioApplication"];
+            res.send(result);
+        }
     }
-  })
+  )
+}
 
-  // number of applications per trip
-  await Trip.aggregate([
-    { "$group": {
-      "_id": "$_id",
-      "total": { "$sum": { "$size": "$stages" } }
-  }}
-  ], function (err, trips) {
-    if (err) {
-      console.log(err)
-      res.send(err)
-    } else {
-      var totals=trips.map(item => item.total);
-      var min = Math.min.apply(null, totals),
-        max = Math.max.apply(null, totals),
-        mean = math.mean(totals),
-        std = math.std(totals);
-
-      applicationsTrip["max"]=max;
-      applicationsTrip["min"]=min;
-      applicationsTrip["mean"]=mean;
-      applicationsTrip["std"]=std;
-    }
-  })
-
-  // price per trip
-  await Trip.aggregate([
-    { "$group": {
-      "_id": "$_id",
-      "total": { "$sum": { "$sum": "$stages.price" } }
-    }}
-  ], function (err, trips) {
-    if (err) {
-      console.log(err)
-      res.send(err)
-    } else {
-      var totals=trips.map(item => item.total);
-      var min = Math.min.apply(null, totals),
-        max = Math.max.apply(null, totals),
-        mean = math.mean(totals),
-        std = math.std(totals);
-
-      pricessTrip["max"]=max;
-      pricessTrip["min"]=min;
-      pricessTrip["mean"]=mean;
-      pricessTrip["std"]=std;
-    }
-  })
-
-  // price per trip
+async function applicationDashboard(){
+  
   var totalDocument = await Application.count()
-  await Application.aggregate([
-    { "$group": { _id: "$status", total: { $sum:1}}},
-    { "$project": { 
-      "total": 1, 
-      "percentage": { 
-          "$concat": [ { "$substr": [ { "$multiply": [ { "$divide": [ "$total", {"$literal": totalDocument }] }, 100 ] }, 0,2 ] }, "", "%" ]}
-      }
+  var result= await  Application.aggregate([{
+    $facet: {
+      "applicationsTrip":[
+        { $group: { _id: '$trip', count: { $sum: 1 } } },
+        { $group: { _id: null, average: { $avg: '$count' }, max: { $max: '$count' }, min: { $min: '$count' }, std: { $stdDevSamp: '$count' } } },
+        { $project: { _id: 0, average: 1, max: 1, min: 1, std: 1 } }
+      ],
+      "ratioApplication":[
+        { "$group": { _id: "$status", total: { $sum:1}}},
+        { "$project": { 
+          "total": 1, 
+          "percentage": { 
+              "$concat": [ { "$substr": [ { "$multiply": [ { "$divide": [ "$total", {"$literal": totalDocument }] }, 100 ] }, 0,2 ] }, "", "%" ]}
+          }
+        }
+      ]
     }
-  ], function (err, applications) {
+  }]
+  , function (err, result) {
     if (err) {
       console.log(err)
       res.send(err)
     } else {
-      ratioApplication=applications
+      return result;
     }
   })
 
-  var result={
-    "tripsByManager":tripsByManager,
-    "applicationsTrip":applicationsTrip,
-    "pricessTrip":pricessTrip,
-    "ratioApplication":ratioApplication
-  }
+  return result[0];
+}
 
-  res.send(result);
+async function tripsDashboard(){ 
+    // Trips by manager
+    var result= await Trip.aggregate([{
+      $facet: {
+        "tripsByManager":[
+          { $group: { _id: "$actor", count: { $sum:1}}},
+          { $group: { _id: null, average: { $avg: '$count' }, max: { $max: '$count' }, min: { $min: '$count' }, std: { $stdDevSamp: '$count' } } },
+          { $project: { _id: 0, average: 1, max: 1, min: 1, std: 1 } }
+        ],
+        "pricesTrip":[
+          { $group: {
+            _id: '$_id',
+            sum: { $sum: { $sum: "$stages.price" } }
+          }},
+          { $group: { _id: null, average: { $avg: '$sum' }, max: { $max: '$sum' }, min: { $min: '$sum' }, std: { $stdDevSamp: '$sum' } } },
+          { $project: { _id: 0, average: 1, max: 1, min: 1, std: 1 } }
+        ]
+      }
+      }
+    ], function (err, result) {
+      if (err) {
+        console.log(err)
+        res.send(err)
+      } else {
+        return result;
+      }
+    })
+
+    return result[0];
 }
