@@ -23,6 +23,8 @@
     "cron": "^1.8.2",
     "dateformat": "^5.0.3",
     "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "group-by": "^0.0.1",
     "mathjs": "^10.1.1",
     "moment": "^2.29.1",
     "mongoose": "^6.2.1",
