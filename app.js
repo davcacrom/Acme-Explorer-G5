@@ -19,7 +19,8 @@ app.use(bodyParser.json())
 
 const routesActors = require('./api/routes/actorRoutes')
 const routesFinder = require('./api/routes/finderRoutes')
-const routesTrip = require('./api/routes/tripRoutes')
+const routesTrip = require('./api/routes/tripRoutes');
+const finderTools = require('./api/controllers/finderController');
 
 routesActors(app)
 routesFinder(app)
@@ -63,3 +64,4 @@ mongoose.connection.on('error', function (err) {
   console.error('DB init error ' + err)
 })
 
+finderTools.createRefreshFindersJob();
