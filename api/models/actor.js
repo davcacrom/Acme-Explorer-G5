@@ -44,6 +44,12 @@ const ActorSchema = new Schema({
     type: Boolean,
     default: true
   },
+  customToken: {
+    type: String
+  },
+  idToken: {
+    type: String
+  },
   created: {
     type: Date,
     default: Date.now
