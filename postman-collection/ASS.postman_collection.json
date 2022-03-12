@@ -331,13 +331,32 @@
 					"response": []
 				},
 				{
+					"name": "Get applications of actor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/trips/621bc2fc0eb01ca0e535d599/applications",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"trips",
+								"621bc2fc0eb01ca0e535d599",
+								"applications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Post application of trip",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"comments\":\"Comentarios de una aplicación\",\r\n\t\"trip\":\"621bc2fdb771ebce7be666da\"\r\n}",
+							"raw": "{\r\n    \"actor\":\"621bc2fc0eb01ca0e535d599\",\r\n\t\"comments\":\"Comentarios de una aplicación\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -345,13 +364,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/trips/6213bcb56ffe766fe06c9ba7/applications",
+							"raw": "{{url}}/trips/622b9c78bb3ab67a6b700137/applications",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"trips",
-								"6213bcb56ffe766fe06c9ba7",
+								"622b9c78bb3ab67a6b700137",
 								"applications"
 							]
 						}
