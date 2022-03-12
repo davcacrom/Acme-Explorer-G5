@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "${PORT:-8080}:${PORT:-8080}"
+    restart: "on-failure"
+    depends_on:
+      - mongo
+    environment:
+      - PORT=${PORT}
+      - mongoDBUser=${mongoDBUser}
+      - mongoDBPass=${mongoDBPass}
+      - mongoDBHostname=${mongoDBHostname}
+      - mongoDBPort=${mongoDBPort}
+      - mongoDBName=${mongoDBName}
+
+  mongo:
+    image: "mongo"
+    volumes:
+      - "datavolume:/data/db"
+    expose:
+      - "${mongoDBPort:-27017}"
+volumes:
+  datavolume:
