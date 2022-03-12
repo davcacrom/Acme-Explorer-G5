@@ -7,7 +7,7 @@ const authController = require('./authController')
 var groupBy = require('group-by');
 
 exports.list_all_applications = function (req, res) {
-  Application.find({}, function (err, applications) {
+  Application.find({trip:req.params.tripId}, function (err, applications) {
       if (err) {
         res.send(err)
       } else {
@@ -20,7 +20,7 @@ exports.list_all_applications_with_auth = async function (req, res) {
   const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
   const authenticatedUser = await authController.getUserId(idToken);
   if (authenticatedUser.role=='MANAGER') {
-    Application.find({}, function (err, applications) {
+    Application.find({trip:req.params.tripId}, function (err, applications) {
         if (err) {
           res.send(err)
         } else {
@@ -41,12 +41,15 @@ exports.create_an_application = async function (req, res) {
       var startDate = Date.parse(trip.startDate);
 
       if(trip.published!=true){
+        res.status(405)
         res.send("The trip is not published");
 
       }else if(startDate < Date.now() ){
+        res.status(405)
         res.send("The trip you are trying to apply for has already started");
 
       }else if(trip.state=="CANCELLED"){
+        res.status(405)
         res.send("The trip is cancelled");
 
       }else{
@@ -85,6 +88,7 @@ exports.create_an_application_with_auth = async function (req, res) {
 
       }else{
         req.body["trip"]=req.params.tripId;
+        req.body["actor"]=authenticatedUser.id;
         const newApplication = new Application(req.body)
         newApplication.save(function (err, application) {
             if (err) {
@@ -143,19 +147,36 @@ exports.read_an_application_with_auth = async function (req, res) {
 }
 
 exports.update_an_application = async function (req, res) {
-  Application.findOneAndUpdate({ _id: req.params.applicationId }, req.body, { new: true }, function (err, application) {
-    if (err) {
-      res.send(err)
-    } else {
+  Application.findOne({ _id: req.params.applicationId}, function (err,application){
+    if(req.body.status=="REJECTED" && ["PENDING","ACCEPTED"].includes(application.status)){
       if(req.body.status=="REJECTED" && (req.body.rejectionReason==null||req.body.rejectionReason.match(/^ *$/) !==null)){
         res.send("Kindly enter the rejection reason")
       }else{
-        res.json(application)
+        Application.findOneAndUpdate({ _id: req.params.applicationId }, req.body, { new: true }, function (err, application) {
+          if (err) {
+            res.send(err)
+          } else {
+          res.json(application)
+          }
+        }) 
       }
+    }else if(req.body.status=="DUE" && application.status=="PENDING"){
+      Application.findOneAndUpdate({ _id: req.params.applicationId }, req.body, { new: true }, function (err, application) {
+        if (err) {
+          res.send(err)
+        } else {
+        res.json(application)
+        }
+      }) 
+    }else{
+      res.status(405)
+      res.send("You can't cancel the application if the status is not PEDING or ACCEPTED")
     }
   })
 }
 
+
+//TODO: Revisar
 exports.update_an_application_with_auth = async function (req, res) {
   const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
   const authenticatedUser = await authController.getUserId(idToken)
@@ -201,7 +222,7 @@ exports.update_an_application_with_auth = async function (req, res) {
           }
         }
       })
-    }else if(['REJECTED', 'ACEPTED', 'DUE', 'CANCELLED'].contains(application.status)){
+    }else if(['REJECTED', 'ACEPTED', 'DUE', 'CANCELLED'].includes(application.status)){
       Application.findOneAndUpdate({ _id: req.params.applicationId }, req.body, { new: true }, function (err, application) {
         if (err) {
           res.send(err)
@@ -244,7 +265,7 @@ exports.pay_application = function (req, res) {
         });
       }else{
         res.status(405)
-        res.send("You caan't pay the application if is not in status DUE")
+        res.send("You can't pay the application if is not in status DUE")
       }
     }
   });
