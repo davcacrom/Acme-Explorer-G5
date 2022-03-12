@@ -14,7 +14,7 @@ const {prepareDatabase}= require("./massiveData");
 
 const bodyParser = require('body-parser')
 var admin = require("firebase-admin");
-var serviceAccount = require("./acme-explorer-g5-ass-firebase-adminsdk-m29nr-eecfb0edbc.json");
+var serviceAccount = require("./acme-explorer-g5-ass-firebase-adminsdk-m29nr-e3653510fe.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
