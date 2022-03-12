@@ -65,3 +65,5 @@ mongoose.connection.on('error', function (err) {
 })
 
 finderTools.createRefreshFindersJob();
+
+module.exports = app

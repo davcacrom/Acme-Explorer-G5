@@ -7,7 +7,7 @@ const authController = require('./authController')
 var groupBy = require('group-by');
 
 exports.list_all_applications = function (req, res) {
-  Application.find({}, function (err, applications) {
+  Application.find({trip:req.params.tripId}, function (err, applications) {
       if (err) {
         res.send(err)
       } else {
@@ -20,7 +20,7 @@ exports.list_all_applications_with_auth = async function (req, res) {
   const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
   const authenticatedUser = await authController.getUserId(idToken);
   if (authenticatedUser.role=='MANAGER') {
-    Application.find({}, function (err, applications) {
+    Application.find({trip:req.params.tripId}, function (err, applications) {
         if (err) {
           res.send(err)
         } else {
@@ -41,12 +41,15 @@ exports.create_an_application = async function (req, res) {
       var startDate = Date.parse(trip.startDate);
 
       if(trip.published!=true){
+        res.status(405)
         res.send("The trip is not published");
 
       }else if(startDate < Date.now() ){
+        res.status(405)
         res.send("The trip you are trying to apply for has already started");
 
       }else if(trip.state=="CANCELLED"){
+        res.status(405)
         res.send("The trip is cancelled");
 
       }else{
