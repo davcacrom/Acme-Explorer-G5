@@ -2,6 +2,7 @@
 module.exports = function (app) {
   const actors = require('../controllers/actorController');
   const applications = require('../controllers/applicationController');
+  const authController = require('../controllers/authController');
 
   // V1 - Sin autenticación
   app.route('/v1/actors')
@@ -24,4 +25,13 @@ module.exports = function (app) {
   
   app.route('/v2/actors/:actorId/applications')
     .get(applications.list_applications_by_user_with_auth) //list applications user has made grouped by status
+
+
+
+
+  app.route('/v2/actors/:actorId')
+    .get(actors.read_an_actor)
+    .put(authController.verifyUser(['ADMINISTRATOR',
+                                    'MANAGER',
+                                    'EXPLORER']), actors.update_a_verified_actor) // Consumer y clerk no puede modificar la info de otro consumer/clerk
 }

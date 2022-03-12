@@ -13,6 +13,13 @@ require('./api/models/finder')
 const {prepareDatabase}= require("./massiveData");
 
 const bodyParser = require('body-parser')
+var admin = require("firebase-admin");
+var serviceAccount = require("./acme-explorer-g5-ass-firebase-adminsdk-m29nr-eecfb0edbc.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
+
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
@@ -20,11 +27,14 @@ app.use(bodyParser.json())
 const routesActors = require('./api/routes/actorRoutes')
 const routesFinder = require('./api/routes/finderRoutes')
 const routesTrip = require('./api/routes/tripRoutes');
+const routesLogin = require('./api/routes/loginRoutes');
 const finderTools = require('./api/controllers/finderController');
+
 
 routesActors(app)
 routesFinder(app)
 routesTrip(app)
+routesLogin(app)
 
 // MongoDB URI building
 const mongoDBUser = process.env.mongoDBUser || 'myUser'
