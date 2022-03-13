@@ -17,7 +17,7 @@ module.exports = function (app) {
   
   //V2 - Con autenticación
   app.route('/v2/actors')
-    .post(actors.create_an_actor) //Register to the system as an explorer, create accounts for new managers
+    .post(actors.create_an_actor_with_auth) //Register to the system as an explorer, create accounts for new managers
 
   app.route('/v2/actors/:actorId')
     .get(actors.read_an_actor_with_auth)
