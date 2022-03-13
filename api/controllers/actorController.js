@@ -44,6 +44,28 @@ exports.read_an_actor = function (req, res) {
     }
   })
 }
+exports.read_an_actor_with_auth = async function (req, res) {
+  const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
+  const authenticatedUser = await authController.getUserId(idToken);
+  if(authenticatedUser!=null){
+    if (authenticatedUser._id==req.params.actorId || authenticatedUser.role=='ADMINISTRATOR'){
+      Actor.findById(req.params.actorId, function (err, actor) {
+        if (err) {
+          res.send(err)
+        } else {
+          res.json(actor)
+        }
+      })
+  }
+    else {
+      res.status(405); // Not allowed
+      res.send('Seeing a profile of other actor is not allowed.');
+    }
+  }else {
+    res.status(405); // Not allowed
+    res.send('The Actor does not exist');
+  }
+}
 
 exports.update_an_actor = function (req, res) {
   Actor.findOneAndUpdate({ _id: req.params.actorId }, req.body, { new: true }, function (err, actor) {
@@ -53,6 +75,36 @@ exports.update_an_actor = function (req, res) {
       res.json(actor)
     }
   })
+}
+
+exports.update_an_actor_with_auth = function (req, res) {
+  const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
+  const authenticatedUser = await authController.getUserId(idToken);
+  if(authenticatedUser!=null){
+    if (authenticatedUser._id==req.params.actorId){
+      Actor.findOneAndUpdate({ _id: req.params.actorId }, req.body, { new: true }, function (err, actor) {
+        if (err) {
+          res.send(err)
+        } else {
+          res.json(actor)
+        }
+      })
+  }else if (authenticatedUser.role=='ADMINISTRATOR'){
+      Actor.findOneAndUpdate({ _id: req.params.actorId }, {active:req.body.active}, { new: true }, function (err, actor) {
+        if (err) {
+          res.send(err)
+        } else {
+          res.json(actor)
+        }
+      })
+  }else {
+      res.status(405); // Not allowed
+      res.send('Seeing a profile of other actor is not allowed.');
+    }
+  }else {
+    res.status(405); // Not allowed
+    res.send('The Actor does not exist');
+  }
 }
 
 exports.delete_an_actor = function (req, res) {
