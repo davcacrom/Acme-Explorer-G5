@@ -16,23 +16,55 @@ exports.list_all_actors = function (req, res) {
   })
 }
 
-exports.create_an_actor = function (req, res) {
+function createActorDB(req, res){
   const newActor = new Actor(req.body)
-  const newFinder = new Finder()
-  newFinder.actor = newActor._id;
-  newActor.save(function (err, actor) {
-    if (err) {
-      res.send(err)
-    } else {
-      newFinder.save(function (err, finder) {
+      const newFinder = new Finder()
+      newFinder.actor = newActor._id;
+      newActor.save(function (err, actor) {
         if (err) {
           res.send(err)
         } else {
-          res.json({ actor: actor, finder: finder })
+          newFinder.save(function (err, finder) {
+            if (err) {
+              res.send(err)
+            } else {
+              res.json({ actor: actor, finder: finder })
+            }
+          })
         }
       })
+}
+
+exports.create_an_actor = function (req, res) {
+  if (req.body.role != undefined && req.body.role != "EXPLORER"){
+    res.send("The user role can only be EXPLORER.")
+  }else if(req.body.active != undefined && req.body.active != true){
+    res.send("The new user must be active.")
+  }else{
+    createActorDB(req, res);
+  }
+}
+
+exports.create_an_actor_with_auth = async function (req, res) {
+  const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
+  const authenticatedUser = await authController.getUserId(idToken);
+  if(authenticatedUser!=null){
+    if (authenticatedUser.role=='ADMINISTRATOR'){
+      createActorDB(req, res);
+    }else{
+      res.send("Authenticated users can't register to the system.")
     }
-  })
+  }else{
+    if (req.body.role != undefined && req.body.role != "EXPLORER"){
+      res.send("The user role can only be EXPLORER.")
+    }else if(req.body.active != undefined && req.body.active != true){
+      res.send("The new user must be active.")
+    }else{
+      createActorDB(req, res);
+    }
+    
+  }
+  
 }
 
 exports.read_an_actor = function (req, res) {
@@ -82,15 +114,20 @@ exports.update_an_actor_with_auth = async function (req, res) {
   const authenticatedUser = await authController.getUserId(idToken);
   if(authenticatedUser!=null){
     if (authenticatedUser._id==req.params.actorId){
-      Actor.findOneAndUpdate({ _id: req.params.actorId }, req.body, { new: true }, function (err, actor) {
-        if (err) {
-          res.send(err)
-        } else {
-          res.json(actor)
-        }
-      })
+        Actor.findOneAndUpdate({ _id: req.params.actorId }, req.body, { new: true }, function (err, actor) {
+          if (err) {
+            res.send(err)
+          } else if (req.body.role != undefined && authenticatedUser.role!='ADMINISTRATOR' && req.body.role != authenticatedUser.role){
+            res.send("Non admin users can't change their role.")
+          }else if(req.body.active != undefined && authenticatedUser.role!='ADMINISTRATOR' && req.body.active != authenticatedUser.active){
+            res.send("Non admin users can't ban or unban any user.")
+          }
+          else {
+            res.json(actor)
+          }
+        })
   }else if (authenticatedUser.role=='ADMINISTRATOR'){
-      Actor.findOneAndUpdate({ _id: req.params.actorId }, {active:req.body.active}, { new: true }, function (err, actor) {
+      Actor.findOneAndUpdate({ _id: req.params.actorId }, {active:req.body.active, role: req.body.role}, { new: true }, function (err, actor) {
         if (err) {
           res.send(err)
         } else {
