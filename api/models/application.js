@@ -2,19 +2,22 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
+function rejectionReasonValidator(value) {
+	if (this.status === 'REJECTED')
+		return value && value.length > 0;
+	else
+		return value === null || value === undefined;
+}
+
 const ApplicationSchema = new Schema({
 	creationMoment: {
 		type: Date,
 		default: Date.now,
 		required: true
 	},
-	paid: {
-		type: Boolean,
-		default: false,
-		required: true
-	},
 	rejectionReason: {
-		type: String
+		type: String,
+		validate: [rejectionReasonValidator, 'Please enter a rejection reason']
 	},
 	comments: {
 		type: String,

@@ -27,8 +27,6 @@ https://json-generator.com/#
     trip: '{{objectId()}}',
     actor: '{{objectId()}}',
     status: '{{random("PENDING", "REJECTED", "ACEPTED","DUE","CANCELLED")}}',
-    paid: '{{bool()}}',
-    rejectionReason: '{{lorem(1, "paragraphs")}}',
     comments: '{{lorem(5, "paragraphs")}}',
     creationMoment: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss")}}',
     __v: '{{integer(1, 10)}}'

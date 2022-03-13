@@ -11,7 +11,7 @@ function maxPriceValidator(value) {
 }
 
 function priceSetter(value) {
-	return value != null ? value.toFixed(2) : value;
+	return value != null ? parseFloat(value.toFixed(2)) : value;
 }
 
 const FinderSchema = new Schema({

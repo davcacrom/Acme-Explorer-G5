@@ -9,15 +9,15 @@ const CronTime = require('cron').CronTime
 let rebuildPeriod;
 let refreshFindersJob;
 
-function createRefreshFindersJob (){
+function createRefreshFindersJob() {
   rebuildPeriod = '* * * * *';
-  refreshFindersJob = new CronJob(rebuildPeriod, function (){
-    Config.find({}, function (err, res){
-      if (err){
+  refreshFindersJob = new CronJob(rebuildPeriod, function () {
+    Config.find({}, function (err, res) {
+      if (err) {
         console.log(err);
-      }else{
-        Finder.updateMany({lastUpdate: {$lt: new Date(), $gte: new Date(new Date().getTime() - res[0].cachedPeriod*60*60*1000)}}, {trips: []}, function (err,res){
-          if(err){
+      } else {
+        Finder.updateMany({ lastUpdate: { $lt: new Date(), $gte: new Date(new Date().getTime() - res[0].cachedPeriod * 60 * 60 * 1000) } }, { trips: [] }, function (err, res) {
+          if (err) {
             console.log(err);
           }
           console.log("Refreshing");
@@ -25,7 +25,7 @@ function createRefreshFindersJob (){
         })
       }
     })
-    
+
   }, null, true, "Europe/Madrid");
 
 }

@@ -50,19 +50,23 @@ async function fixRefs() {
     }
 
     try {
-        const actors = JSON.parse(fileSystem.readFileSync("./data/Actors.json", 'utf8'));
+        const actors = JSON.parse(fileSystem.readFileSync("./data/RawActors.json", 'utf8'));
         const managers = actors.filter(actor => actor.role === 'MANAGER');
         const explorers = actors.filter(actor => actor.role === 'EXPLORER');
 
-        const trips = JSON.parse(fileSystem.readFileSync("./data/Trips.json", 'utf8'));
+        const trips = JSON.parse(fileSystem.readFileSync("./data/RawTrips.json", 'utf8'));
         trips.forEach(trip => {
-            trip.actor = random(managers)._id
+            trip.actor = random(managers)._id;
+            if (trip.state === 'CANCELLED')
+                trip.cancelationReason = 'This trip has been cancelled';
         });
 
-        let applications = JSON.parse(fileSystem.readFileSync("./data/Applications.json", 'utf8'));
+        let applications = JSON.parse(fileSystem.readFileSync("./data/RawApplications.json", 'utf8'));
         applications.forEach(application => {
             application.actor = random(explorers)._id;
             application.trip = random(trips)._id;
+            if (application.status === 'REJECTED')
+                application.rejectionReason = 'This application has been rejected';
         });
         // Eliminamos applications duplicadas (mismo actor y mismo trip) si las hubiese
         // Lo que hace es filtrar las aplicaciones y dejar solo la primera de las ocurrencias con el mismo actor y trip
@@ -71,9 +75,10 @@ async function fixRefs() {
         );
 
         // Dejamos solo la misma cantidad de finders que de explorers y le asignamos uno a cada uno 
-        const finders = JSON.parse(fileSystem.readFileSync("./data/Finders.json", 'utf8')).slice(0, explorers.length);
+        const finders = JSON.parse(fileSystem.readFileSync("./data/RawFinders.json", 'utf8')).slice(0, explorers.length);
         finders.forEach((finder, i) => {
             finder.actor = explorers[i]._id;
+            finder.trips = Array.apply(null, Array(finder.trips.length)).map(() => random(trips)._id);
         });
 
         fileSystem.writeFileSync("./data/Actors.json", JSON.stringify(actors), { encoding: 'utf8' });

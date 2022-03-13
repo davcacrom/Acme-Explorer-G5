@@ -10,7 +10,7 @@ require('./api/models/application')
 require('./api/models/configuration')
 require('./api/models/finder')
 
-const {prepareDatabase}= require("./massiveData");
+const { prepareDatabase } = require("./massiveData");
 
 const bodyParser = require('body-parser')
 var admin = require("firebase-admin");
@@ -19,7 +19,6 @@ var serviceAccount = require("./acme-explorer-g5-ass-firebase-adminsdk-m29nr-e36
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
-
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())

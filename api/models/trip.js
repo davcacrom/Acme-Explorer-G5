@@ -8,11 +8,18 @@ const customAlphabet = require('nanoid').customAlphabet
 const idGenerator = customAlphabet('ABCDEFGHIJKLMNOPQRSTUVWXYZ', 4)
 
 function priceSetter(value) {
-	return value != null ? value.toFixed(2) : value;
+	return value != null ? parseFloat(value.toFixed(2)) : value;
 }
 
 function endDateValidator(value) {
 	return this.startDate <= value;
+}
+
+function cancelationReasonValidator(value) {
+	if (this.state === 'CANCELLED')
+		return value && value.length > 0;
+	else
+		return value === null || value === undefined;
 }
 
 const TripSchema = new Schema({
@@ -23,6 +30,7 @@ const TripSchema = new Schema({
 	},
 	cancelationReason: {
 		type: String,
+		validate: [cancelationReasonValidator, 'Please enter a cancelation reason']
 	},
 	state: {
 		type: String,
@@ -92,7 +100,7 @@ const TripSchema = new Schema({
 }, { strict: false, toJSON: { virtuals: true } })//end Trip
 
 TripSchema.virtual('price').get(function () {
-	return this.stages.reduce((sum, stage) => sum + stage.price, 0);
+	return parseFloat(this.stages.reduce((sum, stage) => sum + stage.price, 0).toFixed(2));
 });
 
 TripSchema.pre('save', function (callback) {

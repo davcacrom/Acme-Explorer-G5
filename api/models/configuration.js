@@ -7,13 +7,15 @@ const ConfigurationSchema = new Schema({
 		type: Number,
 		default: 1,
 		min: 1,
-		max: 24
+		max: 24,
+		set: v => Math.round(v),
 	},
 	numberResults: {
 		type: Number,
 		default: 10,
 		min: 1,
-		max: 100
+		max: 100,
+		set: v => Math.round(v),
 	},
 
 }, { strict: false })//end Configuration
