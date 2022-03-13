@@ -77,7 +77,7 @@ exports.update_an_actor = function (req, res) {
   })
 }
 
-exports.update_an_actor_with_auth = function (req, res) {
+exports.update_an_actor_with_auth = async function (req, res) {
   const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
   const authenticatedUser = await authController.getUserId(idToken);
   if(authenticatedUser!=null){
@@ -99,7 +99,7 @@ exports.update_an_actor_with_auth = function (req, res) {
       })
   }else {
       res.status(405); // Not allowed
-      res.send('Seeing a profile of other actor is not allowed.');
+      res.send("Can't update other user's profiles.");
     }
   }else {
     res.status(405); // Not allowed
