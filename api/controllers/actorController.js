@@ -129,7 +129,7 @@ exports.login_an_actor = async function (req, res) {
     } else if (!actor) { // an access token isn’t provided, or is invalid
       res.status(401)
       res.json({ message: 'forbidden', error: err })
-    } else if ((actor.role.includes('EXPLORER')) && (actor.validated === false)) { // an access token is valid, but requires more privileges
+    } else if ((actor.role.includes('EXPLORER')) && (actor.active === false)) { // an access token is valid, but requires more privileges
       res.status(403)
       res.json({ message: 'forbidden', error: err })
     } else {
@@ -163,8 +163,8 @@ exports.update_a_verified_actor = function (req, res) {
     } else {
       console.log('actor: ' + actor)
       const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
-      if (actor.role.includes('MANAGER') || actor.role.includes('EXPLORER')) {
-        const authenticatedUser = await authController.getUserId(idToken)
+      const authenticatedUser = await authController.getUserId(idToken)
+      if (authenticatedUser.role === "MANAGER" || authenticatedUser.role === "EXPLORER") {
         const authenticatedUserId = authenticatedUser._id
 
         if (authenticatedUserId == req.params.actorId) {
@@ -179,7 +179,7 @@ exports.update_a_verified_actor = function (req, res) {
           res.status(403) // Auth error
           res.send('The Actor is trying to update an Actor that is not himself!')
         }
-      } else if (actor.role.includes('ADMINISTRATOR')) {
+      } else if (authenticatedUser.role === "ADMINISTRATOR") {
         Actor.findOneAndUpdate({ _id: req.params.actorId }, req.body, { new: true }, function (err, actor) {
           if (err) {
             res.send(err)

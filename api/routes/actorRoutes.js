@@ -31,7 +31,7 @@ module.exports = function (app) {
 
   app.route('/v2/actors/:actorId')
     .get(actors.read_an_actor)
-    .put(authController.verifyUser(['ADMINISTRATOR',
+    /*.put(authController.verifyUser(['ADMINISTRATOR',
                                     'MANAGER',
-                                    'EXPLORER']), actors.update_a_verified_actor) // Consumer y clerk no puede modificar la info de otro consumer/clerk
+                                    'EXPLORER']), actors.update_a_verified_actor) // Consumer y clerk no puede modificar la info de otro consumer/clerk*/
 }

@@ -19,9 +19,6 @@ exports.getUserId = async function (idToken) {
   if (!mongoActor) {
     return null
   } else {
-      //Esto lo he cambiado un poco para que devuelva el user entero, que para hacer las validaciones en otros métodos es 
-      //más fácil.
-      // Borra este comentario cuando lo revises, por fa :)
     console.log('The actor exists in our DB')
     console.log('actor: ' + mongoActor)
     return mongoActor
@@ -56,14 +53,12 @@ exports.verifyUser = function (requiredRoles) {
           console.log('actor: ' + actor)
           let isAuth = false
           for (let i = 0; i < requiredRoles.length; i++) {
-            for (let j = 0; j < actor.role.length; j++) {
-              if (requiredRoles[i] === actor.role[j]) {
-                if (requiredRoles[i] === 'CLERK') {
-                  if (actor.validated === true) isAuth = true
+              if (requiredRoles[i] === actor.role) {
+                if (requiredRoles[i] === 'EXPLORER') {
+                  if (actor.active === true) isAuth = true
                 } else {
                   isAuth = true
                 }
-              }
             }
           }
           if (isAuth) {
