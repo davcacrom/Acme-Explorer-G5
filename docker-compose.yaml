@@ -6,7 +6,7 @@ services:
     ports:
       - "${PORT:-8080}:${PORT:-8080}"
     volumes:
-      - logsvolume:/usr/src/app/logs"
+      - "logsvolume:/usr/src/app/logs"
     restart: "on-failure"
     depends_on:
       - mongo
