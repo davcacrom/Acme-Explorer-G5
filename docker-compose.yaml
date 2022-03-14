@@ -5,6 +5,8 @@ services:
     build: .
     ports:
       - "${PORT:-8080}:${PORT:-8080}"
+    volumes:
+      - logsvolume:/usr/src/app/logs"
     restart: "on-failure"
     depends_on:
       - mongo
@@ -18,9 +20,12 @@ services:
 
   mongo:
     image: "mongo"
+    command: --port ${mongoDBPort:-27017} --logpath /var/log/mongodb/mongodb.log
     volumes:
+      - "logsvolume:/var/log/mongodb"
       - "datavolume:/data/db"
     expose:
       - "${mongoDBPort:-27017}"
 volumes:
   datavolume:
+  logsvolume:

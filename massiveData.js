@@ -5,6 +5,7 @@ require('./api/models/trip')
 const Trip = mongoose.model('Trips')
 require('./api/models/application')
 const Application = mongoose.model('Applications')
+var logger = require('./logger');
 
 require('./api/models/configuration')
 const Configuration = mongoose.model('Configurations')
@@ -20,7 +21,7 @@ async function prepareDatabase() {
     var actorsCount = await Actor.count()
     if (actorsCount == 0) {
         try {
-            console.log("The previous data is going to be deleted. Loading new collections");
+            logger.info("The previous data is going to be deleted. Loading new collections");
             // await fixRefs();
             async.parallel(
                 [
@@ -34,7 +35,7 @@ async function prepareDatabase() {
                     if (err) {
                         throw err
                     } else {
-                        console.log("Collections loaded")
+                        logger.info("Collections loaded")
                     }
                 }
             )
@@ -97,7 +98,7 @@ async function loadActors() {
         await Actor.insertMany(jsonDataset);
         return "Actors' collection created";
     } catch (e) {
-        console.log("Error en actor")
+        logger.error("Error en actor")
         throw e;
     }
 }
@@ -110,7 +111,7 @@ async function loadTrips() {
         await Trip.insertMany(jsonDataset);
         return "Trips' collection created";
     } catch (e) {
-        console.log("Error en trip")
+        logger.error("Error en trip")
         throw e;
     }
 }
@@ -122,7 +123,7 @@ async function loadApplications() {
         await Application.insertMany(jsonDataset);
         return "Applications' collection created";
     } catch (e) {
-        console.log("Error en application")
+        logger.error("Error en application")
         throw e;
     }
 }
@@ -134,7 +135,7 @@ async function loadFinders() {
         await Finder.insertMany(jsonDataset);
         return "Finders' collection created";
     } catch (e) {
-        console.log("Error en finder")
+        logger.error("Error en finder")
         throw e;
     }
 }
@@ -144,7 +145,7 @@ async function loadConfiguration() {
         await Configuration.create({});
         return "Configurations' collection created";
     } catch (e) {
-        console.log("Error en configuration")
+        logger.error("Error en configuration")
         throw e;
     }
 }

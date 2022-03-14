@@ -3,44 +3,45 @@
 const mongoose = require('mongoose')
 const Actor = mongoose.model('Actors')
 const admin = require('firebase-admin')
+var logger = require('../../logger.js')
 
 exports.getUserId = async function (idToken) {
-  console.log('idToken: ' + idToken)
+  logger.info('idToken: ' + idToken)
 
   const actorFromFB = await admin.auth().verifyIdToken(idToken)
   const uid = actorFromFB.uid
   const authTime = actorFromFB.auth_time
   const exp = actorFromFB.exp
-  console.log('idToken verificado para el uid: ' + uid)
-  console.log('auth_time: ' + authTime)
-  console.log('exp: ' + exp)
+  logger.info('idToken verificado para el uid: ' + uid)
+  logger.info('auth_time: ' + authTime)
+  logger.info('exp: ' + exp)
 
   const mongoActor = await Actor.findOne({ email: uid })
   if (!mongoActor) {
     return null
   } else {
-    console.log('The actor exists in our DB')
-    console.log('actor: ' + mongoActor)
+    logger.info('The actor exists in our DB')
+    logger.info('actor: ' + mongoActor)
     return mongoActor
   }
 }
 
 exports.verifyUser = function (requiredRoles) {
   return function (req, res, callback) {
-    console.log('starting verifying idToken')
-    console.log('requiredRoles: ' + requiredRoles)
+    logger.info('starting verifying idToken')
+    logger.warn('requiredRoles: ' + requiredRoles)
     const idToken = req.headers.idtoken
-    console.log('idToken: ' + idToken)
+    logger.info('idToken: ' + idToken)
 
     admin.auth().verifyIdToken(idToken).then(function (decodedToken) {
-      console.log('entra en el then de verifyIdToken: ')
+      logger.warn('entra en el then de verifyIdToken: ')
 
       const uid = decodedToken.uid
       const authTime = decodedToken.auth_time
       const exp = decodedToken.exp
-      console.log('idToken verificado para el uid: ' + uid)
-      console.log('auth_time: ' + authTime)
-      console.log('exp: ' + exp)
+      logger.info('idToken verificado para el uid: ' + uid)
+      logger.info('auth_time: ' + authTime)
+      logger.info('exp: ' + exp)
 
       Actor.findOne({ email: uid }, function (err, actor) {
         if (err) {
@@ -49,8 +50,8 @@ exports.verifyUser = function (requiredRoles) {
           res.status(401) // an access token isn’t provided, or is invalid
           res.json({ message: 'No actor found with the provided email as username', error: err })
         } else {
-          console.log('The actor exists in our DB')
-          console.log('actor: ' + actor)
+          logger.info('The actor exists in our DB')
+          logger.info('actor: ' + actor)
           let isAuth = false
           for (let i = 0; i < requiredRoles.length; i++) {
               if (requiredRoles[i] === actor.role) {
@@ -71,7 +72,7 @@ exports.verifyUser = function (requiredRoles) {
       })
     }).catch(function (err) {
       // Handle error
-      console.log('Error en autenticación: ' + err)
+      logger.error('Error en autenticación: ' + err)
       res.status(403) // an access token is valid, but requires more privileges
       res.json({ message: 'The actor has not the required roles', error: err })
     })
