@@ -5,6 +5,7 @@ const Finder = require('../models/finder')
 const Actor = mongoose.model('Actors')
 const admin = require('firebase-admin')
 const authController = require('./authController')
+var logger = require('../../logger.js')
 
 exports.list_all_actors = function (req, res) {
   Actor.find({}, function (err, actors) {
@@ -155,7 +156,7 @@ exports.delete_an_actor = function (req, res) {
 }
 
 exports.login_an_actor = async function (req, res) {
-  console.log('starting login an actor')
+  logger.warn('starting login an actor')
   const emailParam = req.query.email
   const password = req.query.password
   let customToken
@@ -181,7 +182,7 @@ exports.login_an_actor = async function (req, res) {
           try {
             customToken = await admin.auth().createCustomToken(actor.email)
           } catch (error) {
-            console.log('Error creating custom token:', error)
+            logger.error('Error creating custom token:', error)
           }
           actor.customToken = customToken
           res.json(actor)
@@ -193,12 +194,12 @@ exports.login_an_actor = async function (req, res) {
 
 exports.update_a_verified_actor = function (req, res) {
   // Managers and Explorers can update theirselves, administrators can update any actor
-  console.log('Starting to update the verified actor...')
+  logger.info('Starting to update the verified actor...')
   Actor.findById(req.params.actorId, async function (err, actor) {
     if (err) {
       res.send(err)
     } else {
-      console.log('actor: ' + actor)
+      logger.info('actor: ' + actor)
       const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
       const authenticatedUser = await authController.getUserId(idToken)
       if (authenticatedUser.role === "MANAGER" || authenticatedUser.role === "EXPLORER") {

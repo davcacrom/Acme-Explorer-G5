@@ -7,6 +7,7 @@ const authController = require('./authController')
 const Finder = mongoose.model('Finders')
 const math = require('mathjs')
 const async = require("async");
+var logger = require('../../logger.js')
 
 exports.list_all_trips = function (req, res) {
   Trip.find({ published: true }, function (err, trips) {
@@ -67,8 +68,8 @@ exports.read_a_trip = function (req, res) {
   })
 }
 
-exports.update_a_trip = function (req, res) {
-  Trip.findById(req.params.tripId, function (err, trip) {
+exports.update_a_trip = async function (req, res) {
+  Trip.findById(req.params.tripId, async function (err, trip) {
     if (err) {
       res.send(err)
     } else {
@@ -160,7 +161,7 @@ async function applicationDashboard() {
   }]
     , function (err, result) {
       if (err) {
-        console.log(err)
+        logger.error(err)
         res.send(err)
       } else {
         return result;
@@ -193,7 +194,7 @@ async function tripsDashboard() {
   }
   ], function (err, result) {
     if (err) {
-      console.log(err)
+      logger.error(err)
       res.send(err)
     } else {
       return result;
@@ -214,7 +215,7 @@ exports.list_all_trips_with_auth = function (req, res) {
   })
 }
 
-exports.list_trips_by_finder_with_auth = function (req, res) {
+exports.list_trips_by_finder_with_auth = async function (req, res) {
   const user = await authController.getUserId(req.headers.idtoken);
 
   Finder.findById(req.params.finderId, function (err, finder) {
@@ -235,7 +236,7 @@ exports.list_trips_by_finder_with_auth = function (req, res) {
   })
 }
 
-exports.create_a_trip_with_auth = function (req, res) {
+exports.create_a_trip_with_auth = async function (req, res) {
   const user = await authController.getUserId(req.headers.idtoken);
 
   if (user.role === 'MANAGER')
@@ -275,11 +276,11 @@ exports.read_a_trip_with_auth = async function (req, res) {
   })
 }
 
-exports.update_a_trip_with_auth = function (req, res) {
+exports.update_a_trip_with_auth = async function (req, res) {
   const user = await authController.getUserId(req.headers.idtoken);
 
   if (user.role === 'MANAGER')
-    Trip.findById(req.params.tripId, function (err, trip) {
+    Trip.findById(req.params.tripId, async function (err, trip) {
       if (err) {
         res.send(err)
       } else {
@@ -321,7 +322,7 @@ exports.update_a_trip_with_auth = function (req, res) {
     res.status(403).json('Cannot edit that trip');
 }
 
-exports.delete_a_trip_with_auth = function (req, res) {
+exports.delete_a_trip_with_auth = async function (req, res) {
   const user = await authController.getUserId(req.headers.idtoken);
 
   if (user.role === 'MANAGER')

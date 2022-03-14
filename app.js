@@ -2,6 +2,7 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 8080
+var logger = require('./logger');
 
 const mongoose = require('mongoose')
 require('./api/models/actor');
@@ -60,17 +61,17 @@ mongoose.connect(mongoDBURI)
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
 // })
-console.log('Connecting DB to: ' + mongoDBURI)
+logger.info('Connecting DB to: ' + mongoDBURI)
 
 mongoose.connection.on('open', function () {
   prepareDatabase();
   app.listen(port, function () {
-    console.log('ACME-Explorer RESTful API server started on: ' + port)
+    logger.info('ACME-Explorer RESTful API server started on: ' + port)
   })
 })
 
 mongoose.connection.on('error', function (err) {
-  console.error('DB init error ' + err)
+  logger.error('DB init error ' + err)
 })
 
 finderTools.createRefreshFindersJob();

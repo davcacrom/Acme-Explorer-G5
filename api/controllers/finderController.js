@@ -5,6 +5,7 @@ const Finder = mongoose.model('Finders')
 const Config = mongoose.model('Configurations')
 const CronJob = require('cron').CronJob
 const CronTime = require('cron').CronTime
+var logger = require('../../logger.js')
 
 let rebuildPeriod;
 let refreshFindersJob;
@@ -14,14 +15,14 @@ function createRefreshFindersJob() {
   refreshFindersJob = new CronJob(rebuildPeriod, function () {
     Config.find({}, function (err, res) {
       if (err) {
-        console.log(err);
+        logger.error(err);
       } else {
         Finder.updateMany({ lastUpdate: { $lt: new Date(), $gte: new Date(new Date().getTime() - res[0].cachedPeriod * 60 * 60 * 1000) } }, { trips: [] }, function (err, res) {
           if (err) {
-            console.log(err);
+            logger.error(err);
           }
-          console.log("Refreshing");
-          console.log(res.modifiedCount);
+          logger.info("Refreshing");
+          logger.info(res.modifiedCount);
         })
       }
     })
@@ -65,7 +66,7 @@ exports.get_dashboard = function (req, res) {
   },
   { $project: { "data": { $concatArrays: ["$Top", "$AvgRange"] } } }]], function (err, dashboard) {
     if (err) {
-      console.log(err)
+      logger.error(err)
       res.send(err)
     } else {
       res.json(dashboard[0].data)
