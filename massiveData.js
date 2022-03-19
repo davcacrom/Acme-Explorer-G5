@@ -105,7 +105,6 @@ async function loadActors() {
 
 async function loadTrips() {
     try {
-        await Trip.collection.drop();
         let data = fileSystem.readFileSync("./data/Trips.json", 'utf8');
         jsonDataset = JSON.parse(data);
         await Trip.insertMany(jsonDataset);

@@ -19,7 +19,7 @@ module.exports = function (app) {
 
   app.route('/v2/finders/:finderId')
     .get(finders.read_a_finder) 
-    .put(finders.update_a_finder) //manage finder (update)
+    .put(finders.update_a_finder_with_auth) //manage finder (update)
   
   app.route('/v2/finders/config/:configId')
   .put(finders.update_config) // update cached period, update limit results
