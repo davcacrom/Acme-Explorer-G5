@@ -17,7 +17,7 @@ const ApplicationSchema = new Schema({
 	},
 	rejectionReason: {
 		type: String,
-		validate: [rejectionReasonValidator, 'Please enter a rejection reason']
+		// validate: [rejectionReasonValidator, 'Please enter a rejection reason']
 	},
 	comments: {
 		type: String,
