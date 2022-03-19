@@ -15,12 +15,12 @@ module.exports = function (app) {
 
   // V2 - Con autenticación
   app.route('/v2/finders/dashboard')
-    .get(finders.get_dashboard) //finder dashboard
+    .get(finders.get_dashboard_with_auth) //finder dashboard with authentication
 
   app.route('/v2/finders/:finderId')
-    .get(finders.read_a_finder) 
-    .put(finders.update_a_finder_with_auth) //manage finder (update)
+    .get(finders.read_a_finder_with_auth) 
+    .put(finders.update_a_finder_with_auth) //manage finder with authentication (update)
   
   app.route('/v2/finders/config/:configId')
-  .put(finders.update_config) // update cached period, update limit results
+  .put(finders.update_config_with_auth) // update cached period, update limit results with authentication
 }
