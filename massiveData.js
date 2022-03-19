@@ -52,10 +52,14 @@ async function fixRefs() {
 
     try {
         const actors = JSON.parse(fileSystem.readFileSync("./data/RawActors.json", 'utf8'));
+        actors.forEach(actor => {
+            actor.password = '$2a$05$qcxoy81dUiCHGz3d4Xkk/.QLXX1zrMPCFJc18ubHLHDTJE7EmztEK';
+        });
         const managers = actors.filter(actor => actor.role === 'MANAGER');
         const explorers = actors.filter(actor => actor.role === 'EXPLORER');
 
         const trips = JSON.parse(fileSystem.readFileSync("./data/RawTrips.json", 'utf8'));
+        const cancelledTrips = trips.filter(trip => trip.state === 'CANCELLED');
         trips.forEach(trip => {
             trip.actor = random(managers)._id;
             if (trip.state === 'CANCELLED')
@@ -71,8 +75,10 @@ async function fixRefs() {
         });
         // Eliminamos applications duplicadas (mismo actor y mismo trip) si las hubiese
         // Lo que hace es filtrar las aplicaciones y dejar solo la primera de las ocurrencias con el mismo actor y trip
+        // Además borramos applications ACEPTED de los trips cancelados (un trip no puede estar cancelado si hay una solicitud ACEPTED)
         applications = applications.filter(application =>
-            applications.find(x => application.actor === x.actor && application.trip === x.trip) === application
+            applications.find(x => application.actor === x.actor && application.trip === x.trip) === application &&
+            !(application.status === 'ACEPTED' && trips.find(trip => trip._id === application.trip).state === 'CANCELLED')
         );
 
         // Dejamos solo la misma cantidad de finders que de explorers y le asignamos uno a cada uno 
@@ -105,6 +111,7 @@ async function loadActors() {
 
 async function loadTrips() {
     try {
+        // await Trip.collection.drop();
         let data = fileSystem.readFileSync("./data/Trips.json", 'utf8');
         jsonDataset = JSON.parse(data);
         await Trip.insertMany(jsonDataset);

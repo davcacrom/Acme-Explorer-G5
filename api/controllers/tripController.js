@@ -9,29 +9,38 @@ const math = require('mathjs')
 const async = require("async");
 var logger = require('../../logger.js')
 
-exports.list_all_trips = function (req, res) {
-  Trip.find({ published: true }, function (err, trips) {
-    if (err) {
-      res.send(err)
-    } else {
+const KEYWORD_REGEXP = /^[^\s]+$/;
+exports.list_trips = function (req, res) {
+  let filter = { published: true };
+
+  if (req.query.keyword) {
+    const keyword = req.query.keyword;
+    if (keyword.match(KEYWORD_REGEXP))
+      filter.$or = [{ ticker: { $regex: keyword } }, { title: { $regex: keyword } }, { descripcion: { $regex: keyword } }];
+    else
+      res.status(400).json('A keyword must be just 1 word');
+  }
+  Trip.find(filter, function (err, trips) {
+    if (err)
+      res.status(500).send(err)
+    else
       res.json(trips)
-    }
   })
 }
 
 exports.list_trips_by_finder = function (req, res) {
   Finder.findById(req.params.finderId, function (err, finder) {
-    if (err) {
-      res.send(err)
-    } else {
+    if (err)
+      res.status(500).send(err)
+    else if (finder)
       Trip.find({ _id: { $in: finder.trips } }, function (err, trips) {
-        if (err) {
-          res.send(err)
-        } else {
+        if (err)
+          res.status(500).send(err)
+        else
           res.json(trips)
-        }
       })
-    }
+    else
+      res.status(404).json("Not found");
   })
 }
 
@@ -47,32 +56,32 @@ exports.create_a_trip = function (req, res) {
     stages: req.stages,
     published: req.published
   }).save(function (err, trip) {
-    if (err) {
-      res.send(err)
-    } else {
+    if (err)
+      res.status(500).send(err)
+    else
       res.json(trip)
-    }
   })
 }
 
 exports.read_a_trip = function (req, res) {
   Trip.findById(req.params.tripId, function (err, trip) {
-    if (err) {
-      res.send(err)
-    } else {
+    if (err)
+      res.status(500).send(err)
+    else if (trip) {
       if (trip.published)
         res.json(trip)
       else
         res.status(403).json('You do not have permission to view that trip');
-    }
+    } else
+      res.status(404).json("Not found");
   })
 }
 
 exports.update_a_trip = async function (req, res) {
   Trip.findById(req.params.tripId, async function (err, trip) {
-    if (err) {
-      res.send(err)
-    } else {
+    if (err)
+      res.status(500).send(err)
+    else if (trip) {
       let updatedTrip;
       if (!trip.published)
         updatedTrip = {
@@ -96,23 +105,24 @@ exports.update_a_trip = async function (req, res) {
       }
 
       Trip.findOneAndUpdate({ _id: trip._id }, updatedTrip, { new: true }, function (err, trip) {
-        if (err) {
-          res.send(err)
-        } else {
+        if (err)
+          res.status(500).send(err)
+        else if (trip)
           res.json(trip)
-        }
+        else
+          res.status(404).json("Not found");
       })
-    }
+    } else
+      res.status(404).json("Not found")
   })
 }
 
 exports.delete_a_trip = function (req, res) {
   Trip.deleteOne({ _id: req.params.tripId, published: false }, function (err, trip) {
-    if (err) {
-      res.send(err)
-    } else {
-      res.json({ message: 'Trip successfully deleted' })
-    }
+    if (err)
+      res.status(500).send(err)
+    else
+      res.status(204).send()
   })
 }
 
@@ -162,7 +172,7 @@ async function applicationDashboard() {
     , function (err, result) {
       if (err) {
         logger.error(err)
-        res.send(err)
+        res.status(500).send(err)
       } else {
         return result;
       }
@@ -195,7 +205,7 @@ async function tripsDashboard() {
   ], function (err, result) {
     if (err) {
       logger.error(err)
-      res.send(err)
+      res.status(500).send(err)
     } else {
       return result;
     }
@@ -205,13 +215,25 @@ async function tripsDashboard() {
 }
 
 // v2
-exports.list_all_trips_with_auth = function (req, res) {
-  Trip.find({ published: true }, function (err, trips) {
-    if (err) {
-      res.send(err)
-    } else {
+exports.list_trips_with_auth = async function (req, res) {
+  let filter = { published: true };
+
+  if (req.query.keyword) {
+    const keyword = req.query.keyword;
+    if (keyword.match(KEYWORD_REGEXP))
+      filter.$or = [{ ticker: { $regex: keyword } }, { title: { $regex: keyword } }, { descripcion: { $regex: keyword } }];
+    else
+      res.status(400).json('A keyword must be just 1 word');
+  }
+  if (req.query.mine !== undefined) {
+    const user = await authController.getUserId(req.headers.idtoken);
+    filter.actor = user._id;
+  }
+  Trip.find(filter, function (err, trips) {
+    if (err)
+      res.status(500).send(err)
+    else
       res.json(trips)
-    }
   })
 }
 
@@ -219,20 +241,20 @@ exports.list_trips_by_finder_with_auth = async function (req, res) {
   const user = await authController.getUserId(req.headers.idtoken);
 
   Finder.findById(req.params.finderId, function (err, finder) {
-    if (finder.actor === user._id) {
-      if (err) {
-        res.send(err)
-      } else {
+    if (err)
+      res.status(500).send(err)
+    else if (finder) {
+      if (finder.actor.equals(user._id))
         Trip.find({ _id: { $in: finder.trips } }, function (err, trips) {
-          if (err) {
-            res.send(err)
-          } else {
+          if (err)
+            res.status(500).send(err)
+          else
             res.json(trips)
-          }
         })
-      }
+      else
+        res.status(403).json('You can not see another person\'s finder');
     } else
-      res.status(403).json('You can not see another person\'s finder');
+      res.status(404).json("Not found");
   })
 }
 
@@ -251,14 +273,13 @@ exports.create_a_trip_with_auth = async function (req, res) {
       stages: req.stages,
       published: req.published
     }).save(function (err, trip) {
-      if (err) {
-        res.send(err)
-      } else {
+      if (err)
+        res.status(500).send(err)
+      else
         res.json(trip)
-      }
     })
   else
-    res.status(403);
+    res.status(403).json('You do not have permission to do that');
 }
 
 exports.read_a_trip_with_auth = async function (req, res) {
@@ -266,13 +287,14 @@ exports.read_a_trip_with_auth = async function (req, res) {
 
   Trip.findById(req.params.tripId, function (err, trip) {
     if (err) {
-      res.send(err)
-    } else {
+      res.status(500).send(err)
+    } else if (trip) {
       if (trip.published || trip.actor === user._id)
         res.json(trip)
       else
         res.status(403).json('You do not have permission to view that trip');
-    }
+    } else
+      res.status(404).json("Not found");
   })
 }
 
@@ -281,9 +303,9 @@ exports.update_a_trip_with_auth = async function (req, res) {
 
   if (user.role === 'MANAGER')
     Trip.findById(req.params.tripId, async function (err, trip) {
-      if (err) {
-        res.send(err)
-      } else {
+      if (err)
+        res.status(500).send(err)
+      else {
         if (user._id === trip.actor) {
           let updatedTrip;
           if (!trip.published)
@@ -308,11 +330,12 @@ exports.update_a_trip_with_auth = async function (req, res) {
           }
 
           Trip.findOneAndUpdate({ _id: trip._id }, updatedTrip, { new: true }, function (err, trip) {
-            if (err) {
-              res.send(err)
-            } else {
+            if (err)
+              res.status(500).send(err)
+            else if (trip)
               res.json(trip)
-            }
+            else
+              res.status(404).json("Not found");
           })
         } else
           res.status(403).json('Cannot edit that trip');
@@ -328,18 +351,19 @@ exports.delete_a_trip_with_auth = async function (req, res) {
   if (user.role === 'MANAGER')
     Trip.findById(req.params.tripId, function (err, trip) {
       if (err)
-        res.send(err)
-      else {
+        res.status(500).send(err)
+      else if (trip) {
         if (trip.actor === user._id)
           Trip.deleteOne({ _id: req.params.tripId, published: false }, function (err, trip) {
             if (err)
-              res.send(err)
+              res.status(500).send(err)
             else
               res.json({ message: 'Trip successfully deleted' })
           })
         else
           res.status(403).json('Cannot edit that trip');
-      }
+      } else
+        res.status(404).json("Not found");
     });
   else
     res.status(403).json('Cannot edit that trip');

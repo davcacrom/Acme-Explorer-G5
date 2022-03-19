@@ -6,24 +6,28 @@ services:
     ports:
       - "${PORT:-8080}:${PORT:-8080}"
     volumes:
-      - logsvolume:/usr/src/app/logs"
+      - "logsvolume:/usr/src/app/${logsUrl}"
     restart: "on-failure"
     depends_on:
       - mongo
     environment:
+      - NODE_ENV=${NODE_ENV}
       - PORT=${PORT}
       - mongoDBUser=${mongoDBUser}
       - mongoDBPass=${mongoDBPass}
       - mongoDBHostname=${mongoDBHostname}
       - mongoDBPort=${mongoDBPort}
       - mongoDBName=${mongoDBName}
+      - mongoLog=${mongoLog}
+      - dataUrl=${dataUrl}
+      - logsUrl=${logsUrl}
 
   mongo:
     image: "mongo"
-    command: --port ${mongoDBPort:-27017} --logpath /var/log/mongodb/mongodb.log
+    command: --port ${mongoDBPort:-27017} --logpath /var/log/mongodb/${mongoLog}
     volumes:
-      - "logsvolume:/var/log/mongodb"
-      - "datavolume:/data/db"
+      - "logsvolume:/var/log/${mongoLog}"
+      - "datavolume:/data/${dataUrl}"
     expose:
       - "${mongoDBPort:-27017}"
 volumes:

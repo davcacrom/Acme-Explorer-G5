@@ -5,7 +5,7 @@ module.exports = function (app) {
 
   // V1 - Sin autenticación
   app.route('/v1/trips')
-    .get(trips.list_all_trips) //browse the list of trips, search for trips using keyword, listing trips
+    .get(trips.list_trips) //browse the list of trips, search for trips using keyword, listing trips
     .post(trips.create_a_trip) //creating trips
 
   app.route('/v1/trips/dashboard')
@@ -32,7 +32,7 @@ module.exports = function (app) {
 
   //v2 - con autorización
   app.route('/v2/trips')
-    .get(trips.list_all_trips_with_auth) //browse the list of trips, search for trips using keyword, listing trips
+    .get(trips.list_trips_with_auth) //browse the list of trips, search for trips using keyword, listing trips
     .post(trips.create_a_trip_with_auth) //creating trips
 
   app.route('/v2/trips/dashboard')
