@@ -80,8 +80,12 @@ exports.read_an_actor = function (req, res) {
     if (err) {
       res.status(500)
       res.send(err)
-    } else {
+    } else if(actor){
       res.json(actor)
+    }
+    else{
+      res.status(404)
+      res.send("Actor not found")
     }
   })
 }
@@ -94,8 +98,12 @@ exports.read_an_actor_with_auth = async function (req, res) {
         if (err) {
           res.status(500)
           res.send(err)
-        } else {
+        } else if(actor){
           res.json(actor)
+        }
+        else{
+          res.status(404)
+          res.send("Actor not found")
         }
       })
   }
@@ -114,8 +122,13 @@ exports.update_an_actor = function (req, res) {
     if (err) {
       res.status(500)
       res.send(err)
-    } else {
+    } 
+    else if(actor){
       res.json(actor)
+    }
+    else{
+      res.status(404)
+      res.send("Actor not found")
     }
   })
 }
@@ -136,8 +149,12 @@ exports.update_an_actor_with_auth = async function (req, res) {
             res.status(400)
             res.send("Non admin users can't ban or unban any user.")
           }
-          else {
+          else if(actor){
             res.json(actor)
+          }
+          else{
+            res.status(404)
+            res.send("Actor not found")
           }
         })
   }else if (authenticatedUser.role=='ADMINISTRATOR'){
@@ -145,8 +162,12 @@ exports.update_an_actor_with_auth = async function (req, res) {
         if (err) {
           res.status(500)
           res.send(err)
-        } else {
+        } else if(actor){
           res.json(actor)
+        }
+        else{
+          res.status(404)
+          res.send("Actor not found")
         }
       })
   }else {

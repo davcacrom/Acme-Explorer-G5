@@ -101,7 +101,7 @@ describe('Actors', () => {
         })
     })
   })   
-        afterEach((done) => {
+        after((done) => {
           Actor.deleteOne({ _id: newActorId }, (err, response) => {
             done();
           });
