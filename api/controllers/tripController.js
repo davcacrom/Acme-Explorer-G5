@@ -122,8 +122,11 @@ exports.delete_a_trip = function (req, res) {
   Trip.deleteOne({ _id: req.params.tripId, published: false }, function (err, trip) {
     if (err)
       res.status(500).send(err)
-    else
+    else if(trip){
       res.status(204).send()
+    } else{
+      res.status(404).json("Not found");
+    }
   })
 }
 
