@@ -3,21 +3,29 @@
 const mongoose = require('mongoose')
 const Trip =  mongoose.model('Trips')
 const Application = mongoose.model('Applications')
+const Actor = mongoose.model('Actors')
 const authController = require('./authController')
 var groupBy = require('group-by');
 
 exports.list_all_applications = function (req, res) {
-  Application.find({ trip: req.params.tripId }, function (err, applications) {
-    if (err) {
+  Trip.findById(req.params.tripId, function (err, trip) {
+    if(err){
       res.status(500)
       res.send(err)
-    } else {
-      if(applications==null){
-        res.status(404)
-        res.send("There are no applications for this trip")
+    }else if(trip==null){
+      res.status(404)
+      res.send("The trip does not exist")
+    }else{
+      Application.find({ trip: req.params.tripId }, function (err, applications) {
+        if (err) {
+          res.status(500)
+          res.send(err)
+        } else {
+          res.json(applications)
       }
-      res.json(applications)
+    })
     }
+
   })
 }
 
@@ -25,17 +33,24 @@ exports.list_all_applications_with_auth = async function (req, res) {
   const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
   const authenticatedUser = await authController.getUserId(idToken);
   if (authenticatedUser.role == 'MANAGER') {
-    Application.find({ trip: req.params.tripId }, function (err, applications) {
-      if (err) {
+    Trip.findById(req.params.tripId, function (err, trip) {
+      if(err){
         res.status(500)
         res.send(err)
-      } else {
-        if(applications.length==null){
-          res.status(404)
-          res.send("There are no applications for this trip")
+      }else if(trip==null){
+        res.status(404)
+        res.send("The trip does not exist")
+      }else{
+        Application.find({ trip: req.params.tripId }, function (err, applications) {
+          if (err) {
+            res.status(500)
+            res.send(err)
+          } else {
+            res.json(applications)
         }
-        res.json(applications)
+      })
       }
+  
     })
   } else {
     res.status(405); // Not allowed
@@ -43,8 +58,8 @@ exports.list_all_applications_with_auth = async function (req, res) {
   }
 }
 
-exports.create_an_application = async function (req, res) {
-  await Trip.findById(req.params.tripId, async function (err, trip) {
+exports.create_an_application =  function (req, res) {
+  Trip.findById(req.params.tripId, async function (err, trip) {
     if (err) {
       res.status(500)
       res.send(err)
@@ -89,7 +104,7 @@ exports.create_an_application_with_auth = async function (req, res) {
   const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
   const authenticatedUser = await authController.getUserId(idToken);
   if (authenticatedUser.role == 'EXPLORER') {
-    await Trip.findById(req.params.tripId, function (err, trip) {
+    Trip.findById(req.params.tripId, function (err, trip) {
       if (err) {
         res.status(500)
         res.send(err)
@@ -192,6 +207,7 @@ exports.read_an_application_with_auth = async function (req, res) {
 
 exports.update_an_application = async function (req, res) {
   Application.findOne({ _id: req.params.applicationId }, function (err, application) {
+    if(application){
     if (req.body.status == "REJECTED" && ["PENDING", "ACCEPTED"].includes(application.status)) {
       if (req.body.status == "REJECTED" && (req.body.rejectionReason == null || req.body.rejectionReason.match(/^ *$/) !== null)) {
         res.status(400)
@@ -225,6 +241,10 @@ exports.update_an_application = async function (req, res) {
       res.status(400)
       res.send("You can't cancel the application if the status is not PEDING or ACCEPTED")
     }
+    }else{
+      res.status(404)
+      res.send("The application does not exist")
+    }
   })
 }
 
@@ -237,6 +257,9 @@ exports.update_an_application_with_auth = async function (req, res) {
       if (err) {
         res.status(500)
         res.send(err)
+      }else if(application==null){
+        res.status(404)
+        res.send("The application does not exist")
       } else {
         if (authenticatedUser.id == application.actor) {
           if (application.status == "PENDING" || application.status == "ACCEPTED") {
@@ -315,7 +338,10 @@ exports.pay_application = function (req, res) {
     if (err) {
       res.status(500)
       res.send(err)
-    } else {
+    }else if(application==null){
+      res.status(404)
+      res.send("The application does not exist")
+    }else {
       if (application.status == "DUE") {
         Trip.findById(req.params.tripId, function (err, trip) {
           if(trip){
@@ -455,16 +481,22 @@ exports.delete_an_application_with_auth = async function (req, res) {
 }
 
 exports.list_applications_by_user = async function (req, res) {
-
-  Application.find({ user: req.params.userId }, req.body, { new: true, group: "status" }, function (err, applications) {
-    if (err) {
+  Actor.findById(req.params.actorId, function(err, actor){
+    if(err){
       res.status(500)
       res.send(err)
-    }else if(applications==null){
+    }else if(actor==null){
       res.status(404)
       res.send("The actor does not exist")
     } else {
-      res.json(groupBy(applications, 'status'))
+      Application.find({ user: req.params.actorId }, req.body, { new: true, group: "status" }, function (err, applications) {
+        if (err) {
+          res.status(500)
+          res.send(err)
+        } else {
+          res.json(groupBy(applications, 'status'))
+        }
+      })
     }
   })
 }
@@ -474,15 +506,22 @@ exports.list_applications_by_user_with_auth = async function (req, res) {
   const authenticatedUser = await authController.getUserId(idToken);
   if (authenticatedUser.role == 'EXPLORER') {
     if (authenticatedUser.id == req.params.actorId) {
-      Application.find({ user: req.params.userId }, req.body, { new: true, group: "status" }, function (err, applications) {
-        if (err) {
+      Actor.findById(req.params.userId, function(err, actor){
+        if(err){
           res.status(500)
           res.send(err)
-        }else if(applications==null){
+        }else if(actor==null){
           res.status(404)
-          res.send("The application does not exist")
+          res.send("The actor does not exist")
         } else {
-          res.json(groupBy(applications, 'status'))
+          Application.find({ user: req.params.userId }, req.body, { new: true, group: "status" }, function (err, applications) {
+            if (err) {
+              res.status(500)
+              res.send(err)
+            } else {
+              res.json(groupBy(applications, 'status'))
+            }
+          })
         }
       })
     } else {

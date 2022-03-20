@@ -7,13 +7,13 @@ const mongoose = require('mongoose')
 const Application = mongoose.model('Applications')
 const Trip = mongoose.model('Trips')
 
-// const Trip = require('../api/models/trip')
-
 const { expect } = chai
 chai.use(chaiHttp);
 var sandbox = sinon.createSandbox();
 
 describe('Applications', () => {
+
+    var createdApplicationId=null;
     var applications=[{
         "_id": "621bc2fc8ed42c1c26274c30",
         "creationMoment": "2017-10-01T07:06:12.000Z",
@@ -112,6 +112,12 @@ describe('Applications', () => {
     
             authStub = sandbox.stub(Application, 'find').callsFake(fakeFindApplications);
 
+            fakeFindByIdTrip = (err, callback) =>{
+                callback(null, trip)
+            }
+    
+            authStub = sandbox.stub(Trip, 'findById').callsFake(fakeFindByIdTrip);
+
             chai.request(app)
               .get('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
               .end((err, res) => {
@@ -127,6 +133,12 @@ describe('Applications', () => {
             }
     
             authStub = sandbox.stub(Application, 'find').callsFake(fakeFindApplications);
+
+            fakeFindByIdTrip = (err, callback) =>{
+                callback(null, null)
+            }
+    
+            authStub = sandbox.stub(Trip, 'findById').callsFake(fakeFindByIdTrip);
 
             chai.request(app)
               .get('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
@@ -183,7 +195,7 @@ describe('Applications', () => {
             chai.request(app)
                 .get('/v1/actors/62364a936ef0982cbd890bbe/applications')
                 .end((err, res) => {
-                expect(res).to.have.status(200);
+                expect(res).to.have.status(404);
                 done();
                 })
         })
@@ -215,6 +227,7 @@ describe('Applications', () => {
               .send(application)
               .end((err, res) => {
                 expect(res).to.have.status(201);
+                createdApplicationId=res.body._id;
                 done();
             })
         })
@@ -340,22 +353,6 @@ describe('Applications', () => {
                 done();
             })
         })
-
-        // it('Error: Application does not exist on reject an application correctly', (done) => {
-        //     var applicationUpdated={}
-        //     Object.assign(applicationUpdated,application)
-            
-        //     applicationUpdated.status="REJECTED"
-        //     applicationUpdated.rejectionReason="Rejection reason";
-
-        //     chai.request(app)
-        //       .put('/v1/trips/622e380670ca329ee563e511/applications/62364a936ef0982cbd890bbe')
-        //       .send(applicationUpdated)
-        //       .end((err, res) => {
-        //         expect(res).to.have.status(404);
-        //         done();
-        //     })
-        // })
 
         it('Change status of application correctly', (done) => {
             var applicationUpdated={}
@@ -497,6 +494,12 @@ describe('Applications', () => {
         })
         
     })
-  
-  })
+
+    after((done) => {
+        Application.deleteOne({ _id: createdApplicationId }, (err, response) => {
+          done();
+        });
+      });
+    });
+
   
