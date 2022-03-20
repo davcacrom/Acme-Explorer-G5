@@ -2,7 +2,8 @@ const app = require('../app')
 const chai = require('chai')
 const chaiHttp = require('chai-http')
 const sinon = require('sinon');
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const Finder = mongoose.model('Finders')
 
 const Actor = mongoose.model('Actors')
 
@@ -28,6 +29,7 @@ describe('Actors', () => {
         .end((err, res) => {
           expect(res).to.have.status(200)
           newActorId=res.body.actor._id;
+          newFinderId=res.body.finder._id;
           if (err) done(err)
           else done()
         })
@@ -103,7 +105,9 @@ describe('Actors', () => {
   })   
         after((done) => {
           Actor.deleteOne({ _id: newActorId }, (err, response) => {
-            done();
+            Finder.deleteOne( { _id: newFinderId}, (err, response) => {
+              done();
+            })            
           });
         });
       });
