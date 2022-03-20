@@ -71,7 +71,7 @@ https://json-generator.com/#
     _id: '{{objectId()}}',
     endDate: '{{date(new Date(2022, 31, 12), new Date(2023, 31, 12), "YYYY-MM-ddThh:mm:ss")}}',
     startDate: '{{date(new Date(), new Date(2022, 31, 12),  "YYYY-MM-ddThh:mm:ss")}}',
-    keyword: '{{lorem(5, "words")}}',
+    keyword: '{{lorem(1, "words")}}',
     lastUpdate: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss")}}',
     minPrice: '{{floating(50, 100, 2)}}',
     maxPrice: '{{floating(100, 500, 2)}}',

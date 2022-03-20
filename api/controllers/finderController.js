@@ -20,7 +20,7 @@ function createRefreshFindersJob() {
       if (err) {
         console.log(err);
       } else {
-        Finder.updateMany({ lastUpdate: { $lt: new Date(), $gte: new Date(new Date().getTime() - res[0].cachedPeriod * 60 * 60 * 1000) } }, { trips: [] }, function (err, res) {
+        Finder.updateMany({ lastUpdate: { $lt: new Date(new Date().getTime() - res[0].cachedPeriod * 60 * 60 * 1000) } }, { trips: [] }, function (err, res) {
           if (err) {
             console.log(err);
           }
@@ -33,9 +33,8 @@ function createRefreshFindersJob() {
   }, null, true, "Europe/Madrid");
 
 }
+
 module.exports.createRefreshFindersJob = createRefreshFindersJob;
-
-
 
 exports.read_a_finder = function (req, res) {
   Finder.findById(req.params.finderId, function (err, finder) {
@@ -51,7 +50,7 @@ exports.read_a_finder = function (req, res) {
 
 exports.update_a_finder = async function (req, res1) {
   req.body['lastUpdate'] = new Date();
-  await Trip.find({published: true, endDate: { $lt: req.body.endDate}, startDate: { $gte: req.body.startDate} }, async function (err, trips) {
+  await Trip.find({ published: true, endDate: { $lt: req.body.endDate }, startDate: { $gte: req.body.startDate } }, async function (err, trips) {
     if (err) {
       res1.send(err)
     } else {
@@ -103,7 +102,7 @@ exports.update_a_finder = async function (req, res1) {
 exports.read_a_finder_with_auth = async function (req, res) {
   const idToken = req.headers.idtoken
   const authenticatedUser = await authController.getUserId(idToken);
-  const resFinder = await Finder.findById(req.params.finderId, function(err, docs) {
+  const resFinder = await Finder.findById(req.params.finderId, function (err, docs) {
     if (err) {
       res.send(err)
     } else if (docs) {
@@ -214,7 +213,7 @@ exports.get_dashboard = function (req, res) {
     if (err) {
       console.log(err)
       res.send(err)
-    } else{
+    } else {
       res.json(dashboard[0].data)
     }
   })
