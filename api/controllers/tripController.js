@@ -7,7 +7,6 @@ const authController = require('./authController')
 const Finder = mongoose.model('Finders')
 const math = require('mathjs')
 const async = require("async");
-var logger = require('../../logger.js')
 
 const KEYWORD_REGEXP = /^[^\s]+$/;
 exports.list_trips = function (req, res) {
@@ -153,7 +152,7 @@ async function applicationDashboard() {
   }]
     , function (err, result) {
       if (err) {
-        logger.error(err)
+        console.log(err)
         res.status(500).send(err)
       } else {
         return result;
@@ -186,7 +185,7 @@ async function tripsDashboard() {
   }
   ], function (err, result) {
     if (err) {
-      logger.error(err)
+      console.log(err)
       res.status(500).send(err)
     } else {
       return result;

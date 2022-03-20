@@ -7,7 +7,6 @@ const Trip = mongoose.model('Trips')
 const CronJob = require('cron').CronJob
 const CronTime = require('cron').CronTime
 const authController = require('./authController')
-var logger = require('../../logger.js')
 const { exists } = require('../models/finder.js')
 
 let rebuildPeriod;
@@ -19,14 +18,14 @@ function createRefreshFindersJob() {
   refreshFindersJob = new CronJob(rebuildPeriod, function () {
     Config.find({}, function (err, res) {
       if (err) {
-        logger.error(err);
+        console.log(err);
       } else {
         Finder.updateMany({ lastUpdate: { $lt: new Date(), $gte: new Date(new Date().getTime() - res[0].cachedPeriod * 60 * 60 * 1000) } }, { trips: [] }, function (err, res) {
           if (err) {
-            logger.error(err);
+            console.log(err);
           }
-          logger.info("Refreshing");
-          logger.info(res.modifiedCount);
+          console.log("Refreshing");
+          console.log(res.modifiedCount);
         })
       }
     })
@@ -71,7 +70,7 @@ exports.update_a_finder = async function (req, res1) {
       });
       await Config.find({}, async function (err, res) {
         if (err) {
-          logger.error(err);
+          console.log(err);
         } else {
           results = await results.slice(0, res[0].numberResults);
           await Finder.findOneAndUpdate({ _id: req.params.finderId }, {
@@ -148,7 +147,7 @@ exports.update_a_finder_with_auth = async function (req, res) {
           });
           await Config.find({}, async function (err, configuration) {
             if (err) {
-              logger.error(err);
+              console.log(err);
             } else {
               results = await results.slice(0, configuration[0].numberResults);
               await Finder.findOneAndUpdate({ _id: req.params.finderId }, {
@@ -194,7 +193,7 @@ exports.get_dashboard = function (req, res) {
   },
   { $project: { "data": { $concatArrays: ["$Top", "$AvgRange"] } } }]], function (err, dashboard) {
     if (err) {
-      logger.error(err)
+      console.log(err)
       res.send(err)
     } else {
       res.json(dashboard[0].data)
@@ -219,7 +218,7 @@ exports.get_dashboard_with_auth = async function (req, res) {
       },
       { $project: { "data": { $concatArrays: ["$Top", "$AvgRange"] } } }]], function (err, dashboard) {
         if (err) {
-          logger.error(err)
+          console.log(err)
           res.send(err)
         } else {
           res.json(dashboard[0].data)
