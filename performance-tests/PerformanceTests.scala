@@ -105,7 +105,7 @@ class TwoScenarios extends Simulation {
 
 	object ListTripApplications {
 		val listTripApplications = exec(http("LIST TRIP APPLICATIONS")
-			.get("/trips/trips/622e38069feaa871ed2ed42e/applications")
+			.get("/trips/622e38069feaa871ed2ed42e/applications")
 			.headers(headers_0))
 		.pause(1)
 	}
@@ -134,7 +134,13 @@ class TwoScenarios extends Simulation {
 	)
 
 	setUp(
-		explorerScn.inject(atOnceUsers(1)),
-		managerScn.inject(atOnceUsers(1))
-		).protocols(httpProtocol)
+		explorerScn.inject(rampUsers(850) during (60 seconds)),
+		managerScn.inject(rampUsers(850) during (60 seconds))
+		)
+		.protocols(httpProtocol)
+		.assertions(
+			global.responseTime.max.lt(5000),    
+			global.responseTime.mean.lt(1000),
+			global.successfulRequests.percent.gt(95)
+		)
 }
