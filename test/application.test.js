@@ -183,7 +183,7 @@ describe('Applications', () => {
         it('Return list of all applications by actor', done => {
 
             chai.request(app)
-                .get('/v1/actors/621bc003d03031da41d7d008/applications')
+                .get('/v1/actors/622e37ef54d852aa6347e5cb/applications')
                 .end((err, res) => {
                     expect(res).to.have.status(200);
                     done();
@@ -346,7 +346,7 @@ describe('Applications', () => {
             // sinon.stub(Application, 'findOneAndUpdate').callsFake(fakefindOneAndUpdateApplication);
 
             chai.request(app)
-                .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
+                .put('/v1/trips/622e3806bd767e92a41e1224/applications/622e37fa3d775f526ab17324')
                 .send(applicationUpdated)
                 .end((err, res) => {
                     expect(res).to.have.status(200);
@@ -367,7 +367,7 @@ describe('Applications', () => {
             authStub = sandbox.stub(Application, 'findOne').callsFake(fakefindOneApplication);
 
             chai.request(app)
-                .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
+                .put('/v1/trips/622e3806bd767e92a41e1224/applications/622e37fa3d775f526ab17324')
                 .send(applicationUpdated)
                 .end((err, res) => {
                     expect(res).to.have.status(200);
@@ -426,7 +426,7 @@ describe('Applications', () => {
             var body = { price: 2628.17 }
 
             chai.request(app)
-                .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30/pay')
+                .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c31/pay')
                 .send(body)
                 .end((err, res) => {
                     expect(res).to.have.status(200);
