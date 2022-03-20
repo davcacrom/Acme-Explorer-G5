@@ -74,10 +74,10 @@ async function fixRefs() {
         });
         // Eliminamos applications duplicadas (mismo actor y mismo trip) si las hubiese
         // Lo que hace es filtrar las aplicaciones y dejar solo la primera de las ocurrencias con el mismo actor y trip
-        // Además borramos applications ACEPTED de los trips cancelados (un trip no puede estar cancelado si hay una solicitud ACEPTED)
+        // Además borramos applications ACCEPTED de los trips cancelados (un trip no puede estar cancelado si hay una solicitud ACCEPTED)
         applications = applications.filter(application =>
             applications.find(x => application.actor === x.actor && application.trip === x.trip) === application &&
-            !(application.status === 'ACEPTED' && trips.find(trip => trip._id === application.trip).state === 'CANCELLED')
+            !(application.status === 'ACCEPTED' && trips.find(trip => trip._id === application.trip).state === 'CANCELLED')
         );
 
         // Dejamos solo la misma cantidad de finders que de explorers y le asignamos uno a cada uno 

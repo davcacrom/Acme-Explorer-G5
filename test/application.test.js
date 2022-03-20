@@ -13,8 +13,8 @@ var sandbox = sinon.createSandbox();
 
 describe('Applications', () => {
 
-    var createdApplicationId=null;
-    var applications=[{
+    var createdApplicationId = null;
+    var applications = [{
         "_id": "621bc2fc8ed42c1c26274c30",
         "creationMoment": "2017-10-01T07:06:12.000Z",
         "paid": false,
@@ -26,7 +26,7 @@ describe('Applications', () => {
         "__v": 0
     }]
 
-    var application={
+    var application = {
         "creationMoment": "2017-10-01T07:06:12.000Z",
         "paid": false,
         "rejectionReason": "Veniam incididunt labore cillum duis exercitation Lorem non sint officia dolor. Voluptate laborum velit est adipisicing irure id cillum. Pariatur proident ad sunt occaecat proident do do sit consectetur deserunt cillum pariatur mollit. Officia enim magna enim eiusmod cupidatat commodo dolore. Nulla laboris labore ullamco magna in. Eiusmod sunt elit quis irure fugiat ut veniam. Sit qui ex laborum Lorem ea elit nulla laborum nulla reprehenderit irure non dolore adipisicing.\r\n",
@@ -37,7 +37,7 @@ describe('Applications', () => {
         "__v": 0
     }
 
-    var trip={
+    var trip = {
         "_id": "622b9c78bb3ab67a6b700137",
         "actor": "622b9c789742000e530a804e",
         "state": "ACTIVE",
@@ -99,85 +99,85 @@ describe('Applications', () => {
         "price": 2628.17
     }
 
-    afterEach(()=>{
+    afterEach(() => {
         sandbox.restore();
     })
 
-    describe('Get applications', () =>{
+    describe('Get applications', () => {
 
         it('Return list of all applications', (done) => {
-            fakeFindApplications = (err, callback) =>{
+            fakeFindApplications = (err, callback) => {
                 callback(null, applications)
             }
-    
+
             authStub = sandbox.stub(Application, 'find').callsFake(fakeFindApplications);
 
-            fakeFindByIdTrip = (err, callback) =>{
+            fakeFindByIdTrip = (err, callback) => {
                 callback(null, trip)
             }
-    
+
             authStub = sandbox.stub(Trip, 'findById').callsFake(fakeFindByIdTrip);
 
             chai.request(app)
-              .get('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
-              .end((err, res) => {
-                expect(res).to.have.status(200);
-                expect(res.body.length).to.equals(1);
-                done();
-            })
+                .get('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
+                .end((err, res) => {
+                    expect(res).to.have.status(200);
+                    expect(res.body.length).to.equals(1);
+                    done();
+                })
         })
 
         it('Error: Trip does not exist on list applications', (done) => {
-            fakeFindApplications = (err, callback) =>{
+            fakeFindApplications = (err, callback) => {
                 callback(null, null)
             }
-    
+
             authStub = sandbox.stub(Application, 'find').callsFake(fakeFindApplications);
 
-            fakeFindByIdTrip = (err, callback) =>{
+            fakeFindByIdTrip = (err, callback) => {
                 callback(null, null)
             }
-    
+
             authStub = sandbox.stub(Trip, 'findById').callsFake(fakeFindByIdTrip);
 
             chai.request(app)
-              .get('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
-              .end((err, res) => {
-                expect(res).to.have.status(404);
-                done();
-            })
+                .get('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
+                .end((err, res) => {
+                    expect(res).to.have.status(404);
+                    done();
+                })
         })
 
         it('Return one applications', (done) => {
-            fakeFindApplication = (err, callback) =>{
+            fakeFindApplication = (err, callback) => {
                 callback(null, application)
             }
-    
+
             authStub = sandbox.stub(Application, 'findById').callsFake(fakeFindApplication);
 
             chai.request(app)
-              .get('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
-              .end((err, res) => {
-                expect(res).to.have.status(200);
-                expect(res.body.status).to.equals("DUE");
-                expect(res.body.comments).to.equals("Comentarios de una aplicación");
-                done();
-            })
+                .get('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
+                .end((err, res) => {
+                    expect(res).to.have.status(200);
+                    expect(res.body.status).to.equals("DUE");
+                    expect(res.body.comments).to.equals("Comentarios de una aplicación");
+                    done();
+                })
         })
 
         it('Error: Application does not exist on return one application', (done) => {
-            fakeFindApplication = (err, callback) =>{
+            fakeFindApplication = (err, callback) => {
                 callback(null, null)
             }
-    
+
             authStub = sandbox.stub(Application, 'findById').callsFake(fakeFindApplication);
 
             chai.request(app)
-              .get('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
-              .end((err, res) => {
-                expect(res).to.have.status(404);
-                done();
-            })
+                .get('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
+                .end((err, res) => {
+                    expect(res).to.have.status(404);
+                    done();
+                })
         })
 
         it('Return list of all applications by actor', done => {
@@ -185,8 +185,8 @@ describe('Applications', () => {
             chai.request(app)
                 .get('/v1/actors/621bc003d03031da41d7d008/applications')
                 .end((err, res) => {
-                expect(res).to.have.status(200);
-                done();
+                    expect(res).to.have.status(200);
+                    done();
                 })
         })
 
@@ -195,149 +195,149 @@ describe('Applications', () => {
             chai.request(app)
                 .get('/v1/actors/62364a936ef0982cbd890bbe/applications')
                 .end((err, res) => {
-                expect(res).to.have.status(404);
-                done();
+                    expect(res).to.have.status(404);
+                    done();
                 })
         })
-    
+
     })
 
-    describe('Create applications', () =>{
-        
-        afterEach(()=>{
+    describe('Create applications', () => {
+
+        afterEach(() => {
             sandbox.restore();
-        })    
+        })
 
         it('Create an application correctly', (done) => {
 
             // fakeCreateApplication = (err, callback) =>{
             //     callback(null, application)
             // }
-    
+
             // authStub =  sandbox.stub(Application.prototype, 'save').callsFake(fakeCreateApplication);            
 
-            fakefindByIdTrip = (err, callback) =>{
-                callback(null,trip)
+            fakefindByIdTrip = (err, callback) => {
+                callback(null, trip)
             }
-    
-            authStub = sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);            
+
+            authStub = sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);
 
             chai.request(app)
-              .post('/v1/trips/622e380670ca329ee563e511/applications')
-              .send(application)
-              .end((err, res) => {
-                expect(res).to.have.status(201);
-                createdApplicationId=res.body._id;
-                done();
-            })
+                .post('/v1/trips/622e380670ca329ee563e511/applications')
+                .send(application)
+                .end((err, res) => {
+                    expect(res).to.have.status(201);
+                    createdApplicationId = res.body._id;
+                    done();
+                })
         })
 
         it('Error: Trip does not exist on create an application correctly', (done) => {
 
-            fakefindByIdTrip = (err, callback) =>{
-                callback(null,null)
+            fakefindByIdTrip = (err, callback) => {
+                callback(null, null)
             }
-    
-            authStub = sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);            
+
+            authStub = sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);
 
             chai.request(app)
-              .post('/v1/trips/622e380670ca329ee563e511/applications')
-              .send(application)
-              .end((err, res) => {
-                expect(res).to.have.status(404);
-                done();
-            })
+                .post('/v1/trips/622e380670ca329ee563e511/applications')
+                .send(application)
+                .end((err, res) => {
+                    expect(res).to.have.status(404);
+                    done();
+                })
         })
 
         it('Error creating application: Trip is not publised', (done) => {
-            var unpublishedTrip={};
-            Object.assign(unpublishedTrip,trip);
-            unpublishedTrip.published=false;
-            fakefindByIdTrip = (err, callback) =>{
-                callback(null,unpublishedTrip)
+            var unpublishedTrip = {};
+            Object.assign(unpublishedTrip, trip);
+            unpublishedTrip.published = false;
+            fakefindByIdTrip = (err, callback) => {
+                callback(null, unpublishedTrip)
             }
-    
+
             authStub = sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);
-            
+
             chai.request(app)
-              .post('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
-              .send(application)
-              .end((err, res) => {
-                expect(res).to.have.status(400);
-                expect(res.error.text).to.equals("The trip is not published");
-                done();
-            })
+                .post('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
+                .send(application)
+                .end((err, res) => {
+                    expect(res).to.have.status(400);
+                    expect(res.error.text).to.equals("The trip is not published");
+                    done();
+                })
         })
 
         it('Error creating application: Trip already started', (done) => {
-            var startedTrip={};
-            Object.assign(startedTrip,trip);
-            startedTrip.startDate= "2020-05-07T01:36:25.000Z";
-            fakefindByIdTrip = (err, callback) =>{
-                callback(null,startedTrip)
+            var startedTrip = {};
+            Object.assign(startedTrip, trip);
+            startedTrip.startDate = "2020-05-07T01:36:25.000Z";
+            fakefindByIdTrip = (err, callback) => {
+                callback(null, startedTrip)
             }
-    
+
             authStub = sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);
-            
+
             chai.request(app)
-              .post('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
-              .send(application)
-              .end((err, res) => {
-                expect(res).to.have.status(400);
-                expect(res.error.text).to.equals("The trip you are trying to apply for has already started");
-                done();
-            })
+                .post('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
+                .send(application)
+                .end((err, res) => {
+                    expect(res).to.have.status(400);
+                    expect(res.error.text).to.equals("The trip you are trying to apply for has already started");
+                    done();
+                })
         })
 
         it('Error creating application: Trip cancelled', (done) => {
-            var cancelledTrip={}
-            Object.assign(cancelledTrip,trip);
-            cancelledTrip.state= "CANCELLED";
-            fakefindByIdTrip = (err, callback) =>{
-                callback(null,cancelledTrip)
+            var cancelledTrip = {}
+            Object.assign(cancelledTrip, trip);
+            cancelledTrip.state = "CANCELLED";
+            fakefindByIdTrip = (err, callback) => {
+                callback(null, cancelledTrip)
             }
-    
+
             authStub = sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);
-            
+
             chai.request(app)
-              .post('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
-              .send(application)
-              .end((err, res) => {
-                expect(res).to.have.status(400);
-                expect(res.error.text).to.equals("The trip is cancelled");
-                done();
-            })
+                .post('/v1/trips/621bc2fcc4b04c8afb4931a0/applications')
+                .send(application)
+                .end((err, res) => {
+                    expect(res).to.have.status(400);
+                    expect(res.error.text).to.equals("The trip is cancelled");
+                    done();
+                })
         })
-        
+
     })
 
-    describe('Update applications', () =>{
-        var applicationToUpdate={}
+    describe('Update applications', () => {
+        var applicationToUpdate = {}
 
-        beforeEach(done =>{
-            Object.assign(applicationToUpdate,trip);
-            applicationToUpdate.status="PENDING"
+        beforeEach(done => {
+            Object.assign(applicationToUpdate, trip);
+            applicationToUpdate.status = "PENDING"
 
             done();
         })
 
-        afterEach(()=>{
+        afterEach(() => {
             sandbox.restore();
         })
-    
+
 
         it('Reject an application correctly', (done) => {
-            var applicationUpdated={}
-            Object.assign(applicationUpdated,application)
-            
-            applicationUpdated.status="REJECTED"
-            applicationUpdated.rejectionReason="Rejection reason";
+            var applicationUpdated = {}
+            Object.assign(applicationUpdated, application)
 
-            fakefindOneApplication = (err, callback) =>{
+            applicationUpdated.status = "REJECTED"
+            applicationUpdated.rejectionReason = "Rejection reason";
+
+            fakefindOneApplication = (err, callback) => {
                 callback(null, applicationToUpdate)
             }
 
-            authStub =  sandbox.stub(Application, 'findOne').callsFake(fakefindOneApplication);
+            authStub = sandbox.stub(Application, 'findOne').callsFake(fakefindOneApplication);
 
             // fakefindOneAndUpdateApplication = (err, callback) =>{
             //     callback(null, application)
@@ -346,76 +346,76 @@ describe('Applications', () => {
             // sinon.stub(Application, 'findOneAndUpdate').callsFake(fakefindOneAndUpdateApplication);
 
             chai.request(app)
-              .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
-              .send(applicationUpdated)
-              .end((err, res) => {
-                expect(res).to.have.status(200);
-                done();
-            })
+                .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
+                .send(applicationUpdated)
+                .end((err, res) => {
+                    expect(res).to.have.status(200);
+                    done();
+                })
         })
 
         it('Change status of application correctly', (done) => {
-            var applicationUpdated={}
-            Object.assign(applicationUpdated,application)
-            
-            applicationUpdated.status="DUE"
+            var applicationUpdated = {}
+            Object.assign(applicationUpdated, application)
 
-            fakefindOneApplication = (err, callback) =>{
+            applicationUpdated.status = "DUE"
+
+            fakefindOneApplication = (err, callback) => {
                 callback(null, applicationToUpdate)
             }
 
-            authStub =  sandbox.stub(Application, 'findOne').callsFake(fakefindOneApplication);
+            authStub = sandbox.stub(Application, 'findOne').callsFake(fakefindOneApplication);
 
             chai.request(app)
-              .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
-              .send(applicationUpdated)
-              .end((err, res) => {
-                expect(res).to.have.status(200);
-                done();
-            })
+                .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
+                .send(applicationUpdated)
+                .end((err, res) => {
+                    expect(res).to.have.status(200);
+                    done();
+                })
         })
 
         it('Error updating application: Can not cancel application', (done) => {
-            var applicationUpdated={}
-            Object.assign(applicationUpdated,application)
-            
-            applicationUpdated.status="REJECTED"
+            var applicationUpdated = {}
+            Object.assign(applicationUpdated, application)
 
-            applicationToUpdate.status="DUE"
+            applicationUpdated.status = "REJECTED"
 
-            fakefindOneApplication = (err, callback) =>{
+            applicationToUpdate.status = "DUE"
+
+            fakefindOneApplication = (err, callback) => {
                 callback(null, applicationToUpdate)
             }
 
-            authStub =  sandbox.stub(Application, 'findOne').callsFake(fakefindOneApplication);
-            
+            authStub = sandbox.stub(Application, 'findOne').callsFake(fakefindOneApplication);
+
             chai.request(app)
-              .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
-              .send(applicationUpdated)
-              .end((err, res) => {
-                expect(res).to.have.status(400);
-                expect(res.error.text).to.equals("You can't cancel the application if the status is not PEDING or ACCEPTED");
-                done();
-            })
+                .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30')
+                .send(applicationUpdated)
+                .end((err, res) => {
+                    expect(res).to.have.status(400);
+                    expect(res.error.text).to.equals("You can't cancel the application if the status is not PEDING or ACCEPTED");
+                    done();
+                })
         })
 
         it('Pay application correctly', (done) => {
-            var applicationUpdated={}
-            Object.assign(applicationUpdated,application)
-            
-            applicationUpdated.status="ACEPTED"
+            var applicationUpdated = {}
+            Object.assign(applicationUpdated, application)
 
-            fakefindByIdApplication = (err, callback) =>{
+            applicationUpdated.status = "ACCEPTED"
+
+            fakefindByIdApplication = (err, callback) => {
                 callback(null, application)
             }
 
-            authStub =  sandbox.stub(Application, 'findById').callsFake(fakefindByIdApplication);
+            authStub = sandbox.stub(Application, 'findById').callsFake(fakefindByIdApplication);
 
-            fakefindByIdTrip = (err, callback) =>{
+            fakefindByIdTrip = (err, callback) => {
                 callback(null, trip)
             }
 
-            authStub =  sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);
+            authStub = sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);
 
             // fakefindOneAndUpdateApplication = (err, callback) =>{
             //     callback(null, applicationUpdated)
@@ -423,83 +423,82 @@ describe('Applications', () => {
 
             // authStub =  sandbox.stub(Application, 'findOneAndUpdate').callsFake(fakefindOneAndUpdateApplication);
 
-            var body={price:2628.17}
-            
+            var body = { price: 2628.17 }
+
             chai.request(app)
-              .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30/pay')
-              .send(body)
-              .end((err, res) => {
-                expect(res).to.have.status(200);
-                done();
-            })
+                .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30/pay')
+                .send(body)
+                .end((err, res) => {
+                    expect(res).to.have.status(200);
+                    done();
+                })
         })
 
         it('Error updating application: Pay less than trip price', (done) => {
-            var applicationUpdated={}
-            Object.assign(applicationUpdated,application)
-            
-            applicationUpdated.status="ACEPTED"
+            var applicationUpdated = {}
+            Object.assign(applicationUpdated, application)
 
-            fakefindByIdApplication = (err, callback) =>{
+            applicationUpdated.status = "ACCEPTED"
+
+            fakefindByIdApplication = (err, callback) => {
                 callback(null, application)
             }
 
-            authStub =  sandbox.stub(Application, 'findById').callsFake(fakefindByIdApplication);
+            authStub = sandbox.stub(Application, 'findById').callsFake(fakefindByIdApplication);
 
-            fakefindByIdTrip = (err, callback) =>{
+            fakefindByIdTrip = (err, callback) => {
                 callback(null, trip)
             }
 
-            authStub =  sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);
+            authStub = sandbox.stub(Trip, 'findById').callsFake(fakefindByIdTrip);
 
-            var body={price:10}
-            
+            var body = { price: 10 }
+
             chai.request(app)
-              .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30/pay')
-              .send(body)
-              .end((err, res) => {
-                expect(res).to.have.status(400);
-                expect(res.text).to.equals("Kindly enter the correct price")
-                done();
-            })
+                .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30/pay')
+                .send(body)
+                .end((err, res) => {
+                    expect(res).to.have.status(400);
+                    expect(res.text).to.equals("Kindly enter the correct price")
+                    done();
+                })
         })
 
         it('Error updating application: Application is not in status DUE', (done) => {
-            var applicationUpdated={}
-            Object.assign(applicationUpdated,application)
-            
-            applicationUpdated.status="ACEPTED"
+            var applicationUpdated = {}
+            Object.assign(applicationUpdated, application)
 
-            var applicationToBeUpdated={}
-            Object.assign(applicationToBeUpdated,application)
+            applicationUpdated.status = "ACCEPTED"
 
-            applicationToBeUpdated.status="PENDING"
+            var applicationToBeUpdated = {}
+            Object.assign(applicationToBeUpdated, application)
 
-            fakefindByIdApplication = (err, callback) =>{
+            applicationToBeUpdated.status = "PENDING"
+
+            fakefindByIdApplication = (err, callback) => {
                 callback(null, applicationToBeUpdated)
             }
 
-            authStub =  sandbox.stub(Application, 'findById').callsFake(fakefindByIdApplication);
+            authStub = sandbox.stub(Application, 'findById').callsFake(fakefindByIdApplication);
 
-            var body={price:10}
-            
+            var body = { price: 10 }
+
             chai.request(app)
-              .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30/pay')
-              .send(body)
-              .end((err, res) => {
-                expect(res).to.have.status(400);
-                expect(res.error.text).to.equals("You can't pay the application if is not in status DUE")
-                done();
-            })
+                .put('/v1/trips/621bc2fcc4b04c8afb4931a0/applications/621bc2fc8ed42c1c26274c30/pay')
+                .send(body)
+                .end((err, res) => {
+                    expect(res).to.have.status(400);
+                    expect(res.error.text).to.equals("You can't pay the application if is not in status DUE")
+                    done();
+                })
         })
-        
+
     })
 
     after((done) => {
         Application.deleteOne({ _id: createdApplicationId }, (err, response) => {
-          done();
+            done();
         });
-      });
     });
+});
 
-  
