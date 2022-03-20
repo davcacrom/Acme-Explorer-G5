@@ -34,21 +34,25 @@ function createRefreshFindersJob() {
   }, null, true, "Europe/Madrid");
 
 }
-
 module.exports.createRefreshFindersJob = createRefreshFindersJob;
+
+
+
 exports.read_a_finder = function (req, res) {
   Finder.findById(req.params.finderId, function (err, finder) {
     if (err) {
       res.send(err)
-    } else {
+    } else if (finder) {
       res.json(finder)
+    } else {
+      res.status(404).json("Not found")
     }
   })
 }
 
 exports.update_a_finder = async function (req, res1) {
   req.body['lastUpdate'] = new Date();
-  await Trip.find({ published: true, endDate: { $lt: new Date(req.body.endDate) }, startDate: { $gte: new Date(req.body.startDate) } }, async function (err, trips) {
+  await Trip.find({published: true, endDate: { $lt: req.body.endDate}, startDate: { $gte: req.body.startDate} }, async function (err, trips) {
     if (err) {
       res1.send(err)
     } else {
@@ -81,8 +85,10 @@ exports.update_a_finder = async function (req, res1) {
           }, { new: true }, async function (err, finder) {
             if (err) {
               res1.send(err)
-            } else {
+            } else if (finder) {
               res1.json(finder)
+            } else {
+              res1.status(404).json("Not found")
             }
           }).clone().catch(async function (err) { console.log(err) })
         }
@@ -98,14 +104,24 @@ exports.update_a_finder = async function (req, res1) {
 exports.read_a_finder_with_auth = async function (req, res) {
   const idToken = req.headers.idtoken
   const authenticatedUser = await authController.getUserId(idToken);
-  const resFinder = await Finder.findById(req.params.finderId);
+  const resFinder = await Finder.findById(req.params.finderId, function(err, docs) {
+    if (err) {
+      res.send(err)
+    } else if (docs) {
+      return docs
+    } else {
+      res.status(404).json("Not found")
+    }
+  }).clone().catch(async function (err) { console.log(err) })
   if (authenticatedUser != null) {
     if (authenticatedUser._id == resFinder.actor.toString()) {
-      Finder.findById(req.params.finderId, async function (err, finder) {
+      await Finder.findById(req.params.finderId, async function (err, finder) {
         if (err) {
           res.send(err)
-        } else {
+        } else if (finder) {
           res.json(finder)
+        } else {
+          res.status(404).json("Not found")
         }
       })
     } else {
@@ -149,7 +165,7 @@ exports.update_a_finder_with_auth = async function (req, res) {
           await Config.find({}, async function (err, configuration) {
             if (err) {
               logger.error(err);
-            } else {
+            } else if (configuration) {
               results = await results.slice(0, configuration[0].numberResults);
               await Finder.findOneAndUpdate({ _id: req.params.finderId }, {
                 lastUpdate: req.body.lastUpdate,
@@ -158,11 +174,14 @@ exports.update_a_finder_with_auth = async function (req, res) {
               }, { new: true }, async function (err, finder) {
                 if (err) {
                   res.send(err)
-                } else {
-                  console.log(finder);
+                } else if (finder) {
                   res.json(finder)
+                } else {
+                  res.status(404).json("Not found")
                 }
               }).clone().catch(async function (err) { console.log(err) })
+            } else {
+              res.status(404).json("Not found")
             }
           }
           ).clone().catch(async function (err) { console.log(err) })
@@ -196,7 +215,7 @@ exports.get_dashboard = function (req, res) {
     if (err) {
       logger.error(err)
       res.send(err)
-    } else {
+    } else{
       res.json(dashboard[0].data)
     }
   })
@@ -221,8 +240,10 @@ exports.get_dashboard_with_auth = async function (req, res) {
         if (err) {
           logger.error(err)
           res.send(err)
-        } else {
+        } else if (dashboard) {
           res.json(dashboard[0].data)
+        } else {
+          res.status(404).json("Not found")
         }
       })
     }
@@ -240,8 +261,10 @@ exports.update_config = function (req, res) {
   Config.findOneAndUpdate({ _id: req.params.configId }, req.body, { new: true }, function (err, config) {
     if (err) {
       res.send(err)
-    } else {
+    } else if (config) {
       res.json(config)
+    } else {
+      res.status(404).json("Not found")
     }
   })
 }
@@ -254,8 +277,10 @@ exports.update_config_with_auth = async function (req, res) {
       await Config.findOneAndUpdate({ _id: req.params.configId }, req.body, { new: true }, async function (err, config) {
         if (err) {
           res.send(err)
-        } else {
+        } else if (config) {
           res.json(config)
+        } else {
+          res.status(404).json("Not found")
         }
       })
     }
