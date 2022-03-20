@@ -39,7 +39,7 @@ describe('Finders', () => {
     {
         "_id": "6236519484fbbeb4349eee8d",
         "endDate": "2025-06-26T11:54:24.000Z",
-        "keyword": "",
+        "keyword": "a",
         "lastUpdate": "2022-03-19T19:05:20.278Z",
         "maxPrice": 26000,
         "minPrice": 21000,
@@ -55,7 +55,7 @@ describe('Finders', () => {
     {
         "_id": "6236519484fbbeb4349eee8d",
         "endDate": "2025-06-26T11:54:24.000Z",
-        "keyword": "",
+        "keyword": "a",
         "lastUpdate": "2022-03-19T19:05:20.278Z",
         "maxPrice": 26000,
         "minPrice": 2100,
@@ -65,6 +65,10 @@ describe('Finders', () => {
         "__v": 0
     }
 
+    before(() => {
+        var newFinder = new Finder(finder)
+        newFinder.save()
+    })
 
     afterEach(() => {
         sandbox.restore();
@@ -116,10 +120,6 @@ describe('Finders', () => {
     })
 
     describe('Update finder', () => {
-        before(() => {
-            var newFinder = new Finder(finder)
-            newFinder.save()
-        })
 
         it('Update finder', done => {
             chai
