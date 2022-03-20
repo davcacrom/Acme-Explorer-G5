@@ -7,7 +7,6 @@ const authController = require('./authController')
 const Finder = mongoose.model('Finders')
 const math = require('mathjs')
 const async = require("async");
-var logger = require('../../logger.js')
 
 const KEYWORD_REGEXP = /^[^\s]+$/;
 exports.list_trips = function (req, res) {
@@ -17,8 +16,10 @@ exports.list_trips = function (req, res) {
     const keyword = req.query.keyword;
     if (keyword.match(KEYWORD_REGEXP))
       filter.$or = [{ ticker: { $regex: keyword } }, { title: { $regex: keyword } }, { descripcion: { $regex: keyword } }];
-    else
+    else {
       res.status(400).json('A keyword must be just 1 word');
+      return;
+    }
   }
   Trip.find(filter, function (err, trips) {
     if (err)
@@ -46,15 +47,15 @@ exports.list_trips_by_finder = function (req, res) {
 
 exports.create_a_trip = function (req, res) {
   new Trip({
-    actor: req.actor,
-    description: req.description,
-    endDate: req.endDate,
-    pictures: req.pictures,
-    requirements: req.requirements,
-    startDate: req.startDate,
-    title: req.title,
-    stages: req.stages,
-    published: req.published
+    actor: req.body.actor,
+    description: req.body.description,
+    endDate: req.body.endDate,
+    pictures: req.body.pictures,
+    requirements: req.body.requirements,
+    startDate: req.body.startDate,
+    title: req.body.title,
+    stages: req.body.stages,
+    published: req.body.published
   }).save(function (err, trip) {
     if (err)
       res.status(500).send(err)
@@ -83,21 +84,21 @@ exports.update_a_trip = async function (req, res) {
       res.status(500).send(err)
     else if (trip) {
       let updatedTrip;
-      if (!trip.published)
+      if (!trip.published) {
         updatedTrip = {
-          description: req.description,
-          endDate: req.endDate,
-          pictures: req.pictures,
-          requirements: req.requirements,
-          startDate: req.startDate,
-          title: req.title,
-          stages: req.stages,
-          published: req.published
+          description: req.body.description,
+          endDate: req.body.endDate,
+          pictures: req.body.pictures,
+          requirements: req.body.requirements,
+          startDate: req.body.startDate,
+          title: req.body.title,
+          stages: req.body.stages,
+          published: req.body.published
         };
-      else if (trip.state !== 'CANCELLED' && trip.startDate > new Date() && (await Application.count({ trip: trip._id, status: 'ACEPTED' })) === 0)
+      } else if (trip.state !== 'CANCELLED' && trip.startDate > new Date() && (await Application.count({ trip: trip._id, status: 'ACEPTED' })) === 0)
         updatedTrip = {
-          cancelationReason: req.cancelationReason,
-          state: req.state
+          cancelationReason: req.body.cancelationReason,
+          state: req.body.state
         };
       else {
         res.status(403).json('Cannot edit that trip');
@@ -126,26 +127,6 @@ exports.delete_a_trip = function (req, res) {
   })
 }
 
-exports.get_dashboard = async function (req, res) {
-  async.parallel(
-    [
-      applicationDashboard,
-      tripsDashboard,
-    ],
-    function (err, results) {
-      if (err) {
-        throw err
-      } else {
-        var result = {}
-        result["applicationsTrip"] = results[0]["applicationsTrip"][0];
-        result["tripsByManager"] = results[1]["tripsByManager"][0];
-        result["pricesTrip"] = results[1]["pricesTrip"][0];
-        result["ratioApplication"] = results[0]["ratioApplication"];
-        res.send(result);
-      }
-    }
-  )
-}
 
 async function applicationDashboard() {
   var totalDocument = await Application.count()
@@ -171,7 +152,7 @@ async function applicationDashboard() {
   }]
     , function (err, result) {
       if (err) {
-        logger.error(err)
+        console.log(err)
         res.status(500).send(err)
       } else {
         return result;
@@ -204,7 +185,7 @@ async function tripsDashboard() {
   }
   ], function (err, result) {
     if (err) {
-      logger.error(err)
+      console.log(err)
       res.status(500).send(err)
     } else {
       return result;
@@ -212,6 +193,27 @@ async function tripsDashboard() {
   })
 
   return result[0];
+}
+
+exports.get_dashboard = async function (req, res) {
+  async.parallel(
+    [
+      applicationDashboard,
+      tripsDashboard,
+    ],
+    function (err, results) {
+      if (err) {
+        throw err
+      } else {
+        var result = {}
+        result["applicationsTrip"] = results[0]["applicationsTrip"][0];
+        result["tripsByManager"] = results[1]["tripsByManager"][0];
+        result["pricesTrip"] = results[1]["pricesTrip"][0];
+        result["ratioApplication"] = results[0]["ratioApplication"];
+        res.send(result);
+      }
+    }
+  )
 }
 
 // v2
@@ -222,8 +224,10 @@ exports.list_trips_with_auth = async function (req, res) {
     const keyword = req.query.keyword;
     if (keyword.match(KEYWORD_REGEXP))
       filter.$or = [{ ticker: { $regex: keyword } }, { title: { $regex: keyword } }, { descripcion: { $regex: keyword } }];
-    else
+    else {
       res.status(400).json('A keyword must be just 1 word');
+      return;
+    }
   }
   if (req.query.mine !== undefined) {
     const user = await authController.getUserId(req.headers.idtoken);
@@ -264,14 +268,14 @@ exports.create_a_trip_with_auth = async function (req, res) {
   if (user.role === 'MANAGER')
     new Trip({
       actor: user._id,
-      description: req.description,
-      endDate: req.endDate,
-      pictures: req.pictures,
-      requirements: req.requirements,
-      startDate: req.startDate,
-      title: req.title,
-      stages: req.stages,
-      published: req.published
+      description: req.body.description,
+      endDate: req.body.endDate,
+      pictures: req.body.pictures,
+      requirements: req.body.requirements,
+      startDate: req.body.startDate,
+      title: req.body.title,
+      stages: req.body.stages,
+      published: req.body.published
     }).save(function (err, trip) {
       if (err)
         res.status(500).send(err)
@@ -310,19 +314,19 @@ exports.update_a_trip_with_auth = async function (req, res) {
           let updatedTrip;
           if (!trip.published)
             updatedTrip = {
-              description: req.description,
-              endDate: req.endDate,
-              pictures: req.pictures,
-              requirements: req.requirements,
-              startDate: req.startDate,
-              title: req.title,
-              stages: req.stages,
-              published: req.published
+              description: req.body.description,
+              endDate: req.body.endDate,
+              pictures: req.body.pictures,
+              requirements: req.body.requirements,
+              startDate: req.body.startDate,
+              title: req.body.title,
+              stages: req.body.stages,
+              published: req.body.published
             };
           else if (trip.state !== 'CANCELLED' && trip.startDate > new Date() && (await Application.count({ trip: trip._id, status: 'ACEPTED' })) === 0)
             updatedTrip = {
-              cancelationReason: req.cancelationReason,
-              state: req.state
+              cancelationReason: req.body.cancelationReason,
+              state: req.body.state
             };
           else {
             res.status(403).json('Cannot edit that trip');
