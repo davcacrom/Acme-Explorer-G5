@@ -183,7 +183,7 @@ describe('Applications', () => {
         it('Return list of all applications by actor', done => {
 
             chai.request(app)
-                .get('/v1/actors/622e37efa96e4418af9b6fcd/applications')
+                .get('/v1/actors/621bc003d03031da41d7d008/applications')
                 .end((err, res) => {
                 expect(res).to.have.status(200);
                 done();
