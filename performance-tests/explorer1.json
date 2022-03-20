@@ -1,0 +1,11 @@
+{
+    "_id": "6237580680cb74b0ca790f49",
+    "name": "Cathryn",
+    "surname": "Carter",
+    "email": "cathryncarter_test@polaria.com",
+    "password": "$2a$05$qcxoy81dUiCHGz3d4Xkk/.QLXX1zrMPCFJc18ubHLHDTJE7EmztEK",
+    "phone": "(962) 523-2773",
+    "address": "147 Eldert Street, Dragoon, Wyoming, 4430",
+    "role": "EXPLORER",
+    "active": true
+}

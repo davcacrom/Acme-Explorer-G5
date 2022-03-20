@@ -14,6 +14,11 @@ function priceSetter(value) {
 	return value != null ? parseFloat(value.toFixed(2)) : value;
 }
 
+const KEYWORD_REGEXP = /^[^\s]+$/;
+function keywordValidator(value) {
+	return value === null || value.match(KEYWORD_REGEXP);
+}
+
 const FinderSchema = new Schema({
 	endDate: {
 		type: Date,
@@ -22,7 +27,8 @@ const FinderSchema = new Schema({
 	},
 	keyword: {
 		type: String,
-		default: null
+		default: null,
+		validate: [keywordValidator, 'Keyword must be just one word']
 	},
 	lastUpdate: {
 		type: Date,

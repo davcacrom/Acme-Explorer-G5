@@ -52,7 +52,7 @@ async function fixRefs() {
     try {
         const actors = JSON.parse(fileSystem.readFileSync("./data/RawActors.json", 'utf8'));
         actors.forEach(actor => {
-            actor.password = '$2a$05$qcxoy81dUiCHGz3d4Xkk/.QLXX1zrMPCFJc18ubHLHDTJE7EmztEK';
+            actor.password = '$2a$05$qcxoy81dUiCHGz3d4Xkk/.QLXX1zrMPCFJc18ubHLHDTJE7EmztEK'; // La contraseña por defecto es password
         });
         const managers = actors.filter(actor => actor.role === 'MANAGER');
         const explorers = actors.filter(actor => actor.role === 'EXPLORER');
