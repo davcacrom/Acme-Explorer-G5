@@ -25,7 +25,7 @@ const ApplicationSchema = new Schema({
 	status: {
 		type: String,
 		required: 'Kindly enter the Application status',
-		enum: ['PENDING', 'REJECTED', 'ACEPTED', 'DUE', 'CANCELLED'],
+		enum: ['PENDING', 'REJECTED', 'ACCEPTED', 'DUE', 'CANCELLED'],
 		default: 'PENDING'
 	},
 	trip: {

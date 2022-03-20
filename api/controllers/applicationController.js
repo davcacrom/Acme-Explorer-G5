@@ -1,7 +1,7 @@
 'use strict'
 /* ---------------ACTOR---------------------- */
 const mongoose = require('mongoose')
-const Trip =  mongoose.model('Trips')
+const Trip = mongoose.model('Trips')
 const Application = mongoose.model('Applications')
 const Actor = mongoose.model('Actors')
 const authController = require('./authController')
@@ -9,21 +9,21 @@ var groupBy = require('group-by');
 
 exports.list_all_applications = function (req, res) {
   Trip.findById(req.params.tripId, function (err, trip) {
-    if(err){
+    if (err) {
       res.status(500)
       res.send(err)
-    }else if(trip==null){
+    } else if (trip == null) {
       res.status(404)
       res.send("The trip does not exist")
-    }else{
+    } else {
       Application.find({ trip: req.params.tripId }, function (err, applications) {
         if (err) {
           res.status(500)
           res.send(err)
         } else {
           res.json(applications)
-      }
-    })
+        }
+      })
     }
 
   })
@@ -34,23 +34,23 @@ exports.list_all_applications_with_auth = async function (req, res) {
   const authenticatedUser = await authController.getUserId(idToken);
   if (authenticatedUser.role == 'MANAGER') {
     Trip.findById(req.params.tripId, function (err, trip) {
-      if(err){
+      if (err) {
         res.status(500)
         res.send(err)
-      }else if(trip==null){
+      } else if (trip == null) {
         res.status(404)
         res.send("The trip does not exist")
-      }else{
+      } else {
         Application.find({ trip: req.params.tripId }, function (err, applications) {
           if (err) {
             res.status(500)
             res.send(err)
           } else {
             res.json(applications)
-        }
-      })
+          }
+        })
       }
-  
+
     })
   } else {
     res.status(405); // Not allowed
@@ -58,13 +58,13 @@ exports.list_all_applications_with_auth = async function (req, res) {
   }
 }
 
-exports.create_an_application =  function (req, res) {
+exports.create_an_application = function (req, res) {
   Trip.findById(req.params.tripId, async function (err, trip) {
     if (err) {
       res.status(500)
       res.send(err)
     } else {
-      if(trip){
+      if (trip) {
         var startDate = Date.parse(trip.startDate);
 
         if (trip.published != true) {
@@ -92,7 +92,7 @@ exports.create_an_application =  function (req, res) {
             }
           })
         }
-      }else{
+      } else {
         res.status(404)
         res.send("The trips does not exist")
       }
@@ -109,7 +109,7 @@ exports.create_an_application_with_auth = async function (req, res) {
         res.status(500)
         res.send(err)
       } else {
-        if(trip){
+        if (trip) {
           var startDate = Date.parse(trip.startDate);
 
           if (trip.published != true) {
@@ -138,7 +138,7 @@ exports.create_an_application_with_auth = async function (req, res) {
               }
             })
           }
-        }else{
+        } else {
           res.status(404)
           res.send("The trips does not exist")
         }
@@ -156,9 +156,9 @@ exports.read_an_application = async function (req, res) {
       res.status(500)
       res.send(err)
     } else {
-      if(application){
+      if (application) {
         res.json(application)
-      }else{
+      } else {
         res.status(404)
         res.send("The application does not exist")
       }
@@ -174,11 +174,11 @@ exports.read_an_application_with_auth = async function (req, res) {
       if (err) {
         res.status(500)
         res.send(err)
-      } else if(application==null){
+      } else if (application == null) {
         res.status(404)
         res.send("The application does not exist")
       }
-      else{
+      else {
         if (authenticatedUser.id == application.actor) {
           res.json(application)
         } else {
@@ -192,7 +192,7 @@ exports.read_an_application_with_auth = async function (req, res) {
       if (err) {
         res.status(500)
         res.send(err)
-      }else if(application==null){
+      } else if (application == null) {
         res.status(404)
         res.send("The application does not exist")
       } else {
@@ -207,41 +207,41 @@ exports.read_an_application_with_auth = async function (req, res) {
 
 exports.update_an_application = async function (req, res) {
   Application.findOne({ _id: req.params.applicationId }, function (err, application) {
-    if(application){
-    if (req.body.status == "REJECTED" && ["PENDING", "ACCEPTED"].includes(application.status)) {
-      if (req.body.status == "REJECTED" && (req.body.rejectionReason == null || req.body.rejectionReason.match(/^ *$/) !== null)) {
-        res.status(400)
-        res.send("Kindly enter the rejection reason")
-      } else {
+    if (application) {
+      if (req.body.status == "REJECTED" && ["PENDING", "ACCEPTED"].includes(application.status)) {
+        if (req.body.status == "REJECTED" && (req.body.rejectionReason == null || req.body.rejectionReason.match(/^ *$/) !== null)) {
+          res.status(400)
+          res.send("Kindly enter the rejection reason")
+        } else {
+          Application.findOneAndUpdate({ _id: req.params.applicationId }, req.body, { new: true }, function (err, application) {
+            if (err) {
+              res.status(500)
+              res.send(err)
+            } else if (application == null) {
+              res.status(404)
+              res.send("The application does not exist")
+            } else {
+              res.json(application)
+            }
+          })
+        }
+      } else if (req.body.status == "DUE" && application.status == "PENDING") {
         Application.findOneAndUpdate({ _id: req.params.applicationId }, req.body, { new: true }, function (err, application) {
           if (err) {
             res.status(500)
             res.send(err)
-          }else if(application==null){
+          } else if (application == null) {
             res.status(404)
             res.send("The application does not exist")
-          }else {
+          } else {
             res.json(application)
           }
         })
+      } else {
+        res.status(400)
+        res.send("You can't cancel the application if the status is not PEDING or ACCEPTED")
       }
-    } else if (req.body.status == "DUE" && application.status == "PENDING") {
-      Application.findOneAndUpdate({ _id: req.params.applicationId }, req.body, { new: true }, function (err, application) {
-        if (err) {
-          res.status(500)
-          res.send(err)
-        }else if(application==null){
-          res.status(404)
-          res.send("The application does not exist")
-        }else {
-          res.json(application)
-        }
-      })
     } else {
-      res.status(400)
-      res.send("You can't cancel the application if the status is not PEDING or ACCEPTED")
-    }
-    }else{
       res.status(404)
       res.send("The application does not exist")
     }
@@ -257,7 +257,7 @@ exports.update_an_application_with_auth = async function (req, res) {
       if (err) {
         res.status(500)
         res.send(err)
-      }else if(application==null){
+      } else if (application == null) {
         res.status(404)
         res.send("The application does not exist")
       } else {
@@ -267,10 +267,10 @@ exports.update_an_application_with_auth = async function (req, res) {
               if (err) {
                 res.status(500)
                 res.send(err)
-              }else if(application==null){
+              } else if (application == null) {
                 res.status(404)
                 res.send("The application does not exist")
-              }else {
+              } else {
                 if (req.body.status == "REJECTED" && (req.body.rejectionReason == null || req.body.rejectionReason.match(/^ *$/) !== null)) {
                   res.status(400)
                   res.send("Kindly enter the rejection reason")
@@ -296,10 +296,10 @@ exports.update_an_application_with_auth = async function (req, res) {
         if (err) {
           res.status(500)
           res.send(err)
-        }else if(application==null){
+        } else if (application == null) {
           res.status(404)
           res.send("The application does not exist")
-        }else {
+        } else {
           if (req.body.status == "REJECTED" && (req.body.rejectionReason == null || req.body.rejectionReason.match(/^ *$/) !== null)) {
             res.status(400)
             res.send("Kindly enter the rejection reason")
@@ -308,12 +308,12 @@ exports.update_an_application_with_auth = async function (req, res) {
           }
         }
       })
-    } else if (['REJECTED', 'ACEPTED', 'DUE', 'CANCELLED'].includes(application.status)) {
+    } else if (['REJECTED', 'ACCEPTED', 'DUE', 'CANCELLED'].includes(application.status)) {
       Application.findOneAndUpdate({ _id: req.params.applicationId }, req.body, { new: true }, function (err, application) {
         if (err) {
           res.status(500)
           res.send(err)
-        }else if(application==null){
+        } else if (application == null) {
           res.status(404)
           res.send("The application does not exist")
         } else {
@@ -338,23 +338,23 @@ exports.pay_application = function (req, res) {
     if (err) {
       res.status(500)
       res.send(err)
-    }else if(application==null){
+    } else if (application == null) {
       res.status(404)
       res.send("The application does not exist")
-    }else {
+    } else {
       if (application.status == "DUE") {
         Trip.findById(req.params.tripId, function (err, trip) {
-          if(trip){
+          if (trip) {
             tripPrice = trip.price;
             if (price == tripPrice) {
-              Application.findOneAndUpdate({ _id: req.params.applicationId }, { $set: { 'application.status': "ACEPTED" } }, { new: true }, function (err, application) {
+              Application.findOneAndUpdate({ _id: req.params.applicationId }, { $set: { 'application.status': "ACCEPTED" } }, { new: true }, function (err, application) {
                 if (err) {
                   res.status(500)
                   res.send(err)
-                }else if(application==null){
+                } else if (application == null) {
                   res.status(404)
                   res.send("The application does not exist")
-                }else {
+                } else {
                   res.json(application)
                 }
               })
@@ -362,7 +362,7 @@ exports.pay_application = function (req, res) {
               res.status(400)
               res.send("Kindly enter the correct price")
             }
-          }else{
+          } else {
             res.status(404)
             res.send("The trip does not exist")
           }
@@ -383,10 +383,10 @@ exports.pay_application_with_auth = async function (req, res) {
       if (err) {
         res.status(500)
         res.send(err)
-      }else if(application==null){
+      } else if (application == null) {
         res.status(404)
         res.send("The application does not exist")
-      }else {
+      } else {
         if (application.actor == authenticatedUser.id) {
           let price = req.body.price;
           let tripPrice;
@@ -395,37 +395,37 @@ exports.pay_application_with_auth = async function (req, res) {
             if (err) {
               res.status(500)
               res.send(err)
-            }else if(application==null){
+            } else if (application == null) {
               res.status(404)
               res.send("The application does not exist")
-            }else {
+            } else {
               if (application.status == "DUE") {
                 Trip.findById(req.params.tripId, function (err, trip) {
-                  if(err){
+                  if (err) {
                     res.status(500)
                     res.send(err)
-                  }else if(trip==null){
+                  } else if (trip == null) {
                     res.status(404)
                     res.send("The trip does not exist")
-                  }else{
-                  tripPrice = trip.price;
-                  if (price == tripPrice) {
-                    Application.findOneAndUpdate({ _id: req.params.applicationId }, { $set: { 'application.status': "ACEPTED" } }, { new: true }, function (err, application) {
-                      if (err) {
-                        res.status(500)
-                        res.send(err)
-                      }else if(application==null){
-                        res.status(404)
-                        res.send("The application does not exist")
-                      }else {
-                        res.json(application)
-                      }
-                    })
                   } else {
-                    res.status(400)
-                    res.send("Kindly enter the correct price")
+                    tripPrice = trip.price;
+                    if (price == tripPrice) {
+                      Application.findOneAndUpdate({ _id: req.params.applicationId }, { $set: { 'application.status': "ACCEPTED" } }, { new: true }, function (err, application) {
+                        if (err) {
+                          res.status(500)
+                          res.send(err)
+                        } else if (application == null) {
+                          res.status(404)
+                          res.send("The application does not exist")
+                        } else {
+                          res.json(application)
+                        }
+                      })
+                    } else {
+                      res.status(400)
+                      res.send("Kindly enter the correct price")
+                    }
                   }
-                }
                 });
               } else {
                 res.status(400)
@@ -450,10 +450,10 @@ exports.delete_an_application = function (req, res) {
     if (err) {
       res.status(500)
       res.send(err)
-    }else if(application==null){
+    } else if (application == null) {
       res.status(404)
       res.send("The application does not exist")
-    }else {
+    } else {
       res.json({ message: 'Application successfully deleted' })
     }
   })
@@ -467,10 +467,10 @@ exports.delete_an_application_with_auth = async function (req, res) {
       if (err) {
         res.status(500)
         res.send(err)
-      }else if(application==null){
+      } else if (application == null) {
         res.status(404)
         res.send("The application does not exist")
-      }else {
+      } else {
         res.json({ message: 'Application successfully deleted' })
       }
     })
@@ -481,11 +481,11 @@ exports.delete_an_application_with_auth = async function (req, res) {
 }
 
 exports.list_applications_by_user = async function (req, res) {
-  Actor.findById(req.params.actorId, function(err, actor){
-    if(err){
+  Actor.findById(req.params.actorId, function (err, actor) {
+    if (err) {
       res.status(500)
       res.send(err)
-    }else if(actor==null){
+    } else if (actor == null) {
       res.status(404)
       res.send("The actor does not exist")
     } else {
@@ -506,11 +506,11 @@ exports.list_applications_by_user_with_auth = async function (req, res) {
   const authenticatedUser = await authController.getUserId(idToken);
   if (authenticatedUser.role == 'EXPLORER') {
     if (authenticatedUser.id == req.params.actorId) {
-      Actor.findById(req.params.userId, function(err, actor){
-        if(err){
+      Actor.findById(req.params.userId, function (err, actor) {
+        if (err) {
           res.status(500)
           res.send(err)
-        }else if(actor==null){
+        } else if (actor == null) {
           res.status(404)
           res.send("The actor does not exist")
         } else {

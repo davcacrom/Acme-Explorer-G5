@@ -95,7 +95,7 @@ exports.update_a_trip = async function (req, res) {
           stages: req.body.stages,
           published: req.body.published
         };
-      } else if (trip.state !== 'CANCELLED' && trip.startDate > new Date() && (await Application.count({ trip: trip._id, status: 'ACEPTED' })) === 0)
+      } else if (trip.state !== 'CANCELLED' && trip.startDate > new Date() && (await Application.count({ trip: trip._id, status: 'ACCEPTED' })) === 0)
         updatedTrip = {
           cancelationReason: req.body.cancelationReason,
           state: req.body.state
@@ -326,7 +326,7 @@ exports.update_a_trip_with_auth = async function (req, res) {
               stages: req.body.stages,
               published: req.body.published
             };
-          else if (trip.state !== 'CANCELLED' && trip.startDate > new Date() && (await Application.count({ trip: trip._id, status: 'ACEPTED' })) === 0)
+          else if (trip.state !== 'CANCELLED' && trip.startDate > new Date() && (await Application.count({ trip: trip._id, status: 'ACCEPTED' })) === 0)
             updatedTrip = {
               cancelationReason: req.body.cancelationReason,
               state: req.body.state
