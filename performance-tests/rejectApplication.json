@@ -1,3 +1,4 @@
 {
-    "status": "REJECTED"
+    "status": "REJECTED",
+    "rejectionReason": "test"
 }
