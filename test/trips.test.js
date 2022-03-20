@@ -221,4 +221,76 @@ describe('Trips', () => {
         })
     })
   })
+
+  describe('Delete a trip', () => {
+    it('Delete a trip successfully', done => {
+      const trip = trips.find(trip => trip.published === false);
+      sandbox.stub(Trip, 'deleteOne').callsFake(createFakeCallbackCaller(trip));
+
+      chai.request(app)
+        .delete('/v1/trips/' + encodeURIComponent(trip._id))
+        .end((err, res) => {
+          expect(res).to.have.status(204);
+          done();
+        })
+    })
+
+    it('Delete a trip error 404: Not found', done => {
+      const trip = trips.find(trip => trip.published);
+      sandbox.stub(Trip, 'deleteOne').callsFake(createFakeCallbackCaller(undefined));
+
+      chai.request(app)
+        .delete('/v1/trips/' + encodeURIComponent(trip._id))
+        .end((err, res) => {
+          expect(res).to.have.status(404);
+          done();
+        })
+    })
+  })
+
+  describe('Create a trip', () => {
+    it('Create a trip successfully', done => {
+      const trip = {
+        actor: "623621b21c5657dfe659c8b0",
+        description: "Una buena descripcion",
+        endDate: "2025-07-14T07:49:36.000Z",
+        pictures: [],
+        requirements: "Unos buenos requisitos",
+        startDate: "2020-05-28T08:29:52.000Z",
+        title: "Un buen titulo",
+        stages: [],
+        published: false
+      }
+      sandbox.stub(Trip.prototype, 'save').callsFake(createFakeCallbackCaller(trip));
+
+      chai.request(app)
+        .post('/v1/trips')
+        .send(trip)
+        .end((err, res) => {
+          expect(res).to.have.status(200);
+          done();
+        })
+    })
+
+    it('Create a trip error 500', done => {
+
+      chai.request(app)
+        .post('/v1/trips')
+        .end((err, res) => {
+          expect(res).to.have.status(500);
+          done();
+        })
+    })
+  })
+
+  describe('Get trip and application dashboard', () => {
+      it('Returns dashboard', done => {
+          chai.request(app)
+              .get('/v1/trips/dashboard')
+              .end((err, res) => {
+                  expect(res).to.have.status(200);
+                  done();
+              })
+      })
+  })
 })
