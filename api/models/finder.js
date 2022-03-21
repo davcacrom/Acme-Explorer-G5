@@ -70,4 +70,22 @@ FinderSchema.pre('save', function (callback) {
 	callback();
 });
 
+const Trip = mongoose.model('Trips')
+const Config = mongoose.model('Configurations')
+FinderSchema.methods.updateTrips = async function (save) {
+	const config = await Config.findOne();
+
+	this.trips = (await Trip.find({
+		$or: [
+			{ ticker: { $regex: this.keyword } },
+			{ title: { $regex: this.keyword } },
+			{ descripcion: { $regex: this.keyword } }
+		],
+		startDate: { $gte: this.startDate },
+		endDate: { $lte: this.endDate },
+		price: { $gte: this.minPrice, $lte: this.maxPrice }
+	}, { limit: config.numberResults })).map(trip => trip._id);
+	this.lastUpdate = new Date();
+}
+
 module.exports = mongoose.model('Finders', FinderSchema)
