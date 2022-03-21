@@ -61,6 +61,7 @@ async function fixRefs() {
         const cancelledTrips = trips.filter(trip => trip.state === 'CANCELLED');
         trips.forEach(trip => {
             trip.actor = random(managers)._id;
+            trip.price = parseFloat(trip.stages.reduce((sum, stage) => sum + stage.price, 0).toFixed(2));
             if (trip.state === 'CANCELLED')
                 trip.cancelationReason = 'This trip has been cancelled';
         });

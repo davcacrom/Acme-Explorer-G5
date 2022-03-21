@@ -76,6 +76,11 @@ const TripSchema = new Schema({
 		default: false,
 		required: true
 	},
+	price: {
+		type: Number,
+		min: 0.01,
+		set: priceSetter
+	},
 	stages: {
 		type: [
 			{
@@ -97,11 +102,7 @@ const TripSchema = new Schema({
 		],
 		validate: [v => v.length >= 1, 'Must have at least one stage']
 	}
-}, { strict: false, toJSON: { virtuals: true } })//end Trip
-
-TripSchema.virtual('price').get(function () {
-	return parseFloat(this.stages.reduce((sum, stage) => sum + stage.price, 0).toFixed(2));
-});
+}, { strict: false }) //end Trip
 
 TripSchema.pre('save', function (callback) {
 	const trip = this;
@@ -111,6 +112,8 @@ TripSchema.pre('save', function (callback) {
 
 	const generatedTicker = [day, idGenerator()].join('-');
 	trip.ticker = generatedTicker;
+
+	trip.price = parseFloat(trip.stages.reduce((sum, stage) => sum + stage.price, 0).toFixed(2));
 
 	callback();
 })

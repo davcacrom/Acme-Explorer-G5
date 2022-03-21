@@ -56,7 +56,8 @@
                 "title": "ullamco veniam labore enim labore"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 2188.46
     },
     {
         "_id": "622e380670ca329ee563e511",
@@ -115,7 +116,8 @@
                 "title": "sit cupidatat Lorem qui eu"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 3023.83
     },
     {
         "_id": "622e380642aba39a4fd43fa8",
@@ -180,7 +182,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2997.47
     },
     {
         "_id": "622e38064925c84c1254d387",
@@ -244,7 +247,8 @@
                 "title": "veniam ullamco adipisicing adipisicing et"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 3331.42
     },
     {
         "_id": "622e3806169173653914a804",
@@ -308,7 +312,8 @@
                 "title": "pariatur qui consequat qui esse"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 3551.79
     },
     {
         "_id": "622e3806157058412b5efcb8",
@@ -372,7 +377,8 @@
                 "title": "reprehenderit consequat consequat ad excepteur"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 2469.02
     },
     {
         "_id": "622e38065c0ae17a5466a8e3",
@@ -406,7 +412,8 @@
                 "title": "velit occaecat ut voluptate mollit"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 543.21
     },
     {
         "_id": "622e380664d0e888ddba5bc1",
@@ -441,7 +448,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 863.52
     },
     {
         "_id": "622e380696b0145b19e61867",
@@ -490,7 +498,8 @@
                 "title": "dolore elit ullamco labore adipisicing"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 1775.41
     },
     {
         "_id": "622e3806440bbba5316b1948",
@@ -534,7 +543,8 @@
                 "title": "id magna ex labore ex"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1917.14
     },
     {
         "_id": "622e3806f7ac126ff25c36a2",
@@ -573,7 +583,8 @@
                 "title": "Lorem eu eiusmod id excepteur"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1045.37
     },
     {
         "_id": "622e380692188c2767f7e0e5",
@@ -627,7 +638,8 @@
                 "title": "quis velit laboris fugiat cupidatat"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1442.06
     },
     {
         "_id": "622e3806a74bbd638f6ccdcc",
@@ -686,7 +698,8 @@
                 "title": "deserunt et amet proident elit"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1884.11
     },
     {
         "_id": "622e38061af1fdd8168d59b5",
@@ -740,7 +753,8 @@
                 "title": "consectetur pariatur amet sit cupidatat"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 2567.88
     },
     {
         "_id": "622e38062dc3b9750ca6a904",
@@ -794,7 +808,8 @@
                 "title": "deserunt fugiat deserunt ex consequat"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 2325.68
     },
     {
         "_id": "622e3806134e45a3299a7f15",
@@ -854,7 +869,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2445.5
     },
     {
         "_id": "622e38063927e7c1084edcd7",
@@ -908,7 +924,8 @@
                 "title": "commodo est nostrud veniam id"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 2169.97
     },
     {
         "_id": "622e380678c4f3f87ee8ecbb",
@@ -948,7 +965,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1217.1
     },
     {
         "_id": "622e3806d8d3eb343051a4f0",
@@ -992,7 +1010,8 @@
                 "title": "incididunt occaecat proident exercitation excepteur"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 1674.54
     },
     {
         "_id": "622e3806eeab557bc34cb8a9",
@@ -1032,7 +1051,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1076.12
     },
     {
         "_id": "622e3806bbae004c811f5085",
@@ -1081,7 +1101,8 @@
                 "title": "labore nulla voluptate labore eiusmod"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1733.1
     },
     {
         "_id": "622e3806c9ebb90463b034c4",
@@ -1125,7 +1146,8 @@
                 "title": "qui duis id quis nisi"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1174.48
     },
     {
         "_id": "622e380644a0f5f95cef284f",
@@ -1170,7 +1192,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1597.18
     },
     {
         "_id": "622e38061896fbf9fed89375",
@@ -1219,7 +1242,8 @@
                 "title": "minim reprehenderit dolore qui commodo"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1876.95
     },
     {
         "_id": "622e3806fd00edb5fc4c61f6",
@@ -1274,7 +1298,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1445.92
     },
     {
         "_id": "622e3806db26e40b647ab29a",
@@ -1338,7 +1363,8 @@
                 "title": "consequat anim laborum occaecat voluptate"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 3732.57
     },
     {
         "_id": "622e3806a6e9c81c7bdc0e53",
@@ -1378,7 +1404,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 918.59
     },
     {
         "_id": "622e3806566ac73b887abd38",
@@ -1437,7 +1464,8 @@
                 "title": "labore quis cillum deserunt mollit"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 3087.79
     },
     {
         "_id": "622e3806dd9aa27dba565a8b",
@@ -1497,7 +1525,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2644.03
     },
     {
         "_id": "622e380693890bc48604230b",
@@ -1562,7 +1591,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3010.41
     },
     {
         "_id": "622e3806425c083547d7f2b1",
@@ -1621,7 +1651,8 @@
                 "title": "ullamco enim cillum anim eiusmod"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 2984.73
     },
     {
         "_id": "622e3806d803f0576d03b9a0",
@@ -1675,7 +1706,8 @@
                 "title": "ex ea eu ipsum laboris"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1394.64
     },
     {
         "_id": "622e3806103747417bec0347",
@@ -1730,7 +1762,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2858.26
     },
     {
         "_id": "622e3806df94e9e12ed1d714",
@@ -1764,7 +1797,8 @@
                 "title": "eu id laboris proident est"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 1100.93
     },
     {
         "_id": "622e38065ede8baf93576d00",
@@ -1809,7 +1843,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1776.18
     },
     {
         "_id": "622e3806c87a613c70885152",
@@ -1853,7 +1888,8 @@
                 "title": "minim amet et cupidatat labore"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2131.91
     },
     {
         "_id": "622e380627763d71f2c484d3",
@@ -1897,7 +1933,8 @@
                 "title": "est amet ex ex cupidatat"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 2349.85
     },
     {
         "_id": "622e380674134d7f61645eac",
@@ -1936,7 +1973,8 @@
                 "title": "proident irure Lorem ut est"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 1171.88
     },
     {
         "_id": "622e380653dbfc294f494fc4",
@@ -1991,7 +2029,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3544.66
     },
     {
         "_id": "622e380688ef0cf29a4b62ee",
@@ -2025,7 +2064,8 @@
                 "title": "nostrud sint et pariatur laboris"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1083.47
     },
     {
         "_id": "622e38060fc948c4413802df",
@@ -2085,7 +2125,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1687.04
     },
     {
         "_id": "622e3806db7c825da38dd9c7",
@@ -2134,7 +2175,8 @@
                 "title": "minim tempor eiusmod adipisicing tempor"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 1438.02
     },
     {
         "_id": "622e3806241976fad600002e",
@@ -2169,7 +2211,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 418.73
     },
     {
         "_id": "622e380698683a132283853c",
@@ -2234,7 +2277,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 4027.27
     },
     {
         "_id": "622e380671379d9f9c39aa1a",
@@ -2284,7 +2328,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2238.54
     },
     {
         "_id": "622e3806e6874e04f0912e15",
@@ -2349,7 +2394,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2176.44
     },
     {
         "_id": "622e380675a1793e19ab6f1d",
@@ -2384,7 +2430,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1178.58
     },
     {
         "_id": "622e3806cd6d5c3d6f27a711",
@@ -2433,7 +2480,8 @@
                 "title": "elit et adipisicing incididunt sunt"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1571.64
     },
     {
         "_id": "622e3806b6a85680aa8ec539",
@@ -2468,7 +2516,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1314.16
     },
     {
         "_id": "622e380646d5b9b60dfe177c",
@@ -2523,7 +2572,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1767.87
     },
     {
         "_id": "622e3806016d5315e93fcef5",
@@ -2557,7 +2607,8 @@
                 "title": "laborum aute occaecat proident anim"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 654.44
     },
     {
         "_id": "622e3806fee4a4c8adb7aa08",
@@ -2607,7 +2658,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2392.37
     },
     {
         "_id": "622e380659475fa85bdf8850",
@@ -2641,7 +2693,8 @@
                 "title": "dolor reprehenderit ea laboris mollit"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1124.31
     },
     {
         "_id": "622e3806929dc303dae10965",
@@ -2690,7 +2743,8 @@
                 "title": "non nostrud Lorem esse commodo"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1677.19
     },
     {
         "_id": "622e3806ff2057d27f1c1381",
@@ -2724,7 +2778,8 @@
                 "title": "esse magna elit non ea"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 741.59
     },
     {
         "_id": "622e38066f4c55ab81f33dad",
@@ -2758,7 +2813,8 @@
                 "title": "minim sint incididunt laborum laboris"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 846.88
     },
     {
         "_id": "622e3806d408e349d92a9dcb",
@@ -2793,7 +2849,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 599.84
     },
     {
         "_id": "622e3806dfcdfcc21974bf14",
@@ -2837,7 +2894,8 @@
                 "title": "dolore adipisicing commodo nulla magna"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1635
     },
     {
         "_id": "622e380688869a61995582f8",
@@ -2886,7 +2944,8 @@
                 "title": "mollit incididunt reprehenderit adipisicing laboris"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 2397.76
     },
     {
         "_id": "622e3806ebbaba67fa194fa5",
@@ -2951,7 +3010,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3407.32
     },
     {
         "_id": "622e3806d2f92201926b016d",
@@ -2985,7 +3045,8 @@
                 "title": "laboris sint ex do reprehenderit"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 714.76
     },
     {
         "_id": "622e3806454c6c49e884e731",
@@ -3034,7 +3095,8 @@
                 "title": "do id eiusmod cupidatat exercitation"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 2195.34
     },
     {
         "_id": "622e380618d9764f04299f56",
@@ -3073,7 +3135,8 @@
                 "title": "ex ut cupidatat ipsum excepteur"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1108.39
     },
     {
         "_id": "622e3806365290ce7c00b26f",
@@ -3117,7 +3180,8 @@
                 "title": "eu ut nisi magna ea"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 981.55
     },
     {
         "_id": "622e3806128bb25b765aedcb",
@@ -3161,7 +3225,8 @@
                 "title": "eiusmod nulla velit laborum ut"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1321.5
     },
     {
         "_id": "622e3806048d39f1c7d618d9",
@@ -3225,7 +3290,8 @@
                 "title": "dolore aliqua nisi Lorem aliquip"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 2675.41
     },
     {
         "_id": "622e3806ca22fe3d0cdb4d4e",
@@ -3274,7 +3340,8 @@
                 "title": "esse Lorem tempor qui nisi"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1944.79
     },
     {
         "_id": "622e380658db3f7829574ba9",
@@ -3308,7 +3375,8 @@
                 "title": "eiusmod occaecat nulla ullamco id"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 766.65
     },
     {
         "_id": "622e38068301939d20e4fb30",
@@ -3362,7 +3430,8 @@
                 "title": "est occaecat eiusmod adipisicing eu"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 3198.85
     },
     {
         "_id": "622e3806034884dc641f5ebc",
@@ -3422,7 +3491,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2254.01
     },
     {
         "_id": "622e3806b09db0695c18f60a",
@@ -3487,7 +3557,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2983.67
     },
     {
         "_id": "622e3806c1315af77f1116fb",
@@ -3522,7 +3593,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 221.74
     },
     {
         "_id": "622e3806c048307f2f361d2c",
@@ -3556,7 +3628,8 @@
                 "title": "duis qui elit exercitation tempor"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 745.42
     },
     {
         "_id": "622e3806edcd063385da0200",
@@ -3601,7 +3674,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1845.79
     },
     {
         "_id": "622e3806e8404d5912388e09",
@@ -3635,7 +3709,8 @@
                 "title": "adipisicing nulla magna reprehenderit ea"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1162.84
     },
     {
         "_id": "622e38066c64769cdac9fa21",
@@ -3669,7 +3744,8 @@
                 "title": "sit consequat dolore dolore irure"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1113.49
     },
     {
         "_id": "622e380671f4c88be48e713b",
@@ -3719,7 +3795,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1355.65
     },
     {
         "_id": "622e3806dd3f7b84a4425401",
@@ -3759,7 +3836,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1142.81
     },
     {
         "_id": "622e38063ba1b99f3b9cbfe3",
@@ -3803,7 +3881,8 @@
                 "title": "voluptate est nulla excepteur non"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1804.9
     },
     {
         "_id": "622e3806d41922c5a755b7cb",
@@ -3848,7 +3927,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1199.74
     },
     {
         "_id": "622e3806d9ff84369c77f59d",
@@ -3908,7 +3988,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2737.82
     },
     {
         "_id": "622e3806dae40a14d5683965",
@@ -3943,7 +4024,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 903.48
     },
     {
         "_id": "622e38062bfa1c6a6790faee",
@@ -4008,7 +4090,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1998.18
     },
     {
         "_id": "622e3806795a6085b9f5d445",
@@ -4068,7 +4151,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 4085.62
     },
     {
         "_id": "622e3806a40a6071229f819a",
@@ -4128,7 +4212,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2410.04
     },
     {
         "_id": "622e3806e733f6d2364fa8dd",
@@ -4188,7 +4273,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2593.06
     },
     {
         "_id": "622e38062325dd555430253e",
@@ -4243,7 +4329,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2105.86
     },
     {
         "_id": "622e3806e9605c1aba48cff1",
@@ -4297,7 +4384,8 @@
                 "title": "proident consectetur non nostrud deserunt"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 2876.77
     },
     {
         "_id": "622e3806584d7439716043cc",
@@ -4331,7 +4419,8 @@
                 "title": "dolor est reprehenderit incididunt nisi"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 433.32
     },
     {
         "_id": "622e3806c47f9d3cc07342b1",
@@ -4375,7 +4464,8 @@
                 "title": "veniam amet cillum ullamco qui"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1182.17
     },
     {
         "_id": "622e3806ae0d10fb3c57171a",
@@ -4420,7 +4510,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2074.74
     },
     {
         "_id": "622e3806c68a7c1ae8fd9062",
@@ -4485,7 +4576,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3332.67
     },
     {
         "_id": "622e3806ed5479515917becc",
@@ -4540,7 +4632,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3204.96
     },
     {
         "_id": "622e3806f97467262feb9b07",
@@ -4580,7 +4673,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1482.29
     },
     {
         "_id": "622e380647141e50b9444794",
@@ -4629,7 +4723,8 @@
                 "title": "veniam laboris proident velit velit"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 2139.15
     },
     {
         "_id": "622e3806e9add8904e3a24e5",
@@ -4664,7 +4759,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 874.75
     },
     {
         "_id": "622e38069ab8cf0862e5622f",
@@ -4723,7 +4819,8 @@
                 "title": "proident voluptate ad consectetur occaecat"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 2907.82
     },
     {
         "_id": "622e38061d9f168a1b06a943",
@@ -4782,7 +4879,8 @@
                 "title": "consequat veniam duis cupidatat velit"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1894.56
     },
     {
         "_id": "622e38063b07afee38ceb4e2",
@@ -4846,7 +4944,8 @@
                 "title": "aliqua consequat sint consectetur Lorem"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 2765.84
     },
     {
         "_id": "622e3806cb6369e7537f2212",
@@ -4891,7 +4990,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1251.9
     },
     {
         "_id": "622e3806edb0cf2311ae5cb3",
@@ -4930,7 +5030,8 @@
                 "title": "dolore incididunt aute ad Lorem"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 1276.3
     },
     {
         "_id": "622e3806be015aceb1b391ad",
@@ -4970,7 +5071,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1751.31
     },
     {
         "_id": "622e3806693edbda7345d8a7",
@@ -5005,7 +5107,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 645.04
     },
     {
         "_id": "622e38066bd60a6120e735c3",
@@ -5064,7 +5167,8 @@
                 "title": "duis pariatur commodo nisi qui"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 2217.01
     },
     {
         "_id": "622e3806d9be43fa9b761df4",
@@ -5128,7 +5232,8 @@
                 "title": "commodo mollit velit velit Lorem"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 2851.78
     },
     {
         "_id": "622e380605746ac9ace78cd3",
@@ -5173,7 +5278,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1448.85
     },
     {
         "_id": "622e380608aabdd2e4204192",
@@ -5238,7 +5344,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2855.9
     },
     {
         "_id": "622e3806bbfad1d59a8609ac",
@@ -5288,7 +5395,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1191.61
     },
     {
         "_id": "622e380650c1a2b15ca492dd",
@@ -5337,7 +5445,8 @@
                 "title": "ea magna do reprehenderit ex"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 2742.76
     },
     {
         "_id": "622e38069cc2e51a8dc67f32",
@@ -5392,7 +5501,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2514.97
     },
     {
         "_id": "622e3806e9cdfdd75bb957c0",
@@ -5456,7 +5566,8 @@
                 "title": "dolor proident ad et exercitation"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 4047.62
     },
     {
         "_id": "622e3806374f594770559966",
@@ -5500,7 +5611,8 @@
                 "title": "veniam aute aliqua exercitation incididunt"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1404.25
     },
     {
         "_id": "622e380643ff98a874617280",
@@ -5555,7 +5667,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2438.98
     },
     {
         "_id": "622e3806707e627998221629",
@@ -5589,7 +5702,8 @@
                 "title": "in aliqua magna voluptate nostrud"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 773.04
     },
     {
         "_id": "622e38064d892a878f33ef7f",
@@ -5633,7 +5747,8 @@
                 "title": "quis consectetur velit occaecat tempor"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 1440.7
     },
     {
         "_id": "622e3806bc09265de76fe824",
@@ -5692,7 +5807,8 @@
                 "title": "est ut ut labore Lorem"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 3205.95
     },
     {
         "_id": "622e3806efbc4d3fa6f64ade",
@@ -5741,7 +5857,8 @@
                 "title": "et ipsum aliquip id laborum"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1844.58
     },
     {
         "_id": "622e3806012e3ca9c5e31dd7",
@@ -5796,7 +5913,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2490.35
     },
     {
         "_id": "622e3806f4dd5a32e2fd808c",
@@ -5860,7 +5978,8 @@
                 "title": "sunt aliqua anim nostrud ex"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 3254.42
     },
     {
         "_id": "622e380630167e68310c3a2c",
@@ -5904,7 +6023,8 @@
                 "title": "sint reprehenderit dolore aliqua ullamco"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1332.26
     },
     {
         "_id": "622e3806c8312beb4cb3bfdb",
@@ -5969,7 +6089,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3069.49
     },
     {
         "_id": "622e3806c6b1763238e96e00",
@@ -6029,7 +6150,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2261.22
     },
     {
         "_id": "622e3806a8421838a229094f",
@@ -6069,7 +6191,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1186.87
     },
     {
         "_id": "622e3806d2524dd8f57c42c9",
@@ -6103,7 +6226,8 @@
                 "title": "quis minim veniam cupidatat in"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 439.02
     },
     {
         "_id": "622e38061e688c2c46cbbe49",
@@ -6147,7 +6271,8 @@
                 "title": "esse tempor duis ea laborum"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 1355.2
     },
     {
         "_id": "622e3806beb971be7f2beb76",
@@ -6197,7 +6322,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2243.97
     },
     {
         "_id": "622e3806d42a0a66aff497b0",
@@ -6232,7 +6358,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 849.52
     },
     {
         "_id": "622e3806cacdd80ad99a8caa",
@@ -6276,7 +6403,8 @@
                 "title": "do nostrud voluptate labore cupidatat"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1646.31
     },
     {
         "_id": "622e3806386327a49a0acfa8",
@@ -6311,7 +6439,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 905.13
     },
     {
         "_id": "622e38063b419e270c146f11",
@@ -6366,7 +6495,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1870.31
     },
     {
         "_id": "622e3806ad6fa5bcdd617944",
@@ -6421,7 +6551,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2210.86
     },
     {
         "_id": "622e3806683d3e6cdbc7ee1b",
@@ -6461,7 +6592,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1540.77
     },
     {
         "_id": "622e380652793073fd1cf983",
@@ -6495,7 +6627,8 @@
                 "title": "in esse excepteur velit tempor"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1134.51
     },
     {
         "_id": "622e3806d49aa18b31361c2b",
@@ -6545,7 +6678,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1532.27
     },
     {
         "_id": "622e3806eec84ee21a7c6c53",
@@ -6610,7 +6744,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3404.8
     },
     {
         "_id": "622e3806ab8cbcc943ac50c5",
@@ -6655,7 +6790,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1349.87
     },
     {
         "_id": "622e3806a5595ffef6a1510c",
@@ -6719,7 +6855,8 @@
                 "title": "laboris dolor incididunt anim ipsum"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2247.03
     },
     {
         "_id": "622e38065c4e550d1c3f6f10",
@@ -6754,7 +6891,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 968.37
     },
     {
         "_id": "622e380686793453c110743c",
@@ -6814,7 +6952,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3166.93
     },
     {
         "_id": "622e3806c5349b8cb96aebd7",
@@ -6869,7 +7008,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2115.04
     },
     {
         "_id": "622e3806548a777e3d14c054",
@@ -6924,7 +7064,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2798.23
     },
     {
         "_id": "622e38069f7656bff9442dc4",
@@ -6973,7 +7114,8 @@
                 "title": "consequat Lorem excepteur adipisicing sit"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1923.22
     },
     {
         "_id": "622e380641a33c027bc8a741",
@@ -7008,7 +7150,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 606.55
     },
     {
         "_id": "622e3806d0febed99826bd64",
@@ -7073,7 +7216,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2747.62
     },
     {
         "_id": "622e380612b70b6a9a2c02ab",
@@ -7107,7 +7251,8 @@
                 "title": "sint nulla sunt do aliqua"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 446.7
     },
     {
         "_id": "622e3806525a73df30235e9b",
@@ -7146,7 +7291,8 @@
                 "title": "eu sit nisi non irure"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1360.3
     },
     {
         "_id": "622e38069977230fb55a06c6",
@@ -7190,7 +7336,8 @@
                 "title": "voluptate incididunt pariatur ex occaecat"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1409.84
     },
     {
         "_id": "622e380649590de66b1cf46b",
@@ -7239,7 +7386,8 @@
                 "title": "voluptate reprehenderit mollit aliquip labore"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1436.44
     },
     {
         "_id": "622e38060ca0999372364ccf",
@@ -7274,7 +7422,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 722.69
     },
     {
         "_id": "622e3806091d0b61239dbb32",
@@ -7318,7 +7467,8 @@
                 "title": "eu cupidatat excepteur sint nostrud"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1926.45
     },
     {
         "_id": "622e3806e97fd6f0b8e8b87f",
@@ -7383,7 +7533,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2278.03
     },
     {
         "_id": "622e38066c6b1c1dc922c7ae",
@@ -7427,7 +7578,8 @@
                 "title": "incididunt nostrud magna culpa labore"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 1873.3
     },
     {
         "_id": "622e3806518b4d26bf4c5780",
@@ -7467,7 +7619,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1089.38
     },
     {
         "_id": "622e38068f4aef554574782b",
@@ -7527,7 +7680,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3147.97
     },
     {
         "_id": "622e380654cc0959195a8215",
@@ -7582,7 +7736,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1863.2
     },
     {
         "_id": "622e380649edb6c6517e7de5",
@@ -7627,7 +7782,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1169.41
     },
     {
         "_id": "622e38062c20ffdfece2c67f",
@@ -7671,7 +7827,8 @@
                 "title": "ipsum incididunt excepteur minim cillum"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1368.15
     },
     {
         "_id": "622e38069d4cf48cf6f799ce",
@@ -7721,7 +7878,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1951.32
     },
     {
         "_id": "622e3806789e0250c0fde270",
@@ -7760,7 +7918,8 @@
                 "title": "sint sunt do cillum sint"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1180.66
     },
     {
         "_id": "622e3806d69a4db78c040a1a",
@@ -7809,7 +7968,8 @@
                 "title": "reprehenderit cillum adipisicing quis exercitation"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1796.79
     },
     {
         "_id": "622e3806f578e89be2b3a3fe",
@@ -7859,7 +8019,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2515.51
     },
     {
         "_id": "622e38067578e057841350cf",
@@ -7904,7 +8065,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1602.1
     },
     {
         "_id": "622e38068d0ec1535a74788e",
@@ -7948,7 +8110,8 @@
                 "title": "duis mollit consequat est sunt"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1720.42
     },
     {
         "_id": "622e38067e99465fae1342fb",
@@ -8007,7 +8170,8 @@
                 "title": "incididunt amet laborum sint duis"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1629.9
     },
     {
         "_id": "622e380674e156142429cdd5",
@@ -8062,7 +8226,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2232.78
     },
     {
         "_id": "622e3806642ad7946f22adf6",
@@ -8102,7 +8267,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1579.22
     },
     {
         "_id": "622e38061d3e8a381e14c8de",
@@ -8151,7 +8317,8 @@
                 "title": "nulla dolor duis commodo ad"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 2632.65
     },
     {
         "_id": "622e3806c0544608de45f048",
@@ -8200,7 +8367,8 @@
                 "title": "sint est in velit sit"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 2066.66
     },
     {
         "_id": "622e3806b3a0d0d93a1b96ed",
@@ -8249,7 +8417,8 @@
                 "title": "cupidatat excepteur ut adipisicing ex"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 1300.84
     },
     {
         "_id": "622e38066124f7727cd40a2a",
@@ -8288,7 +8457,8 @@
                 "title": "duis do cillum laboris fugiat"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1147.13
     },
     {
         "_id": "622e38062181b55650f53ca1",
@@ -8332,7 +8502,8 @@
                 "title": "consequat dolor non sunt reprehenderit"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1343.79
     },
     {
         "_id": "622e38067076d3e27fbdd517",
@@ -8366,7 +8537,8 @@
                 "title": "laborum irure pariatur occaecat laborum"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 589.16
     },
     {
         "_id": "622e380683df91758b816f50",
@@ -8415,7 +8587,8 @@
                 "title": "esse aliqua consequat nostrud nulla"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1276.56
     },
     {
         "_id": "622e3806a1f333bb40147821",
@@ -8479,7 +8652,8 @@
                 "title": "anim magna qui Lorem cupidatat"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 3180
     },
     {
         "_id": "622e3806e7afbc1daeaf13ca",
@@ -8518,7 +8692,8 @@
                 "title": "id excepteur consequat occaecat proident"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1259.08
     },
     {
         "_id": "622e38061fff27c328dd3ffe",
@@ -8562,7 +8737,8 @@
                 "title": "anim dolore enim velit aliqua"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1865.27
     },
     {
         "_id": "622e3806a59fafdc4659fa4d",
@@ -8612,7 +8788,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1692.13
     },
     {
         "_id": "622e380680e0395dbc3a1c1d",
@@ -8656,7 +8833,8 @@
                 "title": "dolor elit duis est non"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1744.28
     },
     {
         "_id": "622e380649acabc03d588873",
@@ -8721,7 +8899,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2572.96
     },
     {
         "_id": "622e38063012ccb348b95929",
@@ -8775,7 +8954,8 @@
                 "title": "est et est cillum dolor"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 2265.44
     },
     {
         "_id": "622e3806e3e0f28ca77b4489",
@@ -8815,7 +8995,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1282.53
     },
     {
         "_id": "622e3806599995ee0af6b8f6",
@@ -8870,7 +9051,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2136.57
     },
     {
         "_id": "622e380640501ffd56762e29",
@@ -8924,7 +9106,8 @@
                 "title": "eiusmod laboris laboris adipisicing aliqua"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1900.46
     },
     {
         "_id": "622e3806a94854881e33cac6",
@@ -8974,7 +9157,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1720.23
     },
     {
         "_id": "622e38067a2c9b18f1747636",
@@ -9019,7 +9203,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1579.45
     },
     {
         "_id": "622e380687ac9936d8b8da75",
@@ -9064,7 +9249,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1929.92
     },
     {
         "_id": "622e38062bdb62379d956504",
@@ -9114,7 +9300,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2277.86
     },
     {
         "_id": "622e3806f97db94151b129a7",
@@ -9169,7 +9356,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2171.55
     },
     {
         "_id": "622e38062a0cc2ec7e574edc",
@@ -9209,7 +9397,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1661.84
     },
     {
         "_id": "622e3806af3dec3c80106c44",
@@ -9268,7 +9457,8 @@
                 "title": "esse proident quis deserunt excepteur"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 2737.14
     },
     {
         "_id": "622e38067052c27b8bbaf889",
@@ -9312,7 +9502,8 @@
                 "title": "ullamco pariatur tempor sunt nisi"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1240.99
     },
     {
         "_id": "622e3806b2f060ea05757194",
@@ -9377,7 +9568,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2567.41
     },
     {
         "_id": "622e3806706353494a47ed7d",
@@ -9412,7 +9604,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 319.17
     },
     {
         "_id": "622e38063b9b01a4a46d50ee",
@@ -9462,7 +9655,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1949.58
     },
     {
         "_id": "622e3806ae5185e3a5adc86d",
@@ -9496,7 +9690,8 @@
                 "title": "et sit adipisicing do non"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 702.33
     },
     {
         "_id": "622e3806458425b3a368a774",
@@ -9535,7 +9730,8 @@
                 "title": "laborum exercitation amet laborum id"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1510.56
     },
     {
         "_id": "622e38060f9f44553ef7b027",
@@ -9585,7 +9781,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2086.51
     },
     {
         "_id": "622e3806fee627883e1f83eb",
@@ -9639,7 +9836,8 @@
                 "title": "voluptate minim reprehenderit occaecat laboris"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1805.83
     },
     {
         "_id": "622e38065a78911b52bcf572",
@@ -9694,7 +9892,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1626.73
     },
     {
         "_id": "622e38066fd3b8ce5b75e80a",
@@ -9729,7 +9928,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 805.2
     },
     {
         "_id": "622e38060fbb7d7e07c3bd31",
@@ -9793,7 +9993,8 @@
                 "title": "qui Lorem veniam minim minim"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 3112.19
     },
     {
         "_id": "622e38065b164d304fc3691a",
@@ -9852,7 +10053,8 @@
                 "title": "duis elit aliqua sint veniam"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 2981.07
     },
     {
         "_id": "622e3806b3ec9e5e846cc10c",
@@ -9897,7 +10099,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1198.44
     },
     {
         "_id": "622e380697d4ac87c1b04d2b",
@@ -9936,7 +10139,8 @@
                 "title": "Lorem aute aliquip occaecat est"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1267.15
     },
     {
         "_id": "622e3806dce0079ccce82c3d",
@@ -10000,7 +10204,8 @@
                 "title": "elit incididunt occaecat nulla excepteur"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 2789.79
     },
     {
         "_id": "622e380699c2ab6009d7f91d",
@@ -10055,7 +10260,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2235.89
     },
     {
         "_id": "622e380679e539d94ca9a7e2",
@@ -10104,7 +10310,8 @@
                 "title": "do elit ex nisi consequat"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 1578.32
     },
     {
         "_id": "622e3806333d7e9893f554be",
@@ -10164,7 +10371,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2553.45
     },
     {
         "_id": "622e3806d768c3f0650ec832",
@@ -10224,7 +10432,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2652.81
     },
     {
         "_id": "622e38065b3931edfdfe3a8b",
@@ -10289,7 +10498,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3829.14
     },
     {
         "_id": "622e3806b3ad2262a4dac23e",
@@ -10353,7 +10563,8 @@
                 "title": "id dolor dolor magna eiusmod"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 2604.14
     },
     {
         "_id": "622e380658da23bc389b954f",
@@ -10412,7 +10623,8 @@
                 "title": "consequat quis ad duis sit"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2297.67
     },
     {
         "_id": "622e380631e80106a257b298",
@@ -10472,7 +10684,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2620.55
     },
     {
         "_id": "622e38063988f318688b118e",
@@ -10532,7 +10745,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2079.72
     },
     {
         "_id": "622e380653181247a75ad536",
@@ -10577,7 +10791,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1939.66
     },
     {
         "_id": "622e3806326057d399c9d71e",
@@ -10621,7 +10836,8 @@
                 "title": "ipsum consectetur elit eiusmod occaecat"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1448.88
     },
     {
         "_id": "622e3806f14671072023251d",
@@ -10656,7 +10872,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 972.41
     },
     {
         "_id": "622e3806dd1d4692e8480d0e",
@@ -10715,7 +10932,8 @@
                 "title": "exercitation tempor excepteur aute enim"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 3026.37
     },
     {
         "_id": "622e38061142f8d7a863f726",
@@ -10759,7 +10977,8 @@
                 "title": "dolor nostrud cillum ullamco exercitation"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 835.9
     },
     {
         "_id": "622e38064357bf9a46612f5a",
@@ -10804,7 +11023,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1228.86
     },
     {
         "_id": "622e38066b0c76bd77e7b4e9",
@@ -10848,7 +11068,8 @@
                 "title": "culpa ut ad in dolore"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 2549.37
     },
     {
         "_id": "622e3806a0d6ef62b13d676b",
@@ -10898,7 +11119,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2338.43
     },
     {
         "_id": "622e3806bc02affbb80d5684",
@@ -10963,7 +11185,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3642.02
     },
     {
         "_id": "622e380602326da921406a45",
@@ -11007,7 +11230,8 @@
                 "title": "labore duis voluptate fugiat sunt"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1503.94
     },
     {
         "_id": "622e3806da2165d96c3968d0",
@@ -11057,7 +11281,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2433.31
     },
     {
         "_id": "622e3806690a36ecabbf3508",
@@ -11107,7 +11332,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1663.57
     },
     {
         "_id": "622e380660a173899ac0ad43",
@@ -11157,7 +11383,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1892.94
     },
     {
         "_id": "622e3806e51dafcf971fc188",
@@ -11212,7 +11439,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1939.71
     },
     {
         "_id": "622e38061c1c60c55f367187",
@@ -11257,7 +11485,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1868.44
     },
     {
         "_id": "622e3806e74d35cdd6769027",
@@ -11301,7 +11530,8 @@
                 "title": "sint enim ut excepteur do"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1107.83
     },
     {
         "_id": "622e3806c3c04de575af903b",
@@ -11361,7 +11591,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3434.99
     },
     {
         "_id": "622e38067d0828134db5e9c6",
@@ -11411,7 +11642,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1664.76
     },
     {
         "_id": "622e380637331c07242438c8",
@@ -11456,7 +11688,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1578.19
     },
     {
         "_id": "622e3806fc24d63fadfe9cdf",
@@ -11516,7 +11749,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2847.19
     },
     {
         "_id": "622e380661b81e8f1b23fe91",
@@ -11581,7 +11815,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2672.89
     },
     {
         "_id": "622e38069084d851482728e5",
@@ -11635,7 +11870,8 @@
                 "title": "anim fugiat et quis consectetur"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 2132.43
     },
     {
         "_id": "622e3806d78a89b0c4f48392",
@@ -11679,7 +11915,8 @@
                 "title": "tempor id minim non laboris"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1545.63
     },
     {
         "_id": "622e3806166a83616545db18",
@@ -11723,7 +11960,8 @@
                 "title": "duis sint aliquip non aliqua"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1312.33
     },
     {
         "_id": "622e3806a17479342784ddfe",
@@ -11773,7 +12011,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1822.32
     },
     {
         "_id": "622e380622ef0df8a43837ba",
@@ -11827,7 +12066,8 @@
                 "title": "sint ullamco minim irure culpa"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2028.13
     },
     {
         "_id": "622e3806a8a52e6e142cdeeb",
@@ -11877,7 +12117,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1555.49
     },
     {
         "_id": "622e3806e16971592f40f34c",
@@ -11941,7 +12182,8 @@
                 "title": "ut fugiat irure ea mollit"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 3220.53
     },
     {
         "_id": "622e380610cafd037107100c",
@@ -12006,7 +12248,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3785.09
     },
     {
         "_id": "622e38064fb02badb405898d",
@@ -12040,7 +12283,8 @@
                 "title": "deserunt ad est ut nisi"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1247.15
     },
     {
         "_id": "622e38061c912387d1d734c9",
@@ -12094,7 +12338,8 @@
                 "title": "laboris dolore incididunt exercitation mollit"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 2229.12
     },
     {
         "_id": "622e380649b22ee1277b8661",
@@ -12138,7 +12383,8 @@
                 "title": "nostrud deserunt qui veniam aliquip"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1851.16
     },
     {
         "_id": "622e3806e280fc8cff3366a7",
@@ -12193,7 +12439,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2329.15
     },
     {
         "_id": "622e3806bc4c26900b478a0d",
@@ -12248,7 +12495,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1945.5
     },
     {
         "_id": "622e38062bbd9e150b3cab1b",
@@ -12288,7 +12536,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1413.08
     },
     {
         "_id": "622e3806ad9304bd4764ad50",
@@ -12322,7 +12571,8 @@
                 "title": "Lorem irure esse Lorem ipsum"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 797.62
     },
     {
         "_id": "622e3806b7efa1069679e76f",
@@ -12386,7 +12636,8 @@
                 "title": "elit dolor esse aute tempor"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 2531.95
     },
     {
         "_id": "622e380690146df620192ba2",
@@ -12431,7 +12682,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1488.27
     },
     {
         "_id": "622e3806fd0a2da18d576901",
@@ -12490,7 +12742,8 @@
                 "title": "anim aliqua non non ullamco"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 2752.32
     },
     {
         "_id": "622e3806e8f866374befa87d",
@@ -12535,7 +12788,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1310.73
     },
     {
         "_id": "622e3806bb32843ada3eb2cb",
@@ -12595,7 +12849,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3171.21
     },
     {
         "_id": "622e3806496111c3e0a2c828",
@@ -12655,7 +12910,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2144.19
     },
     {
         "_id": "622e38067fb7105a529612ed",
@@ -12694,7 +12950,8 @@
                 "title": "esse officia reprehenderit ullamco culpa"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1043.48
     },
     {
         "_id": "622e3806cf08c520d23d48da",
@@ -12749,7 +13006,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2072.71
     },
     {
         "_id": "622e380651f62a8d1473b3ff",
@@ -12804,7 +13062,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1758.58
     },
     {
         "_id": "622e3806f2327e5ce3d75174",
@@ -12843,7 +13102,8 @@
                 "title": "laboris voluptate nisi in adipisicing"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 1166.03
     },
     {
         "_id": "622e380668f5f6502d47b163",
@@ -12908,7 +13168,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3047.33
     },
     {
         "_id": "622e3806be2972f88f95dc9c",
@@ -12973,7 +13234,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2803.69
     },
     {
         "_id": "622e3806d402648e8ac22b77",
@@ -13018,7 +13280,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 813.97
     },
     {
         "_id": "622e38062c70c7ec59d883f3",
@@ -13083,7 +13346,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2577.57
     },
     {
         "_id": "622e3806d78d4483e846ccb7",
@@ -13127,7 +13391,8 @@
                 "title": "fugiat fugiat sunt labore anim"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1741.62
     },
     {
         "_id": "622e3806f0986e9ac2ed6f61",
@@ -13171,7 +13436,8 @@
                 "title": "irure nulla et ea reprehenderit"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 2021.77
     },
     {
         "_id": "622e380644371f92cf88371a",
@@ -13215,7 +13481,8 @@
                 "title": "aliquip esse adipisicing proident magna"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1301.01
     },
     {
         "_id": "622e380696e9c2bf2840de73",
@@ -13259,7 +13526,8 @@
                 "title": "do proident deserunt incididunt eu"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1776.83
     },
     {
         "_id": "622e3806c90fc2a2cbc5ab72",
@@ -13299,7 +13567,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1371.81
     },
     {
         "_id": "622e38061e955ce4bf2bf0eb",
@@ -13363,7 +13632,8 @@
                 "title": "cupidatat cillum culpa non quis"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 2374.1
     },
     {
         "_id": "622e38067d44ac50c36d4dc9",
@@ -13427,7 +13697,8 @@
                 "title": "esse tempor reprehenderit incididunt cupidatat"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 2275.19
     },
     {
         "_id": "622e380679340581463ce3b9",
@@ -13487,7 +13758,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2535.7
     },
     {
         "_id": "622e3806b39e3576d6aff74d",
@@ -13531,7 +13803,8 @@
                 "title": "excepteur pariatur aliquip ea adipisicing"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1479.76
     },
     {
         "_id": "622e38064d1d701e7281d9f5",
@@ -13570,7 +13843,8 @@
                 "title": "quis ea commodo occaecat aute"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 312.47
     },
     {
         "_id": "622e380630bdeb8c551f67c1",
@@ -13605,7 +13879,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 778.57
     },
     {
         "_id": "622e3806997b4c9142c61f39",
@@ -13664,7 +13939,8 @@
                 "title": "quis laboris irure est in"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 2134.4
     },
     {
         "_id": "622e38063074d2a2784f96d8",
@@ -13723,7 +13999,8 @@
                 "title": "sit consectetur aliqua voluptate sunt"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 3799.97
     },
     {
         "_id": "622e3806f06acfdf5e587ca4",
@@ -13772,7 +14049,8 @@
                 "title": "et labore sit sunt nulla"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 2166.08
     },
     {
         "_id": "622e380618e644fd05462319",
@@ -13821,7 +14099,8 @@
                 "title": "duis voluptate reprehenderit officia dolor"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1673.6
     },
     {
         "_id": "622e3806b041f7f90d70699d",
@@ -13886,7 +14165,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2990.07
     },
     {
         "_id": "622e38066cc7f65ef9902bc4",
@@ -13950,7 +14230,8 @@
                 "title": "consectetur qui nostrud aliquip ex"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2831.88
     },
     {
         "_id": "622e38064a6026c62c80d878",
@@ -13989,7 +14270,8 @@
                 "title": "eiusmod et tempor officia est"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1400.65
     },
     {
         "_id": "622e3806bde4e3fac37ebebb",
@@ -14024,7 +14306,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 856.57
     },
     {
         "_id": "622e3806ace44c8281b741a5",
@@ -14079,7 +14362,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1706.52
     },
     {
         "_id": "622e380652979825d3a0800d",
@@ -14128,7 +14412,8 @@
                 "title": "irure nulla deserunt ea consectetur"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1651.85
     },
     {
         "_id": "622e38067beeba6de61c4160",
@@ -14178,7 +14463,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1996.79
     },
     {
         "_id": "622e38068693143fdb7cfaf1",
@@ -14238,7 +14524,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2578.69
     },
     {
         "_id": "622e38062de2810bb6dd7c88",
@@ -14303,7 +14590,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2918.21
     },
     {
         "_id": "622e38065ea3100cc120052c",
@@ -14347,7 +14635,8 @@
                 "title": "voluptate sint labore eu anim"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 1393.08
     },
     {
         "_id": "622e380607329a21c368821b",
@@ -14401,7 +14690,8 @@
                 "title": "ipsum veniam in reprehenderit cupidatat"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 3146.02
     },
     {
         "_id": "622e380630e088160acc7d5a",
@@ -14445,7 +14735,8 @@
                 "title": "exercitation exercitation cupidatat excepteur enim"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 2324.84
     },
     {
         "_id": "622e3806fcbcd50cfa6cada2",
@@ -14484,7 +14775,8 @@
                 "title": "adipisicing ut eu excepteur ad"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 875.21
     },
     {
         "_id": "622e38066046c0e75d83516f",
@@ -14534,7 +14826,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2025.98
     },
     {
         "_id": "622e3806f3eb8b3ff90fee18",
@@ -14589,7 +14882,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1803.34
     },
     {
         "_id": "622e38065c42ffafdd87529b",
@@ -14643,7 +14937,8 @@
                 "title": "tempor pariatur laboris mollit qui"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 2040.03
     },
     {
         "_id": "622e3806a0e7d9d661059d32",
@@ -14683,7 +14978,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1324.83
     },
     {
         "_id": "622e3806ef1fafae719cf88b",
@@ -14732,7 +15028,8 @@
                 "title": "tempor qui ut do ex"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 2165.93
     },
     {
         "_id": "622e380638b31be6a2a58915",
@@ -14782,7 +15079,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1400.37
     },
     {
         "_id": "622e38062279ade1ca657fad",
@@ -14836,7 +15134,8 @@
                 "title": "mollit eiusmod duis minim et"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1622.15
     },
     {
         "_id": "622e3806aad771a3eafa0168",
@@ -14875,7 +15174,8 @@
                 "title": "voluptate tempor magna fugiat ex"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1143.55
     },
     {
         "_id": "622e3806e8ed44f91ad603c8",
@@ -14910,7 +15210,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 470
     },
     {
         "_id": "622e3806fbe3b14c78ae4509",
@@ -14960,7 +15261,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2393.23
     },
     {
         "_id": "622e38063452e2f07b045832",
@@ -15024,7 +15326,8 @@
                 "title": "irure ad mollit quis aute"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 2460.97
     },
     {
         "_id": "622e380662791b3bed7fd41b",
@@ -15069,7 +15372,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2363.43
     },
     {
         "_id": "622e380611c9fca33fbf738f",
@@ -15113,7 +15417,8 @@
                 "title": "laborum veniam tempor ullamco aute"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1503.85
     },
     {
         "_id": "622e38061fe39738ab36e94d",
@@ -15168,7 +15473,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1147.81
     },
     {
         "_id": "622e380655b3452363390c9f",
@@ -15212,7 +15518,8 @@
                 "title": "nulla irure et nisi eu"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1451.54
     },
     {
         "_id": "622e38065e8058060eb3176a",
@@ -15262,7 +15569,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1154.87
     },
     {
         "_id": "622e3806cc5ea4aa7073fcda",
@@ -15296,7 +15604,8 @@
                 "title": "est mollit aliquip aliquip ea"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 811.64
     },
     {
         "_id": "622e38064e636cde0a3d81f7",
@@ -15341,7 +15650,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1496.73
     },
     {
         "_id": "622e380653c01b263ad7af0e",
@@ -15381,7 +15691,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 917.63
     },
     {
         "_id": "622e380615aeacb244a10355",
@@ -15436,7 +15747,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1911.1
     },
     {
         "_id": "622e380680f56b9f3193eafd",
@@ -15501,7 +15813,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2738.63
     },
     {
         "_id": "622e38064fafb52860971b2f",
@@ -15535,7 +15848,8 @@
                 "title": "enim consectetur officia reprehenderit incididunt"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 439.25
     },
     {
         "_id": "622e3806a59241c705f646f7",
@@ -15570,7 +15884,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 765.7
     },
     {
         "_id": "622e38062956881954014197",
@@ -15610,7 +15925,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 587.39
     },
     {
         "_id": "622e380649354b38b10922d3",
@@ -15664,7 +15980,8 @@
                 "title": "amet laborum pariatur est ex"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1711.75
     },
     {
         "_id": "622e3806fe4ac11e49c64c60",
@@ -15709,7 +16026,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 896.84
     },
     {
         "_id": "622e38064fa32c50f86d6989",
@@ -15748,7 +16066,8 @@
                 "title": "ex nisi eu commodo duis"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1308.66
     },
     {
         "_id": "622e38061d74e33170d24e1c",
@@ -15802,7 +16121,8 @@
                 "title": "consectetur et elit sint cillum"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2834.88
     },
     {
         "_id": "622e3806e9ba9920b58363aa",
@@ -15852,7 +16172,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1890.51
     },
     {
         "_id": "622e3806bf8b897645b0d560",
@@ -15897,7 +16218,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1970.85
     },
     {
         "_id": "622e38068b56c30b1e207bd2",
@@ -15947,7 +16269,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2728.16
     },
     {
         "_id": "622e38062308b570115a1e4c",
@@ -16007,7 +16330,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3104.82
     },
     {
         "_id": "622e38066590e962e55792ea",
@@ -16067,7 +16391,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1861.6
     },
     {
         "_id": "622e3806dcade73b29bb7f90",
@@ -16111,7 +16436,8 @@
                 "title": "voluptate incididunt proident adipisicing aliqua"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1669.01
     },
     {
         "_id": "622e3806d29c3cf7a7f22192",
@@ -16155,7 +16481,8 @@
                 "title": "Lorem consectetur non et irure"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1662.62
     },
     {
         "_id": "622e380650912e34210072f5",
@@ -16204,7 +16531,8 @@
                 "title": "mollit officia et enim tempor"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 2350.11
     },
     {
         "_id": "622e380675a9d735081c9c2b",
@@ -16254,7 +16582,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2378.29
     },
     {
         "_id": "622e3806b111c72897f3b720",
@@ -16298,7 +16627,8 @@
                 "title": "ad irure labore tempor ullamco"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 950.38
     },
     {
         "_id": "622e3806515f7479fd2ee5ed",
@@ -16337,7 +16667,8 @@
                 "title": "esse fugiat cillum tempor occaecat"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 589.97
     },
     {
         "_id": "622e380642f1838e23108b84",
@@ -16376,7 +16707,8 @@
                 "title": "esse mollit eu laboris tempor"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1261.62
     },
     {
         "_id": "622e3806a1d4c0df243decbd",
@@ -16441,7 +16773,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2641.44
     },
     {
         "_id": "622e3806df9464d600646fe0",
@@ -16500,7 +16833,8 @@
                 "title": "reprehenderit in minim in fugiat"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 3596.19
     },
     {
         "_id": "622e38064894f14a627d1d1e",
@@ -16539,7 +16873,8 @@
                 "title": "nisi cupidatat ipsum do adipisicing"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1338.59
     },
     {
         "_id": "622e3806933d4d217bc145d0",
@@ -16584,7 +16919,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1191.48
     },
     {
         "_id": "622e3806bd767e92a41e1224",
@@ -16623,7 +16959,8 @@
                 "title": "do cupidatat officia magna duis"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 957.35
     },
     {
         "_id": "622e3806fc6854be64e139de",
@@ -16672,7 +17009,8 @@
                 "title": "fugiat adipisicing sunt est veniam"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 2790.45
     },
     {
         "_id": "622e3806930c5ed05dbe458b",
@@ -16737,7 +17075,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2673.78
     },
     {
         "_id": "622e38060f47eda9fde42ce6",
@@ -16801,7 +17140,8 @@
                 "title": "labore mollit esse laborum non"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 3250.92
     },
     {
         "_id": "622e3806b625ca8426207bdf",
@@ -16850,7 +17190,8 @@
                 "title": "sint enim cillum ea incididunt"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 935.24
     },
     {
         "_id": "622e3806eec15ac2213f2ba0",
@@ -16885,7 +17226,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 637.51
     },
     {
         "_id": "622e380606f8ccf5d3eb30f9",
@@ -16950,7 +17292,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 4082.06
     },
     {
         "_id": "622e3806703862546f0a7fb5",
@@ -17014,7 +17357,8 @@
                 "title": "pariatur aliquip consequat do elit"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 3065.17
     },
     {
         "_id": "622e3806f53d1a1ca5bf7232",
@@ -17053,7 +17397,8 @@
                 "title": "voluptate ullamco qui minim dolor"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 792.39
     },
     {
         "_id": "622e38062ae31f195ce220fd",
@@ -17103,7 +17448,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2744.15
     },
     {
         "_id": "622e3806d587b7d00fc24c75",
@@ -17138,7 +17484,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1159.07
     },
     {
         "_id": "622e380633f01f0b07c2b253",
@@ -17198,7 +17545,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1818.1
     },
     {
         "_id": "622e38063596eb68beffbbdc",
@@ -17247,7 +17595,8 @@
                 "title": "nisi fugiat exercitation exercitation voluptate"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 2246.11
     },
     {
         "_id": "622e38063ef172496f830998",
@@ -17301,7 +17650,8 @@
                 "title": "excepteur consequat cupidatat nostrud duis"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 2118.38
     },
     {
         "_id": "622e380657c6dd06a753d4f7",
@@ -17355,7 +17705,8 @@
                 "title": "ipsum enim ex officia aliqua"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2399.21
     },
     {
         "_id": "622e3806c8af6d71925642bb",
@@ -17399,7 +17750,8 @@
                 "title": "eu sit qui ut fugiat"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1384.89
     },
     {
         "_id": "622e3806c8984b4606dec90b",
@@ -17448,7 +17800,8 @@
                 "title": "aute nostrud sunt cupidatat ex"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 2107.82
     },
     {
         "_id": "622e3806f29c2af62881afd0",
@@ -17498,7 +17851,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2160.96
     },
     {
         "_id": "622e38065b659c8461989ee2",
@@ -17557,7 +17911,8 @@
                 "title": "aute adipisicing ipsum anim quis"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 3753.43
     },
     {
         "_id": "622e38067f6ccba9c7805e11",
@@ -17591,7 +17946,8 @@
                 "title": "aliquip excepteur fugiat magna mollit"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 743.27
     },
     {
         "_id": "622e3806c0cd4de50bd58a4a",
@@ -17630,7 +17986,8 @@
                 "title": "cillum cupidatat amet reprehenderit ipsum"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 679.04
     },
     {
         "_id": "622e3806a84773a9ee9366dd",
@@ -17680,7 +18037,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1697.7
     },
     {
         "_id": "622e38061de4f8334682fe41",
@@ -17735,7 +18093,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1891.75
     },
     {
         "_id": "622e3806a91e32e38d9cb242",
@@ -17774,7 +18133,8 @@
                 "title": "id dolor aliquip est est"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1014.4
     },
     {
         "_id": "622e3806c6ebcd80bfe647e8",
@@ -17828,7 +18188,8 @@
                 "title": "adipisicing cupidatat occaecat in fugiat"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1834.52
     },
     {
         "_id": "622e38063b61ce89ed4ebeb1",
@@ -17862,7 +18223,8 @@
                 "title": "mollit do in amet nulla"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 997.52
     },
     {
         "_id": "622e3806f99baff190820ec1",
@@ -17927,7 +18289,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2823.16
     },
     {
         "_id": "622e3806ba9b0832df1940d1",
@@ -17976,7 +18339,8 @@
                 "title": "elit nulla nulla laborum duis"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 1262.16
     },
     {
         "_id": "622e3806906d86b12a9db184",
@@ -18011,7 +18375,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 356.95
     },
     {
         "_id": "622e380670a149e7a02c62ce",
@@ -18071,7 +18436,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1840.55
     },
     {
         "_id": "622e3806e45a444b383328de",
@@ -18110,7 +18476,8 @@
                 "title": "sunt ut aute id reprehenderit"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 953.41
     },
     {
         "_id": "622e3806edb9f24caf48bce8",
@@ -18154,7 +18521,8 @@
                 "title": "occaecat labore velit mollit dolore"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1138.07
     },
     {
         "_id": "622e380651c67fdfe8dee2a3",
@@ -18208,7 +18576,8 @@
                 "title": "aute do nisi do Lorem"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 3673.71
     },
     {
         "_id": "622e38069c5db488e7b5e374",
@@ -18268,7 +18637,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3014.94
     },
     {
         "_id": "622e380691b0e78fe2efb015",
@@ -18317,7 +18687,8 @@
                 "title": "quis ipsum proident consequat et"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1988.45
     },
     {
         "_id": "622e3806e1cf68e23faf11b7",
@@ -18377,7 +18748,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3294.06
     },
     {
         "_id": "622e38066968665e2cb44325",
@@ -18412,7 +18784,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 259.11
     },
     {
         "_id": "622e38060d2cb1d6ea884f91",
@@ -18466,7 +18839,8 @@
                 "title": "incididunt elit est nisi culpa"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 2492.16
     },
     {
         "_id": "622e380639517fd9082f64d1",
@@ -18530,7 +18904,8 @@
                 "title": "eiusmod mollit id non nostrud"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 2319.73
     },
     {
         "_id": "622e3806a7e7c37991df169e",
@@ -18584,7 +18959,8 @@
                 "title": "reprehenderit ex aliqua anim dolor"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1876.06
     },
     {
         "_id": "622e3806500def9af822d7e3",
@@ -18624,7 +19000,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 861.97
     },
     {
         "_id": "622e38068b9467751635d2b9",
@@ -18664,7 +19041,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1254.84
     },
     {
         "_id": "622e380637606f422fc5d986",
@@ -18704,7 +19082,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 852.59
     },
     {
         "_id": "622e38060e0849667692b722",
@@ -18754,7 +19133,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1341.3
     },
     {
         "_id": "622e380642319e01f6b03037",
@@ -18794,7 +19174,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1521.49
     },
     {
         "_id": "622e3806fa84e69dcca19961",
@@ -18849,7 +19230,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2035.33
     },
     {
         "_id": "622e38061a4971e211072c00",
@@ -18899,7 +19281,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1638.65
     },
     {
         "_id": "622e38062ae995e56fc0a14f",
@@ -18964,7 +19347,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3590.76
     },
     {
         "_id": "622e3806ac893a650530f25e",
@@ -19013,7 +19397,8 @@
                 "title": "occaecat nisi do amet irure"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1942.02
     },
     {
         "_id": "622e3806de04c9a9008edd95",
@@ -19048,7 +19433,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 454.16
     },
     {
         "_id": "622e3806dae74e0ba9bdd275",
@@ -19098,7 +19484,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2096.77
     },
     {
         "_id": "622e38069988159b49bc18d2",
@@ -19142,7 +19529,8 @@
                 "title": "dolor cillum fugiat amet amet"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1751.15
     },
     {
         "_id": "622e38068e8ef979adc83bc7",
@@ -19186,7 +19574,8 @@
                 "title": "dolor elit laboris proident velit"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 2109.77
     },
     {
         "_id": "622e3806cbf04369b3ce78df",
@@ -19231,7 +19620,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1941.84
     },
     {
         "_id": "622e380601453e9f43b1f757",
@@ -19285,7 +19675,8 @@
                 "title": "eiusmod quis et cupidatat tempor"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1970.21
     },
     {
         "_id": "622e3806ed4f566291650242",
@@ -19344,7 +19735,8 @@
                 "title": "non non mollit laboris commodo"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 2525.57
     },
     {
         "_id": "622e38065a99b79b65caeb40",
@@ -19409,7 +19801,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3164.16
     },
     {
         "_id": "622e38065328a39c39643967",
@@ -19468,7 +19861,8 @@
                 "title": "quis occaecat Lorem pariatur ea"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 3007.55
     },
     {
         "_id": "622e38067bd1f2842cf552b4",
@@ -19523,7 +19917,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1922.63
     },
     {
         "_id": "622e38064bbd770621b666a5",
@@ -19577,7 +19972,8 @@
                 "title": "duis pariatur pariatur dolore sit"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 2739.25
     },
     {
         "_id": "622e3806747cf2d9a216b010",
@@ -19637,7 +20033,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1895.37
     },
     {
         "_id": "622e3806b3a588cc0345d875",
@@ -19682,7 +20079,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1864.34
     },
     {
         "_id": "622e38065202b2d9d7bead76",
@@ -19737,7 +20135,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2248.05
     },
     {
         "_id": "622e38066a79cdba5864f579",
@@ -19801,7 +20200,8 @@
                 "title": "cillum occaecat laborum labore tempor"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 2765.34
     },
     {
         "_id": "622e380688476043b65db9aa",
@@ -19856,7 +20256,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1640.4
     },
     {
         "_id": "622e3806a4d5f8ab6554d1ae",
@@ -19901,7 +20302,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1513.5
     },
     {
         "_id": "622e380644bca182b51b6aee",
@@ -19951,7 +20353,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1436.95
     },
     {
         "_id": "622e3806032e08b26fd69f98",
@@ -20005,7 +20408,8 @@
                 "title": "excepteur nostrud sint nisi magna"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 2801.38
     },
     {
         "_id": "622e380646027d64fd65f224",
@@ -20060,7 +20464,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2654.48
     },
     {
         "_id": "622e38062efeb5ddecca47c3",
@@ -20095,7 +20500,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 756.91
     },
     {
         "_id": "622e3806c7c4eacc6a0b7c7c",
@@ -20159,7 +20565,8 @@
                 "title": "incididunt Lorem id amet velit"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2491.29
     },
     {
         "_id": "622e38064551a561924b901d",
@@ -20223,7 +20630,8 @@
                 "title": "aliqua Lorem sunt do voluptate"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 2970.75
     },
     {
         "_id": "622e3806b2e34991a600b9f3",
@@ -20282,7 +20690,8 @@
                 "title": "eiusmod laborum labore duis eu"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 2826.4
     },
     {
         "_id": "622e3806671541226a7693e5",
@@ -20316,7 +20725,8 @@
                 "title": "culpa reprehenderit cillum pariatur qui"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1066.89
     },
     {
         "_id": "622e38061303ef7b4a6624ae",
@@ -20361,7 +20771,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1468.92
     },
     {
         "_id": "622e3806154552adac4bad19",
@@ -20415,7 +20826,8 @@
                 "title": "in minim est dolor est"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 2063.94
     },
     {
         "_id": "622e3806ebb508c2de051918",
@@ -20459,7 +20871,8 @@
                 "title": "ut adipisicing cupidatat mollit tempor"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1637.04
     },
     {
         "_id": "622e3806266c7d7d01887a04",
@@ -20503,7 +20916,8 @@
                 "title": "cupidatat qui est tempor fugiat"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1674.39
     },
     {
         "_id": "622e38061438deb668769dca",
@@ -20543,7 +20957,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1616.55
     },
     {
         "_id": "622e38061dee8473cef4425f",
@@ -20577,7 +20992,8 @@
                 "title": "occaecat excepteur consectetur exercitation aliquip"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1090.72
     },
     {
         "_id": "622e38068e246a5b382779a0",
@@ -20612,7 +21028,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 439.26
     },
     {
         "_id": "622e3806442a1cc23683fe5b",
@@ -20671,7 +21088,8 @@
                 "title": "nulla dolore nostrud sit nisi"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 2319.31
     },
     {
         "_id": "622e3806f534d6f5bfb9d9b1",
@@ -20731,7 +21149,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2954.99
     },
     {
         "_id": "622e380608584adaca584575",
@@ -20765,7 +21184,8 @@
                 "title": "in amet dolore consequat ad"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 456.38
     },
     {
         "_id": "622e3806cd0fd527f62e6339",
@@ -20805,7 +21225,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1146.91
     },
     {
         "_id": "622e38064314d27090b8602e",
@@ -20870,7 +21291,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3695.93
     },
     {
         "_id": "622e3806c600f9abda520b30",
@@ -20915,7 +21337,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1165.09
     },
     {
         "_id": "622e38061fea372718ba94fe",
@@ -20954,7 +21377,8 @@
                 "title": "est esse non veniam tempor"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1277.53
     },
     {
         "_id": "622e3806d38a5ad88e3e0c43",
@@ -20998,7 +21422,8 @@
                 "title": "officia commodo irure amet consequat"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1548.86
     },
     {
         "_id": "622e380659d415f0bcd2ee64",
@@ -21038,7 +21463,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1207.23
     },
     {
         "_id": "622e38069ed4b58bfe60acfb",
@@ -21098,7 +21524,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2666.21
     },
     {
         "_id": "622e38067067fccc625282a8",
@@ -21138,7 +21565,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1322.31
     },
     {
         "_id": "622e3806040aa238fba5edda",
@@ -21172,7 +21600,8 @@
                 "title": "culpa cupidatat excepteur quis ipsum"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 655.54
     },
     {
         "_id": "622e380666f3779d7aa17cfb",
@@ -21237,7 +21666,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3913.61
     },
     {
         "_id": "622e38064ffd2acd2f36ec80",
@@ -21277,7 +21707,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1064.52
     },
     {
         "_id": "622e3806999bdcae568f7135",
@@ -21342,7 +21773,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2742.5
     },
     {
         "_id": "622e3806c3bd570fa9e97b36",
@@ -21392,7 +21824,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 961.58
     },
     {
         "_id": "622e38063bb713f92f13c1ed",
@@ -21426,7 +21859,8 @@
                 "title": "est anim est dolor ex"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 651.12
     },
     {
         "_id": "622e38069feaa871ed2ed42e",
@@ -21481,7 +21915,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2039.24
     },
     {
         "_id": "622e38067895ad582f6286ff",
@@ -21525,7 +21960,8 @@
                 "title": "commodo aute culpa nulla aliqua"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 1287.28
     },
     {
         "_id": "622e38061ba2827b279f67c9",
@@ -21560,7 +21996,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1050.48
     },
     {
         "_id": "622e380672579b4aafb21be5",
@@ -21614,7 +22051,8 @@
                 "title": "proident Lorem voluptate elit laboris"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 2585.59
     },
     {
         "_id": "622e3806e8e9b208b7ef27b1",
@@ -21648,7 +22086,8 @@
                 "title": "in dolore officia laboris excepteur"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1068.28
     },
     {
         "_id": "622e38067f141a9cb83a4a70",
@@ -21702,7 +22141,8 @@
                 "title": "sit nostrud occaecat nostrud et"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1877.8
     },
     {
         "_id": "622e3806d8ff95e5227d49fc",
@@ -21757,7 +22197,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2835.25
     },
     {
         "_id": "622e380663062b4006d60047",
@@ -21811,7 +22252,8 @@
                 "title": "sint enim labore ex ipsum"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 1878.61
     },
     {
         "_id": "622e3806c266d731b196b222",
@@ -21855,7 +22297,8 @@
                 "title": "adipisicing cillum aliquip mollit velit"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1448.39
     },
     {
         "_id": "622e3806474cdbdee9102482",
@@ -21914,7 +22357,8 @@
                 "title": "est sit mollit ullamco pariatur"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 2583.16
     },
     {
         "_id": "622e380676cb71217c17ccec",
@@ -21958,7 +22402,8 @@
                 "title": "consectetur ipsum consequat laboris occaecat"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 1693.92
     },
     {
         "_id": "622e3806e6c598981df2328b",
@@ -22013,7 +22458,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2186.97
     },
     {
         "_id": "622e38064013530cc047cf5e",
@@ -22057,7 +22503,8 @@
                 "title": "dolore amet veniam exercitation commodo"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1282.31
     },
     {
         "_id": "622e38060a4b5f0afe0d1b3c",
@@ -22107,7 +22554,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1004.65
     },
     {
         "_id": "622e380602048ce933b2e1c9",
@@ -22166,7 +22614,8 @@
                 "title": "ullamco fugiat nisi minim do"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 3311.54
     },
     {
         "_id": "622e38067711cbdaf74dddd4",
@@ -22210,7 +22659,8 @@
                 "title": "duis ea officia elit qui"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1740.31
     },
     {
         "_id": "622e3806e183866de8a24700",
@@ -22259,7 +22709,8 @@
                 "title": "cupidatat in enim esse qui"
             }
         ],
-        "__v": 10
+        "__v": 10,
+        "price": 1708.36
     },
     {
         "_id": "622e3806f2038b4fa30e95d8",
@@ -22294,7 +22745,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1110.6
     },
     {
         "_id": "622e3806ace7ff8fda3e9b65",
@@ -22339,7 +22791,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1350.44
     },
     {
         "_id": "622e3806e49bd012760ccc4f",
@@ -22399,7 +22852,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3200.03
     },
     {
         "_id": "622e380637517f02b1ca90ed",
@@ -22444,7 +22898,8 @@
             }
         ],
         "__v": 3,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1563.02
     },
     {
         "_id": "622e3806039e190fae62aabe",
@@ -22489,7 +22944,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1020.87
     },
     {
         "_id": "622e38068613762067b06cd7",
@@ -22549,7 +23005,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2601.66
     },
     {
         "_id": "622e3806aeabeeb0b3bd1e35",
@@ -22583,7 +23040,8 @@
                 "title": "commodo nisi occaecat ea do"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 742.32
     },
     {
         "_id": "622e38069e75f7eb6f93871e",
@@ -22617,7 +23075,8 @@
                 "title": "velit eiusmod amet proident ad"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 853.97
     },
     {
         "_id": "622e3806544da21a4ae1bb0f",
@@ -22651,7 +23110,8 @@
                 "title": "occaecat velit sit aute cillum"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1297.18
     },
     {
         "_id": "622e3806c706615a77bfb1de",
@@ -22716,7 +23176,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2547
     },
     {
         "_id": "622e38061cda352188d71340",
@@ -22775,7 +23236,8 @@
                 "title": "cupidatat consequat esse et ad"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 2348.81
     },
     {
         "_id": "622e3806bff9bd1a94025f35",
@@ -22840,7 +23302,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2559.27
     },
     {
         "_id": "622e380696689bc931a786ad",
@@ -22904,7 +23367,8 @@
                 "title": "duis do ex cupidatat consectetur"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 3209.63
     },
     {
         "_id": "622e3806419c23f2182989d1",
@@ -22964,7 +23428,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2576.89
     },
     {
         "_id": "622e38069e378566b078993b",
@@ -23004,7 +23469,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 688.89
     },
     {
         "_id": "622e3806f62a0be8212c4b35",
@@ -23059,7 +23525,8 @@
             }
         ],
         "__v": 7,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3094.65
     },
     {
         "_id": "622e3806a3fc6fa43a153b0a",
@@ -23113,7 +23580,8 @@
                 "title": "elit qui culpa mollit tempor"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2604.93
     },
     {
         "_id": "622e3806391f33789d2d0ecb",
@@ -23168,7 +23636,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1804.07
     },
     {
         "_id": "622e3806ebe00325ba1f7518",
@@ -23213,7 +23682,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1288.08
     },
     {
         "_id": "622e3806b65050b01c6d58d6",
@@ -23263,7 +23733,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1376.46
     },
     {
         "_id": "622e3806f992d4594c21a1a4",
@@ -23317,7 +23788,8 @@
                 "title": "nulla adipisicing consequat adipisicing fugiat"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 1805.08
     },
     {
         "_id": "622e38064bd9a080cab482ab",
@@ -23361,7 +23833,8 @@
                 "title": "magna quis proident sunt proident"
             }
         ],
-        "__v": 6
+        "__v": 6,
+        "price": 1586.19
     },
     {
         "_id": "622e380674f91042bd1cf11d",
@@ -23426,7 +23899,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3139.19
     },
     {
         "_id": "622e38061d81c393f243a276",
@@ -23486,7 +23960,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2577.96
     },
     {
         "_id": "622e3806f968a50650d0db29",
@@ -23546,7 +24021,8 @@
             }
         ],
         "__v": 1,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3244.61
     },
     {
         "_id": "622e3806d29aeb5ffee6d336",
@@ -23586,7 +24062,8 @@
             }
         ],
         "__v": 8,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 963.87
     },
     {
         "_id": "622e3806cc1814d9156e6837",
@@ -23621,7 +24098,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 552.77
     },
     {
         "_id": "622e3806d633743872cea668",
@@ -23680,7 +24158,8 @@
                 "title": "quis in qui ullamco cupidatat"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 3345.37
     },
     {
         "_id": "622e3806bac5849d5a9f26f2",
@@ -23714,7 +24193,8 @@
                 "title": "Lorem do ex incididunt tempor"
             }
         ],
-        "__v": 2
+        "__v": 2,
+        "price": 1220.39
     },
     {
         "_id": "622e38069f0f621afe9cfb66",
@@ -23768,7 +24248,8 @@
                 "title": "nisi qui cupidatat nulla sit"
             }
         ],
-        "__v": 3
+        "__v": 3,
+        "price": 2222.33
     },
     {
         "_id": "622e38061c80953a93a7f118",
@@ -23832,7 +24313,8 @@
                 "title": "duis quis quis fugiat tempor"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2587.58
     },
     {
         "_id": "622e38060afce5d882fe5b7f",
@@ -23877,7 +24359,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1640.3
     },
     {
         "_id": "622e3806c45b4c1542af9372",
@@ -23942,7 +24425,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3416.9
     },
     {
         "_id": "622e38069456a8c808650316",
@@ -23982,7 +24466,8 @@
             }
         ],
         "__v": 9,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 788.64
     },
     {
         "_id": "622e3806cd505868d7896530",
@@ -24027,7 +24512,8 @@
             }
         ],
         "__v": 2,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1324.92
     },
     {
         "_id": "622e3806d081be1d8cd42afe",
@@ -24076,7 +24562,8 @@
                 "title": "duis laboris incididunt nulla enim"
             }
         ],
-        "__v": 9
+        "__v": 9,
+        "price": 1960.58
     },
     {
         "_id": "622e3806aefb4364615e4dcc",
@@ -24141,7 +24628,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 3583.08
     },
     {
         "_id": "622e3806e7cb74380f53ba9b",
@@ -24185,7 +24673,8 @@
                 "title": "do do sit ea magna"
             }
         ],
-        "__v": 5
+        "__v": 5,
+        "price": 1187.69
     },
     {
         "_id": "622e380629e4fc50a8d7cd61",
@@ -24234,7 +24723,8 @@
                 "title": "mollit Lorem eu cupidatat ut"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 1855.96
     },
     {
         "_id": "622e380697073fc919514ffb",
@@ -24269,7 +24759,8 @@
             }
         ],
         "__v": 6,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 745.39
     },
     {
         "_id": "622e380638bc6d47d346332a",
@@ -24318,7 +24809,8 @@
                 "title": "aliqua exercitation esse occaecat ullamco"
             }
         ],
-        "__v": 8
+        "__v": 8,
+        "price": 2148.65
     },
     {
         "_id": "622e3806e26db237997fa9ba",
@@ -24378,7 +24870,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 2991.27
     },
     {
         "_id": "622e3806188980df79d3a28e",
@@ -24442,7 +24935,8 @@
                 "title": "voluptate occaecat voluptate duis labore"
             }
         ],
-        "__v": 7
+        "__v": 7,
+        "price": 2947.73
     },
     {
         "_id": "622e3806e1e032b90a8e3e02",
@@ -24492,7 +24986,8 @@
             }
         ],
         "__v": 5,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1879.48
     },
     {
         "_id": "622e3806194ca8a458ab042a",
@@ -24542,7 +25037,8 @@
             }
         ],
         "__v": 10,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 1677.98
     },
     {
         "_id": "622e3806b0925913190fbf47",
@@ -24591,7 +25087,8 @@
                 "title": "anim veniam ea consectetur velit"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1867.27
     },
     {
         "_id": "622e3806c8506fb681fc30c7",
@@ -24635,7 +25132,8 @@
                 "title": "ea nulla fugiat excepteur et"
             }
         ],
-        "__v": 4
+        "__v": 4,
+        "price": 1628.53
     },
     {
         "_id": "622e3806620873e412cabf34",
@@ -24680,7 +25178,8 @@
             }
         ],
         "__v": 4,
-        "cancelationReason": "This trip has been cancelled"
+        "cancelationReason": "This trip has been cancelled",
+        "price": 980.8
     },
     {
         "_id": "622e380646fd043ca3c52a31",
@@ -24734,7 +25233,8 @@
                 "title": "ut et excepteur adipisicing ipsum"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1533.31
     },
     {
         "_id": "621bc2fcc4b04c8afb4931a0",
@@ -24788,6 +25288,7 @@
                 "title": "ut et excepteur adipisicing ipsum"
             }
         ],
-        "__v": 1
+        "__v": 1,
+        "price": 1533.31
     }
 ]
