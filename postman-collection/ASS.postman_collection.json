@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5472900c-a116-42d7-b2fc-7e8244f2c0f0",
+		"_postman_id": "e5e0305e-32d4-46a7-ad50-441719b0558c",
 		"name": "ASS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -494,8 +494,17 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n\t\"price\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "{{url}}/trips/:tripId/applications/:applicationId/:price",
+							"raw": "{{url}}/trips/:tripId/applications/:applicationId/pay",
 							"host": [
 								"{{url}}"
 							],
@@ -504,7 +513,7 @@
 								":tripId",
 								"applications",
 								":applicationId",
-								":price"
+								"pay"
 							],
 							"variable": [
 								{
@@ -513,10 +522,6 @@
 								},
 								{
 									"key": "applicationId",
-									"value": ""
-								},
-								{
-									"key": "price",
 									"value": ""
 								}
 							]
