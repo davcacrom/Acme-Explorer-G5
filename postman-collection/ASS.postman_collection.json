@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "ea11f25c-df60-4239-a212-7b853dd31f5b",
+		"_postman_id": "9b88b0da-5d8f-4e80-a0ec-964b0db310da",
 		"name": "ASS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -126,7 +126,7 @@
 							"variable": [
 								{
 									"key": "finderId",
-									"value": ""
+									"value": null
 								}
 							]
 						}
@@ -138,6 +138,15 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"622e380f960c2cbcbc97d008\",\r\n    \"endDate\": \"2025-06-26T11:54:24.000Z\",\r\n    \"keyword\": \"eiusmod\",\r\n    \"lastUpdate\": \"2018-05-25T00:00:42.000Z\",\r\n    \"maxPrice\": 312.81,\r\n    \"minPrice\": 70.26,\r\n    \"startDate\": \"2022-05-28T08:29:52.000Z\",\r\n    \"actor\": \"622e37efa2109b09cdd55c98\",\r\n    \"trips\": [],\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{url}}/finders/:finderId",
 							"host": [
@@ -150,7 +159,7 @@
 							"variable": [
 								{
 									"key": "finderId",
-									"value": ""
+									"value": null
 								}
 							]
 						}
@@ -180,14 +189,30 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"623781cfcfacb3b731c9a891\",\r\n    \"cachedPeriod\":1,\r\n    \"numberResults\":10,\r\n    \"__v\":0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "{{url}}/finders/config",
+							"raw": "{{url}}/finders/config/:configId",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"finders",
-								"config"
+								"config",
+								":configId"
+							],
+							"variable": [
+								{
+									"key": "configId",
+									"value": null
+								}
 							]
 						}
 					},
@@ -549,6 +574,26 @@
 					"response": []
 				}
 			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
