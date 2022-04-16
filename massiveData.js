@@ -6,6 +6,9 @@ const Trip = mongoose.model('Trips')
 require('./api/models/application')
 const Application = mongoose.model('Applications')
 
+require('./api/models/sponsorship')
+const Sponsorship = mongoose.model('Sponsorships')
+
 require('./api/models/configuration')
 const Configuration = mongoose.model('Configurations')
 
@@ -28,7 +31,8 @@ async function prepareDatabase() {
                     loadTrips,
                     loadApplications,
                     loadFinders,
-                    loadConfiguration
+                    loadConfiguration,
+                    loadSponsorships
                 ],
                 function (err, results) {
                     if (err) {
@@ -103,6 +107,18 @@ async function loadActors() {
         let jsonDataset = JSON.parse(data);
         await Actor.insertMany(jsonDataset);
         return "Actors' collection created";
+    } catch (e) {
+        console.log("Error en actor")
+        throw e;
+    }
+}
+
+async function loadSponsorships() {
+    try {
+        let data = fileSystem.readFileSync("./data/sponsorships.json", 'utf8');
+        let jsonDataset = JSON.parse(data);
+        await Sponsorship.insertMany(jsonDataset);
+        return "Sponsorships' collection created";
     } catch (e) {
         console.log("Error en actor")
         throw e;

@@ -38,7 +38,7 @@ const ActorSchema = new Schema({
   role: {
     type: String,
     required: 'Kindly enter the user role(s)',
-    enum: ['EXPLORER', 'MANAGER', 'ADMINISTRATOR']
+    enum: ['EXPLORER', 'MANAGER', 'ADMINISTRATOR','SPONSOR']
   },
   active: {
     type: Boolean,

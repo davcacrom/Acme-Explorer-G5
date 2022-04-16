@@ -1,0 +1,102 @@
+[
+    {
+      "_id": "62335719a7bd13c6d50dc256",
+      "banner": "http://www.banner.com",
+      "landingPage": "http://www.landingpage.com",
+      "isPaid": "true",
+      "trip": "623351cdb4c28f41331332ac",
+      "sponsor": "62334a03ff8a092025c33615",
+      "created": "2021-09-28T04:21:37.763Z",
+      "__v": "0"
+    },
+    {
+      "_id": "62335719d0a5d12b7e0e7135",
+      "banner": "http://www.banner.com",
+      "landingPage": "http://www.landingpage.com",
+      "isPaid": "true",
+      "trip": "623351cdc5009af95973d506",
+      "sponsor": "62334a03ff8a092025c33615",
+      "created": "2021-10-24T10:35:08.714Z",
+      "__v": "0"
+    },
+    {
+      "_id": "623357193bff297c4c6e49a3",
+      "banner": "http://www.banner.com",
+      "landingPage": "http://www.landingpage.com",
+      "isPaid": "true",
+      "trip": "623351cd1d6d98edd5857c3c",
+      "sponsor": "62334a03ff8a092025c33615",
+      "created": "2022-03-04T01:30:41.370Z",
+      "__v": "0"
+    },
+    {
+      "_id": "623357191b96a44cc74c5977",
+      "banner": "http://www.banner.com",
+      "landingPage": "http://www.landingpage.com",
+      "isPaid": "false",
+      "trip": "623351cd8cae2ed0e95ab8f2",
+      "sponsor": "62334a03ff8a092025c33615",
+      "created": "2021-02-01T10:05:05.726Z",
+      "__v": "0"
+    },
+    {
+      "_id": "623357198b6f294693210e9a",
+      "banner": "http://www.banner.com",
+      "landingPage": "http://www.landingpage.com",
+      "isPaid": "true",
+      "trip": "623351cdf433f656d2da3172",
+      "sponsor": "62334a03ff8a092025c33615",
+      "created": "2022-01-04T09:01:08.055Z",
+      "__v": "0"
+    },
+    {
+      "_id": "62335719c6df54fb823774eb",
+      "banner": "http://www.banner.com",
+      "landingPage": "http://www.landingpage.com",
+      "isPaid": "false",
+      "trip": "623351cd9037b98fa568ae70",
+      "sponsor": "62334a03ff8a092025c33615",
+      "created": "2021-06-18T07:19:23.893Z",
+      "__v": "0"
+    },
+    {
+      "_id": "6233571983357dd237ade952",
+      "banner": "http://www.banner.com",
+      "landingPage": "http://www.landingpage.com",
+      "isPaid": "false",
+      "trip": "623351cdd2f2fff31bfad991",
+      "sponsor": "62334a03ff8a092025c33615",
+      "created": "2021-03-09T15:44:50.539Z",
+      "__v": "0"
+    },
+    {
+      "_id": "623357190be9422d3c370840",
+      "banner": "http://www.banner.com",
+      "landingPage": "http://www.landingpage.com",
+      "isPaid": "true",
+      "trip": "623351cdc588f4fee6516b0c",
+      "sponsor": "62334a03ff8a092025c33615",
+      "created": "2021-05-10T11:39:23.262Z",
+      "__v": "0"
+    },
+    {
+      "_id": "62335719f21a8f32326f9604",
+      "banner": "http://www.banner.com",
+      "landingPage": "http://www.landingpage.com",
+      "isPaid": "true",
+      "trip": "623351cd29c3df9dc562b5dc",
+      "sponsor": "62334a03242d23d3730d8638",
+      "created": "2021-06-14T22:14:00.899Z",
+      "__v": "0"
+    },
+    {
+      "_id": "62335719b16609b55dec305e",
+      "banner": "http://www.banner.com",
+      "landingPage": "http://www.landingpage.com",
+      "isPaid": "false",
+      "trip": "623351cd8b674eb2c62859a3",
+      "sponsor": "62334a03242d23d3730d8638",
+      "created": "2021-08-29T01:04:34.765Z",
+      "__v": "0"
+    }
+  ]
