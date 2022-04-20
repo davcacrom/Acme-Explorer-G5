@@ -23,7 +23,7 @@ module.exports = function (app) {
   app.route('/v1/trips/finders/:finderId')
     .get(trips.list_trips_by_finder) //listing trips by explorers finder
 
-  app.route('/v1/trips/:tripId/applications/:applicationId')
+  app.route('/v1/applications/:applicationId')
     .get(applications.read_an_application) //displaying applications
     .put(applications.update_an_application) //change status, cancel application
 
@@ -50,7 +50,7 @@ module.exports = function (app) {
   app.route('/v2/trips/finders/:finderId')
     .get(trips.list_trips_by_finder_with_auth) //listing trips by explorers finder
 
-  app.route('/v2/trips/:tripId/applications/:applicationId')
+  app.route('/v2/applications/:applicationId')
     .get(applications.read_an_application_with_auth) //displaying applications
     .put(applications.update_an_application_with_auth) //change status, cancel application
 
