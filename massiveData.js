@@ -19,6 +19,13 @@ const async = require("async");
 
 const fileSystem = require('fs');
 
+
+const PICTURES = [
+    "https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg",
+    "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg",
+    "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"
+];
+
 async function prepareDatabase() {
     var actorsCount = await Actor.count()
     if (actorsCount == 0) {
@@ -62,10 +69,10 @@ async function fixRefs() {
         const explorers = actors.filter(actor => actor.role === 'EXPLORER');
 
         const trips = JSON.parse(fileSystem.readFileSync("./data/RawTrips.json", 'utf8'));
-        const cancelledTrips = trips.filter(trip => trip.state === 'CANCELLED');
         trips.forEach(trip => {
             trip.actor = random(managers)._id;
             trip.price = parseFloat(trip.stages.reduce((sum, stage) => sum + stage.price, 0).toFixed(2));
+            trip.pictures = PICTURES.sort(() => 0.5 - Math.random()).slice(0, 1 + Math.floor(Math.random() * PICTURES.length));
             if (trip.state === 'CANCELLED')
                 trip.cancelationReason = 'This trip has been cancelled';
         });

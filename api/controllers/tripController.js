@@ -69,10 +69,7 @@ exports.read_a_trip = function (req, res) {
     if (err)
       res.status(500).send(err)
     else if (trip) {
-      if (trip.published)
-        res.json(trip)
-      else
-        res.status(403).json('You do not have permission to view that trip');
+      res.json(trip)
     } else
       res.status(404).json("Not found");
   })
@@ -95,6 +92,7 @@ exports.update_a_trip = async function (req, res) {
           stages: req.body.stages,
           published: req.body.published
         };
+        updatedTrip.price = parseFloat(updatedTrip.stages.reduce((sum, stage) => sum + stage.price, 0).toFixed(2));
       } else if (trip.state !== 'CANCELLED' && trip.startDate > new Date() && (await Application.count({ trip: trip._id, status: 'ACCEPTED' })) === 0)
         updatedTrip = {
           cancelationReason: req.body.cancelationReason,

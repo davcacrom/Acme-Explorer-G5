@@ -71,7 +71,21 @@ exports.create_an_actor_with_auth = async function (req, res) {
     }
 
   }
+}
 
+exports.read_an_actor_by_email = function (req, res) {
+  Actor.findOne({ email: req.params.email }, function (err, actor) {
+    if (err) {
+      res.status(500)
+      res.send(err)
+    } else if (actor) {
+      res.json(actor)
+    }
+    else {
+      res.status(404)
+      res.send("Actor not found")
+    }
+  })
 }
 
 exports.read_an_actor = function (req, res) {
