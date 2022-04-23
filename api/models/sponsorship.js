@@ -19,12 +19,12 @@ const SponsorshipSchema = new Schema({
     required: 'Kindly enter the paid condition of the banner'
   },
   trip: {
-    type: Schema.Types.ObjectId,
+    type: String,
     required: 'Trip id required',
     ref: 'Trip'
   },
   sponsor: {
-    type: Schema.Types.ObjectId,
+    type: String,
     required: 'Sponsor id required',
     ref: 'Actor'
   },

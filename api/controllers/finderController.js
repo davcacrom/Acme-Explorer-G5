@@ -214,7 +214,15 @@ exports.get_dashboard = function (req, res) {
       console.log(err)
       res.send(err)
     } else {
-      res.json(dashboard[0].data)
+
+      var results={ 
+        "topKeywords":dashboard[0].data[0].top_keywords,
+        "avgPriceRange":{
+          "max":dashboard[0].data[1].avgPriceRangeHigh,
+          "min": dashboard[0].data[1].avgPriceRangeLow
+        }
+      }
+      res.json(results)
     }
   })
 }
