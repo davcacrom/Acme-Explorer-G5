@@ -489,12 +489,12 @@ exports.list_applications_by_user = async function (req, res) {
       res.status(404)
       res.send("The actor does not exist")
     } else {
-      Application.find({ user: req.params.actorId }, req.body, { new: true, group: "status" }, function (err, applications) {
+      Application.find({ actor: req.params.actorId }, req.body, function (err, applications) {
         if (err) {
           res.status(500)
           res.send(err)
         } else {
-          res.json(groupBy(applications, 'status'))
+          res.json(applications)
         }
       })
     }
