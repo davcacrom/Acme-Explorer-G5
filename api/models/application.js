@@ -36,6 +36,10 @@ const ApplicationSchema = new Schema({
 		type: Schema.Types.ObjectId,
 		ref: 'Actors',
 	},
+	manager: {
+		type: Schema.Types.ObjectId,
+		ref: 'Actors',
+	},
 
 }, { strict: false })//end Application
 
