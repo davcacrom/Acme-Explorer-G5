@@ -6,7 +6,7 @@ const Actor = mongoose.model('Actors')
 const authController = require('./authController')
 
 exports.list_my_sponsorships = function (req, res) {
-  Sponsorship.find({}, function (err, sponsorships) {
+  Sponsorship.find({ sponsor: req.params.sponsorId }, function (err, sponsorships) {
     if (err) {
       res.status(500).send(err)
     } else {

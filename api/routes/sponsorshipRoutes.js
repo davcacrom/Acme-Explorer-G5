@@ -16,6 +16,8 @@ module.exports = function (app) {
     .get(sponsorships.list_my_sponsorships)
     .post(sponsorships.create_a_sponsorship)
 
+  app.route('/v1/sponsorshipsBySponsor/:sponsorId')
+    .get(sponsorships.list_my_sponsorships)
   /**
    * Get my sponsorships
    *    RequiredRoles: Sponsor
@@ -27,8 +29,10 @@ module.exports = function (app) {
    * @url /v1/sponsorships
   */
   app.route('/v2/sponsorships')
-    .get(sponsorships.list_my_sponsorships_verified)
     .post(sponsorships.create_a_sponsorship_verified)
+   
+app.route('/v2/sponsorshipsBySponsor/:sponsorId')
+    .get(sponsorships.list_my_sponsorships_verified)
 
   /**
    * Get a sponsorship
