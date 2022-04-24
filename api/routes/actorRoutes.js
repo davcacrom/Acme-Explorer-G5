@@ -18,6 +18,9 @@ module.exports = function (app) {
   app.route('/v1/actors/:actorId/applications')
     .get(applications.list_applications_by_user) //list applications user has made grouped by status
 
+  app.route('/v1/manager/:managerId/applications')
+    .get(applications.list_applications_by_manager) //list applications user has made grouped by status
+
   //V2 - Con autenticación
   app.route('/v2/actors')
     .post(actors.create_an_actor_with_auth) //Register to the system as an explorer, create accounts for new managers
