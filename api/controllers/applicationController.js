@@ -501,6 +501,27 @@ exports.list_applications_by_user = async function (req, res) {
   })
 }
 
+exports.list_applications_by_manager = async function (req, res) {
+  Actor.findById(req.params.managerId, function (err, actor) {
+    if (err) {
+      res.status(500)
+      res.send(err)
+    } else if (actor == null) {
+      res.status(404)
+      res.send("The actor does not exist")
+    } else {
+      Application.find({ manager: req.params.managerId }, req.body, function (err, applications) {
+        if (err) {
+          res.status(500)
+          res.send(err)
+        } else {
+          res.json(applications)
+        }
+      })
+    }
+  })
+}
+
 exports.list_applications_by_user_with_auth = async function (req, res) {
   const idToken = req.headers.idtoken // WE NEED the FireBase custom token in the req.header... it is created by FireBase!!
   const authenticatedUser = await authController.getUserId(idToken);
