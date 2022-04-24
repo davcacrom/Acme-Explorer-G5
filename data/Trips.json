@@ -10,8 +10,10 @@
         "endDate": "2024-10-29T03:45:46",
         "startDate": "2023-06-27T02:29:14",
         "ticker": "180419-YVWB",
-        "pictures": ["https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg"],
-        "price":1700.00,
+        "pictures": [
+            "https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg"
+        ],
+        "price": 1700.00,
         "stages": [
             {
                 "description": "Est adipisicing nulla occaecat dolore elit mollit ipsum culpa et esse velit irure aliqua. Sint sunt laboris reprehenderit ad dolore enim. Deserunt ea in sunt culpa ea consequat aute exercitation cillum mollit laboris labore. Velit cupidatat veniam pariatur non eiusmod sunt proident proident et proident dolore.\r\nConsequat deserunt tempor anim officia ex sunt cupidatat dolore ea fugiat in excepteur. Incididunt magna cillum occaecat est reprehenderit occaecat proident exercitation Lorem ea ex. Reprehenderit proident cupidatat consequat proident reprehenderit cillum deserunt magna dolor consectetur excepteur. In minim sunt ullamco laborum nulla nostrud elit. Consequat sunt sit eiusmod quis culpa. Esse eu officia velit esse commodo dolor culpa. Esse labore cupidatat esse cillum ex adipisicing.\r\n",
@@ -62,8 +64,12 @@
         "endDate": "2025-03-11T03:58:30",
         "startDate": "2023-07-18T06:58:24",
         "ticker": "190213-UOFU",
-        "price":1526.58,
-        "pictures": ["https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg","https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg","https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg"],
+        "price": 1526.58,
+        "pictures": [
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg",
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg",
+            "https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg"
+        ],
         "stages": [
             {
                 "description": "Id nulla duis officia adipisicing anim. Cillum sunt mollit duis voluptate esse id magna. Quis cillum ex consectetur laborum sit qui ea est velit nulla laboris veniam culpa cillum. Veniam excepteur consequat amet est ex dolor id adipisicing esse. Do velit amet qui laborum. Reprehenderit excepteur occaecat exercitation ullamco voluptate elit officia.\r\nIn culpa adipisicing consectetur sint. Labore non fugiat dolor consectetur veniam proident enim. Velit magna irure nulla occaecat nulla exercitation commodo fugiat ad non aliquip eiusmod ullamco. Elit excepteur ea nulla deserunt irure. Ullamco tempor do reprehenderit eiusmod do qui esse. Excepteur ea excepteur non quis excepteur duis.\r\n",
@@ -111,12 +117,14 @@
         "requirements": "aliquip aliquip aliqua aliquip amet",
         "title": "ex sint consectetur excepteur dolore",
         "state": "CANCELLED",
-        "cancelationReason":"Eu exercitation fugiat ea cillum laborum cupidatat cupidatat",
+        "cancelationReason": "Eu exercitation fugiat ea cillum laborum cupidatat cupidatat",
         "endDate": "2025-05-21T08:23:45",
         "startDate": "2023-12-27T12:50:09",
         "ticker": "201013-JDHE",
-        "price":2047.04,
-        "pictures": ["https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"],
+        "price": 2047.04,
+        "pictures": [
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"
+        ],
         "stages": [
             {
                 "description": "Commodo irure aute eu aliquip est et minim magna non id laboris. Id mollit magna cillum eu. Reprehenderit et do cupidatat consequat consequat non nisi aute consequat voluptate aliquip ullamco deserunt duis. Consequat adipisicing excepteur nostrud laboris occaecat.\r\nConsectetur sint exercitation adipisicing labore. Ullamco ipsum quis non amet sint. Culpa pariatur consequat duis ad velit occaecat exercitation minim. Nulla nisi cupidatat nisi sit fugiat duis dolore enim. Sit eu minim pariatur commodo fugiat anim nisi velit.\r\n",
@@ -172,8 +180,10 @@
         "endDate": "2025-02-07T05:54:35",
         "startDate": "2024-02-03T02:36:05",
         "ticker": "150908-TKKY",
-        "price":3012.59,
-        "pictures": ["https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"],
+        "price": 3012.59,
+        "pictures": [
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"
+        ],
         "stages": [
             {
                 "description": "Dolor reprehenderit nisi ex exercitation est anim. Aliqua ut fugiat consequat nulla ut do Lorem sit. Aliqua occaecat non cillum dolor fugiat. Aliqua consequat duis enim dolor fugiat quis quis voluptate. Voluptate officia commodo cillum officia nostrud. Enim irure amet commodo laborum veniam officia in Lorem aute sit labore. Dolor aliqua laborum incididunt cillum sit id mollit esse irure dolor deserunt pariatur aliquip.\r\nUt est exercitation ex duis ut mollit consectetur incididunt. In fugiat exercitation et commodo enim ad voluptate. Do consequat et voluptate adipisicing magna velit dolor fugiat voluptate voluptate dolor.\r\n",
@@ -229,8 +239,12 @@
         "endDate": "2025-07-22T07:36:47",
         "startDate": "2024-04-09T06:40:36",
         "ticker": "180404-FIFU",
-        "price":3590.04,
-        "pictures": ["https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg","https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg","https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"],
+        "price": 3590.04,
+        "pictures": [
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg",
+            "https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg",
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"
+        ],
         "stages": [
             {
                 "description": "Irure cupidatat ex reprehenderit cupidatat laborum aliquip magna amet occaecat non. Qui nisi reprehenderit pariatur velit magna id laboris aute elit aliqua amet ad sint. In excepteur ut cupidatat ex ad. Aute anim quis aliquip do qui sunt. Dolor est aliquip irure labore mollit aliqua ea mollit laborum consectetur ullamco.\r\nFugiat aute voluptate magna fugiat consectetur est laborum dolor dolore officia anim id amet esse. Ad consequat adipisicing nostrud commodo labore esse sit et pariatur reprehenderit magna. Tempor nostrud pariatur id eiusmod nisi ut deserunt qui duis reprehenderit.\r\n",
@@ -285,9 +299,13 @@
         "state": "ACTIVE",
         "endDate": "2025-04-19T12:02:56",
         "startDate": "2023-06-19T05:14:37",
-        "price":1743.00,
+        "price": 1743.00,
         "ticker": "150217-BNCO",
-        "pictures": ["https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg","https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg","https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"],
+        "pictures": [
+            "https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg",
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg",
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"
+        ],
         "stages": [
             {
                 "description": "Deserunt ex qui adipisicing esse et nisi do reprehenderit ipsum qui occaecat voluptate. Ex sit aute et magna esse velit commodo in ullamco ut irure quis commodo. Ad eiusmod cupidatat ex mollit aliquip sint. Velit non ex eu qui est elit anim Lorem irure ullamco cillum cupidatat nostrud laborum. Consequat velit sit eiusmod commodo dolore Lorem quis.\r\nAliquip incididunt ea sint est incididunt consectetur esse pariatur. Esse ad officia labore tempor adipisicing. Voluptate mollit nisi eiusmod incididunt laboris officia Lorem quis laboris.\r\n",
@@ -343,8 +361,12 @@
         "endDate": "2025-04-07T03:54:53",
         "startDate": "2023-09-01T01:11:18",
         "ticker": "160815-YBDC",
-        "price":560.23,
-        "pictures": ["https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg","https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg","https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"],
+        "price": 560.23,
+        "pictures": [
+            "https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg",
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg",
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"
+        ],
         "stages": [
             {
                 "description": "Lorem deserunt pariatur do nostrud irure exercitation. Ipsum voluptate duis culpa eiusmod irure. In reprehenderit non officia qui est proident pariatur amet eu ad quis eiusmod ut.\r\nIpsum duis aliquip irure fugiat aute cillum amet in eiusmod laborum laborum. Ea adipisicing anim exercitation sit excepteur ullamco laboris eu qui. Elit nostrud voluptate cillum labore reprehenderit laboris et exercitation aute do quis ad.\r\n",
@@ -361,18 +383,21 @@
     },
     {
         "_id": "622e380664d0e888ddba5bc1",
-        "actor": "622e3806ac0e4563541ce4e6",
+        "actor": "6265696ff868a1ca1de9c636",
         "published": true,
         "description": "Ullamco id amet voluptate est exercitation veniam est commodo. Officia pariatur duis duis nulla labore nulla dolore sunt do magna culpa irure minim. Qui sunt nulla excepteur sit elit nisi dolore eu ex pariatur voluptate consectetur laboris. Laborum dolor adipisicing reprehenderit commodo et labore proident duis sint. Lorem amet veniam est reprehenderit.\r\nSunt commodo voluptate elit ullamco id velit occaecat deserunt eiusmod elit amet sit eu enim. Non excepteur sint anim nisi est excepteur magna culpa tempor pariatur ea consectetur. Qui nisi consequat adipisicing adipisicing tempor id commodo in est proident eiusmod sit. Consequat consequat ut non quis laboris nulla enim exercitation laborum dolore labore. Proident occaecat mollit elit labore consectetur.\r\nNon magna pariatur amet pariatur sit cupidatat esse est qui fugiat consectetur anim. Duis ad eu dolor officia et cillum. Id fugiat ea laboris exercitation sit occaecat ex est amet excepteur fugiat. Reprehenderit nostrud ad non eu esse exercitation est in sit excepteur. Adipisicing commodo sunt sint ut quis. Consectetur aute magna velit adipisicing. Non eu cillum aute deserunt excepteur occaecat.\r\nEu ut aliquip do dolore enim reprehenderit velit amet dolor. Cillum anim sit dolor aliqua laborum in ut tempor enim sit fugiat pariatur veniam tempor. Velit proident laborum exercitation laboris officia aute minim veniam do dolore dolore ad. Non est ipsum ex minim. Duis est et duis reprehenderit ut ullamco aliquip sit. Sunt aute quis enim sunt consequat esse. Fugiat elit deserunt ex pariatur et irure minim sit dolore reprehenderit est officia.\r\nDeserunt esse quis amet labore tempor. Aliqua elit tempor eu sunt incididunt laboris veniam officia sunt exercitation adipisicing dolor sit nisi. Voluptate laboris ex eu do est consectetur anim nulla nisi est. Sunt ex sint voluptate quis adipisicing adipisicing do. Velit aliquip proident proident amet sint commodo voluptate qui do sint eu veniam.\r\n",
         "requirements": "labore eu fugiat anim cupidatat",
         "title": "excepteur laborum irure voluptate proident",
         "state": "CANCELLED",
-        "cancelationReason":"Eu exercitation fugiat ea cillum laborum cupidatat cupidatat",
+        "cancelationReason": "Eu exercitation fugiat ea cillum laborum cupidatat cupidatat",
         "endDate": "2024-09-19T09:06:20",
         "startDate": "2024-07-25T04:06:10",
         "ticker": "201005-MLGL",
-        "price":890.14,
-        "pictures": ["https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg","https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"],
+        "price": 890.14,
+        "pictures": [
+            "https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg",
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"
+        ],
         "stages": [
             {
                 "description": "Ex aute voluptate exercitation sunt fugiat Lorem eu est. Laboris adipisicing ut ullamco cillum ullamco Lorem ullamco excepteur anim qui exercitation. Lorem proident minim aliquip magna magna minim nulla et non elit eu dolor laboris. Tempor duis nostrud anim ad non proident ad ut. Ut duis enim cillum pariatur nulla culpa commodo et cupidatat consequat qui labore exercitation. Enim qui ipsum do culpa minim et ad mollit ut aliquip dolore consequat.\r\nCillum consequat ea cillum et. Enim irure deserunt id cillum. Nisi laborum aliquip reprehenderit in esse occaecat excepteur non esse elit. Aute reprehenderit eu Lorem consectetur mollit quis nulla qui aute.\r\n",
@@ -398,8 +423,10 @@
         "endDate": "2025-02-28T03:44:36",
         "startDate": "2024-08-11T09:41:23",
         "ticker": "140429-TLIY",
-        "price":1302.04,
-        "pictures": ["https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"],
+        "price": 1302.04,
+        "pictures": [
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"
+        ],
         "stages": [
             {
                 "description": "Ullamco eu culpa duis non sit sint do occaecat ad excepteur elit exercitation eu qui. Commodo exercitation cupidatat fugiat duis ipsum mollit sint aute. Aliqua irure sit mollit consequat ea commodo enim sit. Elit elit nostrud officia exercitation ullamco fugiat anim nostrud culpa proident et aute.\r\nIncididunt ut culpa id reprehenderit cillum quis et dolore nisi labore proident mollit anim eiusmod. Ullamco pariatur officia esse ullamco non pariatur officia nulla pariatur irure sint dolore. Magna ut consectetur sint non magna. Proident eiusmod elit ea ex adipisicing in ullamco anim consectetur enim in exercitation enim. Eiusmod nisi ad sint deserunt pariatur duis officia non qui ex irure irure qui.\r\n",
@@ -440,8 +467,11 @@
         "endDate": "2025-04-04T06:23:24",
         "startDate": "2023-09-28T12:27:06",
         "ticker": "200426-CEFW",
-        "price":1573.04,
-        "pictures": ["https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg","https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"],
+        "price": 1573.04,
+        "pictures": [
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg",
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"
+        ],
         "stages": [
             {
                 "description": "Proident excepteur irure ex voluptate. Lorem ex pariatur in ut duis cillum laboris. Ipsum adipisicing enim enim velit nisi pariatur excepteur laborum. Exercitation aliquip veniam consequat sit sit sunt elit. Dolore et et occaecat sunt ut Lorem adipisicing aute amet officia. Cupidatat pariatur fugiat cillum aliqua quis laboris nulla fugiat consequat labore exercitation.\r\nDolore adipisicing eiusmod incididunt velit sint minim officia. Eu nulla Lorem fugiat excepteur ipsum adipisicing nostrud ea cillum ad commodo ipsum deserunt. Irure officia qui officia aliquip aute do officia labore dolor esse sit. Incididunt labore adipisicing do eiusmod anim nulla voluptate sunt dolor enim. Lorem pariatur ex tempor in pariatur adipisicing anim deserunt minim duis. Aliqua proident ullamco proident nulla adipisicing aliquip tempor minim deserunt ad excepteur dolor nisi aliquip.\r\n",
@@ -477,8 +507,10 @@
         "endDate": "2025-01-07T03:48:27",
         "startDate": "2023-03-14T02:48:39",
         "ticker": "140214-YJOT",
-        "price":1102.04,
-        "pictures": ["https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"],
+        "price": 1102.04,
+        "pictures": [
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"
+        ],
         "stages": [
             {
                 "description": "Reprehenderit magna proident nostrud do exercitation do sit reprehenderit aliquip cupidatat aute. Reprehenderit culpa quis id minim mollit Lorem incididunt aliquip. Velit sunt et Lorem qui. Ullamco consectetur magna adipisicing laboris ea cillum culpa.\r\nNon qui est consequat eiusmod incididunt aute occaecat in sint proident sint sit anim occaecat. Sint eu cupidatat incididunt mollit qui sunt est enim reprehenderit. Irure excepteur amet est Lorem veniam est exercitation fugiat reprehenderit velit eiusmod ipsum.\r\n",
@@ -509,8 +541,12 @@
         "endDate": "2024-09-22T02:23:31",
         "startDate": "2023-07-01T01:03:57",
         "ticker": "140927-RKAW",
-        "price":2491.04,
-        "pictures": ["https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg","https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg","https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg"],
+        "price": 2491.04,
+        "pictures": [
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg",
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg",
+            "https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg"
+        ],
         "stages": [
             {
                 "description": "Anim mollit Lorem occaecat eu nisi commodo. Fugiat ex veniam est duis laboris sit ipsum aliqua magna incididunt. Consequat consequat et aliquip voluptate laborum adipisicing aliqua tempor officia id voluptate. Magna commodo mollit ea duis deserunt elit. Dolor anim incididunt duis esse nostrud occaecat fugiat tempor qui tempor quis. Cillum ipsum laboris dolore adipisicing. Occaecat id veniam excepteur duis.\r\nTempor irure laboris adipisicing qui exercitation mollit aliquip. Aliqua et mollit nostrud occaecat nulla pariatur est excepteur sunt officia occaecat eiusmod. Eu consectetur incididunt tempor ea ad velit aliqua qui. Irure nisi incididunt aliquip nostrud cupidatat. Excepteur minim amet ad irure consectetur occaecat. Laboris laborum nostrud aliqua Lorem ut veniam velit.\r\n",
@@ -556,8 +592,11 @@
         "endDate": "2025-02-28T11:25:42",
         "startDate": "2023-05-06T02:27:39",
         "ticker": "150507-MLPB",
-        "price":2153.52,
-        "pictures": ["https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg","https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"],
+        "price": 2153.52,
+        "pictures": [
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg",
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"
+        ],
         "stages": [
             {
                 "description": "Reprehenderit Lorem mollit proident duis est excepteur commodo laborum. Adipisicing sit laborum consequat nulla aute tempor commodo esse fugiat veniam dolore. Est excepteur est non mollit anim nostrud duis quis consequat. Consectetur cillum mollit nostrud id tempor. Nisi excepteur voluptate quis aliqua laboris cupidatat velit.\r\nTempor mollit sunt laborum sint irure ipsum proident est ex proident reprehenderit. Reprehenderit aliqua nisi fugiat fugiat sunt fugiat veniam laborum pariatur non anim. Officia tempor pariatur ipsum eiusmod velit minim do cillum velit quis ex quis. Cillum incididunt id consequat quis est officia duis. Dolor excepteur cupidatat anim cupidatat consectetur. Aliqua duis aliquip aliqua magna voluptate dolore consequat.\r\n",
@@ -608,8 +647,11 @@
         "endDate": "2024-11-24T07:01:56",
         "startDate": "2022-10-13T07:49:08",
         "ticker": "210711-YSQC",
-        "price":1783.24,
-        "pictures": ["https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg","https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg"],
+        "price": 1783.24,
+        "pictures": [
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg",
+            "https://i.blogs.es/161dfa/simon-migaj-yui5vfkhuzs-unsplash/450_1000.jpg"
+        ],
         "stages": [
             {
                 "description": "Nulla proident ad ut laboris nisi ut ullamco duis amet qui dolor Lorem sit reprehenderit. In consectetur voluptate quis fugiat. Nulla dolore deserunt duis culpa ut sint est eu adipisicing laborum ea officia ut.\r\nDeserunt duis dolor adipisicing id laborum pariatur cillum dolore culpa. Ad ad fugiat officia duis consequat deserunt. Culpa nostrud enim pariatur excepteur tempor culpa sint excepteur ut sunt ad aliqua sit aute. Id sit et Lorem culpa mollit dolor nisi amet ex in.\r\n",
@@ -655,8 +697,10 @@
         "endDate": "2024-08-24T10:33:16",
         "startDate": "2023-11-30T04:28:58",
         "ticker": "170126-NMPP",
-        "price":1342.67,
-        "pictures": ["https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"],
+        "price": 1342.67,
+        "pictures": [
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg"
+        ],
         "stages": [
             {
                 "description": "Amet aliqua amet et sint sit. Aliquip do anim Lorem fugiat incididunt qui adipisicing do deserunt. Ut esse fugiat proident veniam ipsum anim mollit do commodo. Ut labore ipsum tempor enim laborum duis in. Pariatur ea enim eu ad ex eiusmod velit voluptate et incididunt adipisicing dolore. Exercitation adipisicing culpa pariatur cupidatat velit cupidatat aliqua laboris velit commodo velit nulla.\r\nEiusmod dolore qui excepteur adipisicing tempor officia nostrud sint labore enim ut. Fugiat culpa duis nisi dolor minim aute ipsum ad mollit eiusmod nostrud excepteur ea. Veniam adipisicing consequat proident ea. Incididunt nulla ut duis commodo ad sunt nulla non veniam cillum. Est voluptate enim ad fugiat Lorem officia commodo reprehenderit quis mollit. Ipsum ullamco amet nostrud Lorem officia amet irure irure sint aliquip id. Sint amet Lorem eu cupidatat.\r\n",
@@ -699,12 +743,15 @@
         "requirements": "cillum proident labore est in",
         "title": "ex dolor ullamco laborum esse",
         "state": "CANCELLED",
-        "cancelationReason":"Eu exercitation fugiat ea cillum laborum cupidatat cupidatat",
+        "cancelationReason": "Eu exercitation fugiat ea cillum laborum cupidatat cupidatat",
         "endDate": "2025-08-05T05:09:48",
         "startDate": "2023-10-02T05:46:14",
         "ticker": "210718-KKJF",
-        "price":730.23,
-        "pictures": ["https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg","https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"],
+        "price": 730.23,
+        "pictures": [
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg",
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"
+        ],
         "stages": [
             {
                 "description": "Sunt deserunt occaecat reprehenderit id ullamco deserunt aliqua ut pariatur aliqua. Anim aliqua velit ea enim mollit. Excepteur amet sint in cupidatat nisi et magna officia non. Nulla tempor esse incididunt dolor deserunt aliqua. Incididunt consequat exercitation labore duis do proident sunt officia est irure reprehenderit ullamco velit. Sint adipisicing irure non amet et tempor veniam mollit excepteur elit. Anim consequat voluptate anim ipsum sit.\r\nIpsum dolore elit id pariatur occaecat deserunt non ea. Laborum duis qui quis voluptate id ipsum minim. Est non ea consequat ea commodo ipsum sunt dolor. Labore deserunt adipisicing ut fugiat reprehenderit commodo fugiat ipsum aliquip magna nulla veniam. Dolor est mollit nostrud commodo dolore eu consequat cillum voluptate eu cupidatat sunt laboris do. Incididunt in nisi aliqua enim aliquip velit sit consequat quis laboris non in amet cillum. Minim aliquip quis consectetur eiusmod ut ea proident duis nostrud.\r\n",
@@ -755,8 +802,11 @@
         "endDate": "2025-06-13T02:40:15",
         "startDate": "2023-05-03T09:51:47",
         "ticker": "190308-ATWV",
-        "price":1234.67,
-        "pictures": ["https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg","https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"],
+        "price": 1234.67,
+        "pictures": [
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg",
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"
+        ],
         "stages": [
             {
                 "description": "In Lorem irure ullamco eiusmod reprehenderit fugiat cillum laborum irure voluptate dolor ut ipsum eiusmod. Exercitation esse cupidatat minim nisi occaecat occaecat proident culpa tempor Lorem. In aute magna ullamco ipsum quis cupidatat incididunt. Esse officia eu consequat sint cillum. Nisi commodo non occaecat esse cupidatat excepteur. Esse cillum nulla amet est non duis esse sunt dolore sit mollit.\r\nIn est minim tempor ullamco cupidatat mollit ut nostrud reprehenderit ipsum dolore et et. Sint quis ipsum veniam proident in reprehenderit eu laborum minim tempor anim. Magna aute do occaecat elit fugiat exercitation do anim veniam aute id.\r\n",
@@ -799,12 +849,15 @@
         "requirements": "adipisicing eu deserunt non non",
         "title": "excepteur velit officia eiusmod dolore",
         "state": "CANCELLED",
-        "cancelationReason":"Eu exercitation fugiat ea cillum laborum cupidatat cupidatat",
+        "cancelationReason": "Eu exercitation fugiat ea cillum laborum cupidatat cupidatat",
         "endDate": "2024-11-21T02:31:14",
         "startDate": "2023-09-12T06:54:17",
         "ticker": "200415-KMMF",
-        "price":934.12,
-        "pictures": ["https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg","https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"],
+        "price": 934.12,
+        "pictures": [
+            "https://elviajerofeliz.com/wp-content/uploads/2016/08/como-hacer-buenas-fotos-de-viaje.jpg",
+            "https://lamenteesmaravillosa.com/wp-content/uploads/2015/07/shutterstock_144112840.jpg"
+        ],
         "stages": [
             {
                 "description": "Dolore ipsum sit irure occaecat aliqua laborum. Eu laboris ullamco qui mollit ad cupidatat aute adipisicing amet laboris excepteur ullamco ex. Incididunt est ut magna consequat mollit sint eiusmod ex tempor labore enim adipisicing consequat consequat. Consectetur eiusmod ea quis elit cupidatat voluptate officia. Elit magna commodo aliquip laborum.\r\nReprehenderit aliqua magna sit officia. Proident aliqua minim fugiat duis. Nulla irure occaecat veniam commodo. Dolor cillum ea pariatur commodo dolor ad ullamco eiusmod laboris ad eiusmod incididunt. Elit duis eiusmod deserunt quis eiusmod.\r\n",
