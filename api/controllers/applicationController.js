@@ -514,12 +514,12 @@ exports.list_applications_by_user_with_auth = async function (req, res) {
           res.status(404)
           res.send("The actor does not exist")
         } else {
-          Application.find({ user: req.params.userId }, req.body, { new: true, group: "status" }, function (err, applications) {
+          Application.find({ actor: req.params.userId }, req.body, function (err, applications) {
             if (err) {
               res.status(500)
               res.send(err)
             } else {
-              res.json(groupBy(applications, 'status'))
+              res.json(applications)
             }
           })
         }
