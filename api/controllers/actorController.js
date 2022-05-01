@@ -38,10 +38,7 @@ function createActorDB(req, res) {
 }
 
 exports.create_an_actor = function (req, res) {
-  if (req.body.role != undefined && req.body.role != "EXPLORER") {
-    res.status(400)
-    res.send("The user role can only be EXPLORER.")
-  } else if (req.body.active != undefined && req.body.active != true) {
+  if (req.body.active != undefined && req.body.active != true) {
     res.status(400)
     res.send("The new user must be active.")
   } else {
