@@ -11,6 +11,7 @@ exports.list_all_actors = function (req, res) {
     if (err) {
       res.send(err)
     } else {
+      console.log(actors.length);
       res.json(actors)
     }
   })
