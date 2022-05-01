@@ -7,6 +7,7 @@ module.exports = function (app) {
   // V1 - Sin autenticación
   app.route('/v1/actors')
     .post(actors.create_an_actor) //Register to the system as an explorer, create accounts for new managers
+    .get(actors.list_all_actors)
 
   app.route('/v1/actors/email/:email')
     .get(actors.read_an_actor_by_email)
