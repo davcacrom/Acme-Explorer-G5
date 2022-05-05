@@ -22,6 +22,11 @@ function cancelationReasonValidator(value) {
 		return value === null || value === undefined;
 }
 
+function getMinDate() {
+	const today = new Date();
+	return new Date(today.getFullYear(), today.getMonth(), today.getDate(), 0, 0, 0);
+}
+
 const TripSchema = new Schema({
 	actor: {
 		type: Schema.Types.ObjectId,
@@ -45,7 +50,7 @@ const TripSchema = new Schema({
 	endDate: {
 		type: Date,
 		required: 'Kindly enter the Trip endDate',
-		min: Date.now,
+		min: getMinDate,
 		validate: [endDateValidator, 'End date must be greater than start date']
 	},
 	pictures: [
@@ -61,7 +66,7 @@ const TripSchema = new Schema({
 	startDate: {
 		type: Date,
 		required: 'Kindly enter the Trip startDate',
-		min: Date.now,
+		min: getMinDate
 	},
 	ticker: {
 		type: String,

@@ -55,7 +55,7 @@ exports.create_a_trip = function (req, res) {
     startDate: req.body.startDate,
     title: req.body.title,
     stages: req.body.stages,
-    published: req.body.published
+    published: true
   }).save(function (err, trip) {
     if (err)
       res.status(500).send(err)
@@ -81,24 +81,28 @@ exports.update_a_trip = async function (req, res) {
       res.status(500).send(err)
     else if (trip) {
       let updatedTrip;
-      if (!trip.published) {
-        updatedTrip = {
-          description: req.body.description,
-          endDate: req.body.endDate,
-          pictures: req.body.pictures,
-          requirements: req.body.requirements,
-          startDate: req.body.startDate,
-          title: req.body.title,
-          stages: req.body.stages,
-          published: req.body.published
-        };
-        updatedTrip.price = parseFloat(updatedTrip.stages.reduce((sum, stage) => sum + stage.price, 0).toFixed(2));
-      } else if (trip.state !== 'CANCELLED' && trip.startDate > new Date() && (await Application.count({ trip: trip._id, status: 'ACCEPTED' })) === 0)
-        updatedTrip = {
-          cancelationReason: req.body.cancelationReason,
-          state: req.body.state
-        };
-      else {
+
+      const timeDifference = trip.startDate.getTime() - new Date().getTime();
+      if (trip.state !== 'CANCELLED' && timeDifference / 86400000 > 7) {
+        if (req.body.state === 'ACTIVE') {
+          updatedTrip = {
+            description: req.body.description,
+            endDate: req.body.endDate,
+            pictures: req.body.pictures,
+            requirements: req.body.requirements,
+            startDate: req.body.startDate,
+            title: req.body.title,
+            stages: req.body.stages,
+            published: req.body.published
+          };
+          updatedTrip.price = parseFloat(updatedTrip.stages.reduce((sum, stage) => sum + stage.price, 0).toFixed(2));
+        } else {
+          updatedTrip = {
+            cancelationReason: req.body.cancelationReason,
+            state: req.body.state
+          };
+        }
+      } else {
         res.status(403).json('Cannot edit that trip');
         return;
       }
@@ -117,12 +121,12 @@ exports.update_a_trip = async function (req, res) {
 }
 
 exports.delete_a_trip = function (req, res) {
-  Trip.deleteOne({ _id: req.params.tripId, published: false }, function (err, trip) {
+  Trip.deleteOne({ _id: req.params.tripId }, function (err, trip) {
     if (err)
       res.status(500).send(err)
-    else if(trip){
+    else if (trip) {
       res.status(204).send()
-    } else{
+    } else {
       res.status(404).json("Not found");
     }
   })
