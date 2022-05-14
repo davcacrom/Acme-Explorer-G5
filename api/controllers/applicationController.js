@@ -237,9 +237,21 @@ exports.update_an_application = async function (req, res) {
             res.json(application)
           }
         })
+      }else if(req.body.status=="CANCELLED" && (application.status=="PENDING" || application.status=="DUE")){
+        Application.findOneAndUpdate({ _id: req.params.applicationId }, req.body, { new: true }, function (err, application) {
+          if (err) {
+            res.status(500)
+            res.send(err)
+          } else if (application == null) {
+            res.status(404)
+            res.send("The application does not exist")
+          } else {
+            res.json(application)
+          }
+        })
       } else {
         res.status(400)
-        res.send("You can't cancel the application if the status is not PEDING or ACCEPTED")
+        res.send("You can't cancel the application if the status is not PEDING or DUE")
       }
     } else {
       res.status(404)
@@ -343,33 +355,20 @@ exports.pay_application = function (req, res) {
       res.send("The application does not exist")
     } else {
       if (application.status == "DUE") {
-        Trip.findById(req.params.tripId, function (err, trip) {
-          if (trip) {
-            tripPrice = trip.price;
-            if (price == tripPrice) {
-              Application.findOneAndUpdate({ _id: req.params.applicationId }, { $set: { 'application.status': "ACCEPTED" } }, { new: true }, function (err, application) {
-                if (err) {
-                  res.status(500)
-                  res.send(err)
-                } else if (application == null) {
-                  res.status(404)
-                  res.send("The application does not exist")
-                } else {
-                  res.json(application)
-                }
-              })
-            } else {
-              res.status(400)
-              res.send("Kindly enter the correct price")
-            }
-          } else {
+        Application.findOneAndUpdate({ _id: req.params.applicationId }, { $set: { 'status': "ACCEPTED" } }, { new: true }, function (err, application) {
+          if (err) {
+            res.status(500)
+            res.send(err)
+          } else if (application == null) {
             res.status(404)
-            res.send("The trip does not exist")
+            res.send("The application does not exist")
+          } else {
+            res.json(application)
           }
-        });
+        })
       } else {
         res.status(400)
-        res.send("You can't pay the application if is not in status DUE")
+        res.send("You can't pay the trip if the application status is not DUE")
       }
     }
   });

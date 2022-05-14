@@ -27,7 +27,7 @@ module.exports = function (app) {
     .get(applications.read_an_application) //displaying applications
     .put(applications.update_an_application) //change status, cancel application
 
-  app.route('/v1/trips/:tripId/applications/:applicationId/pay')
+  app.route('/v1/applications/:applicationId/pay')
     .put(applications.pay_application) //pay trip
 
   //v2 - con autorización
