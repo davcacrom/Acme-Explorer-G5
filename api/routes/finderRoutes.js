@@ -6,6 +6,9 @@ module.exports = function (app) {
   app.route('/v1/finders/dashboard')
     .get(finders.get_dashboard) //finder dashboard
 
+  app.route('/v1/finders/:actorId')
+    .get(finders.get_finder) //get finde by user id
+
   app.route('/v1/finders/:finderId')
     .get(finders.read_a_finder) 
     .put(finders.update_a_finder) //manage finder (update)
@@ -20,6 +23,9 @@ module.exports = function (app) {
   app.route('/v2/finders/:finderId')
     .get(finders.read_a_finder_with_auth) 
     .put(finders.update_a_finder_with_auth) //manage finder with authentication (update)
+
+  app.route('/v2/finders/:actorId')
+    .get(finders.get_finder_with_auth) //get finde by user id
   
   app.route('/v2/finders/config/:configId')
   .put(finders.update_config_with_auth) // update cached period, update limit results with authentication

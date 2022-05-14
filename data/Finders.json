@@ -7,7 +7,7 @@
         "lastUpdate": "2018-05-25T01:00:42",
         "minPrice": 74.26,
         "maxPrice": 312.81,
-        "actor": "622e380f14174beda5bdb921",
+        "actor": "622e37ef54d852aa6347e5cb",
         "__v": 1,
         "trips": [
             "622e380fbf5902c761fc2b8d",
@@ -27,7 +27,7 @@
         "lastUpdate": "2017-12-23T06:08:58",
         "minPrice": 99.43,
         "maxPrice": 116.12,
-        "actor": "622e380fd5be0b3a9f754d52",
+        "actor": "6265696ff868a1ca1de9c636",
         "__v": 3,
         "trips": [
             "622e380ff190f39efb5656c7",
@@ -44,11 +44,28 @@
         "lastUpdate": "2017-11-15T08:09:14",
         "minPrice": 78.67,
         "maxPrice": 464.39,
-        "actor": "622e380f235649ab448c056b",
+        "actor": "626569760c58fa0082d1d785",
         "__v": 5,
         "trips": [
             "622e380f030eb485b40d55f6",
             "622e380fb7638d6cc25b1c04"
+        ]
+    },
+    {
+        "_id": "627e80099d1dfcbaa7e72fdf",
+        "endDate": "2025-06-08T03:09:38",
+        "startDate": "2022-08-08T05:49:20",
+        "keyword": "consequat",
+        "lastUpdate": "2017-12-23T06:08:58",
+        "minPrice": 99.43,
+        "maxPrice": 116.12,
+        "actor": "626569802ffb830a5b178590",
+        "__v": 3,
+        "trips": [
+            "622e380ff190f39efb5656c7",
+            "622e380fdb149634525f3cdd",
+            "622e380f6bd65087e6f21de2",
+            "622e380f598735fb6f67e832"
         ]
     }
 ]

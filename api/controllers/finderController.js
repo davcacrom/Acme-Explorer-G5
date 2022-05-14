@@ -48,6 +48,51 @@ exports.read_a_finder = function (req, res) {
   })
 }
 
+exports.get_finder = function (req, res) {
+  Finder.findOne({ actor: req.params.actorId }, function (err, finder) {
+    if (err) {
+      res.send(err)
+    } else if (finder) {
+      res.json(finder)
+    } else {
+      res.status(404).json("Not found")
+    }
+  })
+}
+
+exports.get_finder_with_auth = async function (req, res) {
+  const idToken = req.headers.idtoken
+  const authenticatedUser = await authController.getUserId(idToken);
+  const resFinder = await Finder.findById(req.params.finderId, function (err, docs) {
+    if (err) {
+      res.send(err)
+    } else if (docs) {
+      return docs
+    } else {
+      res.status(404).json("Not found")
+    }
+  }).clone().catch(async function (err) { console.log(err) })
+  if (authenticatedUser != null) {
+    if (authenticatedUser._id == resFinder.actor.toString()) {
+      Finder.findOne({ actor: req.params.actorId }, function (err, finder) {
+        if (err) {
+          res.send(err)
+        } else if (finder) {
+          res.json(finder)
+        } else {
+          res.status(404).json("Not found")
+        }
+      })
+    } else {
+      res.status(405); // Not allowed
+      res.send('Read a finder of other actor is not allowed.');
+    }
+  } else {
+    res.status(401); // Not allowed
+    res.send('The Actor is not authenticated');
+  }
+}
+
 exports.update_a_finder = async function (req, res1) {
   req.body['lastUpdate'] = new Date();
   await Trip.find({ published: true, endDate: { $lt: req.body.endDate }, startDate: { $gte: req.body.startDate } }, async function (err, trips) {
@@ -215,10 +260,10 @@ exports.get_dashboard = function (req, res) {
       res.send(err)
     } else {
 
-      var results={ 
-        "topKeywords":dashboard[0].data[0].top_keywords,
-        "avgPriceRange":{
-          "max":dashboard[0].data[1].avgPriceRangeHigh,
+      var results = {
+        "topKeywords": dashboard[0].data[0].top_keywords,
+        "avgPriceRange": {
+          "max": dashboard[0].data[1].avgPriceRangeHigh,
           "min": dashboard[0].data[1].avgPriceRangeLow
         }
       }
