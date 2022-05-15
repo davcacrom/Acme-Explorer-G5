@@ -19,16 +19,19 @@ function keywordValidator(value) {
 	return value === null || value.match(KEYWORD_REGEXP);
 }
 
+const a = new Date();
+const b = new Date(a);
+b.setDate(a.getDate() + 2);
+
 const FinderSchema = new Schema({
 	endDate: {
 		type: Date,
-		default: null,
+		default: b,
 		validate: [endDateValidator, 'End date must be greater than start date']
 	},
 	keyword: {
 		type: String,
-		default: null,
-		validate: [keywordValidator, 'Keyword must be just one word']
+		default: "",
 	},
 	lastUpdate: {
 		type: Date,
@@ -36,20 +39,20 @@ const FinderSchema = new Schema({
 	},
 	maxPrice: {
 		type: Number,
-		default: null,
+		default: 100,
 		min: 0,
 		set: priceSetter,
 		validate: [maxPriceValidator, 'Maximum price must be greater than min price']
 	},
 	minPrice: {
 		type: Number,
-		default: null,
+		default: 1,
 		min: 0,
 		set: priceSetter
 	},
 	startDate: {
 		type: Date,
-		default: null
+		default: new Date()
 	},
 	actor: {
 		type: Schema.Types.ObjectId,

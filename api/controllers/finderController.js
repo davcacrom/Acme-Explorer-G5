@@ -13,7 +13,7 @@ let rebuildPeriod;
 let refreshFindersJob;
 let tripsFiltrer;
 
-function createRefreshFindersJob() {
+/*function createRefreshFindersJob() {
   rebuildPeriod = '* * * * *';
   refreshFindersJob = new CronJob(rebuildPeriod, function () {
     Config.find({}, function (err, res) {
@@ -34,7 +34,19 @@ function createRefreshFindersJob() {
 
 }
 
-module.exports.createRefreshFindersJob = createRefreshFindersJob;
+module.exports.createRefreshFindersJob = createRefreshFindersJob;*/
+
+exports.get_configuration = function (req, res) {
+  Config.find({}, function (err, config) {
+    if (err) {
+      res.send(err)
+    } else if (config) {
+      res.json(config[0])
+    } else {
+      res.status(404).json("Not found")
+    }
+  })
+}
 
 exports.read_a_finder = function (req, res) {
   Finder.findById(req.params.finderId, function (err, finder) {
