@@ -6,7 +6,7 @@ module.exports = function (app) {
   app.route('/v1/finders/dashboard')
     .get(finders.get_dashboard) //finder dashboard
 
-  app.route('/v1/finders/:actorId')
+  app.route('/v1/finders/actor/:actorId')
     .get(finders.get_finder) //get finde by user id
 
   app.route('/v1/finders/:finderId')
@@ -15,6 +15,9 @@ module.exports = function (app) {
   
   app.route('/v1/finders/config/:configId')
   .put(finders.update_config) // update cached period, update limit results
+
+  app.route('/v1/configurations')
+  .get(finders.get_configuration) // get configuration
 
   // V2 - Con autenticación
   app.route('/v2/finders/dashboard')

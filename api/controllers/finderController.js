@@ -36,6 +36,21 @@ function createRefreshFindersJob() {
 
 module.exports.createRefreshFindersJob = createRefreshFindersJob;
 
+exports.get_configuration = function (req, res) {
+  Config.find({}, function (err, config) {
+    console.log(1);
+    if (err) {
+      console.log(2);
+      res.send(err)
+    } else if (config) {
+      console.log(3);
+      res.json(config[0])
+    } else {
+      res.status(404).json("Not found")
+    }
+  })
+}
+
 exports.read_a_finder = function (req, res) {
   Finder.findById(req.params.finderId, function (err, finder) {
     if (err) {
