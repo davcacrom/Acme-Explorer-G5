@@ -94,6 +94,6 @@ mongoose.connection.on('error', function (err) {
   console.log('DB init error ' + err)
 })
 
-finderTools.createRefreshFindersJob();
+//finderTools.createRefreshFindersJob();
 
 module.exports = app
